@@ -11,3 +11,7 @@ Project)
   3.  motion-induced blur in cone-beam computed tomography(CB-CT) : CB-CT 를 사용했을 때 먼 거리에서 뿌연 현상(blur) 발생 문제
   4.  segmentation task of oral CBCT image with Deep Learning : 딥러닝을 이용하여 이미지의 인체기관 위치 식별
   5.  3D image stitching with CB-CT : CB-CT 를 이용하여 추출한 3D 이미지 연결(스티칭)
+
+
+ref)   
+https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file
