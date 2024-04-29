@@ -15,4 +15,5 @@ Project)
 
 ref)   
 https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
-https://github.com/jvirico/mouse_CT_3D_reconstruction/blob/master/README.md
+https://github.com/jvirico/mouse_CT_3D_reconstruction/blob/master/README.md  
+https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file
