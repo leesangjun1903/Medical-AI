@@ -21,4 +21,5 @@ https://ok97465.github.io/2019/10/191019_PrincipleOfCT
 https://ghebook.blogspot.com/2020/11/radon-transform.html#google_vignette  
 https://www.researchgate.net/publication/279770487_Object_Recognition_Using_Radon_Transform-Based_RST_Parameter_Estimation  
 https://www.researchgate.net/publication/358975239_Translation_Invariant_Global_Estimation_of_Heading_Angle_Using_Sinogram_of_LiDAR_Point_Cloud  
-https://velog.io/@davkim1030/Image-Stitching
+https://velog.io/@davkim1030/Image-Stitching  
+https://github.com/vast-ai-research/triposr?tab=readme-ov-file
