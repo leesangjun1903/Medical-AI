@@ -13,7 +13,10 @@ Project)
   5.  3D image stitching with CB-CT : CB-CT 를 이용하여 추출한 3D 이미지 연결(스티칭)
 
 
-ref)   
+ref)     
+Computer Tomography, Matthias Beckmann  
+Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition  
+
 https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
 https://github.com/jvirico/mouse_CT_3D_reconstruction/blob/master/README.md  
 https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file  
