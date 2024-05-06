@@ -27,3 +27,16 @@ https://www.researchgate.net/publication/358975239_Translation_Invariant_Global_
 https://velog.io/@davkim1030/Image-Stitching  
 https://github.com/vast-ai-research/triposr?tab=readme-ov-file  
 https://daddynkidsmakers.blogspot.com/2019/11/2-3-sfm-openmvg.html
+https://blog.naver.com/yunuri1012/80094694153  
+https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html  
+https://circlezoo.tistory.com/83  
+
+Radon Transform  
+https://ghebook.blogspot.com/2020/11/radon-transform.html  
+
+Hough transform  
+https://en.wikipedia.org/wiki/Hough_transform  
+Fourier transform  
+https://www.theoretical-physics.com/dev/math/transforms.html  
+https://en.wikipedia.org/wiki/Fourier_transform  
+
