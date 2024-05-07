@@ -33,6 +33,7 @@ https://circlezoo.tistory.com/83
 
 Radon Transform  
 https://ghebook.blogspot.com/2020/11/radon-transform.html  
+https://ebrary.net/207759/engineering/radon_transform_approach_solution_elastodynamic_greens_function
 
 Hough transform  
 https://en.wikipedia.org/wiki/Hough_transform  
