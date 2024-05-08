@@ -30,6 +30,8 @@ https://daddynkidsmakers.blogspot.com/2019/11/2-3-sfm-openmvg.html
 https://blog.naver.com/yunuri1012/80094694153  
 https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html  
 https://circlezoo.tistory.com/83  
+https://slideplayer.com/slide/4044214/  
+https://slideplayer.com/slide/4881743/
 
 Radon Transform  
 https://ghebook.blogspot.com/2020/11/radon-transform.html  
