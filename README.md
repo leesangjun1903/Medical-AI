@@ -43,3 +43,14 @@ Fourier transform
 https://www.theoretical-physics.com/dev/math/transforms.html  
 https://en.wikipedia.org/wiki/Fourier_transform  
 
+# Image Matching  
+https://github.com/chicleee/Image-Matching-Paper-List  
+https://github.com/ericzzj1989/Awesome-Image-Matching  
+https://github.com/3DOM-FBK/deep-image-matching
+
+
+# 3D Reconstruction
+https://github.com/bluestyle97/awesome-3d-reconstruction-papers  
+https://github.com/natowi/3D-Reconstruction-with-Deep-Learning-Methods  
+https://github.com/timzhang642/3D-Machine-Learning  
+
