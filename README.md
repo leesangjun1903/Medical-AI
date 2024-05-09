@@ -31,7 +31,8 @@ https://blog.naver.com/yunuri1012/80094694153
 https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html  
 https://circlezoo.tistory.com/83  
 https://slideplayer.com/slide/4044214/  
-https://slideplayer.com/slide/4881743/
+https://slideplayer.com/slide/4881743/  
+https://lme.tf.fau.de/category/lecture-notes/lecture-notes-me/
 
 - Radon Transform  
 https://ghebook.blogspot.com/2020/11/radon-transform.html  
@@ -41,10 +42,17 @@ https://ebrary.net/207759/engineering/radon_transform_approach_solution_elastody
 https://blog.naver.com/seungwan777/100210900086
 
 - Hough transform  
-https://en.wikipedia.org/wiki/Hough_transform  
-Fourier transform  
+https://en.wikipedia.org/wiki/Hough_transform
+
+- Fourier transform  
 https://www.theoretical-physics.com/dev/math/transforms.html  
-https://en.wikipedia.org/wiki/Fourier_transform  
+https://en.wikipedia.org/wiki/Fourier_transform
+
+- Dirac-Delta Function
+https://en.wikipedia.org/wiki/Dirac_delta_function
+
+- Interpolation
+https://blog.naver.com/PostView.nhn?blogId=libeor06&logNo=221966447062
 
 # Lower-Dise
 
