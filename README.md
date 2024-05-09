@@ -1,8 +1,8 @@
 # Computer-tomograpy
 
-Radon Transform  
-Filtered Back Projection(FBP)  
-Deep Filtered Back Projection(DFBP)
+- Radon Transform  
+- Filtered Back Projection(FBP)  
+- Deep Filtered Back Projection(DFBP)
 
 
 Project)
@@ -33,11 +33,14 @@ https://circlezoo.tistory.com/83
 https://slideplayer.com/slide/4044214/  
 https://slideplayer.com/slide/4881743/
 
-Radon Transform  
+- Radon Transform  
 https://ghebook.blogspot.com/2020/11/radon-transform.html  
 https://ebrary.net/207759/engineering/radon_transform_approach_solution_elastodynamic_greens_function
 
-Hough transform  
+- Sinogram
+https://blog.naver.com/seungwan777/100210900086
+
+- Hough transform  
 https://en.wikipedia.org/wiki/Hough_transform  
 Fourier transform  
 https://www.theoretical-physics.com/dev/math/transforms.html  
