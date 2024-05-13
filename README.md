@@ -26,7 +26,6 @@ Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition
 - Computed Tomograpy  
 https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html  
 https://ok97465.github.io/2019/10/191019_PrincipleOfCT
-
 https://circlezoo.tistory.com/83  
 https://slideplayer.com/slide/4044214/  
 https://slideplayer.com/slide/4881743/  
