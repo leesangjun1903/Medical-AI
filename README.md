@@ -23,14 +23,16 @@ Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition
 - TripoSR https://github.com/vast-ai-research/triposr?tab=readme-ov-file
 - 2차원 이미지에서 3차원 모델 자동 생성하는 SFM기반 OpenMVG https://daddynkidsmakers.blogspot.com/2019/11/2-3-sfm-openmvg.html
 
-https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html  
+- Computed Tomograpy
+https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html
+https://ok97465.github.io/2019/10/191019_PrincipleOfCT
+
 https://circlezoo.tistory.com/83  
 https://slideplayer.com/slide/4044214/  
 https://slideplayer.com/slide/4881743/  
 https://lme.tf.fau.de/category/lecture-notes/lecture-notes-me/
 
 - Radon Transform  
-https://ok97465.github.io/2019/10/191019_PrincipleOfCT  
 https://ghebook.blogspot.com/2020/11/radon-transform.html  
 https://ebrary.net/207759/engineering/radon_transform_approach_solution_elastodynamic_greens_function
 Object Recognition Using Radon Transform-Based RST Parameter Estimation https://www.researchgate.net/publication/279770487_Object_Recognition_Using_Radon_Transform-Based_RST_Parameter_Estimation  
