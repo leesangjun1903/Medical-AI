@@ -20,8 +20,8 @@ Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition
 - DBPN-PyTorch https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
 - 3D reconstruction of a mouse CT https://github.com/jvirico/mouse_CT_3D_reconstruction/blob/master/README.md  
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file  
+- TripoSR https://github.com/vast-ai-research/triposr?tab=readme-ov-file
  
-https://github.com/vast-ai-research/triposr?tab=readme-ov-file  
 https://daddynkidsmakers.blogspot.com/2019/11/2-3-sfm-openmvg.html
 https://blog.naver.com/yunuri1012/80094694153  
 https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html  
