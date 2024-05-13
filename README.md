@@ -20,7 +20,7 @@ Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition
 - DBPN-PyTorch https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
 - 3D reconstruction of a mouse CT https://github.com/jvirico/mouse_CT_3D_reconstruction/blob/master/README.md  
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file  
-https://ok97465.github.io/2019/10/191019_PrincipleOfCT  
+
 https://ghebook.blogspot.com/2020/11/radon-transform.html#google_vignette  
 https://www.researchgate.net/publication/279770487_Object_Recognition_Using_Radon_Transform-Based_RST_Parameter_Estimation  
 https://www.researchgate.net/publication/358975239_Translation_Invariant_Global_Estimation_of_Heading_Angle_Using_Sinogram_of_LiDAR_Point_Cloud  
@@ -35,6 +35,7 @@ https://slideplayer.com/slide/4881743/
 https://lme.tf.fau.de/category/lecture-notes/lecture-notes-me/
 
 - Radon Transform  
+https://ok97465.github.io/2019/10/191019_PrincipleOfCT  
 https://ghebook.blogspot.com/2020/11/radon-transform.html  
 https://ebrary.net/207759/engineering/radon_transform_approach_solution_elastodynamic_greens_function
 
