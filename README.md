@@ -24,7 +24,7 @@ Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition
 - 2차원 이미지에서 3차원 모델 자동 생성하는 SFM기반 OpenMVG https://daddynkidsmakers.blogspot.com/2019/11/2-3-sfm-openmvg.html
 
 - Computed Tomograpy  
-https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html
+https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html  
 https://ok97465.github.io/2019/10/191019_PrincipleOfCT
 
 https://circlezoo.tistory.com/83  
