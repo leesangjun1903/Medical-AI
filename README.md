@@ -21,7 +21,6 @@ Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition
 - 3D reconstruction of a mouse CT https://github.com/jvirico/mouse_CT_3D_reconstruction/blob/master/README.md  
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file  
 
-https://ghebook.blogspot.com/2020/11/radon-transform.html#google_vignette  
 https://www.researchgate.net/publication/279770487_Object_Recognition_Using_Radon_Transform-Based_RST_Parameter_Estimation  
 https://www.researchgate.net/publication/358975239_Translation_Invariant_Global_Estimation_of_Heading_Angle_Using_Sinogram_of_LiDAR_Point_Cloud  
 https://velog.io/@davkim1030/Image-Stitching  
