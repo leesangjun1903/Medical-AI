@@ -17,7 +17,7 @@ ref)
 Computer Tomography, Matthias Beckmann  
 Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition  
 
-https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
+- DBPN-PyTorch https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
 https://github.com/jvirico/mouse_CT_3D_reconstruction/blob/master/README.md  
 https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file  
 https://ok97465.github.io/2019/10/191019_PrincipleOfCT  
