@@ -36,8 +36,8 @@ https://unist.tistory.com/5
 https://ghebook.blogspot.com/2020/11/radon-transform.html  
 https://ebrary.net/207759/engineering/radon_transform_approach_solution_elastodynamic_greens_function
 Object Recognition Using Radon Transform-Based RST Parameter Estimation https://www.researchgate.net/publication/279770487_Object_Recognition_Using_Radon_Transform-Based_RST_Parameter_Estimation  
-Translation Invariant Global Estimation of Heading Angle Using Sinogram of LiDAR Point Cloud https://www.researchgate.net/publication/358975239_Translation_Invariant_Global_Estimation_of_Heading_Angle_Using_Sinogram_of_LiDAR_Point_Cloud
-https://blog.naver.com/yunuri1012/80094694153
+Translation Invariant Global Estimation of Heading Angle Using Sinogram of LiDAR Point Cloud https://www.researchgate.net/publication/358975239_Translation_Invariant_Global_Estimation_of_Heading_Angle_Using_Sinogram_of_LiDAR_Point_Cloud  
+https://blog.naver.com/yunuri1012/80094694153  
 https://blog.naver.com/gwl0711/222187454928
 
 - Sinogram
