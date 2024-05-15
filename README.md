@@ -68,6 +68,9 @@ https://velog.io/@davkim1030/Image-Stitching
 
 # 3D Reconstruction
 https://www.kaggle.com/code/aatamikorpi/3d-reconstruction-visualistaion/notebook  
+https://www.kaggle.com/code/allunia/pulmonary-dicom-preprocessing  
+https://www.kaggle.com/code/wrrosa/advanced-dicom-ct-3d-visualizations-with-vtk  
+https://www.kaggle.com/code/qiyuange/covid19-segmentation-and-3d-reconstruction
 
 https://github.com/bluestyle97/awesome-3d-reconstruction-papers  
 https://github.com/natowi/3D-Reconstruction-with-Deep-Learning-Methods  
