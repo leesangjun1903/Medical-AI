@@ -75,5 +75,6 @@ https://www.kaggle.com/code/qiyuange/covid19-segmentation-and-3d-reconstruction
 https://github.com/bluestyle97/awesome-3d-reconstruction-papers  
 https://github.com/natowi/3D-Reconstruction-with-Deep-Learning-Methods  
 https://github.com/timzhang642/3D-Machine-Learning  
-https://github.com/Unity-Technologies/ind-bermuda-opensfm
+https://github.com/Unity-Technologies/ind-bermuda-opensfm  
+https://github.com/masaaki-75/freeseed
 
