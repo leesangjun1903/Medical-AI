@@ -81,3 +81,5 @@ https://github.com/ProtossDragoon/PlankHyundong
 - Benchmark for visual localization on 3D mesh models https://github.com/v-pnk/cadloc?tab=readme-ov-file
 - Joint 3D Face Reconstruction and Dense Alignment with Position Map Regression Network https://github.com/yfeng95/PRNet
 
+## Physically Based Rendering method
+
