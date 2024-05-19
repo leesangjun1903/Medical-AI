@@ -77,5 +77,6 @@ https://github.com/natowi/3D-Reconstruction-with-Deep-Learning-Methods
 https://github.com/timzhang642/3D-Machine-Learning  
 https://github.com/Unity-Technologies/ind-bermuda-opensfm  
 https://github.com/masaaki-75/freeseed  
-https://github.com/ProtossDragoon/PlankHyundong
+https://github.com/ProtossDragoon/PlankHyundong  
+- Benchmark for visual localization on 3D mesh models https://github.com/v-pnk/cadloc?tab=readme-ov-file
 
