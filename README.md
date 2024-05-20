@@ -82,4 +82,4 @@ https://github.com/ProtossDragoon/PlankHyundong
 - Joint 3D Face Reconstruction and Dense Alignment with Position Map Regression Network https://github.com/yfeng95/PRNet
 
 ## Physically Based Rendering method
-
+- Deep Learning with Cinematic Rendering: Fine-Tuning Deep Neural Networks Using Photorealistic Medical Images https://durr.jhu.edu/pubs/dl-cin-ren/
