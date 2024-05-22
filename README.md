@@ -65,6 +65,14 @@ https://blog.naver.com/PostView.nhn?blogId=libeor06&logNo=221966447062
 # 3D image stitching
 https://velog.io/@davkim1030/Image-Stitching 
 
+# Image Denoising
+- MR-self Noise2Noise: self-supervised deep learning–based image quality improvement of submillimeter resolution 3D MR images https://link.springer.com/article/10.1007/s00330-022-09243-y
+- Multi-Stage Progressive Image Restoration https://arxiv.org/abs/2102.02808 https://github.com/swz30/MPRNet
+- CycleISP: Real Image Restoration via Improved Data Synthesis https://arxiv.org/abs/2003.07761 https://github.com/swz30/CycleISP
+- Image Denoising https://docs.opencv.org/4.x/d5/d69/tutorial_py_non_local_means.html
+- Learning Medical Image Denoising with Deep Dynamic Residual Attention Network https://github.com/sharif-apu/MID-DRAN
+- SwinIA: Self-Supervised Blind-Spot Image Denoising with Zero Convolutions https://arxiv.org/abs/2305.05651
+- MR Image Denoising and Super-Resolution Using Regularized Reverse Diffusion https://arxiv.org/abs/2203.12621 
 
 # 3D Reconstruction
 https://www.kaggle.com/code/aatamikorpi/3d-reconstruction-visualistaion/notebook  
