@@ -68,7 +68,6 @@ https://blog.naver.com/PostView.nhn?blogId=libeor06&logNo=221966447062
 https://velog.io/@davkim1030/Image-Stitching 
 
 # Sparse View CT
-## Tutorial
 - Scientific Computational Imaging Code (SCICO) https://github.com/lanl/scico
 - MagiciansCorner https://github.com/RSNA/MagiciansCorner/tree/master?tab=readme-ov-file
 - RSNA AI Deep Learning Lab 2019 https://github.com/mohannadhussain/AI-Deep-Learning-Lab/tree/master
