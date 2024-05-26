@@ -70,6 +70,7 @@ https://velog.io/@davkim1030/Image-Stitching
 - Scientific Computational Imaging Code (SCICO) https://github.com/lanl/scico
 - MagiciansCorner https://github.com/RSNA/MagiciansCorner/tree/master?tab=readme-ov-file
 - RSNA AI Deep Learning Lab 2019 https://github.com/mohannadhussain/AI-Deep-Learning-Lab/tree/master
+- 2-Step Sparse-View CT Reconstruction with a Domain-Specific Perceptual Network https://github.com/anonyr7/Sinogram-Inpainting/tree/master?tab=readme-ov-file
 
 ## Image Denoising
 - MR-self Noise2Noise: self-supervised deep learning–based image quality improvement of submillimeter resolution 3D MR images https://link.springer.com/article/10.1007/s00330-022-09243-y
