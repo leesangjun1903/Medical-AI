@@ -4,6 +4,8 @@
 - Filtered Back Projection(FBP)  
 - Deep Filtered Back Projection(DFBP)
 
+## Papers
+- Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
 
 Project)
   1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
@@ -71,6 +73,8 @@ https://velog.io/@davkim1030/Image-Stitching
 - MagiciansCorner https://github.com/RSNA/MagiciansCorner/tree/master?tab=readme-ov-file
 - RSNA AI Deep Learning Lab 2019 https://github.com/mohannadhussain/AI-Deep-Learning-Lab/tree/master
 - 2-Step Sparse-View CT Reconstruction with a Domain-Specific Perceptual Network https://github.com/anonyr7/Sinogram-Inpainting/tree/master?tab=readme-ov-file
+- Improving Hemorrhage Detection in Sparse-view CTs via Deep Learning https://github.com/J-3TO/Sparse-View-Cranial-CT-Reconstruction
+- Low-Dose X-Ray Ct Reconstruction on X3D https://paperswithcode.com/sota/low-dose-x-ray-ct-reconstruction-on-x3d
 
 ## Image Denoising
 - MR-self Noise2Noise: self-supervised deep learning–based image quality improvement of submillimeter resolution 3D MR images https://link.springer.com/article/10.1007/s00330-022-09243-y
