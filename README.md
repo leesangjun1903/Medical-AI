@@ -1,4 +1,4 @@
-# Computer-tomograpy
+# Computer-Tomograpy
 
 - Radon Transform  
 - Filtered Back Projection(FBP)  
