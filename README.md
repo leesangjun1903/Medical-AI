@@ -69,7 +69,7 @@
 - Deep Learning with Cinematic Rendering: Fine-Tuning Deep Neural Networks Using Photorealistic Medical Images https://durr.jhu.edu/pubs/dl-cin-ren/
 
 # Studies 
-- Computer Tomography
+- Computer Tomography  
 https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/tomography.html  
 https://ok97465.github.io/2019/10/191019_PrincipleOfCT
 https://circlezoo.tistory.com/83  
