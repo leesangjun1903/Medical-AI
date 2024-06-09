@@ -8,7 +8,9 @@
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
 - Awesome 3D Reconstruction Papers https://github.com/bluestyle97/awesome-3d-reconstruction-papers
 - 3D-Reconstruction-with-Deep-Learning-Methods https://github.com/natowi/3D-Reconstruction-with-Deep-Learning-Methods
-- 3D Machine Learning Study notes https://github.com/timzhang642/3D-Machine-Learning  
+- 3D Machine Learning Study notes https://github.com/timzhang642/3D-Machine-Learning
+- Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
+- Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
 
 # Main Project(연구과제)
   1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
@@ -54,6 +56,7 @@
 - Learning Medical Image Denoising with Deep Dynamic Residual Attention Network https://github.com/sharif-apu/MID-DRAN
 - SwinIA: Self-Supervised Blind-Spot Image Denoising with Zero Convolutions https://arxiv.org/abs/2305.05651
 - MR Image Denoising and Super-Resolution Using Regularized Reverse Diffusion https://arxiv.org/abs/2203.12621
+- Physics-informed deep neural network for image denoising https://codeocean.com/capsule/9043085/tree/v1
 
 ## 3D Reconstruction
 - 3D Reconstruction & visualistaion https://www.kaggle.com/code/aatamikorpi/3d-reconstruction-visualistaion/notebook  
