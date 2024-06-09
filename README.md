@@ -29,6 +29,7 @@
 - TripoSR : a state-of-the-art open-source model for fast feedforward 3D reconstruction from a single image https://github.com/vast-ai-research/triposr?tab=readme-ov-file
 - 2차원 이미지에서 3차원 모델 자동 생성하는 SFM기반 OpenMVG https://daddynkidsmakers.blogspot.com/2019/11/2-3-sfm-openmvg.html https://github.com/openMVG/openMVG/tree/develop
 - RSNA AI Deep Learning Lab 2019 https://github.com/mohannadhussain/AI-Deep-Learning-Lab/tree/master
+- pix2pix_super_resolution https://www.kaggle.com/code/chaimaemoumou/pix2pix-super-resolution/notebook
 
 ## Lower-Dise
 
