@@ -11,6 +11,7 @@
 - 3D Machine Learning Study notes https://github.com/timzhang642/3D-Machine-Learning
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
 - Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
+- Awesome Image or Video Denoising Algorithms https://github.com/z-bingo/awesome-image-denoising-state-of-the-art
 
 ### Paper with name
 - Medical image denoising using convolutional denoising autoencoders https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
@@ -75,6 +76,7 @@ https://m.blog.naver.com/na1se/80176910730
 - SwinIA: Self-Supervised Blind-Spot Image Denoising with Zero Convolutions https://arxiv.org/abs/2305.05651
 - MR Image Denoising and Super-Resolution Using Regularized Reverse Diffusion https://arxiv.org/abs/2203.12621
 - Physics-informed deep neural network for image denoising https://codeocean.com/capsule/9043085/tree/v1
+- Image Denoising with Autoencoder (as a baseline model), CBDNet, PRIDNet, RIDNet https://github.com/sharathsolomon/ImageDenoising/tree/main?tab=readme-ov-file
 
 ## 3D Reconstruction
 - 3D Reconstruction & visualistaion https://www.kaggle.com/code/aatamikorpi/3d-reconstruction-visualistaion/notebook  
