@@ -12,6 +12,23 @@
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
 - Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
 
+### Paper with name
+- Medical image denoising using convolutional denoising autoencoders https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
+- Content-Noise Complementary Learning for Medical Image Denoising
+- Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior
+- Learning Medical Image Denoising with Deep Dynamic Residual Attention Network
+- Transformers in Medical Imaging: A Survey
+- Adversarial Distortion Learning for Medical Image Denoising
+- Physics-informed deep neural network for image denoising
+- Simple Baselines for Image Restoration
+- Multi-stage image denoising with the wavelet transform
+- CT Image Denoising with Perceptive Deep Neural Networks
+- Dynamic Convolution: Attention over Convolution Kernels
+- Recent Advances in CT Image Reconstruction
+- The evolution of image reconstruction for CT—from filtered back projection to artificial intelligence
+
+
+
 # Main Project(연구과제)
   1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
   2.  Metal artifact reduction techniques : CT 이미지의 결함 문제 : 배터리 노화, 인체 속 다른 물질 출력으로 인한 이미지 결함 해결
