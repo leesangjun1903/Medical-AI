@@ -3,6 +3,11 @@
 - Radon Transform  
 - Filtered Back Projection(FBP)  
 - Deep Filtered Back Projection(DFBP)
+- Low pass filters
+- Sampling Theory
+- Parallel beam geometry
+- Fan beam geometry
+- Multivariable Radon transform, X-ray transform
 
 ## Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
@@ -20,15 +25,15 @@
 - Learning Medical Image Denoising with Deep Dynamic Residual Attention Network
 - Transformers in Medical Imaging: A Survey
 - Adversarial Distortion Learning for Medical Image Denoising
-- Physics-informed deep neural network for image denoising
+- Physics-informed deep neural network for image denoising https://codeocean.com/capsule/9043085/tree/v1
 - Simple Baselines for Image Restoration
-- Multi-stage image denoising with the wavelet transform
+- Multi-stage image denoising with the wavelet transform https://github.com/hellloxiaotian/MWDCNN
 - CT Image Denoising with Perceptive Deep Neural Networks
 - Dynamic Convolution: Attention over Convolution Kernels
 - Recent Advances in CT Image Reconstruction
 - The evolution of image reconstruction for CT—from filtered back projection to artificial intelligence
-
-
+- EDCNN: Edge enhancement-based Densely Connected Network with Compound Loss for Low-Dose CT Denoising
+- X2CT-GAN: Reconstructing CT from Biplanar X-Rays with Generative Adversarial Networks https://github.com/kylekma/X2CT
 
 # Main Project(연구과제)
   1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
@@ -41,6 +46,7 @@
 - Computer Tomography, Matthias Beckmann  
 - Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition  
 - Notebooks, datasets, other content for the Radiology:AI series known as Magicians Corner by Brad Erickson https://github.com/RSNA/MagiciansCorner/tree/master?tab=readme-ov-file
+- 의학영상기기 https://www.youtube.com/playlist?list=PLSN_PltQeOyj-XhgiWmtqjGo08isXUlSy
 
 # Projects
 - DBPN-PyTorch : Deep Back-Projection Networks for Single Image Super-resolution https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
@@ -50,6 +56,7 @@
 - 2차원 이미지에서 3차원 모델 자동 생성하는 SFM기반 OpenMVG https://daddynkidsmakers.blogspot.com/2019/11/2-3-sfm-openmvg.html https://github.com/openMVG/openMVG/tree/develop
 - RSNA AI Deep Learning Lab 2019 https://github.com/mohannadhussain/AI-Deep-Learning-Lab/tree/master
 - pix2pix_super_resolution https://www.kaggle.com/code/chaimaemoumou/pix2pix-super-resolution/notebook
+- Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
 
 ## Lower-Dise
 
@@ -125,3 +132,6 @@ https://en.wikipedia.org/wiki/Dirac_delta_function
 
 - Interpolation
 https://blog.naver.com/PostView.nhn?blogId=libeor06&logNo=221966447062
+
+- Machine learning
+https://kimbg.tistory.com/category/machine%20learning
