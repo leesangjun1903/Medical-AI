@@ -48,7 +48,7 @@ Denoising의 목표는 reference signal에 포함된 정보를 보존하면서 �
 이러한 이유로 noise-free reference signal이 알려진 이미지에서 PSNR(peak signal to noise ratio) 또는 SSIM(structured image similarity index)[13]을 사용하여 노이즈 제거 알고리즘을 평가하는 경우가 많습니다.
 
 ## 응용
-노이즈 제거는 의료 이미징, 천문학 또는 synthetic aperture radar와 같은 영역의 이미지에 유용한 preprocessing 단계일 수 있습니다. 
+노이즈 제거는 의료 이미징, 천문학 또는 synthetic aperture radar와 같은 영역의 이미지에 유용한 preprocessing 단계일 수 있습니다.   
 low illumination conditions에서 디지털 사진 촬영과 archival footage 및 사진 복원에도 적용할 수 있습니다.  
 이미지 편집 및 이미지 처리 프로그램에는 일반적으로 노이즈 제거 모듈이 포함됩니다.
 
