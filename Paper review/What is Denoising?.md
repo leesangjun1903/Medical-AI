@@ -31,9 +31,9 @@ brightness gradients와 같은 value of image-dependent quantities, accuracy in 
 Ir의 속성에 대한 제약 조건에 따라 handful of major classes로 denoising methods들을 그룹화할 수 있습니다.  
 
 ## Classes of Denoising Algorithms
-Denoising Algorithms의 첫 번째 class는 brightness away from image edges가 uniform해야 한다는 가정 하에 the value of pixels within small image neighborhoods부분을 averaging하는 것을 기반으로 합니다. 
-이러한 알고리즘은 strong brightness discontinuities을 유지하면서 이미지에서 균일해 보이는 영역을 smoothing하는 경향이 강하기 때문에 anisotropic smoothing를 수행합니다[2]. 
-original anisotropic smoothing algorithm[3], bilateral filter[4], minimizing total variation에 기반한 방법[5] 및 stochastic denoising algorithm[6]은 모두 homogeneous regions에 걸쳐 maximizing brightness uniformity하는 것을 기반으로 하는 노이즈 제거 방법의 예입니다.  
+Denoising Algorithms의 첫 번째 class는 brightness away from image edges가 uniform해야 한다는 가정 하에 the value of pixels within small image neighborhoods부분을 averaging하는 것을 기반으로 합니다.  
+이러한 알고리즘은 strong brightness discontinuities을 유지하면서 이미지에서 균일해 보이는 영역을 smoothing하는 경향이 강하기 때문에 anisotropic smoothing를 수행합니다[2].  
+original anisotropic smoothing algorithm[3], bilateral filter[4], minimizing total variation에 기반한 방법[5] 및 stochastic denoising algorithm[6]은 모두 homogeneous regions에 걸쳐 maximizing brightness uniformity하는 것을 기반으로 하는 노이즈 제거 방법의 예입니다.   
 
 두 번째 class는 analysis of image statistics을 기반으로 합니다. 
 기본 원리는 natural images의 statistical properties을 모델링할 수 있고 모델이 주어지면 examining the statistics of a noisy image하고 통계가 학습된 모델의 통계와 일치하도록 이미지를 변환하여 노이즈 제거를 수행할 수 있다는 것입니다[7]. 
