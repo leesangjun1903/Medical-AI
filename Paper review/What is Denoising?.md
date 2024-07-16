@@ -45,7 +45,7 @@ salt and pepper noise을 제거하기 위해 특별히 고안된 세 번째 clas
 median filter[12]는 이러한 등급의 노이즈 제거 알고리즘의 예입니다.
 
 Denoising의 목표는 reference signal에 포함된 정보를 보존하면서 가능한 한 많은 노이즈를 제거하는 것입니다.   
-이러한 이유로 noise-free reference signal이 알려진 이미지에서 pSNR(peak signal to noise ratio) 또는 SSIM(structured image similarity index)[13]을 사용하여 노이즈 제거 알고리즘을 평가하는 경우가 많습니다.
+이러한 이유로 noise-free reference signal이 알려진 이미지에서 PSNR(peak signal to noise ratio) 또는 SSIM(structured image similarity index)[13]을 사용하여 노이즈 제거 알고리즘을 평가하는 경우가 많습니다.
 
 # 응용
 노이즈 제거는 의료 이미징, 천문학 또는 synthetic aperture radar와 같은 영역의 이미지에 유용한 preprocessing 단계일 수 있습니다. 
