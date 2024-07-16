@@ -47,12 +47,12 @@ median filter[12]는 이러한 등급의 노이즈 제거 알고리즘의 예입
 Denoising의 목표는 reference signal에 포함된 정보를 보존하면서 가능한 한 많은 노이즈를 제거하는 것입니다.   
 이러한 이유로 noise-free reference signal이 알려진 이미지에서 PSNR(peak signal to noise ratio) 또는 SSIM(structured image similarity index)[13]을 사용하여 노이즈 제거 알고리즘을 평가하는 경우가 많습니다.
 
-# 응용
+## 응용
 노이즈 제거는 의료 이미징, 천문학 또는 synthetic aperture radar와 같은 영역의 이미지에 유용한 preprocessing 단계일 수 있습니다. 
 low illumination conditions에서 디지털 사진 촬영과 archival footage 및 사진 복원에도 적용할 수 있습니다.  
 이미지 편집 및 이미지 처리 프로그램에는 일반적으로 노이즈 제거 모듈이 포함됩니다.
 
-# 실험 결과
+## 실험 결과
 서로 다른 알고리즘에 의해 생성된 결과의 품질은 이미지에서 이미지로, 서로 다른 도메인에 걸쳐 달라집니다.   
 그러나 최근의 벤치마크[14]는 block matching algorithm이 서로 다른 Gaussian noise 양을 가진 natural images에서 전반적으로 더 나은 성능을 달성한다는 것을 나타냅니다.
 
