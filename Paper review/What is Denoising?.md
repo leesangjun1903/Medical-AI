@@ -35,9 +35,9 @@ Denoising Algorithms의 첫 번째 class는 brightness away from image edges가 
 이러한 알고리즘은 strong brightness discontinuities을 유지하면서 이미지에서 균일해 보이는 영역을 smoothing하는 경향이 강하기 때문에 anisotropic smoothing를 수행합니다[2].  
 original anisotropic smoothing algorithm[3], bilateral filter[4], minimizing total variation에 기반한 방법[5] 및 stochastic denoising algorithm[6]은 모두 homogeneous regions에 걸쳐 maximizing brightness uniformity하는 것을 기반으로 하는 노이즈 제거 방법의 예입니다.   
 
-두 번째 class는 analysis of image statistics을 기반으로 합니다. 
-기본 원리는 natural images의 statistical properties을 모델링할 수 있고 모델이 주어지면 examining the statistics of a noisy image하고 통계가 학습된 모델의 통계와 일치하도록 이미지를 변환하여 노이즈 제거를 수행할 수 있다는 것입니다[7]. 
-일반적인 모델에는 distributions of filter responses와 pooled statistics for collections of image patches가 포함됩니다. 
+두 번째 class는 analysis of image statistics을 기반으로 합니다.  
+기본 원리는 natural images의 statistical properties을 모델링할 수 있고 모델이 주어지면 examining the statistics of a noisy image하고 통계가 학습된 모델의 통계와 일치하도록 이미지를 변환하여 노이즈 제거를 수행할 수 있다는 것입니다[7].  
+일반적인 모델에는 distributions of filter responses와 pooled statistics for collections of image patches가 포함됩니다.  
 Gaussian scale mixtures[8], fields of experts[9], nonlocal means method[10] 및 block matching algorithm[11]과 같은 알고리즘은 이미지 또는 작은 이미지 패치의 통계적 규칙성을 활용합니다.
 
 salt and pepper noise을 제거하기 위해 특별히 고안된 세 번째 class의 이미지 노이즈 제거 방법은 outlier detection를 기반으로 합니다.  
