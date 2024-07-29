@@ -35,7 +35,8 @@
 - Recent Advances in CT Image Reconstruction
 - The evolution of image reconstruction for CT—from filtered back projection to artificial intelligence
 - EDCNN: Edge enhancement-based Densely Connected Network with Compound Loss for Low-Dose CT Denoising
-- X2CT-GAN: Reconstructing CT from Biplanar X-Rays with Generative Adversarial Networks https://github.com/kylekma/X2CT
+- X2CT-GAN: Reconstructing CT from Biplanar X-Rays with Generative Adversarial Networks https://github.com/kylekma/X2CT  
+- NAFNet: Nonlinear Activation Free Network for Image Restoration https://github.com/megvii-research/NAFNet
 
 # Main Project(연구과제)
   1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
