@@ -17,13 +17,15 @@
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
 - Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
 - Awesome Image or Video Denoising Algorithms https://github.com/z-bingo/awesome-image-denoising-state-of-the-art
+- Image Denoising State-of-the-art https://github.com/flyywh/Image-Denoising-State-of-the-art
+- reproducible-image-denoising-state-of-the-art https://github.com/wenbihan/reproducible-image-denoising-state-of-the-art?tab=readme-ov-file
 
 ### Paper with name
 - Medical image denoising using convolutional denoising autoencoders https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
 - Content-Noise Complementary Learning for Medical Image Denoising
 - Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior
 - Learning Medical Image Denoising with Deep Dynamic Residual Attention Network
-- Transformers in Medical Imaging: A Survey
+- Transformers in Medical Imaging: A Survey https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction  
 - Adversarial Distortion Learning for Medical Image Denoising
 - Physics-informed deep neural network for image denoising https://codeocean.com/capsule/9043085/tree/v1
 - Simple Baselines for Image Restoration
