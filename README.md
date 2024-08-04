@@ -19,6 +19,7 @@
 - Awesome Image or Video Denoising Algorithms https://github.com/z-bingo/awesome-image-denoising-state-of-the-art
 - Image Denoising State-of-the-art https://github.com/flyywh/Image-Denoising-State-of-the-art
 - reproducible-image-denoising-state-of-the-art https://github.com/wenbihan/reproducible-image-denoising-state-of-the-art?tab=readme-ov-file
+- Awesome-Super-Resolution https://github.com/ChaofWang/Awesome-Super-Resolution?tab=readme-ov-file
 
 ### Paper with name
 - Medical image denoising using convolutional denoising autoencoders https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
