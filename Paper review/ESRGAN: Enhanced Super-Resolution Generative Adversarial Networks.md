@@ -82,6 +82,8 @@ PSNR-oriented network(Gpsnr)을 학습한 후, 미세 조정을 통해 GAN-based
 또한 한 이미지가 다른 이미지보다 더 현실적인지 여부를 판단하는 방법을 배우는 상대론적 GAN을 판별기로 사용하여 생성기가 더 자세한 텍스처를 복구하도록 안내했습니다.  
 또한 활성화 전 기능을 사용하여 지각 손실을 개선하여 더 강력한 감독을 제공하고 더 정확한 밝기와 현실적인 텍스처를 복원했습니다.
 
+# Reference
+https://velog.io/@kanghoon12/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0-ESRGAN
 
 
 
