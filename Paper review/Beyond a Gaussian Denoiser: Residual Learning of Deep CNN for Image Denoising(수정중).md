@@ -108,4 +108,51 @@ R(y)을 학습시키기 위해 Residual learning formulation을 사용한 것.
 MLP method에서 noisy input image의 boundary는 preprocessing 단계에서 균형있게 padding을 하는 반면에, CSF method와 TNRD method에서는 모든 단계 전에 padding이 된다.  
 DnCNN은 이러한 방법들과 다르게 middle layers의 각 feature map들이 계속해서 input image와 같은 사이즈를 가질 수 있도록 convolution 전에 바로 zero padding을 해주었다.
 
+## [Integration of Residual Learning and Batch Normalization for Image Denoising]
+DnCNN network는 x를 예측하기 위해 original mapping F(y)를 학습시키거나, v를 예측하기 위해 residual mapping R(y)를 학습시키는 데에 사용될 수 있다.  
+또한 Original mapping이 identity mapping에 더 가까울 때 residual mapping은 더욱 최적화되기 쉽고, Residual learning 관련 논문에 따르면 noisy observation y는 (특히 noise level이 낮을 때) residual image v 보다 latent clean image x에 더 가깝다고 한다.  
+따라서 R(y)보다 F(y)가 identity mapping에 더 가깝고, residual learning formulation은 image denoising에 더욱 적합하다.  
+아래의 그래프는 Batch normalization(BN)과 Residual learning(RL)의 사용 유무에 따른 PSNR 평균값을 나타낸 것이다. (Gradient-based optimization 알고리즘으로는 'SGD'와 'Adam'을 사용했다.)  
 
+![](https://velog.velcdn.com/images%2Fdanielseo%2Fpost%2F77648b59-9349-420c-823f-7b8e41f81949%2Fcompare.png)
+
+이 그래프를 통해 두 가지 결론을 얻을 수 있다.
+- residual learning formulation을 사용할 경우, original mapping learning보다 더 빠르고 안정적으로 수렴된다.  
+- residual learning formulation과 batch normalizaion을 함께 사용할 경우(Red line), original mapping(Blue line) 보다 빠르게 수렴하고 더 좋은 denoising performance를 나타내는데, 특히 SGD와 Adam optimizaiton algorithms이 이 network가 best 결과를 가질 수 있도록 돕는다.
+
+## Connection With TNRD
+
+## [Extension to General Image Denoising]
+기존의 Gaussian denoising 방법들(MLP, CSF, TNRD)은 fixed noise level을 통해 model을 학습시킨다. 즉, unknown noise에 대해 Gaussian denoising을 할 경우 먼저 noise level을 추정한 후, 이에 해당하는 noise level에 대해 학습된 model을 사용하는 것이 일반적이다.  
+하지만 이러한 방법들은 accuracy of noise estimation에 영향을 받은 denoising 결과를 나타내게 되며, SISR이나 JPEG deblocking과 같은 non-Gaussian noise distribution에 대해서는 적용될 수 없다.  
+DnCNN이 unknown noise level에 대해 Gaussian denoising을 가능하게 하도록 wide range of noise levels를 이용해 학습시키고, 학습된 single DnCNN 모델은 test 시 noise level에 대해 estimation 없이 denoise하기 위해 이용될 수 있다.  
+또한, 저자는 몇몇 일반 image denoising tasks에 대해 single DnCNN model을 학습시킴으로써 DnCNN을 더욱 확장시켰는데, blind Gaussian denoing, SISR, JPEG deblocking 이렇게 3가지를 고려하였다.  
+
+학습 단계에서 저자는 single DnCNN 모델을 훈련시키기 위해 wide range of noise levels와 multiple upscaling factors가 포함된 down-sampled images, 그리고 다른 quality factors의 JPEG images에게서 받은 AWGN를 포함한 image들을 이용하였고, 실험 결과 several general image denoising tasks(Gaussian denoising, SISR, JPEG deblocking)에서 모두 훌륭한 성능을 보였다.  
+
+# EXPERIMENTAL RESULTS
+
+## Experimental Setting
+
+### [Training]
+우선 이미지를 준비한다.  
+본 논문에서는 gray 이미지를 대상으로 함으로 이미지를 우선 gray로 만드는 과정이 필요하다.  
+그런 다음 Additve White Gaussian Noise를 더하여 noise 이미지를 만든다.  
+이후 noise가 더해진 이미지에 normalization을 통해서 이미지의 color 값을 0과 1사이로 normalization한다.  
+학습을 위해서 많은 양의 데이터가 이용될 수 있지만, 논문에 서술되어 있기를 적당한 지점부터는 noise의 MSE가 줄어들지 않음으로, 적당한 데이터의 양이 필요해 보인다.
+
+## Compared Methods
+
+## [Quantitative and Qualitative Evaluation]
+
+![](https://velog.velcdn.com/images%2Fdanielseo%2Fpost%2F810aa732-9162-4889-986a-545f4068104a%2F%EC%BA%A1%EC%B2%98.PNG)
+
+DnCNN-S와 DnCNN-B 모두 다른 competing method들 보다 높은 PSNR 결과를 나타냈는데, 그중 unknown noise level에 대한 모델인 DnCNN-B의 결과가 주목할 만하다.  
+
+![](https://velog.velcdn.com/images%2Fdanielseo%2Fpost%2Fb771ea3f-9377-4aa9-ad56-e05a9397cfa3%2F%EC%BA%A1%EC%B2%98.PNG)
+
+# [Conclusion]
+결과적으로 노이즈의 크기가 커질수록 DNCNN이 BM3D보다 좋아졌으며, BM3D와는 다르게, DnCNN은 원래의 이미지의 high frequency 부분 (가장자리나 엣지와 같은 특징점)을 보존하려는 경향을 보이고 있었다.  
+DnCNN을 이용하면, 기존의 방식과는 다르게 다양한 종류의 Noise에 적용할 수 있으며, denoising뿐만 아니라 super resolution같은 분야에도 적용할 수 있어서 유연성면에서 기존의 방식과 차별화를 둘 수 있다.  
+또한 DnCNN은 BM3D의 blur문제를 많이 감소시켰지만 아직도 Blur문제는 적게나마 남아 있어서 추후 연구에 있어서 이러한 문제를 해결하는 과정이 필요해 보인다.  
+또한 BM3D와 같이 non local mean과 같은 방식이 사용되지 않았는데, DnCNN에 이러한 방식을 적용한다면 좀더 성능을 높일 수 있어 보였다.
