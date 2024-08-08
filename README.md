@@ -10,10 +10,11 @@
 - Fan beam geometry
 - Multivariable Radon transform, X-ray transform
 
-## CT reconstruction(Application)
+## CT reconstruction(Image Denoising)
 - SRGAN
 - ESRGAN
 - Real-ESRGAN
+- Autoencoder
 
 ## Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
