@@ -1,5 +1,6 @@
 # Computer-Tomograpy reconstruction
 
+## Computer Tomography(Theory)
 - Radon Transform  
 - Filtered Back Projection(FBP)  
 - Deep Filtered Back Projection(DFBP)
@@ -8,6 +9,11 @@
 - Parallel beam geometry
 - Fan beam geometry
 - Multivariable Radon transform, X-ray transform
+
+## CT reconstruction(Application)
+- SRGAN
+- ESRGAN
+- Real-ESRGAN
 
 ## Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
@@ -38,6 +44,7 @@
 - EDCNN: Edge enhancement-based Densely Connected Network with Compound Loss for Low-Dose CT Denoising
 - X2CT-GAN: Reconstructing CT from Biplanar X-Rays with Generative Adversarial Networks https://github.com/kylekma/X2CT  
 - NAFNet: Nonlinear Activation Free Network for Image Restoration https://github.com/megvii-research/NAFNet
+- Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network : https://github.com/pris-cv/wfen?tab=readme-ov-file
 
 # Main Project(연구과제)
   1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
@@ -52,7 +59,7 @@
 - Notebooks, datasets, other content for the Radiology:AI series known as Magicians Corner by Brad Erickson https://github.com/RSNA/MagiciansCorner/tree/master?tab=readme-ov-file
 - 의학영상기기 https://www.youtube.com/playlist?list=PLSN_PltQeOyj-XhgiWmtqjGo08isXUlSy
 
-# Projects
+# Projects and Challenges
 - DBPN-PyTorch : Deep Back-Projection Networks for Single Image Super-resolution https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
 - 3D reconstruction of a mouse CT https://github.com/jvirico/mouse_CT_3D_reconstruction/tree/master  
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file  
@@ -61,6 +68,7 @@
 - RSNA AI Deep Learning Lab 2019 https://github.com/mohannadhussain/AI-Deep-Learning-Lab/tree/master
 - pix2pix_super_resolution https://www.kaggle.com/code/chaimaemoumou/pix2pix-super-resolution/notebook
 - Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
+- AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 
 ## Lower-Dise
 
