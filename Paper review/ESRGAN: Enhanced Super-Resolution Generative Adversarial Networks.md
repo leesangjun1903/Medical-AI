@@ -84,6 +84,8 @@ PSNR-oriented network(Gpsnr)을 학습한 후, 미세 조정을 통해 GAN-based
 
 # Reference
 https://velog.io/@kanghoon12/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0-ESRGAN
+https://velog.io/@joon6093/%EC%9D%BC%EB%8B%A8-%EB%B0%95%EC%A3%A0-ESRGAN-%EB%AA%A8%EB%8D%B8%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%95%B4%EC%83%81%EB%8F%84-%ED%96%A5%EC%83%81
+https://velog.io/@danielseo/Computer-Vision-ESRGAN
 
 
 
