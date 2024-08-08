@@ -45,6 +45,7 @@
 - X2CT-GAN: Reconstructing CT from Biplanar X-Rays with Generative Adversarial Networks https://github.com/kylekma/X2CT  
 - NAFNet: Nonlinear Activation Free Network for Image Restoration https://github.com/megvii-research/NAFNet
 - Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network : https://github.com/pris-cv/wfen?tab=readme-ov-file
+- CAMixerSR: Only Details Need More “Attention” : https://github.com/icandle/CAMixerSR/tree/main?tab=readme-ov-file
 
 # Main Project(연구과제)
   1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
