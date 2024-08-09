@@ -64,6 +64,7 @@ SRGAN에서는 Batch Normalization(BN)을 사용하지만, train 데이터셋과
 BN을 제거함으로 계산 복잡도, 메모리 사용량에서 이점이 생긴다.  
 
 ![](https://velog.velcdn.com/images%2Fkanghoon12%2Fpost%2F4640cc7b-9842-46e1-b128-9e812a4f139c%2Fimage.png)
+
 기존의 SRGAN의 구조는 그대로 사용하며 Block만 교체한 모습이다.  
 RRDB는 기존 SRGAN의 Residual Block 보다 더 깊고 복잡한 구조로, 주 경로에서 dense block을 사용하는데, 이로 인해 네트워크 용량은 커진다.
 
