@@ -11,13 +11,49 @@
 마지막으로, 활성화 전 기능을 사용하여 지각 손실을 개선하여 밝기 일관성과 텍스처 복구에 대한 더 강력한 감독을 제공할 수 있습니다.  
 이러한 개선의 혜택을 받아 제안된 ESRGAN은 SRGAN보다 더 현실적이고 자연스러운 텍스처로 일관되게 더 나은 시각적 품질을 달성했습니다.
 
+# Introduction
+근본적인 컴퓨터 비전 문제인 단일 이미지 초해상도(SISR)는 연구 커뮤니티와 AI 기업에서 점점 더 많은 관심을 받고 있습니다. SISR은 단일 저해상도(LR) 이미지에서 고해상도(HR) 이미지로 복구하는 것을 목표로 합니다.  
+Dong 등이 제안한 SRCNN의 선구적인 작업 이후 심층 컨볼루션 신경망(CNN) 접근 방식은 성공적인 발전을 가져왔습니다.    
+다양한 네트워크 아키텍처 설계 및 훈련 전략은 SR 성능, 특히 PSNR(PSNR) 값[5,6,7,1,8,9,10,11,12]을 지속적으로 향상시켰습니다.  
+그러나 이러한 PSNR 접근 방식은 PSNR metric이 인간의 주관적인 평가와 근본적으로 일치하지 않기 때문에 충분한 고주파수의 세부 정보 없이는 과도하게 평활된 결과를 출력하는 경향이 있습니다[1].  
+
+SR 결과의 시각적 품질을 향상시키기 위해 몇 가지 지각 기반 방법이 제안되었습니다.  
+예를 들어, pixel space 대신 feature space에서 SR 모델을 최적화하기 위해 perceptual loss[13,14]가 제안됩니다.  
+네트워크가 원래 이미지와 더 유사한 솔루션을 선호하도록 장려하기 위해 [1,16]에 의해 Generative adversarial network(GAN)[15]이 SR에 도입됩니다.  
+이전의 semantic image은 복구된 텍스처(질감)의 세부 정보를 개선하기 위해 추가로 통합됩니다[17].  
+시각적으로 만족스러운 결과를 추구하는 방식의 이정표 중 하나는 SRGAN[1]입니다.  
+기본 모델은 residual blocks[18]로 구축되며 GAN 프레임워크에서 perceptual loss을 사용하여 최적화됩니다.   
+이러한 모든 기술을 사용하여 SRGAN은 PSNR 지향 방법에 비해 재구성의 전반적인 시각적 품질을 크게 향상시킵니다.  
+
+그러나 그림 1과 같이 SRGAN 결과와 실제 (ground-truth) 이미지 사이에는 여전히 명확한 격차가 존재합니다.   
+이 연구에서는 SRGAN의 주요 구성 요소를 다시 살펴보고 세 가지 측면에서 모델을 개선합니다.  
+첫째, 용량이 더 크고 훈련하기 쉬운 Residual-in-Residual Dense Block (RDDB) 을 도입하여 네트워크 구조를 개선합니다.  
+또한 [20]에서와 같이 Batch Normalization (BN) [19] 레이어를 제거하고 residual scaling [21,20] 및 더 작은 initialization를 사용하여 매우 심층적인 네트워크를 쉽게 훈련합니다.  
+둘째, 저희는 "한 이미지가 실제인지 가짜인지"가 아닌 "한 이미지가 다른 이미지보다 더 현실적인지" 판단하는 방법을 배우는 Relativistic average GAN (RaGAN) [2) 를 사용하여 판별기(discriminator)를 개선합니다.  
+저희의 실험은 이러한 개선이 생성기가 더 현실적인 텍스처 세부 사항을 복구하는 데 도움이 된다는 것을 보여줍니다.  
+셋째, 저희는 SRGAN에서와 같이 activation 전에 VGG feature들을 사용하여 개선된 perceptual loss을 제안합니다.  
+저희는 4.4절에서 볼 수 있듯이 조정된 perceptual loss이 더 선명한 가장자리와 더 시각적으로 만족스러운 결과를 제공한다는 것을 경험적으로 발견했습니다.  
+광범위한 실험은 ESRGAN이라고 하는 향상된 SRGAN이 선명도와 세부 사항 모두에서 SOTA 방법을 능가한다는 것을 보여줍니다 (그림 1 및 그림 7 참조).  
+
+저희는 PIRM-SR 챌린지[3]에 참여하기 위해 ESRGAN의 변형을 취했습니다.  
+이 챌린지는 [22]를 기반으로 지각 품질 인식 방식으로 성능을 평가하는 최초의 SR 대회로, 저자는 왜곡과 perceptual quality가 서로 상충된다고 주장합니다.   
+perceptual quality는 Ma의 점수[23]와 NIQE[24], 즉 지각 지수 = 1/2((10-Ma)+NIQE의 비 참조 측정으로 판단됩니다.  
+perceptual quality가 낮을수록 더 나은 지각 품질을 나타냅니다.
+
+그림 2와 같이 perception-distortion plane은 RMSE(Root-Mean-Square Error)의 임계값으로 정의된 세 개의 영역으로 나뉘며, 각 영역에서 가장 낮은 지각 지수를 달성하는 알고리즘이 지역 챔피언이 됩니다.  
+우리는 지각 품질을 새로운 최고치로 끌어올리는 것을 목표로 하기 때문에 주로 R 3에 초점을 맞추고 있습니다.  
+앞서 언급한 개선 사항과 4.6절에서 논의한 몇 가지 다른 조정 덕분에 제안한 ESRGAN은 PIRM-SR 챌린지(R3)에서 최고의 지각 지수로 1위를 차지했습니다.
+시각적 품질과 RMSE/PSNR의 균형을 맞추기 위해 재구성 스타일과 평활도를 지속적으로 조정할 수 있는 network interpolation 전략을 추가로 제안합니다.  
+또 다른 대안은 픽셀 단위로 이미지를 직접 보간하는 image interpolation입니다.  
+우리는 이 전략을 사용하여 이미지 보간 방식을 R1과 R2에 참여시킵니다.  
+네트워크 보간 및 이미지 보간 전략과 그 차이점에 대해서는 3.4절에서 설명합니다.
+
 # Proposed methods
 - SRGAN과의 차이
 SRGAN의 성능향상을 위해 논문에서는 크게 세가지를 바꾼다.
 1. Network Architecture
-2. elativistic Discriminator
+2. Relativistic Discriminator
 3. Perceptual Loss
-
 
 ## Network Architecture
 
