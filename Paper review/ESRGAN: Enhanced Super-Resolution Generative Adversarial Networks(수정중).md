@@ -48,6 +48,12 @@ perceptual quality가 낮을수록 더 나은 지각 품질을 나타냅니다.
 우리는 이 전략을 사용하여 이미지 보간 방식을 R1과 R2에 참여시킵니다.  
 네트워크 보간 및 이미지 보간 전략과 그 차이점에 대해서는 3.4절에서 설명합니다.
 
+# Related Works
+end-to-end란?
+딥러닝에서 end-to-end의 의미는 입력에서 출력까지 파이프라인 네트워크 없이 신경망으로 한 번에 처리하는 것을 의미합니다.
+
+즉, 복잡한 파이프라인 없이 하나의 신경망으로 입력받은 것을 출력할 수 있다는 것입니다.
+
 # Proposed methods
 - SRGAN과의 차이
 SRGAN의 성능향상을 위해 논문에서는 크게 세가지를 바꾼다.
@@ -123,7 +129,7 @@ PSNR-oriented network(Gpsnr)을 학습한 후, 미세 조정을 통해 GAN-based
 https://velog.io/@kanghoon12/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0-ESRGAN
 https://velog.io/@joon6093/%EC%9D%BC%EB%8B%A8-%EB%B0%95%EC%A3%A0-ESRGAN-%EB%AA%A8%EB%8D%B8%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%95%B4%EC%83%81%EB%8F%84-%ED%96%A5%EC%83%81
 https://velog.io/@danielseo/Computer-Vision-ESRGAN
-
+https://velog.io/@jeewoo1025/What-is-end-to-end-deep-learning
 
 
 
