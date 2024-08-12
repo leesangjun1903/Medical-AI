@@ -49,10 +49,17 @@ perceptual quality가 낮을수록 더 나은 지각 품질을 나타냅니다.
 네트워크 보간 및 이미지 보간 전략과 그 차이점에 대해서는 3.4절에서 설명합니다.
 
 # Related Works
-end-to-end란?
-딥러닝에서 end-to-end의 의미는 입력에서 출력까지 파이프라인 네트워크 없이 신경망으로 한 번에 처리하는 것을 의미합니다.
 
+저희는 SR 문제를 해결하기 위한 심층 신경망 접근 방식에 중점을 둡니다. 선구적인 작업으로, Dong et al. [4,25]는 LR에서 HR 이미지로의 매핑을 end-to-end방식으로 학습하여 이전 작업에 비해 우수한 성능을 달성하는 SRCNN을 제안합니다.  
+이후 이 분야에서는 deeper network with residual learning [5], Laplacian pyramid structure [6], residual blocks [1], recursive learning [7,8], densely connected network [9], deep back projection [10] and residual dense network [11]와 같은 다양한 네트워크 아키텍처를 목격했습니다.  
+특히, Lim et al. [20]은 잔차 블록에서 불필요한 BN 레이어를 제거하고 모델 크기를 확장하여 EDSR 모델을 제안하여 상당한 개선을 달성했습니다.  
+Zhang et al. [11]은 SR에서 효과적인 residual dense block을 사용할 것을 제안하고, channel attention[12]를 통해 더 깊은 네트워크를 탐색하여 최첨단 PSNR 성능을 달성합니다.  
+지도 학습 외에도 일반적인 이미지 복원 문제를 해결하기 위해 reinforcement learning[26] 및 unsupervised learning[27]과 같은 다른 방법도 도입되었습니다.  
+
+- end-to-end란?
+딥러닝에서 end-to-end의 의미는 입력에서 출력까지 파이프라인 네트워크 없이 신경망으로 한 번에 처리하는 것을 의미합니다.  
 즉, 복잡한 파이프라인 없이 하나의 신경망으로 입력받은 것을 출력할 수 있다는 것입니다.
+
 
 # Proposed methods
 - SRGAN과의 차이
