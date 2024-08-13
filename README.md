@@ -47,6 +47,7 @@
 - NAFNet: Nonlinear Activation Free Network for Image Restoration https://github.com/megvii-research/NAFNet
 - Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network(*) : https://github.com/pris-cv/wfen?tab=readme-ov-file
 - CAMixerSR: Only Details Need More “Attention” : https://github.com/icandle/CAMixerSR/tree/main?tab=readme-ov-file
+- DBPN : Deep Back-Projection Networks for Single Image Super-resolution https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
 
 # Main Project(연구과제)
   1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
@@ -62,7 +63,6 @@
 - 의학영상기기 https://www.youtube.com/playlist?list=PLSN_PltQeOyj-XhgiWmtqjGo08isXUlSy
 
 # Projects and Challenges
-- DBPN-PyTorch : Deep Back-Projection Networks for Single Image Super-resolution https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file  
 - 3D reconstruction of a mouse CT https://github.com/jvirico/mouse_CT_3D_reconstruction/tree/master  
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file  
 - TripoSR : a state-of-the-art open-source model for fast feedforward 3D reconstruction from a single image https://github.com/vast-ai-research/triposr?tab=readme-ov-file
