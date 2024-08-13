@@ -29,14 +29,14 @@
 - Awesome-Super-Resolution https://github.com/ChaofWang/Awesome-Super-Resolution?tab=readme-ov-file
 
 ### Paper with name
-- Medical image denoising using convolutional denoising autoencoders https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
-- Content-Noise Complementary Learning for Medical Image Denoising
-- Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior
+- Medical image denoising using convolutional denoising autoencoders(**) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
+- Content-Noise Complementary Learning for Medical Image Denoising(**)
+- Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior(**)
 - Learning Medical Image Denoising with Deep Dynamic Residual Attention Network
-- Transformers in Medical Imaging: A Survey https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction  
-- Adversarial Distortion Learning for Medical Image Denoising
-- Physics-informed deep neural network for image denoising https://codeocean.com/capsule/9043085/tree/v1
-- Simple Baselines for Image Restoration
+- Transformers in Medical Imaging: A Survey(**) https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction  
+- Adversarial Distortion Learning for Medical Image Denoising(**)
+- Physics-informed deep neural network for image denoising(**) https://codeocean.com/capsule/9043085/tree/v1
+- Simple Baselines for Image Restoration(**)
 - Multi-stage image denoising with the wavelet transform https://github.com/hellloxiaotian/MWDCNN
 - CT Image Denoising with Perceptive Deep Neural Networks
 - Dynamic Convolution: Attention over Convolution Kernels
