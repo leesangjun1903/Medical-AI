@@ -29,7 +29,11 @@
 - Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 - 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
-- FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction https://github.com/masaaki-75/freeseed  
+- FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction https://github.com/masaaki-75/freeseed
+- Single Image Super-Resolution with EDSR, WDSR and SRGAN : https://github.com/krasserm/super-resolution/tree/master?tab=readme-ov-file
+- Modified ESRGAN for solving the Super Resolution Problem : https://github.com/JRhin/Modified-ESRGAN-for-Super-Resolution-Problem/tree/main
+- Image-Super-Resolution : SRCNN : https://github.com/sharmaroshan/Image-Super-Resolution/tree/master
+- Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
 
 ## Image Denoising
 - Awesome Image or Video Denoising Algorithms https://github.com/z-bingo/awesome-image-denoising-state-of-the-art
@@ -63,13 +67,19 @@
 - NAFNet: Nonlinear Activation Free Network for Image Restoration https://github.com/megvii-research/NAFNet
 - Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network(*) : https://github.com/pris-cv/wfen?tab=readme-ov-file
 - CAMixerSR: Only Details Need More “Attention” : https://github.com/icandle/CAMixerSR/tree/main?tab=readme-ov-file
-- DBPN : Deep Back-Projection Networks for Single Image Super-resolution https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file
+- DBPN : Deep Back-Projection Networks for Single Image Super-resolution : https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file
+- Image Denoising Using a Generative Adversarial Network : https://github.com/manumathewthomas/ImageDenoisingGAN/tree/master?tab=readme-ov-file
+- Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data : https://github.com/xinntao/Real-ESRGAN
+- Learning Enriched Features for Fast Image Restoration and Enhancement : https://github.com/swz30/MIRNetv2/tree/main
+- Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network : https://github.com/PRIS-CV/WFEN/tree/main?tab=readme-ov-file
+- 
 
 ## Sparse View CT
 - Scientific Computational Imaging Code (SCICO) https://github.com/lanl/scico
 - 2-Step Sparse-View CT Reconstruction with a Domain-Specific Perceptual Network https://github.com/anonyr7/Sinogram-Inpainting/tree/master?tab=readme-ov-file
 - Improving Hemorrhage Detection in Sparse-view CTs via Deep Learning https://github.com/J-3TO/Sparse-View-Cranial-CT-Reconstruction
 - Low-Dose X-Ray Ct Reconstruction on X3D https://paperswithcode.com/sota/low-dose-x-ray-ct-reconstruction-on-x3d
+- WalnutReconstructionCodes (FDK) : https://github.com/cicwi/WalnutReconstructionCodes?tab=readme-ov-file
 
 # Main Project(연구과제)
   1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
