@@ -28,6 +28,7 @@
 - pix2pix_super_resolution https://www.kaggle.com/code/chaimaemoumou/pix2pix-super-resolution/notebook
 - Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
+- 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
 - FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction https://github.com/masaaki-75/freeseed  
 
 ## Image Denoising
