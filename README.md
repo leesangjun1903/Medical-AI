@@ -18,9 +18,6 @@
 
 ## Image reconstruction with Super-resolution
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
-- Awesome 3D Reconstruction Papers https://github.com/bluestyle97/awesome-3d-reconstruction-papers
-- 3D-Reconstruction-with-Deep-Learning-Methods https://github.com/natowi/3D-Reconstruction-with-Deep-Learning-Methods
-- 3D Machine Learning Study notes https://github.com/timzhang642/3D-Machine-Learning
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
 - Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
 - Awesome-Super-Resolution https://github.com/ChaofWang/Awesome-Super-Resolution?tab=readme-ov-file
@@ -100,6 +97,9 @@
 - 🧩Image Stitching 프로젝트 https://velog.io/@davkim1030/Image-Stitching 
 
 ## 3D Reconstruction
+- Awesome 3D Reconstruction Papers https://github.com/bluestyle97/awesome-3d-reconstruction-papers
+- 3D-Reconstruction-with-Deep-Learning-Methods https://github.com/natowi/3D-Reconstruction-with-Deep-Learning-Methods
+- 3D Machine Learning Study notes https://github.com/timzhang642/3D-Machine-Learning
 - 3D Reconstruction & visualistaion https://www.kaggle.com/code/aatamikorpi/3d-reconstruction-visualistaion/notebook  
 - Pulmonary Dicom Preprocessing https://www.kaggle.com/code/allunia/pulmonary-dicom-preprocessing  
 - Advanced DICOM-CT 3D visualizations with VTK https://www.kaggle.com/code/wrrosa/advanced-dicom-ct-3d-visualizations-with-vtk  
