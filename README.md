@@ -29,7 +29,6 @@
 - Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 - 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
-- FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction https://github.com/masaaki-75/freeseed
 - Single Image Super-Resolution with EDSR, WDSR and SRGAN : https://github.com/krasserm/super-resolution/tree/master?tab=readme-ov-file
 - Modified ESRGAN for solving the Super Resolution Problem : https://github.com/JRhin/Modified-ESRGAN-for-Super-Resolution-Problem/tree/main
 - Image-Super-Resolution : SRCNN : https://github.com/sharmaroshan/Image-Super-Resolution/tree/master
@@ -73,7 +72,7 @@
 - Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data : https://github.com/xinntao/Real-ESRGAN
 - Learning Enriched Features for Fast Image Restoration and Enhancement : https://github.com/swz30/MIRNetv2/tree/main
 - Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network : https://github.com/PRIS-CV/WFEN/tree/main?tab=readme-ov-file
-- 
+- FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction https://github.com/masaaki-75/freeseed
 
 ## Sparse View CT
 - Scientific Computational Imaging Code (SCICO) https://github.com/lanl/scico
