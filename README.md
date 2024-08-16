@@ -9,6 +9,9 @@
 - Parallel beam geometry
 - Fan beam geometry
 - Multivariable Radon transform, X-ray transform
+- Orloav's fomula
+- Grageat's method
+- FDK algorithm
 
 ## CT reconstruction(Super-resolution, Image Denoising)
 - SRGAN
