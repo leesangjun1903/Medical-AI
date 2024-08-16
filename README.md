@@ -9,7 +9,7 @@
 - Parallel beam geometry
 - Fan beam geometry
 - Multivariable Radon transform, X-ray transform
-- Orloav's fomula
+- Orlov's fomula
 - Grageat's method
 - FDK algorithm
 
