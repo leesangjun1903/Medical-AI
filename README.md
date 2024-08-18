@@ -60,6 +60,7 @@
 - Image-Super-Resolution : SRCNN : https://github.com/sharmaroshan/Image-Super-Resolution/tree/master
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
 - Real-ESRGAN : https://github.com/ai-forever/Real-ESRGAN
+- Image Super Resolution Using : Deep Convolution Neural Network Computer Science Graduation Project : https://github.com/AmrShaaban99/super-resolution/tree/main?tab=readme-ov-file#abstract
 
 ## Image Denoising
 - Awesome Image or Video Denoising Algorithms https://github.com/z-bingo/awesome-image-denoising-state-of-the-art
