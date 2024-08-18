@@ -19,6 +19,32 @@
 - Real-ESRGAN
 - Autoencoder
 
+## Paper with name
+- Medical image denoising using convolutional denoising autoencoders(**) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
+- Content-Noise Complementary Learning for Medical Image Denoising(**)
+- Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior(**)
+- Learning Medical Image Denoising with Deep Dynamic Residual Attention Network
+- Transformers in Medical Imaging: A Survey(**) https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction  
+- Adversarial Distortion Learning for Medical Image Denoising(**)
+- Physics-informed deep neural network for image denoising(**) https://codeocean.com/capsule/9043085/tree/v1
+- Simple Baselines for Image Restoration(**)
+- Multi-stage image denoising with the wavelet transform https://github.com/hellloxiaotian/MWDCNN
+- CT Image Denoising with Perceptive Deep Neural Networks
+- Dynamic Convolution: Attention over Convolution Kernels
+- Recent Advances in CT Image Reconstruction
+- The evolution of image reconstruction for CT—from filtered back projection to artificial intelligence
+- EDCNN: Edge enhancement-based Densely Connected Network with Compound Loss for Low-Dose CT Denoising
+- X2CT-GAN: Reconstructing CT from Biplanar X-Rays with Generative Adversarial Networks https://github.com/kylekma/X2CT  
+- NAFNet: Nonlinear Activation Free Network for Image Restoration https://github.com/megvii-research/NAFNet
+- Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network(*) : https://github.com/pris-cv/wfen?tab=readme-ov-file
+- CAMixerSR: Only Details Need More “Attention” : https://github.com/icandle/CAMixerSR/tree/main?tab=readme-ov-file
+- DBPN : Deep Back-Projection Networks for Single Image Super-resolution : https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file
+- Image Denoising Using a Generative Adversarial Network : https://github.com/manumathewthomas/ImageDenoisingGAN/tree/master?tab=readme-ov-file
+- Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data : https://github.com/xinntao/Real-ESRGAN
+- Learning Enriched Features for Fast Image Restoration and Enhancement : https://github.com/swz30/MIRNetv2/tree/main
+- Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network : https://github.com/PRIS-CV/WFEN/tree/main?tab=readme-ov-file
+- FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction https://github.com/masaaki-75/freeseed
+
 ## Image reconstruction with Super-resolution
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
@@ -47,32 +73,6 @@
 - SwinIA: Self-Supervised Blind-Spot Image Denoising with Zero Convolutions https://arxiv.org/abs/2305.05651
 - MR Image Denoising and Super-Resolution Using Regularized Reverse Diffusion https://arxiv.org/abs/2203.12621
 - Image Denoising with Autoencoder (as a baseline model), CBDNet, PRIDNet, RIDNet https://github.com/sharathsolomon/ImageDenoising/tree/main?tab=readme-ov-file
-
-### Paper with name
-- Medical image denoising using convolutional denoising autoencoders(**) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
-- Content-Noise Complementary Learning for Medical Image Denoising(**)
-- Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior(**)
-- Learning Medical Image Denoising with Deep Dynamic Residual Attention Network
-- Transformers in Medical Imaging: A Survey(**) https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction  
-- Adversarial Distortion Learning for Medical Image Denoising(**)
-- Physics-informed deep neural network for image denoising(**) https://codeocean.com/capsule/9043085/tree/v1
-- Simple Baselines for Image Restoration(**)
-- Multi-stage image denoising with the wavelet transform https://github.com/hellloxiaotian/MWDCNN
-- CT Image Denoising with Perceptive Deep Neural Networks
-- Dynamic Convolution: Attention over Convolution Kernels
-- Recent Advances in CT Image Reconstruction
-- The evolution of image reconstruction for CT—from filtered back projection to artificial intelligence
-- EDCNN: Edge enhancement-based Densely Connected Network with Compound Loss for Low-Dose CT Denoising
-- X2CT-GAN: Reconstructing CT from Biplanar X-Rays with Generative Adversarial Networks https://github.com/kylekma/X2CT  
-- NAFNet: Nonlinear Activation Free Network for Image Restoration https://github.com/megvii-research/NAFNet
-- Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network(*) : https://github.com/pris-cv/wfen?tab=readme-ov-file
-- CAMixerSR: Only Details Need More “Attention” : https://github.com/icandle/CAMixerSR/tree/main?tab=readme-ov-file
-- DBPN : Deep Back-Projection Networks for Single Image Super-resolution : https://github.com/Lornatang/DBPN-PyTorch?tab=readme-ov-file
-- Image Denoising Using a Generative Adversarial Network : https://github.com/manumathewthomas/ImageDenoisingGAN/tree/master?tab=readme-ov-file
-- Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data : https://github.com/xinntao/Real-ESRGAN
-- Learning Enriched Features for Fast Image Restoration and Enhancement : https://github.com/swz30/MIRNetv2/tree/main
-- Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network : https://github.com/PRIS-CV/WFEN/tree/main?tab=readme-ov-file
-- FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction https://github.com/masaaki-75/freeseed
 
 ## Sparse View CT
 - Scientific Computational Imaging Code (SCICO) https://github.com/lanl/scico
