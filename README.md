@@ -19,7 +19,7 @@
 - Real-ESRGAN
 - Autoencoder
 
-## Paper with name
+## Paper with name (* : 성능순)
 - Medical image denoising using convolutional denoising autoencoders(**) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
 - Content-Noise Complementary Learning for Medical Image Denoising(**)
 - Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior(**)
