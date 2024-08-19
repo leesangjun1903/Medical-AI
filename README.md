@@ -21,7 +21,7 @@
 
 ## Paper with name ( * ~ ***** : 성능)
 - Medical image denoising using convolutional denoising autoencoders(**) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
-- Content-Noise Complementary Learning for Medical Image Denoising(**)
+- Content-Noise Complementary Learning for Medical Image Denoising(***)
 - Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior(**)
 - Learning Medical Image Denoising with Deep Dynamic Residual Attention Network
 - Transformers in Medical Imaging: A Survey(**) https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction  
