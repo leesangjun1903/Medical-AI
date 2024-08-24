@@ -75,6 +75,7 @@
 - SwinIA: Self-Supervised Blind-Spot Image Denoising with Zero Convolutions https://arxiv.org/abs/2305.05651
 - MR Image Denoising and Super-Resolution Using Regularized Reverse Diffusion https://arxiv.org/abs/2203.12621
 - Image Denoising with Autoencoder (as a baseline model), CBDNet, PRIDNet, RIDNet https://github.com/sharathsolomon/ImageDenoising/tree/main?tab=readme-ov-file
+- Notebooks, datasets, other content for the Radiology:AI series known as Magicians Corner by Brad Erickson https://github.com/RSNA/MagiciansCorner/tree/master?tab=readme-ov-file
 
 ## Sparse View CT
 - Scientific Computational Imaging Code (SCICO) https://github.com/lanl/scico
@@ -93,7 +94,6 @@
 # Lecture   
 - Computer Tomography, Matthias Beckmann  
 - Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition  
-- Notebooks, datasets, other content for the Radiology:AI series known as Magicians Corner by Brad Erickson https://github.com/RSNA/MagiciansCorner/tree/master?tab=readme-ov-file
 - 의학영상기기 https://www.youtube.com/playlist?list=PLSN_PltQeOyj-XhgiWmtqjGo08isXUlSy
 
 # 3D reconstruction
