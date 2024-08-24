@@ -61,7 +61,7 @@
 - Image-Super-Resolution : SRCNN : https://github.com/sharmaroshan/Image-Super-Resolution/tree/master
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
 - Real-ESRGAN : https://github.com/ai-forever/Real-ESRGAN
-- Image Super Resolution Using : Deep Convolution Neural Network Computer Science Graduation Project : https://github.com/AmrShaaban99/super-resolution/tree/main?tab=readme-ov-file#abstract
+- Image Super Resolution Using Deep Convolution Neural Network Computer Science Graduation Project : https://github.com/AmrShaaban99/super-resolution/tree/main?tab=readme-ov-file#abstract
 
 ## Image Denoising
 - Awesome Image or Video Denoising Algorithms https://github.com/z-bingo/awesome-image-denoising-state-of-the-art
@@ -75,7 +75,6 @@
 - SwinIA: Self-Supervised Blind-Spot Image Denoising with Zero Convolutions https://arxiv.org/abs/2305.05651
 - MR Image Denoising and Super-Resolution Using Regularized Reverse Diffusion https://arxiv.org/abs/2203.12621
 - Image Denoising with Autoencoder (as a baseline model), CBDNet, PRIDNet, RIDNet https://github.com/sharathsolomon/ImageDenoising/tree/main?tab=readme-ov-file
-- Notebooks, datasets, other content for the Radiology:AI series known as Magicians Corner by Brad Erickson https://github.com/RSNA/MagiciansCorner/tree/master?tab=readme-ov-file
 
 ## Sparse View CT
 - Scientific Computational Imaging Code (SCICO) https://github.com/lanl/scico
@@ -93,8 +92,9 @@
 
 # Lecture   
 - Computer Tomography, Matthias Beckmann  
-- Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition  
+- Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition
 - 의학영상기기 https://www.youtube.com/playlist?list=PLSN_PltQeOyj-XhgiWmtqjGo08isXUlSy
+
 
 # 3D reconstruction
 
@@ -122,6 +122,8 @@
 - Deep Learning with Cinematic Rendering: Fine-Tuning Deep Neural Networks Using Photorealistic Medical Images https://durr.jhu.edu/pubs/dl-cin-ren/
 
 # Studies 
+- Notebooks, datasets, other content for the Radiology:AI series known as Magicians Corner by Brad Erickson https://github.com/RSNA/MagiciansCorner/tree/master?tab=readme-ov-file
+- 
 - Lower-Dise
 - 
 - CB-CT
