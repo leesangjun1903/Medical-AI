@@ -65,7 +65,7 @@
 ### Progressive Upsampling Super-resolution
 ![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.21.05.png)
 
-![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.21.05.png)
+![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.21.20.png)
 
 ### Iterative Up-and-down Sampling Super-resolution
 
