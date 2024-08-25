@@ -9,3 +9,129 @@
 마지막으로, 향후 커뮤니티에서 추가로 해결해야 할 몇 가지 미래 방향과 해결되지 않은 문제를 강조하는 것으로 이 조사를 마무리합니다.  
 
 # Introduction
+![]()
+
+# PROBLEM SETTING AND TERMINOLOGY
+## Problem Definitions
+
+## Datasets for Super-resolution
+
+## Image Quality Assessment
+
+### Peak Signal-to-Noise Ratio
+
+### Structural Similarity
+
+### Mean Opinion Score
+
+### Learning-based Perceptual Quality
+
+### Task-based Evaluation
+
+### Other IQA Methods
+
+## Operating Channels
+
+## Super-resolution Challenges
+
+# SUPERVISED SUPER-RESOLUTION
+
+## Super-resolution Frameworks
+
+### Pre-upsampling Super-resolution
+
+### Post-upsampling Super-resolution
+
+### Progressive Upsampling Super-resolution
+
+### Iterative Up-and-down Sampling Super-resolution
+
+## Upsampling Methods
+
+### Interpolation-based Upsampling
+
+### Learning-based Upsampling In order to overcome the shortcomi
+
+## Network Design
+
+### Residual Learning
+
+### Recursive Learning
+
+### Multi-path Learning
+
+### Dense Connections
+
+### Attention Mechanism
+
+### Advanced Convolution
+
+### Region-recursive Learning
+
+### Pyramid Pooling
+
+### Wavelet Transformation
+
+### Desubpixel
+
+### xUnit
+
+## Learning Strategies
+
+### Loss Functions
+
+### Batch Normalization
+
+### Curriculum Learning
+
+### Multi-supervision
+
+## Other Improvements
+
+### Context-wise Network Fusion
+
+### Data Augmentation
+
+### Multi-task Learning
+
+### Network Interpolation
+
+### Self-Ensemble
+
+## State-of-the-art Super-resolution Models
+
+# UNSUPERVISED SUPER-RESOLUTION
+
+## Zero-shot Super-resolution
+
+## Weakly-supervised Super-resolution
+
+## Deep Image Prior
+
+# DOMAIN-SPECIFIC APPLICATIONS
+
+## Depth Map Super-resolution
+
+## Face Image Super-resolution
+
+## Hyperspectral Image Super-resolution
+
+## Real-world Image Super-resolution
+
+## Video Super-resolution
+
+## Other Applications
+
+# CONCLUSION AND FUTURE DIRECTIONS
+
+## Network Design
+
+## Learning Strategies
+
+## Evaluation Metrics
+
+## Unsupervised Super-resolution
+
+## Towards Real-world Scenarios
+
+
