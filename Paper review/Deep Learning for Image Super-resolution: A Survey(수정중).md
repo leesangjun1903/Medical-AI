@@ -140,14 +140,28 @@ cascading residual network(CARN)[28]도 여러 ResBlock을 포함하는 유사�
 그리고 본질적으로 vanishing or exploding gradient problems 때문에 잔차 학습(섹 3.3.1) 및 multi-supervision(섹 3.4.4)과 같은 일부 기술은 종종 이러한 문제를 완화하기 위해 재귀적 학습과 통합됩니다[55], [56], [82], [85].  
 
 ### Multi-path Learning
-다중 경로 학습은 다양한 작업을 수행하는 여러 경로를 통해 기능을 전달하고 더 나은 모델링 기능을 제공하기 위해 이를 다시 융합하는 것을 말합니다.  
+다중 경로 학습은 다양한 작업을 수행하는 여러 경로를 통해 feature를 전달하고 더 나은 모델링 기능을 제공하기 위해 이를 다시 융합하는 것을 말합니다.  
 구체적으로 다음과 같이 global, local and scale-specific multi-path learning으로 나눌 수 있습니다.
 
 #### Global Multi-path Learning
+Global 다중 경로 학습은 이미지의 다양한 측면의 feature를 추출하기 위해 여러 경로를 사용하는 것을 말합니다.  
+이러한 경로는 propagation 과정에서 서로 교차할 수 있으므로 학습 능력을 크게 향상시킬 수 있습니다.  
+구체적으로 LapSRN[27]에는 다양한 hyperparameter optimization 방식으로 sub-band residual을 예측하는 feature extraction path와 두 경로의 신호를 기반으로 HR 이미지를 재구성하는 다른 path가 포함됩니다.  
+유사하게 DSRN[85]은 두 개의 경로를 활용하여 저차원 및 고차원 공간에서 각각 정보를 추출하고 학습 능력을 추가로 향상시키기 위해 지속적으로 정보를 교환합니다.  
+그리고 pixel recursive super-resolution[64]는 이미지의 글로벌 구조를 캡처하기 위한 conditioning path와 생성된 픽셀의 연속적 의존성을 캡처하기 위한 이전 경로를 채택합니다.  
+이와 대조적으로, Ren et al. [100]은 불균형 구조를 가진 여러 경로를 사용하여 upsampling을 수행하고 모델 끝에서 연합합니다.
 
 #### Local Multi-path Learning
+인셉션 모듈[101]에 영감을 받은 MSRN[99]은 그림 7e와 같이 다중 스케일 feature extraction을 위해 새로운 블록을 채택합니다.  
+
+![]()
+
+이 블록에서는 커널 크기가 3 × 3 및 5 × 5인 두 개의 컨볼루션 레이어를 채택하여 feature를 동시에 추출한 다음 출력을 연결하고 동일한 작업을 다시 거쳐 마지막에 1 × 1 컨볼루션을 적용합니다.  
+shortcut은 element-wise addition을 적용하여 입력과 출력을 연결합니다.  
+이러한 local 다중 경로 학습을 통해 SR 모델은 여러 스케일에서 이미지 feature를 더 잘 추출하고 성능을 더욱 향상시킬 수 있습니다.
 
 #### Scale-specific Multi-path Learning
+
 
 ### Dense Connections
 Huang 등[102]이 dense block을 기반으로 DenseNet을 제안한 이후, 조밀한 연결은 비전 작업에서 점점 더 인기를 얻고 있습니다.  
@@ -169,24 +183,93 @@ feature correlation를 더 잘 학습하기 위해 Dai et al. [105]는 second-or
 SOCA는 GAP 대신 second-order feature를 사용하여 channel-wise features를 적응적으로 rescale하고 더 많은 정보와 판별 표현을 추출할 수 있도록 합니다.
 
 #### Non-local Attention
+대부분의 기존 SR 모델은 local receptive field가 매우 제한되어 있습니다.  
+그러나 일부 먼 거리의 물체 또는 텍스처는 로컬 패치 생성에 매우 중요할 수 있습니다.  
+따라서 Zhang et al. [106]은 픽셀 간의 넓은 범위의 종속성을 캡처하는 feature를 추출하기 위해 local and nonlocal attention block을 제안합니다.  
+특히 feature를 추출하기 위한 trunk branch와 trunk branch의 특징을 적응적으로 스케일링하기 위한 (non)local mask branch를 제안합니다.  
+그 중 local branch는 encoder-decoder 구조를 사용하여 local attention을 학습하는 반면, non-local branch는 내장된 Gaussian function을 사용하여 feature map의 두 위치별 인덱스 간의 관계를 평가하여 scaling weight를 예측합니다.  
+이 메커니즘을 통해 제안된 방법은 spatial attention을 잘 캡처하고 표현 능력을 더욱 향상시킵니다.  
+유사하게 Dai et al. [105]도 non-local attention mechanism을 통합하여 장거리의 공간적 정보를 캡처합니다.
 
 ### Advanced Convolution
+컨볼루션 연산은 심층 신경망의 기본이기 때문에 연구자들은 더 나은 성능 또는 더 큰 효율을 위해 컨볼루션 연산을 개선하려고 시도합니다.
+
+#### Dilated Convolution
+contextual 정보가 SR에 대한 현실적인 세부 정보를 생성하는 것을 용이하게 한다는 것은 잘 알려져 있습니다.  
+따라서 Zhang et al. [107]은 SR 모델에서 공통된 컨볼루션을 dilated convolution으로 대체하고 receptive field를 두 배 이상 증가시키며 훨씬 더 나은 성능을 달성합니다.
+
+#### Group Convolution
+최근 lightweight CNN[108], [109], Hui et al. [98] 및 An et al. [28]은 vanilla 컨볼루션을 group 컨볼루션으로 대체하여 각각 IDN과 CARN-M을 제안합니다.  
+일부 이전 연구에서 입증된 바와 같이, group 컨볼루션은 약간의 성능 손실을 감수하면서 매개 변수와 연산의 수를 훨씬 줄입니다 [28], [98].
+
+#### Depthwise Separable Convolution
+Howard 등[110]이 효율적인 컨볼루션을 위해 depthwise separable convolution을 제안한 이후 다양한 분야로 확장되었습니다.  
+구체적으로, factorized된 depthwise separable convolution과 pointwise convolution(즉, 1 × 1 컨볼루션)으로 구성되어 있어 정확도를 조금만 낮추면 많은 매개변수와 연산을 줄일 수 있습니다[110].  
+그리고 최근 Nie 등[81]은 depthwise separable convolution을 사용하여 SR 아키텍처를 훨씬 가속화합니다.
 
 ### Region-recursive Learning
+대부분의 SR 모델은 SR을 픽셀에 독립적인 작업으로 취급하므로 생성된 픽셀 간의 상호 의존성을 제대로 맞출 수 없습니다.  
+PixelCNN[111]에서 영감을 받아 Dahl 등[64]은 먼저 두 개의 네트워크를 사용하여 global contextual information과 연속적인 생성 의존성을 각각 캡처하여 픽셀별 생성을 수행하는 pixel recursive learning을 제안합니다.  
+이러한 방식으로 제안된 방법은 매우 낮은 얼굴 이미지(예: 8 × 8)에 초해상도화하기 위해 현실적인 모발 및 피부 세부 정보를 합성하며 MOS 테스트[64](Sec. 2.3.3)에 대한 이전 방법을 훨씬 능가합니다.
+
+human attention shifting mechanism[112]에 동기를 부여받은 Attention-FH[113]는 또한 패치를 순차적으로 발견하고 local enhancemen를 수행하기 위해 recurrent policy network에 의존하여 이 전략을 채택합니다.  
+이러한 방식으로 각 이미지에 대한 최적의 searching path를 고유의 특성에 따라 적응적으로 personalize할 수 있으므로 이미지의 global intra-dependence를 완전히 활용할 수 있습니다.  
+
+이러한 방법은 어느 정도 더 나은 성능을 보여주지만 긴 propagation path가 필요한 recursive process는 특히 초해상도 HR 이미지의 경우 계산 비용과 훈련 난이도를 크게 증가시킵니다.
 
 ### Pyramid Pooling
+Spatial pyramid pooling layer[114]에서 영감을 받아 Zhao et al. [115]는 global and local contextual information를 더 잘 활용하기 위해 pyramid pooling module을 제안합니다.  
+구체적으로, h x w × c 크기의 feature map에 대해 각 feature map은 M × M bin으로 분할되고 global average pooling을 거치게 되어 M × M × c 출력이 생성됩니다.  
+그런 다음 출력을 단일 채널로 압축하기 위해 1 × 1 컨볼루션이 수행됩니다.  
+그 후, low-dimensional feature map은 bilinear interpolation을 통해 원래 feature map과 동일한 크기로 upsample됩니다.  
+서로 다른 M을 사용하여 모듈은 global 및 local contextual information를 효과적으로 통합합니다.  
+이 모듈을 통합함으로써 제안된 EDSR-PP 모델[116]은 기존선 대비 성능을 더욱 향상시킵니다.
 
 ### Wavelet Transformation
+잘 알려진 바와 같이, wavelet transformation(WT)[117], [118]은 이미지 신호를 텍스처 세부 정보를 나타내는 high-frequency sub-band와 global topological information를 포함하는 low-frequency sub-band로 분해하여 이미지를 매우 효율적으로 표현하는 것입니다.  
+Bae et al. [119]는 먼저 WT를 deep learning based SR model과 결합하고 interpolated LR wavelet의 subband를 입력으로 받아 해당 HR sub-band의 잔차를 예측합니다.  
+WT와 inverse WT는 각각 LR input을 분해하고 HR output을 재구성하는 데 적용됩니다.  
+유사하게, DWSR [120] 및 Wavelet-SRNet [121]도 wavelet domain에서 SR을 수행하지만 더 복잡한 구조로 수행합니다.  
+위의 작업들이 각 sub-band를 독립적으로 처리하는 것과 달리, MWCNN [122]는 multi-level WT를 채택하고 연결된 sub-band를 단일 CNN의 입력으로 사용하여 이들 사이의 의존성을 더 잘 캡처합니다.  
+wavelet transformation에 의한 효율적인 표현으로 인해 이 전략을 사용하는 모델은 종종 모델 크기와 계산 비용을 훨씬 줄이면서 경쟁 성능을 유지합니다[119], [122].
 
 ### Desubpixel
+추론 속도를 높이기 위해 Vu 등[123]은 lower-dimensional space에서 시간이 많이 걸리는 feature extraction을 수행할 것을 제안하고, sub-pixel layer(Learning-based Upsampling)의 shuffle operation의 역인 desubpixel을 제안합니다.  
+특히, desubpixel operation은 이미지를 공간적으로 분할하고, 추가 채널로 적층하여 정보 손실을 방지합니다.  
+이러한 방식으로 모델 초기에는 입력 이미지를 desubpixel별로 downsample하고, 저차원 공간에서 표현을 학습하고, 마지막에는 목표 크기로 upsample합니다.  
+제안된 모델은 매우 빠른 추론과 우수한 성능으로 스마트폰의 PIRM 챌린지[81]에서 최고의 점수를 달성합니다.
 
 ### xUnit
+spatial feature processing와 nonlinear activation를 결합하여 복잡한 feature들을 보다 효율적으로 학습하기 위해 Kligvasser et al. [124]는 spatial activation function를 학습하기 위한 xUnit을 제안합니다.  
+특히 ReLU는 입력과의 element-wise multiplication을 수행할 weight map을 결정하는 것으로 간주되며, xUnit은 컨볼루션 및 Gaussian gating을 통해 weight map을 직접 학습합니다.  
+xUnit은 성능에 미치는 극적인 영향으로 인해 계산이 더 까다롭지만 ReLU와 성능을 일치시키면서 모델 크기를 크게 줄일 수 있습니다.  
+이러한 방식으로 저자는 성능 저하 없이 모델 크기를 거의 50%까지 줄일 수 있습니다.
 
 ## Learning Strategies
-
 ### Loss Functions
+초해상도 분야에서는 손실 함수를 사용하여 재구성 오류를 측정하고 모델 최적화를 안내합니다.  
+초기에는 연구자들이 일반적으로 pixelwise L2 loss를 사용하지만 나중에 재구성 품질을 매우 정확하게 측정할 수 없다는 것을 발견합니다.  
+따라서 재구성 오류를 더 잘 측정하고 보다 현실적이고 고품질의 결과를 생성하기 위해 다양한 손실 함수(예: content loss[29], adversarial loss[25])가 채택됩니다.  
+오늘날 이러한 손실 함수는 중요한 역할을 하고 있습니다.  
+이 섹션에서는 널리 사용되는 손실 함수를 자세히 살펴보도록 하겠습니다.  
+이 섹션의 표기법은 간결성을 위해 대상 HR 이미지 ˆIy, 생성된 HR 이미지 Iy의 첨자 y를 무시하고 2.1절, Problem Definitions을 따릅니다.
+
+#### Pixel Loss
+
+#### Content Loss
+
+#### Texture Loss
+
+#### Adversarial Loss
+
+#### Cycle Consistency Loss
+
+#### Total Variation Loss
+
+#### Prior-Based Loss
 
 ### Batch Normalization
+
 
 ### Curriculum Learning
 
