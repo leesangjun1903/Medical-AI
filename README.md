@@ -45,6 +45,7 @@
 - Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network : https://github.com/PRIS-CV/WFEN/tree/main?tab=readme-ov-file
 - FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction : https://github.com/masaaki-75/freeseed
 - Image Denoising Using a Generative Adversarial Network : https://github.com/manumathewthomas/ImageDenoisingGAN/tree/master?tab=readme-ov-file
+- SwinIR: Image Restoration Using Swin Transformer : https://github.com/JingyunLiang/SwinIR/tree/main
 
 ## Image reconstruction with Super-resolution
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
@@ -62,6 +63,7 @@
 - Image Super Resolution Using Deep Convolution Neural Network Computer Science Graduation Project : https://github.com/AmrShaaban99/super-resolution/tree/main?tab=readme-ov-file#abstract
 - BCRN：A Very Lightweight Network for single Image Super-Resolution https://github.com/kptx666/BCRN/tree/main
 - Image Reconstructor that applies fast proximal gradient method (FISTA) to the wavelet transform of an image using L1 and Total Variation (TV) regularizations : https://github.com/EliaFantini/Image-Reconstructor-FISTA-proximal-method-on-wavelets-transform/tree/main
+- 'Lightweight' GAN : https://github.com/lucidrains/lightweight-gan
 
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 - 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
