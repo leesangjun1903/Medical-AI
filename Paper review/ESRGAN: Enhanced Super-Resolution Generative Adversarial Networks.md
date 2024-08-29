@@ -138,6 +138,7 @@ https://velog.io/@joon6093/%EC%9D%BC%EB%8B%A8-%EB%B0%95%EC%A3%A0-ESRGAN-%EB%AA%A
 https://velog.io/@danielseo/Computer-Vision-ESRGAN
 https://velog.io/@jeewoo1025/What-is-end-to-end-deep-learning
 https://limitsinx.tistory.com/290
+https://zeroact.tistory.com/9
 
 
 
