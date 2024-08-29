@@ -1,5 +1,7 @@
 # Diffusion Model list
 
+- Awesome-Diffusion-Models : https://github.com/diff-usion/Awesome-Diffusion-Models
+
 - Diffusion Models from Scratch : https://colab.research.google.com/github/huggingface/diffusion-models-class/blob/main/unit1/02_diffusion_models_from_scratch.ipynb#scrollTo=6MW0xsLGNrXL
 
 ## Latent Diffusion + FBCNN
