@@ -19,6 +19,12 @@
 - Real-ESRGAN
 - Autoencoder
 
+# Papers
+- Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
+- Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
+- Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
+- Awesome-Super-Resolution https://github.com/ChaofWang/Awesome-Super-Resolution?tab=readme-ov-file
+
 ## Paper with name ( * ~ ***** : 성능)
 - Medical image denoising using convolutional denoising autoencoders(**) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
 - Content-Noise Complementary Learning for Medical Image Denoising(***)
@@ -49,10 +55,6 @@
 - Lightweight Image Super-Resolution with Enhanced CNN : https://github.com/hellloxiaotian/LESRCNN/tree/master?tab=readme-ov-file
 
 ## Image reconstruction with Super-resolution
-- Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
-- Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
-- Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
-- Awesome-Super-Resolution https://github.com/ChaofWang/Awesome-Super-Resolution?tab=readme-ov-file
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file
 - pix2pix_super_resolution https://www.kaggle.com/code/chaimaemoumou/pix2pix-super-resolution/notebook
 - Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
