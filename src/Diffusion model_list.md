@@ -9,6 +9,7 @@
 
 ## Denoising Diffusion Probabilistic Models
 - Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch
+- https://github.com/hojonathanho/diffusion
   
 ## SR3
 https://medium.com/@adityanutakki6250/sr3-explained-and-implemented-in-pytorch-from-scratch-b43b9742c232  
