@@ -51,9 +51,28 @@ Inference chain에서 중간 이미지의 분포는 q(yt|yt-1) 로 표시되는 
 모델의 목적 함수는 x로 컨디셔닝된 reverse Markov chain을 통해 noise에서 신호를 반복적으로 복구하여 Gaussian diffusion process를 reverse시키는 것이다.  
 원본 이미지와 noisy한 타겟 이미지를 입력으로 사용하고 noise를 추정하는 denoising model fθ를 사용하여 reverse chain을 학습한다.
 
+# Gaussian Diffusion Process
+
+![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.21.33.png)
+
+# Optimizing the Denoising Model
+
+![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.21.49.png)
+
+# Inference via Iterative Refinement
+
+![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.22.13.png)
+
+# SR3 Model Architecture and Noise Schedule
+
+![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.22.24.png)
+
 # Related Work
 
 # Experiments
+
+![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.23.45.png)
+
 ## Qualitative Results
 ### Natural Images
 다음은 ImageNet에서 학습한 SR3 model을 ImageNet 테스트 이미지에서 평가한 것이다.
