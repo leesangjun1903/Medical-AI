@@ -6,7 +6,10 @@
 
 ## Latent Diffusion + FBCNN
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
-- 
+
+## Denoising Diffusion Probabilistic Models
+- Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch
+  
 ## SR3
 https://medium.com/@adityanutakki6250/sr3-explained-and-implemented-in-pytorch-from-scratch-b43b9742c232  
 https://github.com/aditya-nutakki/SR3/tree/main  
