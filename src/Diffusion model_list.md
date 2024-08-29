@@ -4,6 +4,11 @@
 
 - Diffusion Models from Scratch : https://colab.research.google.com/github/huggingface/diffusion-models-class/blob/main/unit1/02_diffusion_models_from_scratch.ipynb#scrollTo=6MW0xsLGNrXL
 
+- A Diffusion Model from Scratch in Pytorch : https://colab.research.google.com/drive/1sjy9odlSSy0RBVgMTgP7s99NXsqglsUL?usp=sharing#scrollTo=HhIgGq3za0yh
+
+## Latent Diffusion
+(https://github.com/LukeDitria/pytorch_tutorials/blob/main/section09_generation/solutions/Pytorch3_Latent_Diffusion.ipynb)
+
 ## Latent Diffusion + FBCNN
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
 
