@@ -55,6 +55,7 @@
 - Image Denoising Using a Generative Adversarial Network : https://github.com/manumathewthomas/ImageDenoisingGAN/tree/master?tab=readme-ov-file
 - SwinIR: Image Restoration Using Swin Transformer : https://github.com/JingyunLiang/SwinIR/tree/main
 - Lightweight Image Super-Resolution with Enhanced CNN : https://github.com/hellloxiaotian/LESRCNN/tree/master?tab=readme-ov-file
+- Denoising Diffusion Probabilistic Models : https://github.com/lucidrains/denoising-diffusion-pytorch?tab=readme-ov-file , https://github.com/hojonathanho/diffusion
 
 ## Image reconstruction with Super-resolution
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file
