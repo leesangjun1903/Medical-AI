@@ -57,14 +57,14 @@
 - pix2pix_super_resolution https://www.kaggle.com/code/chaimaemoumou/pix2pix-super-resolution/notebook
 - Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
 - Single Image Super-Resolution with EDSR, WDSR and SRGAN : https://github.com/krasserm/super-resolution/tree/master?tab=readme-ov-file
-- Modified ESRGAN for solving the Super Resolution Problem : https://github.com/JRhin/Modified-ESRGAN-for-Super-Resolution-Problem/tree/main
-- Image-Super-Resolution : SRCNN : https://github.com/sharmaroshan/Image-Super-Resolution/tree/master
+- Image-Super-Resolution - SRCNN : https://github.com/sharmaroshan/Image-Super-Resolution/tree/master
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
 - Real-ESRGAN : https://github.com/ai-forever/Real-ESRGAN
 - Image Super Resolution Using Deep Convolution Neural Network Computer Science Graduation Project : https://github.com/AmrShaaban99/super-resolution/tree/main?tab=readme-ov-file#abstract
 - BCRN：A Very Lightweight Network for single Image Super-Resolution https://github.com/kptx666/BCRN/tree/main
 - Image Reconstructor that applies fast proximal gradient method (FISTA) to the wavelet transform of an image using L1 and Total Variation (TV) regularizations : https://github.com/EliaFantini/Image-Reconstructor-FISTA-proximal-method-on-wavelets-transform/tree/main
 - 'Lightweight' GAN : https://github.com/lucidrains/lightweight-gan
+- BEDMAP2 using a super resolution deep neural network : https://github.com/weiji14/deepbedmap/tree/master?tab=readme-ov-file
 
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 - 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
