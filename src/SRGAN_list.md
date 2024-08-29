@@ -12,3 +12,5 @@
 
 # Real-ESRGAN
 - Dacon SR : https://github.com/Jinwoo1126/Dacon_SR/tree/main?tab=readme-ov-file
+- Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data : https://github.com/xinntao/Real-ESRGAN?tab=readme-ov-file#python-script  
+- Real-ESRGAN : https://github.com/ai-forever/Real-ESRGAN/tree/main
