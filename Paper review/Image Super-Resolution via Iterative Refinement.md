@@ -51,5 +51,68 @@ Inference chain에서 중간 이미지의 분포는 q(yt|yt-1) 로 표시되는 
 모델의 목적 함수는 x로 컨디셔닝된 reverse Markov chain을 통해 noise에서 신호를 반복적으로 복구하여 Gaussian diffusion process를 reverse시키는 것이다.  
 원본 이미지와 noisy한 타겟 이미지를 입력으로 사용하고 noise를 추정하는 denoising model fθ를 사용하여 reverse chain을 학습한다.
 
+# Related Work
+
+# Experiments
+## Qualitative Results
+### Natural Images
+다음은 ImageNet에서 학습한 SR3 model을 ImageNet 테스트 이미지에서 평가한 것이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-fig3.PNG)
+
+### Face Images
+다음은 FFHQ에서 학습한 SR3 model을 학습 셋에 포함되지 않는 이미지에서 평가한 것이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-fig4.PNG)
+
+## Benchmark Comparison
+### Automated metrics
+얼굴 super-resolution에 대한 PSNR과 SSIM을 평가한 것이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-table1.PNG)
+
+다음은 SR3와 Regression baseline을 ImageNet validation set으로 성능을 평가한 것이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-table2.PNG)
+
+다음은 ImageNet Validation set의 이미지 1,000개에서 4× 자연 이미지 super-resolution에 대한 classification 정확도를 비교한 것이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-table3.PNG)
+
+### Human Evaluation (2AFC)
+다음은 얼굴 super-resolution의 fool rates를 평가한 것이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-fig6.PNG)
+
+다음은 ImageNet super-resolution의 fool rates를 평가한 것이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-fig7.PNG)
+
+## Quantitative Results
+얼굴 super-resolution task에 대한 다양한 방법을 비교한 것이다.
+![](https://kimjy99.github.io/assets/img/sr3/sr3-fig5.PNG)
+
+## Cascaded High-Resolution Image Synthesis
+unconditional diffusion model로 샘플링한 뒤 SR3 model 2개를 통과시켜 얼굴 이미지를 생성한 것이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-fig8.PNG)
+
+클래스 조건부 diffusion model로 샘플링한 뒤 SR3 4x model을 통과시킨 것이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-fig9.PNG)
+
+FID 점수이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-table4.PNG)
+
+## Ablation Studies
+SR model에 대한 ablation study 결과이다.
+
+![](https://kimjy99.github.io/assets/img/sr3/sr3-table5.PNG)
+
+
+
+
+
 # Ref
 https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
