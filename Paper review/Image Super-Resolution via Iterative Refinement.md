@@ -136,6 +136,6 @@ SR model에 대한 ablation study 결과이다.
 # Ref
 https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
 
-## Implemenatation
+## Implementation
 https://medium.com/@adityanutakki6250/sr3-explained-and-implemented-in-pytorch-from-scratch-b43b9742c232  
 https://github.com/novwaul/SR3/tree/main
