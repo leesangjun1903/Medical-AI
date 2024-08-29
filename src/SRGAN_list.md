@@ -2,7 +2,8 @@
 - Pytorch GAN : https://github.com/eriklindernoren/PyTorch-GAN/tree/master
 
 # SRGAN
-- https://github.com/vishal1905/Super-Resolution/tree/master
+- A pytorch implementation of SRGAN : https://github.com/vishal1905/Super-Resolution/tree/master
+- Single Image Super-Resolution with EDSR, WDSR and SRGAN : https://github.com/krasserm/super-resolution/tree/master?tab=readme-ov-file
 
 # ESRGAN
 - https://github.com/xinntao/ESRGAN/tree/master
