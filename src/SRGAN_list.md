@@ -2,6 +2,7 @@
 - Pytorch GAN : https://github.com/eriklindernoren/PyTorch-GAN/tree/master
 
 # SRGAN
+- https://github.com/vishal1905/Super-Resolution/tree/master
 
 # ESRGAN
 - https://github.com/xinntao/ESRGAN/tree/master
