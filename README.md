@@ -46,6 +46,7 @@
 - FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction : https://github.com/masaaki-75/freeseed
 - Image Denoising Using a Generative Adversarial Network : https://github.com/manumathewthomas/ImageDenoisingGAN/tree/master?tab=readme-ov-file
 - SwinIR: Image Restoration Using Swin Transformer : https://github.com/JingyunLiang/SwinIR/tree/main
+- Lightweight Image Super-Resolution with Enhanced CNN : https://github.com/hellloxiaotian/LESRCNN/tree/master?tab=readme-ov-file
 
 ## Image reconstruction with Super-resolution
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
