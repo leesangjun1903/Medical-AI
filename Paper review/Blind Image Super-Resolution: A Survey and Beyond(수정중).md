@@ -194,4 +194,148 @@ y = (x ↓s ⊗k) + n
 Unfolding super-resolution network(USRNet) [46]도 MAP 프레임워크를 채택하지만 식 (4)의 원래 열화 모델을 기반으로 하며, 해당하는 두 하위 문제는 kernel k에 의해 블러링된 LR 이미지를 초해상도하고 virtual noise level μ를 가진 HR 이미지를 노이즈 제거합니다.  
 DPSR의 iterative optimization process를 반복 방식으로 end-to-end 학습 가능한 네트워크로 펼쳐 솔루션 프레임워크를 향상시켜 두 하위 문제 간의 joint optimization를 가능하게 합니다.  
 DPSR과 USRNet의 솔루션 프레임워크를 비교하면 그림 11(b)과 (c)가 표시됩니다.  
+
+![]()
+
 이외에도 plug-and-play technique을 활용하는 몇 가지 다른 방법으로는 [51], [52], [53]이 있습니다.
+
+한계점 : 앞서 언급한 진전에도 불구하고, 이러한 종류의 방법에는 한 가지 분명한 단점이 있습니다:  
+이들은 모두 열화 추정의 추가된 입력, 특히 SR kernel k에 의존합니다.  
+그러나 임의의 LR 이미지에서 올바른 kernel을 추정하는 것은 쉬운 작업이 아니며, 부정확한 추정된 입력은 kernel 불일치를 유발하고 SR 성능을 크게 저하시킬 것입니다[7], [12].  
+그림 12는 SRMD 방법을 기반으로 SR 결과를 정확한 kernel과 부정확한 kernel 간의 비교를 보여줍니다.  
+
+![]()
+
+따라서 신뢰할 수 있는 열화 추정을 위한 방법이 있는 경우에만 만족스러운 SR 출력을 빠르게 얻을 수 있으며, 그렇지 않으면 더 나은 결과를 위해 적절한 추정 입력을 수동으로 선택하는 지루한 작업을 하게 될 수 있습니다.  
+
+따라서 다음 부분에서는 kernel 추정을 SR 프레임워크에 통합하여 보다 강력한 성능을 제공하는 또 다른 종류의 접근 방식을 소개합니다.
+
+### Image-Specific Adaptation with Kernel Estimation
+Iterative kernel correction(IKC)[7]은 만족스러운 결과에 점진적으로 접근하기 위해 반복적인 방식으로 kernel estimation을 수정할 것을 제안합니다.  
+이 방법의 백미는 kernel mismatch로 인해 SR 이미지 내의 결함이 규칙적인 패턴을 갖는 경향이 있기 때문에 중간 SR 결과를 활용하는 것입니다.  
+특히 현재 커널에 조건화된 SR 이미지가 주어지면 corrector network를 사용하여 kernel correcting residual를 추정합니다.  
+그런 다음 업데이트된 커널을 사용하여 더 적은 결함으로 새로운 SR 결과를 생성합니다.  
+SR 네트워크에는 각 residual block에  spatial feature transform [54] layer가 포함되어 있으며 현재 커널은 feature adaptation을 위한 transforming parameter를 생성하는 데 사용되며, 이는 SRMD에서 제안한 입력의 direct concatenation보다 더 효과적일 수 있습니다.  
+또한 입력 LR 이미지만 기반한 kernel initialization를 위해 predictor network를 적용하고 kernel coding을 위해 dimensionality stretching을 채택합니다.  
+보다 최근의 작업인 deep alternating network(DAN)[48]는 IKC 프레임워크를 더욱 향상시킵니다.  
+IKC와 같이 각 하위 네트워크를 별도로 훈련하는 대신 corrector 및 SR 네트워크를 end-to-end 훈련 가능한 네트워크로 통합합니다.  
+이 joint training 전략은 두 네트워크를 서로 더 호환되도록 만들 수 있습니다.  
+또한 corrector는 중간 SR 결과에 조건화된 kernel estimation에 원본 LR 입력을 사용하므로 보다 강력한 커널 추정 성능에 도움이 됩니다.  
+IKC와 DAN의 전체 프레임워크는 그림 13(a)과 (b)에 나와 있습니다.  
+
+![]()
+
+커널 추정을 위해 SR 결함을 사용하는 아이디어는 variant blind SR(VBSR)[47]에도 사용되지만 커널 자체 대신 SR 출력의 error map을 추정하도록 커널 discriminator를 훈련하고 그림 13(c)와 같이 추론 단계에서 SR 출력의 오류를 최소화하여 최적의 커널을 찾습니다.  
+SR 커널 외에도 더 많은 열화 유형에 대한 추정도 연구되었습니다.  
+CBSR[14]은 노이즈 및 커널 추정을 위한 두 개의 하위 네트워크를 non-blind SR 네트워크와 결합하여 blind SR을 위한 unified cascaded architecture를 형성합니다.
+
+실제로 IKC와 DAN이 채택한 반복 방식은 도메인 적응의 관점에서 잘 해석될 수 있습니다.  
+SRMD와 같이 single stroke로 최종 SR 출력을 생성하는 대신 입력 LR에서 대상 Natural HR 도메인으로 이동하는 동안 여러 중간 SR 결과를 interchange station으로 선택하여 그림 2의 domain 차이를 단계적으로 통과합니다.  
+이 두 가지 방법은 커널 추정 입력의 정확도에 따라 SRMD 프레임워크보다 더 강력한 성능을 가질 수 있습니다. 
+
+그럼에도 불구하고 이러한 반복 방식은 일반적으로 더 많은 추론 시간을 소비하고 최적의 반복 횟수를 선택하기 위해 사람의 개입이 필요합니다.  
+이러한 문제를 해결하기 위해 최근 일부 연구에서는 보다 정확한 열화 추정 또는 보다 효율적인 기능 적응 전략을 도입하여 non-iterative framework를 제안합니다. Blind SR을 위한 Unsupervised degradation representation learning(DRLDASR)[55]은 latent feature space에서 훈련 가능한 encoder로 열화 정보를 추정하려고 하며, 열화 인코더는 비지도 방식으로 대조적인 방식으로 학습됩니다.  
+특히, query input과 동일한 열화를 가진 LR 샘플은 긍정적인 예시로 간주되고 다른 열화를 가진 샘플은 부정적인 예시로 간주됩니다.  
+그런 다음 모든 샘플 간의 상호 정보가 latent space에서 최대화되어 content-invariant degradation representation으로 이어집니다.  
+또한 추정된 열화 표현은 SR 네트워크에서 해당 convolutional kernel과 modulation coefficient를 생성하는 데 사용됩니다.  
+이러한 프레임워크는 single forward pass로 만족스러운 SR 결과를 달성할 수 있습니다.  
+Kernel-oriented adaptive local adjustment(KOalanet)[56]도 SR 네트워크를 특정 열화에 적응시키는 유사한 dynamic kernel 전략을 사용하며, local kernel estimation을 위해 다운샘플링 네트워크를 사용하여 non-iterative framework를 공간적으로 변형된 열화로 더욱 확장합니다.  
+또 다른 작업인 adaptive modulation network with reinforcement learning (AMNet-RL) [57]는 수정된 버전의 adaptive instance norm(AdaIN)을 제안합니다[58].  
+kernel estimation을 SR 네트워크에 통합하기 위해 강화 학습 프레임워크에서 차별화할 수 없는 지각 메트릭(예: NIQE [59])으로 blind SR 모델을 최적화하는 데 개척했습니다.
+
+훈련 데이터 세트, 특히 실제 이미지에서 추정된 보다 현실적인 커널의 더 많은 열화를 커버하여 blind SR 모델을 학습하는 것을 제안하는 몇 가지 다른 접근 방식도 있습니다.  
+예를 들어, kernel modelling super-resolution(KMSR)[23]는 실제 LR 이미지에서 추정된 일부 현실적인 SR 커널을 기반으로 data distribution learning을 통해 대규모 kernel pool을 구축합니다.  
+그런 다음 이 풀의 커널을 사용하여 고전적인 열화 모델에 따라 HR-LR 훈련 쌍을 합성하고 훈련 프로세스는 지도 학습과 함께 non-blind 설정을 따릅니다.  
+일반적으로 보다 일반적인 훈련 데이터 세트를 사용하면 SR 모델이 암시적으로 서로 다른 열화를 가진 LR 입력을 구별하고 적응적으로 처리할 수 있습니다.  
+즉, SR 모델은 훈련 프로세스에서 커널 추정을 위한 더 많은 양의 데이터를 암묵적으로 부여받으므로 프레임워크에서 explicit kernel estimation을 피할 수 있습니다.  
+그러나 이러한 직접적인 방법은 [13]에서 주장한 바와 같이 최고의 성능으로 이어지지 않을 수 있습니다.  
+RealSR[49] 및 RealSRGAN[50]에서도 유사한 전략을 사용하여 보다 일반적인 훈련 데이터 세트를 보다 많은 종류의 현실적인 커널로 구축합니다.  
+이 프로세스는 그림 13(d)에 나와 있습니다.  
+
+![]()
+
+이러한 방법 외에도 correction filter[60]는 SR 모델을 미리 정의된 열화와 일치하도록 LR 입력을 수정하도록 설계되었으며, 이는 주로 LR의 kernel estimation을 기반으로 합니다.
+
+한계점 : kernel estimation이 없는 접근 방식과 비교했을 때, 이러한 방법은 특히 추론 단계에서 kernel estimation 알고리즘을 검색하는 노력을 실질적으로 절약할 수 있으며 인상적인 성능을 입증했습니다.  
+그러나 여전히 explicit modelling의 본질적인 단점을 피할 수 없습니다.  
+IKC와 같은 커널 k로 인한 열화에 초점을 맞춘 SR 모델의 경우 모델링 범위를 벗어난 열화가 있는 LR 입력을 거의 처리할 수 없습니다.  
+이 제한은 복잡한 실제 이미지에 대해 매우 어렵습니다.  
+더 많은 열화 유형으로 모델을 재교육할 의향이 있다고 해도, 3절에 명시된 바와 같이 임의의 LR에서 열화를 명시적으로 모델링하고 충분한 외부 교육 데이터를 수집하는 것은 비현실적입니다.  
+
+다음으로, 이미지별 SR 모델링을 위해 단일 입력 이미지만 사용하는 다른 유형의 방법으로 들어가 보겠습니다.
+
+## Single Image Modelling with Internal Statistics
+단일 이미지를 사용한 SR 모델링은 자연 이미지의 내부 통계적 정보를 기반으로 합니다:  
+단일 이미지의 패치는 이 이미지의 다양한 스케일 내에서 그리고 여러 스케일에 걸쳐 반복되는 경향이 있습니다.  
+내부 통계는 정량화되었으며 많은 자연 이미지에 대한 외부 통계적 정보보다 더 많은 예측력을 갖는 것으로 입증되었습니다[61].  
+이론적 공식은 [62]에 의해 제공됩니다.  
+구체적으로, HR 이미지 h와 그 LR 대응물 l은 동일한 카메라에 의해 촬영되지만, 후자의 경우 latter에 s-scale zoom-in된다고 가정할 수 있습니다:
+
+h[n] = ∫ I(x)bH ( n/s − x)dx  
+l[n] = ∫ I(x)bL(n − x)dx
+
+여기서 I(x)는 연속 공간 이미지, b는 카메라의 point spread function(PSF), bH는 optical zoom의 경우 bL의 다운스케일링 버전이어야 합니다:
+
+bH (x) = sbL(sx)
+
+또한 노이즈 n이 없는 식 (4)의 고전적 열화 모델링을 사용하면 이산 형태로 표현되는 h와 l의 관계는 다음과 같습니다:
+
+l[n] = ∑m h[m]k[sn − m]
+
+이제 주어진 LR 영상에 대해 q와 r이 연속되는 장면에서 반복되는 패턴 P(x)를 갖는 두 개의 로컬 패치라고 가정합니다.  
+여기서 r은 q보다 s배 큽니다:
+
+r[n] = ∫ P(x/s)bL(n − x)dx = ∫ sP (x)bL(n − sx)dx  
+q[n] = ∫ P (x)bL(n − x)dx
+
+식 (10)을 기준으로 최종적으로 도착할 수 있습니다:
+
+q[n] = ∑m r[m]k[sn − m]
+
+즉, 동일한 LR에서 q와 r 사이의 관계는 커널 k와 관련된 HR과 그 LR 버전의 두 패치와 동등합니다.  
+이 속성은 k를 추정하고 미지의 HR을 푸는 데 사용될 수 있습니다. 
+
+Glasner et al. [30]은 2009년에 단일 이미지에서 SISR 문제를 해결하기 위해 내부 통계적 정보를 도입하는 선구적인 작업을 수행했습니다.  
+후자의 경우 nonparametric blind SR(NPBSR)[62]은 이 프레임워크를 blind SR 설정으로 더욱 확장합니다.  
+구체적으로, 최적의 커널 k는 서로 다른 스케일에서 반복되는 패치 간의 유사성을 극대화하는 것이라는 식 (14)의 관찰을 기반으로 SR blur kernel을 추정하는 MAP 프레임워크를 제안합니다.  
+또한 NPBSR은 최적의 k가 카메라의 PSF가 아니라 흔한 지표과 달리 폭이 작은 커널이어야 함을 증명합니다.  
+
+최근 GAN의 발전으로 blind kernel estimation에 patch recurrence을 사용하는 새로운 실현이 이루어졌습니다.  
+KernelGAN[6]은 단일 이미지 내의 patch recurrence을 극대화하는 것을 데이터 분포 학습 문제로 해석합니다.  
+최적 k에 의해 생성된 LR 이미지의 다운샘플링된 버전이 원래 LR과 동일한 패치 분포를 공유해야 한다고 가정합니다.  
+GAN 프레임워크에서는 deep linear network를 generator로 사용하여 기본 SR 커널을 매개변수화하고, 생성된 패치를 원래 LR 이미지의 패치와 구별합니다.  
+훈련이 완료되면 generator의 모든 convolutional filter를 컨볼루션하여 커널 추정치를 명시적으로 얻을 수 있습니다.  
+훈련 프로세스는 외부 데이터 세트 없이 입력 LR에만 의존하며, 이는 self-supervised learning으로 볼 수 있습니다.  
+Flow-based kernel prior(FKP)[63]은 kernel optimization를 위한 보다 효과적인 접근 방식을 개발하며, 여기서 latent space의 kernel prior은 normalizing flow(NF)[64], [65] 기법으로 학습됩니다.  
+NF에 의해 허용된 latent space과 pixel space 간의 invertible mapping 덕분에 학습된 kernel manifold에서 최적의 k를 검색할 수 있습니다.  
+이 프로세스는 무작위로 초기화된 심층 네트워크를 직접 최적화하는 것보다 더 효율적일 수 있으므로 보다 강력한 커널 추정 결과를 얻을 수 있습니다.  
+
+patch recurrence property을 기반으로 한 self-supervision 아이디어는 SR 수행에도 직접 적용될 수 있습니다.  
+NPBSR 및 KernelGAN과 같은 그룹의 저자들이 개발한 Zero-shot super-resolution(ZSSR)[12]는 사전 훈련 단계 없이 각 입력 LR을 초해상도화하기 위해 이미지별 CNN을 훈련하는 최초의 시도를 했습니다.  
+훈련은 단일 LR 입력 y에서 생성된 HR-LR 쌍으로 수행되며, 여기서 y는 HR로 간주되고 커널 k로 다운 샘플링하여 안 좋은 LR 이미지가 생성됩니다.  
+Data augmentation은 입력 이미지에서만 정보를 최대한 활용하는 데 활용됩니다.  
+이러한 이미지 쌍으로 훈련된 CNN은 y의 다양한 스케일에서 특정 관계를 추론할 수 있으며, 이는 y를 초해상도화하는 데 사용됩니다.  
+또한 ZSSR은 상관된 이미지 콘텐츠만 노이즈가 아닌 스케일에 걸쳐 반복되는 경향이 있다고 주장하기 때문에 LR 훈련 샘플에 약간의 노이즈를 추가하여 주의를 산만하게 하는 결함(예: Gaussian noises, JPEG artifacts)에 더 강력할 수 있습니다.  
+
+실제로 ZSSR은 여전히 blind 설정을 위해 잘 설계되지 않았습니다.  
+훈련을 위해 거친 LR 이미지의 생성을 안내하기 위해 입력으로 추정된 SR 블러 커널 k가 필요합니다.  
+따라서 학습 기반 SR을 위한 통합된 self-supervision 프레임워크가 DGDML-SR[15] - depth guided degradation model for learning-based SR에서 제안됩니다.  
+열화 네트워크와 SR 네트워크를 단일 아키텍처로 결합하여 KernelGAN의 기능과 유사하게 열화 과정을 시뮬레이션하도록 훈련되고 후자는 ZSSR처럼 SR 작업을 수행하는 것을 목표로 합니다.  
+이 공동 프레임워크를 사용하면 SR 커널의 명시적인 추출 없이 생성된 LR을 SR 네트워크의 입력으로 직접 사용할 수 있습니다.  
+또한 DGDML-SR은 depth가 작은 패치가 HR과 동일하고 depth가 큰 패치가 LR과 동일하다고 가정하여 입력 이미지의 depth map에 따라 페어링되지 않은 방식으로 HR 및 LR 패치를 샘플링할 것을 제안합니다.  
+CycleGAN[66] 구조와 유사한 두 개의 네트워크를 동시에 훈련하기 위해 사용되며(그림 15 참조), 여기서 페어링되지 않은 HR 및 LR 패치는 data distribution learning을 위한 실제 샘플로 사용됩니다.
+
+![]()
+
+한계점 : 내부 통계적 정보를 사용한 self-supervision 아이디어는 대규모 외부 훈련 데이터 세트를 수집하는 노력이 필요하지 않기 때문에 변형 열화 유형을 가진 LR의 SR 이미지를 해결하는 데 매력적인 것으로 보입니다.  
+그럼에도 불구하고, 특히 다양한 콘텐츠(예: 동물)가 있는 자연 이미지 또는 단조로운 장면(예: 하늘)의 경우 이러한 종류의 입력 이미지로 SR을 강력하게 수행하기 위해 스케일 간 반복 정보를 활용하기 어렵기 때문에 기본적인 가정이 쉽게 실패할 수 있습니다.  
+따라서 이러한 접근 방식은 스케일 간에 자주 반복되는 콘텐츠가 있는 매우 제한된 이미지 세트에 대해 유리한 SR 출력만 생성할 수 있으며, 보다 일반적인 자연 이미지에 대해 단일 이미지 모델링을 위한 새로운 방법이 모색되기를 기다리고 있습니다.  
+
+지금까지 explicit degradation modelling을 사용한 접근 방식과 장단점에 대해 개요를 보았습니다.  
+열화 프로세스의 explicit degradation modelling은 명확하고 간단하지만 카메라 센서에서 발생하는 실제 열화와 같은 블러링 및 가산 노이즈 외에 더 복잡한 열화를 모델링하는 것에 비해 너무 간단할 수 있습니다.  
+실제로 실제 이미지에는 일반적으로 여러 열화가 포함되며, 이러한 얽힌 요소를 명시적으로 잘 정의된 함수로 표현하기는 거의 어렵습니다.  
+따라서 다른 방법 그룹에서는 data distribution learning을 통해 열화를 암시적으로 모델링할 것을 제안합니다.  
+저희가 아는 한, 지금까지 암시적 모델링을 위한 외부 데이터 세트를 기반으로 한 접근 방식만 있었고, 다음 섹션에서 이에 대해 이야기하겠습니다.
+
+# IMPLICIT DEGRADATION MODELLING
+## Learning Data Distribution within External Dataset
