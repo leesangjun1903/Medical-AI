@@ -18,6 +18,7 @@
 - Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch
 - https://github.com/acids-ircam/diffusion_models/tree/main
 - https://github.com/hojonathanho/diffusion
+- https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
 
 ## Stable Diffusion
 - pytorch-stable-diffusion : https://github.com/hkproj/pytorch-stable-diffusion/tree/main
