@@ -1,7 +1,6 @@
 # Diffusion model
 
 - What are Diffusion Models? : https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
-- Diffusion model 설명 (Diffusion model이란? Diffusion model 증명) : https://process-mining.tistory.com/182
 - Diffusion Model 설명 – 기초부터 응용까지 : https://aigong.tistory.com/569
 
 # DPM
@@ -10,6 +9,7 @@
 - https://aigong.tistory.com/569
 
 # DDPM
+- Diffusion model 설명 (Diffusion model이란? Diffusion model 증명) : https://process-mining.tistory.com/182
 https://developers-shack.tistory.com/8
 https://jang-inspiration.com/ddpm-2
 https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/ddpm/
