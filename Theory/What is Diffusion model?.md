@@ -1,5 +1,7 @@
 # Diffusion model
 
+- What are Diffusion Models? : https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+
 
 # Ref
 - Diffusion model 설명 (Diffusion model이란? Diffusion model 증명) : https://process-mining.tistory.com/182
