@@ -33,5 +33,3 @@ Markov Chain은 이전의 샘플링이 현재 샘플링에 영향을 미치는 p
 
 # Conclusion
 
-# Ref
-https://developers-shack.tistory.com/8
