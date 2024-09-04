@@ -8,7 +8,7 @@
 
 - Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch?tab=readme-ov-file
 
-## Deep Unsupervised Learning using Nonequilibrium Thermodynamics
+## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
 - https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Deep_Unsupervised_Learning_using_Nonequilibrium_Thermodynamics
 
@@ -18,7 +18,7 @@
 ## Latent Diffusion + FBCNN
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
 
-## Denoising Diffusion Probabilistic Models
+## Denoising Diffusion Probabilistic Models(DDPM)
 - Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch
 - https://github.com/acids-ircam/diffusion_models/tree/main
 - https://github.com/hojonathanho/diffusion
