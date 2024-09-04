@@ -10,6 +10,7 @@
 - https://aigong.tistory.com/569
 
 # DDPM
+https://developers-shack.tistory.com/8
 
 # DDIM
 
