@@ -6,7 +6,11 @@
 
 - A Diffusion Model from Scratch in Pytorch : https://colab.research.google.com/drive/1sjy9odlSSy0RBVgMTgP7s99NXsqglsUL?usp=sharing#scrollTo=HhIgGq3za0yh
 
-- Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch?tab=readme-ov-file 
+- Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch?tab=readme-ov-file
+
+## Deep Unsupervised Learning using Nonequilibrium Thermodynamics
+- https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
+- https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Deep_Unsupervised_Learning_using_Nonequilibrium_Thermodynamics
 
 ## Latent Diffusion
 (https://github.com/LukeDitria/pytorch_tutorials/blob/main/section09_generation/solutions/Pytorch3_Latent_Diffusion.ipynb)
