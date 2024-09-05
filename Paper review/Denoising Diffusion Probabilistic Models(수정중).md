@@ -62,6 +62,25 @@ Forward process에서 주목할만한 것은 closed form으로 임의의 시간 
 $\alpha_t := 1-\beta_t, \quad \bar{\alpha_t} := \prod_{s=1}^t \alpha_s$  
 $q(x_t | x_0) = \mathcal{N} (x_t ; \sqrt{ \bar{\alpha_t}} x_0 , (1-\bar{\alpha_t})I)$
 
+한 번에 샘플링이 가능하므로 stochastic gradient descent을 이용하여 효율적인 학습이 가능하다.  
+L을 다음과 같이 다시 쓰면 분산 감소로 인해 추가 개선이 가능하다.
+
+```math
+\begin{equation} L = \mathbb{E}_q \bigg[ \underbrace{D_{KL} (q(x_T | x_0) \; || \; p(x_T))}_{L_T} + \sum_{t>1} \underbrace{D_{KL} (q(x_{t-1} | x_t , x_0) \; || \; p_\theta (x_{t-1} | x_t))}_{L_{t-1}} \underbrace{- \log p_\theta (x_0 | x_1)}_{L_0} \bigg] \end{equation}
+```
+
+위 식은 KL divergence으로 forward process posterior (ground truth)와 $p_\theta (x_{t-1} \vert x_t)$ 를 직접 비교하며, 이는 tractable하다. 두 가우시안 분포에 대한 KL Divergence는 closed form으로 된 Rao-Blackwellized 방식으로 계산할 수 있기 때문에 L을 쉽게 계산할 수 있다.
+
+```math
+\begin{aligned}
+q (x_{t-1} | x_t, x_0) &= \mathcal{N} (x_{t-1} ; \tilde{\mu_t} (x_t, x_0), \tilde{\beta_t} I), \\
+\rm{where} \quad \tilde{\mu_t} (x_t, x_0) &:= \frac{\sqrt{{1} \bar{\alpha}_{t-1}} \beta_t}{1-\bar{\alpha}_t} x_0 + \frac{\sqrt{\alpha_t}(1-\bar{\alpha}_{t-1})}{1-\bar{\alpha}_t} x_t
+\quad \rm{and} \quad \tilde{\beta_t} := \frac{1-\bar{\alpha}_{t-1}}{1-\bar{\alpha}_t} \beta_t
+\end{aligned}
+```
+
+
+
 # Diffusion models and denoising autoencoders
 
 ## Forward Process and LT
