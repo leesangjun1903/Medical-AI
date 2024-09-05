@@ -18,6 +18,12 @@
 - ESRGAN
 - Real-ESRGAN
 - Autoencoder
+- DIP, Deep Image Prior
+- NAFNet
+- Wavelet Transform
+- DBPN
+- MIRnet
+- 
 
 # Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
@@ -52,10 +58,10 @@
 - Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network : https://github.com/PRIS-CV/WFEN/tree/main?tab=readme-ov-file
 - FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction(FreeSeed) : https://github.com/masaaki-75/freeseed
 - Image Denoising Using a Generative Adversarial Network(ImageDenoisingGAN) : https://github.com/manumathewthomas/ImageDenoisingGAN/tree/master?tab=readme-ov-file
-- SwinIR: Image Restoration Using Swin Transformer : https://github.com/JingyunLiang/SwinIR/tree/main
-- Lightweight Image Super-Resolution with Enhanced CNN : https://github.com/hellloxiaotian/LESRCNN/tree/master?tab=readme-ov-file
-- Denoising Diffusion Probabilistic Models : https://github.com/lucidrains/denoising-diffusion-pytorch?tab=readme-ov-file
-- Deep Unsupervised Learning using Nonequilibrium Thermodynamics https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
+- SwinIR: Image Restoration Using Swin Transformer(SwinIR) : https://github.com/JingyunLiang/SwinIR/tree/main
+- Lightweight Image Super-Resolution with Enhanced CNN(LESRCNN) : https://github.com/hellloxiaotian/LESRCNN/tree/master?tab=readme-ov-file
+- Denoising Diffusion Probabilistic Models(DDPM) : https://github.com/lucidrains/denoising-diffusion-pytorch?tab=readme-ov-file
+- Deep Unsupervised Learning using Nonequilibrium Thermodynamics(DPM) https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
 
 ## Image reconstruction with Super-resolution
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file
