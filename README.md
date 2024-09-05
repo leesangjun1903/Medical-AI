@@ -23,6 +23,9 @@
 - Wavelet Transform
 - DBPN
 - MIRnet
+- DPM, DDPM
+- 
+- SR3
 - 
 
 # Papers
