@@ -184,7 +184,7 @@ $D$는 데이터의 dimensionality이며 $i$는 각 좌표를 나타낸다.
 
 ```math
 \begin{equation}
-L_{\rm{simple}} := \mathbb{E}_{t, x_0, \epsilon} \bigg[ \| \epsilon - \epsilon_\theta (\sqrt{\vphantom{1} \bar{\alpha}_t} + \sqrt{1-\bar{\alpha}_t} \epsilon, t) \|^2 \bigg]
+L_{\rm{simple}} := \mathbb{E}_{t, x_0, \epsilon} \bigg[ \| \epsilon - \epsilon_\theta (\sqrt{ \bar{\alpha}_t} + \sqrt{1-\bar{\alpha}_t} \epsilon, t) \|^2 \bigg]
 \end{equation}
 ```
 
