@@ -38,11 +38,11 @@
 
 ## Paper with name ( * ~ ***** : 성능)
 - Medical image denoising using convolutional denoising autoencoders(Autoencoder) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
-- Content-Noise Complementary Learning for Medical Image Denoising(CNCL)
-- Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior(DIP)
-- Learning Medical Image Denoising with Deep Dynamic Residual Attention Network
+- Content-Noise Complementary Learning for Medical Image Denoising(CNCL) https://github.com/gengmufeng/CNCL-denoising/tree/main, https://github.com/kiananvari/Content-Noise-Complementary-Learning-for-Medical-Image-Denoising?tab=readme-ov-file
+- Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior(DIP) https://github.com/mlaves/uncertainty-deep-image-prior?tab=readme-ov-file
+- Learning Medical Image Denoising with Deep Dynamic Residual Attention Network https://github.com/sharif-apu/MID-DRAN
 - Transformers in Medical Imaging: A Survey(Transformers) https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction  
-- Adversarial Distortion Learning for Medical Image Denoising(수정필)
+- Adversarial Distortion Learning for Medical Image Denoising(수정필) https://github.com/mogvision/ADL/tree/main
 - Physics-informed deep neural network for image denoising(PINN) https://codeocean.com/capsule/9043085/tree/v1
 - Simple Baselines for Image Restoration(NAFNet) https://github.com/megvii-research/NAFNet
 - Multi-stage image denoising with the wavelet transform(Wavelet Transform)  https://github.com/hellloxiaotian/MWDCNN
@@ -50,7 +50,7 @@
 - Dynamic Convolution: Attention over Convolution Kernels
 - Recent Advances in CT Image Reconstruction
 - The evolution of image reconstruction for CT—from filtered back projection to artificial intelligence
-- EDCNN: Edge enhancement-based Densely Connected Network with Compound Loss for Low-Dose CT Denoising(EDCNN)
+- EDCNN: Edge enhancement-based Densely Connected Network with Compound Loss for Low-Dose CT Denoising(EDCNN) https://github.com/workingcoder/EDCNN
 - X2CT-GAN: Reconstructing CT from Biplanar X-Rays with Generative Adversarial Networks(X2CT-GAN) https://github.com/kylekma/X2CT  
 - Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network(Wavelet) : https://github.com/pris-cv/wfen?tab=readme-ov-file
 - CAMixerSR: Only Details Need More “Attention”(CAMixerSR) : https://github.com/icandle/CAMixerSR/tree/main?tab=readme-ov-file
