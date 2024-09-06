@@ -59,20 +59,43 @@
 ### Pre-upsampling Super-resolution
 ![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.20.17.png)
 
+- SRCNN
+- VDSR
+- MemNet
+- DRRN(Residual Network)
+- DRCN(Recursive Network)
+- Zero Shot SR
+
 ### Post-upsampling Super-resolution
 ![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.20.26.png)
+
+- FSRCNN(Fast SRCNN)
+- ESPCN
+- SRGAN
+- EDSR
+- SRDenseNet
+- DSRN 
 
 ### Progressive Upsampling Super-resolution
 ![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.21.05.png)
 
+- LapSRN
+- MS-LapSRN
+- progressive SR (ProSR)
+
 ![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.21.20.png)
 
 ### Iterative Up-and-down Sampling Super-resolution
+- DBPN
+- SRFBN
+- RBPN
 
 ## Upsampling Methods
 모델의 업샘플링 위치 외에도 업샘플링을 수행하는 방법이 매우 중요합니다.  
 다양한 전통적인 업샘플링 방법이 있었지만 [20], [21], [88], [89]를 사용하여 엔드투엔드 업샘플링을 학습하는 것이 점차 추세가 되었습니다.  
 이 섹션에서는 몇 가지 전통적인 보간 기반 알고리즘과 딥러닝 기반 업샘플링 레이어를 소개합니다.  
+
+- 
 
 ### Interpolation-based Upsampling
 이미지 보간, 일명 이미지 스케일링은 디지털 이미지의 크기를 조정하는 것을 말하며 이미지 관련 응용 분야에서 널리 사용됩니다.  
