@@ -137,6 +137,9 @@ Transposed convolution layer, 일명 deconvolution layer[90], [91]은 일반 컨
 transposed convolution은 vanilla convolution과 호환되는 연결 패턴을 유지하면서 end-to-end 방식으로 이미지 크기를 확장하기 때문에 SR 모델[57], [78], [79], [85]에서 upsampling layer로 널리 사용됩니다.  
 그러나 이 layer는 각 축에서 쉽게 "불균일한 중첩, uneven overlapping"을 일으킬 수 있으며, 두 축의 곱해진 결과는 다양한 크기의 바둑판과 같은 패턴을 생성하여 SR 성능에 해를 끼칩니다.  
 
+- DBPN
+- 
+
 #### Sub-pixel Layer.
 또 다른 end-to-end 학습 가능한 업샘플링 레이어인 sub-pixel layer [84]는 그림 5와 같이 컨벌루션으로 복수의 채널을 생성한 다음 reshaping하여 업샘플링을 수행합니다. 
 
