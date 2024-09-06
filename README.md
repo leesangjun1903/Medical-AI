@@ -65,6 +65,7 @@
 - Lightweight Image Super-Resolution with Enhanced CNN(LESRCNN) : https://github.com/hellloxiaotian/LESRCNN/tree/master?tab=readme-ov-file
 - Denoising Diffusion Probabilistic Models(DDPM) : https://github.com/lucidrains/denoising-diffusion-pytorch?tab=readme-ov-file
 - Deep Unsupervised Learning using Nonequilibrium Thermodynamics(DPM) https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
+- Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising(DnCNN) https://github.com/anushkayadav/Denoising_cifar10
 
 ## Image reconstruction with Super-resolution
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file
