@@ -34,5 +34,5 @@ https://github.com/LeiaLi/SRDiff/tree/main
 https://medium.com/@adityanutakki6250/sr3-explained-and-implemented-in-pytorch-from-scratch-b43b9742c232  
 https://github.com/aditya-nutakki/SR3/tree/main  
 https://github.com/novwaul/SR3/tree/main  
-https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement
+https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement  
 https://github.com/anthony-frion/SR3
