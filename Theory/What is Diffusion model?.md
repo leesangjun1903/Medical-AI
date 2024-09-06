@@ -2,7 +2,8 @@
 
 - What are Diffusion Models? : https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
 - Diffusion Model 설명 – 기초부터 응용까지 : https://aigong.tistory.com/569
-- DMQA 연구실
+- Super resolution with diffusion models https://www.youtube.com/watch?v=h-t6QNUBL8o&list=PLpIPLT0Pf7IoTAvBJ6FX1vAi-PIeSw9xK&index=2
+- 
 
 # DPM
 - https://dongwoo-im.github.io/papers/review/2023-10-02-DPM/
