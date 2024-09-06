@@ -2,6 +2,7 @@
 
 - What are Diffusion Models? : https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
 - Diffusion Model 설명 – 기초부터 응용까지 : https://aigong.tistory.com/569
+- DMQA 연구실
 
 # DPM
 - https://dongwoo-im.github.io/papers/review/2023-10-02-DPM/
