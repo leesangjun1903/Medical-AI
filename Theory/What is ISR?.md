@@ -1,6 +1,10 @@
 # Single Image Super Resolution using Deep Learning Overview
 https://hoya012.github.io/blog/SIngle-Image-Super-Resolution-Overview/
 
+# Image Restoration (IR): inverse problem point of view
+https://jaejunyoo.blogspot.com/2019/05/image-restoration-inverse-problem-1.html  
+https://jaejunyoo.blogspot.com/2019/05/image-restoration-inverse-problem-2.html
+
 # ISR Survey
 https://jaejunyoo.blogspot.com/2019/05/deep-learning-for-SISR-survey-1.html
 
