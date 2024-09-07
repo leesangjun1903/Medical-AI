@@ -157,6 +157,12 @@ transposed convolution layer에 비해 sub-pixel layer는 더 큰 receptive fiel
 반면에 차단된 영역에서 인접한 픽셀을 독립적으로 예측하면 출력이 원활하지 않을 수 있습니다.  
 따라서 Gao et al. [94]는 독립적인 예측을 상호 의존적인 sequential prediction으로 대체하고 더 부드럽고 일관된 결과를 생성하는 PixelTCL을 제안합니다.
 
+- SRGAN
+- CARN
+- SRMD
+- RDN
+- Sub-pixel 개선 : PixelTCL
+
 #### Meta Upscale Module.
 이전 방법은 scaling factor를 미리 정의해야 합니다.  
 즉, 서로 다른 factor에 대해 서로 다른 업샘플링 모듈을 훈련해야 하는데, 이는 비효율적이고 실제로 필요하지 않습니다.  
@@ -172,6 +178,8 @@ transposed convolution layer에 비해 sub-pixel layer는 더 큰 receptive fiel
 
 오늘날 이러한 학습 기반 계층은 가장 널리 사용되는 업샘플링 방법이 되었습니다.  
 특히 업샘플링 후 프레임워크(Post-upsampling Super-resolution)에서 이러한 계층은 일반적으로 저차원 공간에서 추출된 고수준 표현을 기반으로 HR 이미지를 재구성하는 최종 업샘플링 단계에서 사용되므로 고차원 공간에서 압도적인 작업을 피하면서 엔드투엔드 SR을 달성합니다.  
+
+- Meta-SR
 
 ## Network Design
 오늘날 네트워크 설계는 딥 러닝의 가장 중요한 부분 중 하나였습니다.  
