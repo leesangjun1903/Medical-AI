@@ -198,11 +198,21 @@ He 등[96]이 철저한 매핑 방법 대신 잔차 학습을 위한 ResNet을 �
 대부분의 영역의 잔차가 0에 가깝기 때문에 모델 복잡성과 학습 난이도가 크게 낮아집니다.  
 따라서 SR 모델[26], [55], [56], [98]에서 널리 사용됩니다.
 
+- VDSR
+- Memnet
+- DRRN
+- IDN
+
 #### Local Residual Learning
 로컬 잔차 학습은 ResNet[96]의 잔차 학습과 유사하며, 계속 증가하는 네트워크 깊이로 인한 degradation 문제[96]를 완화하고 훈련 난이도를 줄이며 학습 능력을 향상시키는 데 사용됩니다.  
 SR[70], [78], [85], [99]에도 널리 사용됩니다. 
 
 실제로 위의 방법들은 모두 shortcut connection(종종 작은 상수에 의해 확장됨)과 element-wise addition로 구현되는 반면, 전자는 입력 이미지와 출력 이미지를 직접 연결하는 반면, 후자는 일반적으로 네트워크 내부에서 깊이가 다른 레이어 사이에 여러 개의 shortcut을 추가한다는 차이점이 있습니다.
+
+- RCAN
+- RED-Net
+- DSRN
+- MSRN
 
 ### Recursive Learning
 많은 파라미터를 도입하지 않고 더 높은 수준의 특징을 학습하기 위해 그림 7b와 같이 동일한 모듈을 여러 번 재귀적으로 적용하는 것을 의미하는 재귀적 학습이 SR 필드에 도입됩니다.  
@@ -223,6 +233,13 @@ cascading residual network(CARN)[28]도 여러 ResBlock을 포함하는 유사�
 일반적으로 재귀적 학습은 과도한 파라미터를 도입하지 않고도 더 진보적인 표현을 학습할 수 있지만 여전히 높은 계산 비용을 피할 수 없습니다.  
 그리고 본질적으로 vanishing or exploding gradient problems 때문에 잔차 학습(섹 3.3.1) 및 multi-supervision(섹 3.4.4)과 같은 일부 기술은 종종 이러한 문제를 완화하기 위해 재귀적 학습과 통합됩니다[55], [56], [82], [85].  
 
+- DRCN
+- DRRN
+- MemNet
+- CARN
+- SRFBN
+- DSRN
+
 ### Multi-path Learning
 다중 경로 학습은 다양한 작업을 수행하는 여러 경로를 통해 feature를 전달하고 더 나은 모델링 기능을 제공하기 위해 이를 다시 융합하는 것을 말합니다.  
 구체적으로 다음과 같이 global, local and scale-specific multi-path learning으로 나눌 수 있습니다.
@@ -235,6 +252,10 @@ Global 다중 경로 학습은 이미지의 다양한 측면의 feature를 추�
 그리고 pixel recursive super-resolution[64]는 이미지의 글로벌 구조를 캡처하기 위한 conditioning path와 생성된 픽셀의 연속적 의존성을 캡처하기 위한 이전 경로를 채택합니다.  
 이와 대조적으로, Ren et al. [100]은 불균형 구조를 가진 여러 경로를 사용하여 upsampling을 수행하고 모델 끝에서 연합합니다.
 
+- LapSRN
+- DSRN
+- Pixel recursive super-resolution
+
 #### Local Multi-path Learning
 인셉션 모듈[101]에 영감을 받은 MSRN[99]은 그림 7e와 같이 다중 스케일 feature extraction을 위해 새로운 블록을 채택합니다.  
 
@@ -243,6 +264,8 @@ Global 다중 경로 학습은 이미지의 다양한 측면의 feature를 추�
 이 블록에서는 커널 크기가 3 × 3 및 5 × 5인 두 개의 컨볼루션 레이어를 채택하여 feature를 동시에 추출한 다음 출력을 연결하고 동일한 작업을 다시 거쳐 마지막에 1 × 1 컨볼루션을 적용합니다.  
 shortcut은 element-wise addition을 적용하여 입력과 출력을 연결합니다.  
 이러한 local 다중 경로 학습을 통해 SR 모델은 여러 스케일에서 이미지 feature를 더 잘 추출하고 성능을 더욱 향상시킬 수 있습니다.
+
+- MSRN
 
 #### Scale-specific Multi-path Learning
 서로 다른 스케일에 대한 SR 모델은 유사한 feature extraction을 거쳐야 한다는 점을 고려하여 Lim et al. [31]은 단일 네트워크로 다중 스케일 SR에 대처하기 위한 스케일별 multi-path learning을 제안합니다.  
@@ -254,9 +277,14 @@ shortcut은 element-wise addition을 적용하여 입력과 출력을 연결합�
 이러한 방식으로 제안된 MDSR [31]은 서로 다른 스케일에 대해 대부분의 매개 변수를 공유하여 모델 크기를 크게 줄이고 단일 스케일 모델과 유사한 성능을 나타냅니다.  
 유사한 scale-specific multi-path learning은 CARN [28] 및 ProSR [32]에서도 채택됩니다.
 
+- EDSR
+- MDSR
+- CARN
+- ProSR
+
 ### Dense Connections
 Huang 등[102]이 dense block을 기반으로 DenseNet을 제안한 이후, 조밀한 연결은 비전 작업에서 점점 더 인기를 얻고 있습니다.  
-Dense block의 각 layer에 대해 이전 모든 레이어의 feature map이 입력으로 사용되고 자체 feature map이 모든 후속 레이어의 입력으로 사용되어 l-ayer dense block(l ≥ 2)에서 l · (l - 1)/2 연결로 이어집니다.  
+Dense block의 각 layer에 대해 이전 모든 레이어의 feature map이 입력으로 사용되고 자체 feature map이 모든 후속 레이어의 입력으로 사용되어 layer dense block $(l ≥ 2)$에서 $l · (l - 1)/2$ 연결로 이어집니다.  
 조밀한 연결은 gradient vanishing을 완화하고 신호 전파를 향상시키며 feature 재사용을 장려하는 데 도움이 될 뿐만 아니라 작은 growth rate(dense blocks의 채널 수)을 사용하고 모든 input feature map을 연결한 후 채널을 squeezing해서 모델 크기를 크게 줄일 수 있습니다.  
 
 low-level and high-level feature을 융합하여 고품질의 세부 정보를 재구성하기 위한 풍부한 정보를 제공하기 위해 그림 7d에서 볼 수 있듯이 dense connection이 SR 필드에 도입됩니다.  
@@ -267,6 +295,13 @@ Tong et al. [79]는 dense blocks을 채택하여 69-SRDenseNet을 구성할 뿐�
 즉, 모든 dense block에 대해 이전 블록의 feature map은 input으로 사용되고 자체 feature map은 모든 후속 블록에 input으로 사용됩니다.  
 이러한 계층 수준 및 블록 수준의 dense connection은 MemNet [55], CARN [28], RDN [93] 및 ESRGAN [103]에서도 채택됩니다.  
 DBPN [57]도 dense connection을 광범위하게 채택하지만 다운 샘플링 유닛과 마찬가지로 dense connection은 모든 업샘플링 유닛 사이에 있습니다.
+
+- SRDenseNet
+- MemNet
+- CARN
+- RDN
+- ESRGAN
+- DBPN
 
 ### Attention Mechanism
 #### Channel Attention
@@ -279,6 +314,9 @@ DBPN [57]도 dense connection을 광범위하게 채택하지만 다운 샘플�
 feature correlation를 더 잘 학습하기 위해 Dai et al. [105]는 second-order channel attention(SOCA) 모듈을 추가로 제안합니다.  
 SOCA는 GAP 대신 second-order feature를 사용하여 channel-wise features를 적응적으로 rescale하고 더 많은 정보와 판별 표현을 추출할 수 있도록 합니다.
 
+- RCAN
+- SAN
+
 #### Non-local Attention
 대부분의 기존 SR 모델은 local receptive field가 매우 제한되어 있습니다.  
 그러나 일부 먼 거리의 물체 또는 텍스처는 로컬 패치 생성에 매우 중요할 수 있습니다.  
@@ -288,6 +326,9 @@ SOCA는 GAP 대신 second-order feature를 사용하여 channel-wise features를
 이 메커니즘을 통해 제안된 방법은 spatial attention을 잘 캡처하고 표현 능력을 더욱 향상시킵니다.  
 유사하게 Dai et al. [105]도 non-local attention mechanism을 통합하여 장거리의 공간적 정보를 캡처합니다.
 
+- RNAN
+- SAN
+
 ### Advanced Convolution
 컨볼루션 연산은 심층 신경망의 기본이기 때문에 연구자들은 더 나은 성능 또는 더 큰 효율을 위해 컨볼루션 연산을 개선하려고 시도합니다.
 
@@ -295,12 +336,17 @@ SOCA는 GAP 대신 second-order feature를 사용하여 channel-wise features를
 contextual 정보가 SR에 대한 현실적인 세부 정보를 생성하는 것을 용이하게 한다는 것은 잘 알려져 있습니다.  
 따라서 Zhang et al. [107]은 SR 모델에서 공통된 컨볼루션을 dilated convolution으로 대체하고 receptive field를 두 배 이상 증가시키며 훨씬 더 나은 성능을 달성합니다.
 
+- IRCNN
+
 #### Group Convolution
 
 ![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-28%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%201.40.25.png)
 
 최근 lightweight CNN[108], [109], Hui et al. [98] 및 An et al. [28]은 vanilla 컨볼루션을 group 컨볼루션으로 대체하여 각각 IDN과 CARN-M을 제안합니다.  
 일부 이전 연구에서 입증된 바와 같이, group 컨볼루션은 약간의 성능 손실을 감수하면서 매개 변수와 연산의 수를 훨씬 줄입니다 [28], [98].
+
+- IDN
+- CARN
 
 #### Depthwise Separable Convolution
 Howard 등[110]이 효율적인 컨볼루션을 위해 depthwise separable convolution을 제안한 이후 다양한 분야로 확장되었습니다.  
@@ -317,6 +363,9 @@ human attention shifting mechanism[112]에 동기를 부여받은 Attention-FH[1
 
 이러한 방법은 어느 정도 더 나은 성능을 보여주지만 긴 propagation path가 필요한 recursive process는 특히 초해상도 HR 이미지의 경우 계산 비용과 훈련 난이도를 크게 증가시킵니다.
 
+- Pixel recursive super resolution
+- Attention-FH
+
 ### Pyramid Pooling
 
 ![](https://github.com/leesangjun1903/Computer-Tomograpy-reconstruction/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-28%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%201.40.35.png)
@@ -328,6 +377,8 @@ Spatial pyramid pooling layer[114]에서 영감을 받아 Zhao et al. [115]는 g
 서로 다른 M을 사용하여 모듈은 global 및 local contextual information를 효과적으로 통합합니다.  
 이 모듈을 통합함으로써 제안된 EDSR-PP 모델[116]은 기존선 대비 성능을 더욱 향상시킵니다.
 
+- EDSR-PP
+
 ### Wavelet Transformation
 잘 알려진 바와 같이, wavelet transformation(WT)[117], [118]은 이미지 신호를 텍스처 세부 정보를 나타내는 high-frequency sub-band와 global topological information를 포함하는 low-frequency sub-band로 분해하여 이미지를 매우 효율적으로 표현하는 것입니다.  
 Bae et al. [119]는 먼저 WT를 deep learning based SR model과 결합하고 interpolated LR wavelet의 subband를 입력으로 받아 해당 HR sub-band의 잔차를 예측합니다.  
@@ -335,6 +386,11 @@ WT와 inverse WT는 각각 LR input을 분해하고 HR output을 재구성하는
 유사하게, DWSR [120] 및 Wavelet-SRNet [121]도 wavelet domain에서 SR을 수행하지만 더 복잡한 구조로 수행합니다.  
 위의 작업들이 각 sub-band를 독립적으로 처리하는 것과 달리, MWCNN [122]는 multi-level WT를 채택하고 연결된 sub-band를 단일 CNN의 입력으로 사용하여 이들 사이의 의존성을 더 잘 캡처합니다.  
 wavelet transformation에 의한 효율적인 표현으로 인해 이 전략을 사용하는 모델은 종종 모델 크기와 계산 비용을 훨씬 줄이면서 경쟁 성능을 유지합니다[119], [122].
+
+- Matconvnet
+- DWSR
+- Wavelet-SRNet
+- MWCNN
 
 ### Desubpixel
 추론 속도를 높이기 위해 Vu 등[123]은 lower-dimensional space에서 시간이 많이 걸리는 feature extraction을 수행할 것을 제안하고, sub-pixel layer(Learning-based Upsampling)의 shuffle operation의 역인 desubpixel을 제안합니다.  
@@ -465,6 +521,17 @@ BN은 중간 feature distribution를 보정하고 vanishing gradient를 완화�
 따라서 BN을 제거하고 절약된 메모리 비용(최대 40%)을 사용하여 훨씬 더 큰 모델을 개발하여 성능을 크게 향상시킵니다.  
 일부 다른 모델 [32], [103], [147]도 이 경험을 채택하고 성능을 향상시킵니다.
 
+- SRGAN
+- SRMD
+- Memnet
+- DRRN
+- MWCNN
+
+- Removing BN
+- EDSR
+- ProSR
+- ESRGAN
+
 ### Curriculum Learning
 Curriculum learning[148]은 더 쉬운 작업에서 시작하여 점진적으로 난이도를 높이는 것을 의미합니다.  
 초해상도는 ill-posed problem(여러 개의 정답이 있을 수 있는 문제)이며 항상 큰 scaling factor, noise and blurring과 같은 불리한 조건을 겪기 때문에 학습 난이도를 줄이기 위해 Curriculum learning이 통합됩니다.  
@@ -478,6 +545,11 @@ Curriculum learning[148]은 더 쉬운 작업에서 시작하여 점진적으로
 대조적으로 SRFBN[86]은 반대의 조건, 즉 쉬운 degradation에서 시작하여 점진적으로 증가하는 degradation 복잡성에서 SR을 위해 이 전략을 사용합니다.  
 일반적인 훈련 절차에 비해 curriculum learning은 특히 큰 요인의 경우 훈련 난이도를 크게 줄이고 총 훈련 시간을 단축합니다.  
 
+- ProSR
+- ADRSR
+- Progressive CARN
+- SRFBN
+
 ### Multi-supervision
 Multi-supervision은 gradient propagation를 향상시키고 vanishing and exploding gradient을 피하기 위해 모델 내에 여러 감독 신호를 추가하는 것을 말합니다.  
 recursive learning에 의해 도입된 gradient problem를 방지하기 위해 DRCN[82]은 recursive unit와 함께 multi-supervision을 통합합니다.  
@@ -486,6 +558,11 @@ recursive learning에 의해 도입된 gradient problem를 방지하기 위해 D
 또한, progressive upsampling framework(Progressive Upsampling Super-resolution)에 따른 LapSRN[27], [65]은 propagation 중에 서로 다른 스케일의 중간 결과를 생성하기 때문에 multi-supervision 전략을 채택하는 것은 간단합니다.  
 특히, 중간 결과는 실측 HR 이미지에서 다운샘플링된 중간 이미지와 동일해야 합니다.  
 실제로 이 multi-supervision 기술은 손실 함수에서 일부 용어를 추가하여 구현되는 경우가 많으며, 이러한 방식으로 supervision signal가 더 효과적으로 back-propagated되어 훈련 난이도를 낮추고 모델 훈련을 향상시킵니다.  
+
+- DRCN
+- MemNet
+- DSRN
+- LapSRN
 
 ## Other Improvements
 네트워크 설계 및 학습 전략 외에도 SR 모델을 더욱 개선하는 다른 기술이 있습니다.
@@ -509,6 +586,10 @@ SR 분야에서 Wang et al. [46]은 semantic 지식을 제공하고 semantic별 
 유사하게, cycle-in-cycle GAN(CinCGAN)[131]은 cycle-in-cycle 노이즈 제거 프레임워크와 cycle-in-cycle SR 모델을 결합하여 노이즈 감소 및 초해상도를 공동 수행합니다.  
 서로 다른 작업은 데이터의 서로 다른 측면에 초점을 맞추는 경향이 있기 때문에 관련 작업을 SR 모델과 결합하면 일반적으로 추가 정보와 지식을 제공하여 SR 성능이 향상됩니다.
 
+- SRF-GAN
+- DNSR
+- CinCGAN
+
 ### Network Interpolation
 PSNR 기반 모델은 이미지를 ground truth에 더 가깝게 생성하지만 blurring 문제를 유발하는 반면, GAN 기반 모델은 더 나은 지각 품질을 제공하지만 불쾌한 결함(예: 무의미한 노이즈로 인해 이미지가 더 "현실적"임)를 보입니다.  
 왜곡과 인식의 균형을 더 잘 맞추기 위해 Wang et al. [103], [155]는 네트워크 보간 전략을 제안합니다.  
@@ -521,6 +602,12 @@ Self-ensemble, 일명 향상된 예측[44]은 SR 모델에 의해 일반적으�
 그런 다음 이러한 이미지가 SR 모델에 공급되고 해당 inverse transformation이 재구성된 HR 이미지에 적용되어 출력을 얻습니다.  
 최종 예측 결과는 이러한 출력의 평균 [31], [32], [44], [70], [78], [93] 또는 중간값[83]에 의해 수행됩니다.  
 이러한 방식으로 이러한 모델은 성능을 더욱 향상시킵니다.
+
+- EDSR
+- ProSR
+- RCAN
+- RED-Net
+- RDN
 
 ## State-of-the-art Super-resolution Models
 최근 몇 년 동안 딥 러닝에 기반한 이미지 초해상도 모델이 점점 더 많은 관심을 받고 있으며 최첨단 성능을 달성했습니다.  
@@ -556,6 +643,8 @@ SR 정확도 외에도 효율성은 또 다른 매우 중요한 측면이며 다
 이러한 방식으로 ZSSR은 모든 이미지 내부의 가장자리(1 dB for estimated kernels and 2 dB for known kernels)에 cross-scale internal recurrence을 활용하므로 이상적이지 않은 조건(즉, non-bicubic degradation에 의해 얻고 실제 장면에 더 가까운 블러링, 노이즈, 압축 결함과 같은 영향을 겪은 이미지)에서 이전 접근 방식을 크게 능가하는 동시에 이상적인 조건(즉, bicubic degradation에 의해 얻은 이미지)에서 경쟁한 결과를 제공합니다.  
 그러나 테스트 중에 다른 이미지에 대해 서로 다른 네트워크를 훈련해야 하기 때문에 추론 시간이 다른 네트워크보다 훨씬 깁니다.
 
+- ZSSR
+
 ## Weakly-supervised Super-resolution
 사전 정의된 degradation를 도입하지 않고 초해상도에 대처하기 위해 연구자들은 weakly-supervised learning, 즉 페어링되지 않은 LR-HR 이미지를 사용하여 SR 모델을 학습하려고 시도합니다.  
 그 중 일부 연구자는 먼저 HR-to-LR degradation를 학습하고 이를 사용하여 SR 모델을 학습하기 위한 데이터 세트를 구성하는 데 사용하는 반면, 다른 연구자는 cycle-in-cycle network를 설계하여 LR-to-HR and HR-to-LR mapping을 동시에 학습합니다.  
@@ -580,6 +669,8 @@ CycleGAN [138]에서 영감을 얻은 Yuan et al. [131]은 4개의 생성기와 
 미리 정의된 degradation를 피하기 때문에 unsupervised CinCGAN은 supervised 방법과 비슷한 성능을 달성할 뿐만 아니라 매우 가혹한 조건에서도 다양한 사례에 적용할 수 있습니다.  
 그러나 SR 문제의 ill-posed essence과 CinCGAN의 복잡한 구조로 인해 훈련 ​​난이도와 불안정성을 줄이기 위한 몇 가지 고급 전략이 필요합니다.  
 
+- CinCGAN
+
 ## Deep Image Prior
 CNN 구조가 inverse problem에 대한 많은 낮은 수준의 이미지 통계 정보를 사전에 포착하기에 충분하다는 점을 고려하여 Ulyanov et al. [160]은 SR을 수행하기 위해 수작업으로 사전 제작된 무작위로 초기화된 CNN을 사용합니다.  
 구체적으로, 그들은 랜덤 벡터 z를 입력으로 사용하고 target HR 이미지 Iy를 생성하려고 하는 생성기 네트워크를 정의합니다.  
@@ -587,6 +678,8 @@ CNN 구조가 inverse problem에 대한 많은 낮은 수준의 이미지 통계
 네트워크는 무작위로 초기화되고 훈련되지 않으므로 유일한 prior는 CNN 구조 자체입니다.  
 이 방법의 성능은 여전히 ​​supervised method(2dB)보다 나쁘지만 기존의 bicubic upsampling(1dB)보다 상당히 우수합니다.  
 게다가 CNN 구조 자체의 합리성을 보여주고 CNN 구조나 self-similarity와 같은 수작업으로 사전 제작된 prior과 딥 러닝 방법론을 결합하여 SR을 개선하도록 촉구합니다.
+
+- DIP
 
 # DOMAIN-SPECIFIC APPLICATIONS
 
@@ -608,27 +701,4 @@ CNN 구조가 inverse problem에 대한 많은 낮은 수준의 이미지 통계
 큰 성공에도 불구하고 여전히 해결되지 않은 문제가 많이 있습니다.  
 따라서 이 섹션에서는 이러한 문제를 명시적으로 지적하고 향후 진화에 대한 몇 가지 유망한 동향을 소개합니다.  
 이번 survey를 통해 연구자에게 이미지 SR을 더 잘 이해할 수 있을 뿐만 아니라 이 분야의 향후 연구 활동과 응용 프로그램 개발을 용이하게 할 수 있기를 바랍니다.
-
-## Network Design
-
-### Combining Local and Global Information
-### Combining Low- and High-level Information
-### Context-specific Attention
-### More Efficient Architectures
-### Upsampling Methods
-
-## Learning Strategies
-### Loss Functions
-### Normalization
-
-## Evaluation Metrics
-### More Accurate Metrics
-### Blind IQA Methods
-
-## Unsupervised Super-resolution
-
-## Towards Real-world Scenarios
-
-### Dealing with Various Degradation
-### Domain-specific Applications
 
