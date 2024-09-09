@@ -14,6 +14,7 @@
 - FDK algorithm
 
 ## CT reconstruction(Super-resolution, Image Denoising)
+### CNN models
 - SRGAN
 - ESRGAN
 - Real-ESRGAN
@@ -23,6 +24,8 @@
 - Wavelet Transform
 - DBPN
 - MIRnet
+- 
+### Diffusion models
 - DPM, DDPM
 - 
 - SR3
