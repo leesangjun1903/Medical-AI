@@ -23,7 +23,6 @@
 - https://github.com/acids-ircam/diffusion_models/tree/main
 - https://github.com/hojonathanho/diffusion
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
-- https://github.com/acids-ircam/diffusion_models/tree/a00399e8fd87e4c81ccd124757597b581f8756c4?tab=readme-ov-file#ref3
 
 ## Stable Diffusion
 - pytorch-stable-diffusion : https://github.com/hkproj/pytorch-stable-diffusion/tree/main
