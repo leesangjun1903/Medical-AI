@@ -12,6 +12,7 @@
 - Image-Super-Resolution-Enhancer-via-ESRGAN : https://github.com/u7javed/Image-Super-Resolution-Enhancer-via-ESRGAN/tree/master
 - ESRGAN : https://www.kaggle.com/code/aniruddhupadhyay/esrgan/notebook
 - Modified ESRGAN for solving the Super Resolution Problem : https://github.com/JRhin/Modified-ESRGAN-for-Super-Resolution-Problem/tree/main
+- https://github.com/vishal1905/ESRGAN-Enhanced-Super-Resolution
 
 # Real-ESRGAN
 - Dacon SR : https://github.com/Jinwoo1126/Dacon_SR/tree/main?tab=readme-ov-file
