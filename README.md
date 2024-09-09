@@ -74,12 +74,12 @@
 
 ## Image reconstruction with Super-resolution
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file
-- pix2pix_super_resolution https://www.kaggle.com/code/chaimaemoumou/pix2pix-super-resolution/notebook
+- pix2pix_super_resolution(pix2pix) https://www.kaggle.com/code/chaimaemoumou/pix2pix-super-resolution/notebook
 - Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
-- Single Image Super-Resolution with EDSR, WDSR and SRGAN : https://github.com/krasserm/super-resolution/tree/master?tab=readme-ov-file
-- Image-Super-Resolution - SRCNN : https://github.com/sharmaroshan/Image-Super-Resolution/tree/master
+- Single Image Super-Resolution(EDSR, WDSR, SRGAN) : https://github.com/krasserm/super-resolution/tree/master?tab=readme-ov-file
+- Image-Super-Resolution(SRCNN) : https://github.com/sharmaroshan/Image-Super-Resolution/tree/master
 - Image Super Resolution Using Deep Convolution Neural Network Computer Science Graduation Project : https://github.com/AmrShaaban99/super-resolution/tree/main?tab=readme-ov-file#abstract
-- BCRN：A Very Lightweight Network for single Image Super-Resolution https://github.com/kptx666/BCRN/tree/main
+- BCRN：A Very Lightweight Network for single Image Super-Resolution(BCRN) https://github.com/kptx666/BCRN/tree/main
 - Image Reconstructor that applies fast proximal gradient method (FISTA) to the wavelet transform of an image using L1 and Total Variation (TV) regularizations : https://github.com/EliaFantini/Image-Reconstructor-FISTA-proximal-method-on-wavelets-transform/tree/main
 - 'Lightweight' GAN : https://github.com/lucidrains/lightweight-gan
 - BEDMAP2 using a super resolution deep neural network : https://github.com/weiji14/deepbedmap/tree/master?tab=readme-ov-file
