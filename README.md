@@ -13,23 +13,55 @@
 - Grageat's method
 - FDK algorithm
 
-## CT reconstruction(Super-resolution, Image Denoising)
-### CNN models
+## CT reconstruction(Super-resolution, Image Denoising), 연구해볼 모델
+### Useful paper(survey) :
+- Deep Learning for Single Image Super-Resolution: A Brief Review
+- A Deep Journey into Super-resolution: A survey
+- Deep learning for image super-resolution: A survey
+### GAN models
 - SRGAN
 - ESRGAN
+- SWAGAN
 - Real-ESRGAN
-- Autoencoder
-- DIP, Deep Image Prior
+- BSRGAN
+- DPSRGAN
+- EdgeSRGAN
+
+### 기타 models
 - NAFNet
+- Wavelet Transform
+- DIP, Deep Image Prior
+- Autoencoder
 - Wavelet Transform
 - DBPN
 - MIRnet
-- 
+- MPRNet
+- FSRCNN
+- SRDenseNet
+- EDSR
+
+#### I want to find Lightweight models
+Useful paper : Lightweight image super-resolution based on deep learning: State-of-the-art and future directions
+- Light ESPCN
+- DPSRGAN
+- EdgeSRGAN
+- FSRCNN
+- VDSR
+- DRCN
+- GhostSR
+- CARN
+- CBPN
+- SRRFN
+- MFIN
+- WMRN
+- ELCRN
+
 ### Diffusion models
 - DPM, DDPM
-- 
+- DDIM
 - SR3
-- 
+- Latent Diffusion
+- Stable Diffusion
 
 # Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
@@ -71,6 +103,8 @@
 - Deep Unsupervised Learning using Nonequilibrium Thermodynamics(DPM) https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
 - Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising(DnCNN) https://github.com/anushkayadav/Denoising_cifar10
 - Deep Image Prior https://github.com/DmitryUlyanov/deep-image-prior/tree/master
+- DPSRGAN: Dilation Patch Super-Resolution Generative Adversarial Networks https://github.com/kushalchordiya216/DPSRGAN/tree/master?tab=readme-ov-file
+- Generative Adversarial Super-Resolution at the Edge with Knowledge Distillation(EdgeSRGAN) : https://github.com/PIC4SeR/EdgeSRGAN?tab=readme-ov-file
 
 ## Image reconstruction with Super-resolution
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file
