@@ -27,7 +27,7 @@
 ### GAN models
 - SRGAN
 - ESRGAN
-- SWAGAN
+- SWAGAN(super-resolution용은 아님)
 - Real-ESRGAN
 - BSRGAN
 - DPSRGAN
