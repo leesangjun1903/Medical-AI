@@ -1,4 +1,4 @@
-# SWAGAN: A Style-based WAvelet-driven Generative Model
+# SWAGAN: A Style-based Wavelet-driven Generative Model
 
 # Abs
 최근 몇 년간 GAN(Generative Adversarial Networks)의 시각적 품질에 상당한 진전이 있었다.  
@@ -50,3 +50,33 @@ Generator가 wavelet 영역에서 직접 content를 생성하게 함으로써 �
 마찬가지로, Discriminator에 주파수 정보를 제공함으로써 네트워크는 생성된 이미지에서 종종 누락되는 고주파 content를 더 잘 식별할 수 있다.  
 그 결과, Generator는 그럴듯한 고주파 데이터를 다시 생성하도록 동기를 부여받는다.
 
+제안된 Generator에서 각 해상도 블럭은 입력으로써 전체 wavelet 분해를 받는다.  
+StyleGAN2와 유사한 방식으로 wavelet coefficients는 skip connection을 통해 주파수 영역으로 매핑된 고차원 features set을 사용하여 세분화된다.  
+StyleGAN2에서는 간단한 bilinear up-sampling을 사용하여 블록들 사이에서 이미지 크기가 조정된다.  
+주파수 영역에서 이 up-sampling을 수행하는 것은 동일한 의미를 갖지 않는다.  
+대신, 저자들은 자연스러운 대안을 선택하고 역파장 변환(Inverse Wavelet Transform)을 적용하여 wavelet 표현을 이미지 영역으로 다시 변환하고, 이미지를 평소대로 조정한 다음 고해상도 이미지에서 다음 wavelet coefficients set을 예측하여 up-sampling을 수행한다.  
+네트워크의 output은 마지막 layer의 output에 의해 제공되는 wavelet 분해에 역파장 변환을 적용하여 형성된다.  
+Generator의 구조는 Figure 3.(왼쪽)에 설명되어 있다.
+
+![](https://velog.velcdn.com/images%2Fdanielseo%2Fpost%2F23515a09-53ad-4fe2-ac01-9824dcb88b4b%2F%EC%BA%A1%EC%B2%98.PNG)
+
+(Figure 3. 저자들의 SWAGAN Generator(왼쪽) 및 Discriminator(오른쪽) 구조이다.  
+각 ConvBlock은 StyleGAN2 구조의 feature-resolution increasing block과 동일하다.  
+StyleGAN2의 tRGB와 fRGB layer는 tWavelet 분해와 고차원 feature 간의 매핑을 학습하는 데 사용된다.  
+Inverse wavelet transforms는 IWT로 표시되며, 위와 아래는 각각 이미지를 높은 해상도 또는 낮은 해상도의 초기 wavelet 분해로 변환하는 비학습 layer이다.)
+
+Discriminator에서 저자들은 유사하게 각 블록에 해당하는 해상도의 wavelet coefficients를 제공한다.  
+각 해상도 단계에서 skip connection 기반 네트워크는 wavelet 분해에서 feature들을 추출하고 더 높은 해상도 블록에서 파생된 feature 표현으로 병합하는 데 사용된다.  
+블록 간 이미지를 downscale하기 위해 wavelet coefficient가 역파장 변환(IWT)를 통해 전체 이미지로 다시 결합되고, 이미지가 bilinear하게 downsample이 되며, 저해상도 이미지가 wavelet coefficient로 다시 분해되어 다음 블록으로 전달된다.  
+Discriminator의 첫 번째 블록에 대한 입력은 단순히 모든 이미지(실제 또는 가짜)의 DWT이다.  
+Discriminator의 구조는 Figure 3.(오른쪽)에 설명되어 있다.  
+위에서 설명한 구조 외에도 동일한 네트워크에서 서로 다른 up-sampling 단계, 이미지와 wavelet domain 생성 단계 혼합 등 다양한 변형을 살펴보았다.
+
+## Downstream Tasks
+스타일 기반 네트워크의 모든 적응은 원본 주위에 구축된 downstream tasks의 backbone으로 사용할 수 없다면 불완전할 것이다.  
+저자들은 wavelet 기반 네트워크가 여전히 동일한 애플리케이션을 지원할 수 있으며, 경우에 따라서는 더 나은 결과를 얻을 수 있음을 보여준다.  
+저자들은 Generator가 주어진 소스 이미지의 최상의 근사치를 출력하는 latent space 표현을 찾기 위해 gradient descent를 사용하는 inversion에 대한 최적화 기반 접근 방식을 사용하여 모델을 분석한다.  
+저자들은 지각 기반 손실(LPIPS)을 최소화하는 대상을 사용하여 스타일 기반 네트워크의 소위 W 공간에서 latent 표현을 찾는 Karas 등의 latent space projector를 사용한다.  
+L2 기반 재구성 대상은 최적화 프로세스에서 불가피하게 고주파 정보를 폐기하기 때문에 나중에는 저자들의 needs에 매우 중요하다.
+
+## Implementation and Training Details
