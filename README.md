@@ -32,7 +32,33 @@
 - BSRGAN
 - DPSRGAN
 - EdgeSRGAN
-
+- LSMGAN
+- PGGAN
+- MPDGAN
+- ESRGAN+
+- SPGAN
+- MLGE
+- SD-GAN
+- PathSRGAN
+- Enlighten-GAN
+- TWIST-GAN
+- SCSE-GAN
+- MFAGAN
+- TGAN
+- DGAN
+- DMGAN
+- G-GANISR
+- RaGAN
+- LE-GAN
+- NCSR
+- Beby-GAN
+- CMRI-CGAN
+- D-SRGAN
+- LMISR-GAN
+- SRDGAN
+- GLEAN
+- I-SRGAN
+- 
 ### 기타 models
 - NAFNet
 - Wavelet Transform
@@ -123,6 +149,7 @@ Useful paper : Lightweight image super-resolution based on deep learning: State-
 - Image Reconstructor that applies fast proximal gradient method (FISTA) to the wavelet transform of an image using L1 and Total Variation (TV) regularizations : https://github.com/EliaFantini/Image-Reconstructor-FISTA-proximal-method-on-wavelets-transform/tree/main
 - 'Lightweight' GAN : https://github.com/lucidrains/lightweight-gan
 - BEDMAP2 using a super resolution deep neural network : https://github.com/weiji14/deepbedmap/tree/master?tab=readme-ov-file
+- Deep Learning Image Generation with GANs and Diffusion Model : https://github.com/kanru-wang/Udemy_GAN_and_Diffusion_models/tree/main
 
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 - 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
