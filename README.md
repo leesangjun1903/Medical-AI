@@ -33,7 +33,6 @@
 - EdgeSRGAN
 - LSMGAN
 - PGGAN
-- MPDGAN
 - ESRGAN+
 - SPGAN
 - MLGE
