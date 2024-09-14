@@ -31,14 +31,10 @@
 - BSRGAN
 - DPSRGAN
 - EdgeSRGAN
-- LSMGAN
-- PGGAN
-- ESRGAN+
-- SPGAN
-- MLGE
-- SD-GAN
-- PathSRGAN
-- Enlighten-GAN
+- LSMGAN : https://github.com/BehzadBozorgtabar/Retinal_Super_Resolution/tree/master
+- PGGAN -> StyleGAN
+- ESRGAN+ : https://github.com/ncarraz/ESRGANplus
+- Enlighten-GAN : https://github.com/VITA-Group/EnlightenGAN
 - TWIST-GAN
 - SCSE-GAN
 - MFAGAN
