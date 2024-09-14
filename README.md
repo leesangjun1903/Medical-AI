@@ -27,7 +27,6 @@
 ### GAN models
 - SRGAN
 - ESRGAN
-- SWAGAN(super-resolution용은 아님)
 - Real-ESRGAN
 - BSRGAN
 - DPSRGAN
@@ -72,6 +71,8 @@
 - MESRGAN+
 - SNPE-SRGAN
 - SOUP-GAN
+
+- SWAGAN(super-resolution용은 아님)
 - 
 ### 기타 models
 - NAFNet
