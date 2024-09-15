@@ -161,6 +161,7 @@ Useful paper : Lightweight image super-resolution based on deep learning: State-
 - BEDMAP2 using a super resolution deep neural network : https://github.com/weiji14/deepbedmap/tree/master?tab=readme-ov-file
 - Deep Learning Image Generation with GANs and Diffusion Model : https://github.com/kanru-wang/Udemy_GAN_and_Diffusion_models/tree/main
 - Training and testing codes for USRNet, DnCNN, FFDNet, SRMD, DPSR, MSRResNet, ESRGAN, BSRGAN, SwinIR, VRT, RVRT : https://github.com/cszn/KAIR/tree/master
+- https://github.com/hellloxiaotian/Deep-Learning-on-Image-Denoising-An-overview
 
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 - 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
