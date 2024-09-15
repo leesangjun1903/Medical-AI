@@ -1,5 +1,29 @@
-#
+# Using Deep Learning
+## A survey on deep learning in medical image reconstruction(수정필)
 
+# Using Super-resolution Algorithm
+## Medical image super-resolution reconstruction algorithms based on deep learning: A survey
+배경과 목표: 임상에서 의료 영상의 고해상도(HR) 요구 사항이 요구됨에 따라 저해상도(LR) 의료 영상 기반의 초해상도(SR) 재구성 알고리즘이 연구 핫스팟이 되고 있습니다.  
+이러한 유형의 방법은 하드웨어 장비를 개선하지 않고도 이미지 SR을 크게 개선할 수 있으므로 검토하는 것이 매우 중요합니다.
+
+방법: 자기공명영상(MR) 영상, 컴퓨터단층촬영(CT) 영상, 초음파 영상 등 세분화된 의료 분야를 기반으로 의료 영상 분야의 고유한 SR 재구성 알고리즘을 목표로 합니다.  
+첫째, SR 재구성 알고리즘의 연구 진행 상황을 심층적으로 분석하고 다양한 유형의 알고리즘을 요약 및 비교했습니다.  
+둘째, SR 재구성 알고리즘에 해당하는 평가 지표를 소개했습니다. 마지막으로 의료 분야에서 SR 재구성 기술의 발전 추세를 예측했습니다. 
+
+결과: 딥러닝 기반의 의료 영상 SR 재구성 기술은 보다 풍부한 병변 정보를 제공하고 전문가의 진단 압력을 완화하며 진단 효율성과 정확성을 향상시킬 수 있습니다.
+
+결론: 딥러닝 기반의 의료영상 SR 재구성 기술은 의료의 질 향상에 도움을 주고 전문가 진단에 도움을 주며, 컴퓨터의 후속 분석 및 식별 작업을 위한 탄탄한 기반을 마련하여 전문가의 진단 효율성 향상과 지능형 의료 실현에 큰 의미가 있습니다.
+
+## CT Super-Resolution GAN Constrained by the Identical, Residual, and Cycle Learning Ensemble (GAN-CIRCLE)
+본 논문에서는 저해상도(LR) 대응물에서 고해상도(HR) CT 이미지를 정확하게 복구하기 위한 준지도 딥 러닝 접근 방식을 제시합니다.  
+특히 생성 적대적 네트워크(GAN)를 빌딩 블록으로 하여 Wasserstein distance  측면에서 주기 일관성을 강화하여 노이즈가 많은 LR 입력 이미지에서 노이즈가 제거되고 디블러링된 HR 출력으로 비선형 end-to-end 매핑을 설정합니다.  
+또한 손실 함수에 조인트 제약 조건을 포함하여 구조 보존을 용이하게 합니다. 이 과정에서 우리는 특징 추출 및 복원을 위한 네트워크 기술에 심층 컨볼루션 신경망(CNN), 잔차 학습 및 네트워크를 통합합니다.  
+이미징 성능을 향상시키기 위해 네트워크 깊이와 복잡성을 증가시키는 현재의 추세와 달리 병렬 1 × 1 CNN을 적용하여 숨겨진 레이어의 출력을 압축하고 각 컨볼루션 레이어의 레이어 수와 필터 수를 최적화합니다.  
+정량적 및 정성적 평가 결과는 제안된 모델이 노이즈가 많은 LR 입력 이미지에서 초해상도(SR) 이미지 복원에 정확하고 효율적이며 강력하다는 것을 보여줍니다. 
+ 
+특히 세 가지 대규모 CT 데이터 세트에서 합성 SR 네트워크를 검증하고 다른 최첨단 방법과 비교하여 유망한 결과를 얻습니다.
+
+## A Review of the Deep Learning Methods for Medical Images Super Resolution Problems(수정필)
 
 # Using Diffusion Model
 ## CBCT-Based synthetic CT image generation using conditional denoising diffusion probabilistic model
