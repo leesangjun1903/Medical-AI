@@ -1,4 +1,4 @@
-### Diffusion models
+# Diffusion models
 - DPM, DDPM
 - DDIM
 - SR3
