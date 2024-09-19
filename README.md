@@ -13,13 +13,6 @@
 - Grageat's method
 - FDK algorithm
 
-### Diffusion models
-- DPM, DDPM
-- DDIM
-- SR3
-- Latent Diffusion
-- Stable Diffusion
-
 # Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
