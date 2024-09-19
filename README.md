@@ -1,6 +1,6 @@
 # Computer-Tomograpy reconstruction
 
-# Papers
+# Awesome Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
 - Awesome Diffusion models for image processing https://github.com/lixinustc/awesome-diffusion-model-for-image-processing
