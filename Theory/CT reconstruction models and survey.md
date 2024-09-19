@@ -21,40 +21,19 @@
 - PGGAN -> StyleGAN
 - ESRGAN+ : https://github.com/ncarraz/ESRGANplus
 - Enlighten-GAN : https://github.com/VITA-Group/EnlightenGAN
-- TWIST-GAN
-- SCSE-GAN
-- MFAGAN
-- TGAN
-- DGAN
-- DMGAN
-- G-GANISR
-- RaGAN
-- LE-GAN
-- NCSR
-- Beby-GAN
-- CMRI-CGAN
-- D-SRGAN
-- LMISR-GAN
-- SRDGAN
-- GLEAN
-- I-SRGAN
-- RankSRGAN
-- GMGAN
-- FSLSR
-- I-WAGAN
-- CESR-GAN
-- RTSRGAN
-- MSSRGAN
-- RSISRGAN
-- JPLSRGAN
-- SRR-GAN
-- MRD-GAN
-- MESRGAN+
-- SNPE-SRGAN
-- SOUP-GAN
+- NCSR : https://github.com/younggeun-kim/NCSR/tree/main
+- Beby-GAN : https://github.com/dvlab-research/Simple-SR
+- RankSRGAN : https://github.com/XPixelGroup/RankSRGAN
+- I-WAGAN(WA-SRGAN) : https://github.com/Fuzzy-sh/WA-SRGAN/tree/main
+- SOUP-GAN : https://github.com/Mayo-Radiology-Informatics-Lab/SOUP-GAN
 
 - SWAGAN(super-resolution용은 아님)
 - Lightweight GAN https://github.com/lucidrains/lightweight-gan/tree/main?tab=readme-ov-file
+- PSRGAN : https://github.com/yongsongH/Infrared_Image_SR_PSRGAN
+- MedSRGAN : https://github.com/04RR/MedSRGAN
+- FDPL : https://github.com/sdv4/FDPL
+- Remote Sensing SRGAN : https://github.com/simon-donike/Remote-Sensing-SRGAN/tree/main
+- 
 ### 기타 models
 - NAFNet
 - Wavelet Transform
