@@ -3,7 +3,7 @@
 - What are Diffusion Models? : https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
 - Diffusion Model 설명 – 기초부터 응용까지 : https://ffighting.net/deep-learning-paper-review/diffusion-model/diffusion-model-basic/
 - Super resolution with diffusion models https://www.youtube.com/watch?v=h-t6QNUBL8o&list=PLpIPLT0Pf7IoTAvBJ6FX1vAi-PIeSw9xK&index=2
-- 
+- Annotated Research Paper Implementations: Transformers, StyleGAN, Stable Diffusion, DDPM/DDIM, LayerNorm, Nucleus Sampling and more https://nn.labml.ai/index.html
 
 # DPM
 - https://dongwoo-im.github.io/papers/review/2023-10-02-DPM/
