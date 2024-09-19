@@ -33,6 +33,7 @@
 - MedSRGAN : https://github.com/04RR/MedSRGAN
 - FDPL : https://github.com/sdv4/FDPL
 - Remote Sensing SRGAN : https://github.com/simon-donike/Remote-Sensing-SRGAN/tree/main
+- Super-resolution using Real-ESRGAN and ESRGAN in Medical Images : https://github.com/ShawkhIbneRashid/medical-images-sr
 - 
 ### 기타 models
 - NAFNet
