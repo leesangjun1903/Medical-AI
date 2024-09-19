@@ -163,6 +163,7 @@ Useful paper : Lightweight image super-resolution based on deep learning: State-
 - Training and testing codes for USRNet, DnCNN, FFDNet, SRMD, DPSR, MSRResNet, ESRGAN, BSRGAN, SwinIR, VRT, RVRT : https://github.com/cszn/KAIR/tree/master
 - https://github.com/hellloxiaotian/Deep-Learning-on-Image-Denoising-An-overview
 - Annotated Research Paper Implementations: Transformers, StyleGAN, Stable Diffusion, DDPM/DDIM, LayerNorm, Nucleus Sampling and more https://nn.labml.ai/index.html
+- Pix2Pix: Denoising and Super Resolution (x4) : https://github.com/hieuGoku/Pix2Pix-Denoising-and-Super-Resolution/tree/main?tab=readme-ov-file
 
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 - 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
