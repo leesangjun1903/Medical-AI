@@ -1,0 +1,12 @@
+## Computer Tomography(Theory)
+- Radon Transform  
+- Filtered Back Projection(FBP)  
+- Deep Filtered Back Projection(DFBP)
+- Low pass filters
+- Sampling Theory
+- Parallel beam geometry
+- Fan beam geometry
+- Multivariable Radon transform, X-ray transform
+- Orlov's fomula
+- Grageat's method
+- FDK algorithm
