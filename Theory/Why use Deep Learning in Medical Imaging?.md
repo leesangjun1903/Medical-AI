@@ -82,6 +82,7 @@ sCT 생성 방법은 pCT의 사전 정보를 사용하여 딥 러닝을 통해 �
 
 ## Diffusion models in medical imaging: A comprehensive survey
 https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging
+
 생성 모델의 일종인 노이즈 제거 확산 모델은 최근 다양한 딥 러닝 문제에서 큰 관심을 받고 있습니다.  
 확산 확률론적 모델은 가우시안 노이즈를 추가하여 입력 데이터를 여러 단계에 걸쳐 점진적으로 교란한 다음 확산 과정을 반전시켜 노이즈가 많은 데이터 샘플에서 원하는 노이즈 없는 데이터를 검색하는 순방향 확산 단계를 정의합니다.  
 확산 모델은 알려진 계산 부담에도 불구하고 생성된 샘플의 강력한 모드 커버리지와 품질로 널리 인정받고 있습니다.  
