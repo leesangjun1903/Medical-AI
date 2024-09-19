@@ -1,18 +1,5 @@
 # Computer-Tomograpy reconstruction
 
-## Computer Tomography(Theory)
-- Radon Transform  
-- Filtered Back Projection(FBP)  
-- Deep Filtered Back Projection(DFBP)
-- Low pass filters
-- Sampling Theory
-- Parallel beam geometry
-- Fan beam geometry
-- Multivariable Radon transform, X-ray transform
-- Orlov's fomula
-- Grageat's method
-- FDK algorithm
-
 # Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
