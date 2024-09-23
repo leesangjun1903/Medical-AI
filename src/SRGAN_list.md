@@ -14,6 +14,9 @@
 - Modified ESRGAN for solving the Super Resolution Problem : https://github.com/JRhin/Modified-ESRGAN-for-Super-Resolution-Problem/tree/main
 - https://github.com/vishal1905/ESRGAN-Enhanced-Super-Resolution
 
+# A-ESRGAN
+https://github.com/stroking-fishes-ml-corp/A-ESRGAN/tree/e1a71deb4a47e332cad6b3d6bbbbb21a56bdd9c6
+
 # Real-ESRGAN
 - Dacon SR : https://github.com/Jinwoo1126/Dacon_SR/tree/main?tab=readme-ov-file
 - Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data : https://github.com/xinntao/Real-ESRGAN?tab=readme-ov-file#python-script  
