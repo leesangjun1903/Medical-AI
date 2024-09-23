@@ -4,6 +4,7 @@
 # SRGAN
 - A pytorch implementation of SRGAN : https://github.com/vishal1905/Super-Resolution/tree/master
 - Single Image Super-Resolution with EDSR, WDSR and SRGAN : https://github.com/krasserm/super-resolution/tree/master?tab=readme-ov-file
+-  PyTorch Tutorial to Super-Resolution : https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Super-Resolution/tree/master
 
 # ESRGAN
 - https://github.com/xinntao/ESRGAN/tree/master
