@@ -37,7 +37,9 @@ https://medium.com/@adityanutakki6250/sr3-explained-and-implemented-in-pytorch-f
 https://github.com/aditya-nutakki/SR3/tree/main  
 https://github.com/novwaul/SR3/tree/main  
 https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement  
-https://github.com/anthony-frion/SR3
+https://github.com/anthony-frion/SR3  
+https://github.com/anthony-frion/SR3/tree/main  
+
 
 ## DDIM
 - https://keras.io/examples/generative/ddim/
