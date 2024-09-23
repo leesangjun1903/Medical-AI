@@ -9,7 +9,8 @@
 - Hitchhiker's Guide to Super-Resolution: Introduction and Recent Advances
 - Diffusion Models, Image Super-Resolution And Everything: A Survey
 - (Video Super Resolution Based on Deep Learning: A comprehensive survey)
-- 
+- pytorch-super-resolution-model-collection(7 years ago) : https://github.com/togheppi/pytorch-super-resolution-model-collection/tree/master
+
 ### GAN models
 - SRGAN
 - ESRGAN
