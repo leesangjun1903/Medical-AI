@@ -22,6 +22,7 @@
 - Single-Image-Super-Resolution(7 years ago) : https://github.com/YapengTian/Single-Image-Super-Resolution?tab=readme-ov-file
 - Awesome GAN for Medical Imaging : https://github.com/xinario/awesome-gan-for-medical-imaging?tab=readme-ov-file#reconstruction
 - Awesome Diffusion Models : https://github.com/diff-usion/Awesome-Diffusion-Models?tab=readme-ov-file
+- Awesome Diffusion Categorized models : https://github.com/wangkai930418/awesome-diffusion-categorized?tab=readme-ov-file#image-restoration
 
 ## Paper with name ( * ~ ***** : 성능)
 - Medical image denoising using convolutional denoising autoencoders(Autoencoder) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
