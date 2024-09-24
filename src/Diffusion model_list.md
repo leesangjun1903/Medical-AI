@@ -13,7 +13,12 @@
 - https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Deep_Unsupervised_Learning_using_Nonequilibrium_Thermodynamics
 
 ## Latent Diffusion
-(https://github.com/LukeDitria/pytorch_tutorials/blob/main/section09_generation/solutions/Pytorch3_Latent_Diffusion.ipynb)
+- https://paperswithcode.com/paper/high-resolution-image-synthesis-with-latent
+- https://github.com/LukeDitria/pytorch_tutorials/blob/main/section09_generation/solutions/Pytorch3_Latent_Diffusion.ipynb
+- https://ostin.tistory.com/139
+- https://huggingface.co/docs/diffusers/v0.30.3/en/api/pipelines/latent_diffusion#diffusers.LDMSuperResolutionPipeline
+- https://github.com/huggingface/notebooks/tree/main/diffusers
+- https://github.com/fastai/course22p2/blob/master/nbs/30_lsun_diffusion-latents.ipynb
 
 ## Latent Diffusion + FBCNN
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
