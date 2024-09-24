@@ -30,6 +30,18 @@
 # SR3
 https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
 
+# Latent Diffusion
+- https://www.goteodata.kr/104
+- https://velog.io/@yeonheedong/RUS-High-Resolution-Image-Synthesis-with-Latent-Diffusion-Models
+- https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/ldm/
+- https://jang-inspiration.com/latent-diffusion-model
+- https://medium.com/@preranabora12/understanding-the-loss-functions-of-latent-diffusion-model-fe53a551fa14
+- https://ostin.tistory.com/120
+- https://openaccess.thecvf.com/content/CVPR2021/papers/Esser_Taming_Transformers_for_High-Resolution_Image_Synthesis_CVPR_2021_paper.pdf
+- https://blog.outta.ai/5
+- https://towardsdatascience.com/controllable-medical-image-generation-with-controlnets-48ef33dde652
+- https://lilianweng.github.io/posts/2021-07-11-diffusion-models/#ldm
+
 # Stable Diffusion
 - Stable Diffusion 원리 : https://ai-designer-allan.tistory.com/entry/%EB%88%84%EA%B5%AC%EB%82%98-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-%EC%8A%A4%ED%85%8C%EC%9D%B4%EB%B8%94-%EB%94%94%ED%93%A8%EC%A0%84-%EC%9B%90%EB%A6%AC1-Diffusion-%EB%AA%A8%EB%8D%B8
 - An Introduction to Diffusion Models and Stable Diffusion : https://blog.marvik.ai/2023/11/28/an-introduction-to-diffusion-models-and-stable-diffusion/
