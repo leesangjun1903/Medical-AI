@@ -45,6 +45,8 @@ https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement
 https://github.com/anthony-frion/SR3  
 https://github.com/anthony-frion/SR3/tree/main  
 
+## Score Based Diffusion Model
+https://github.com/yang-song/score_sde/tree/main?tab=readme-ov-file
 
 ## DDIM
 - https://keras.io/examples/generative/ddim/
