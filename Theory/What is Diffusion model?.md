@@ -48,3 +48,6 @@ https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
 
 # SRDiff
 - https://chaeso-coding.tistory.com/118
+
+# Score based Diffusion
+- https://dlaiml.tistory.com/entry/Score-based-Generative-Models%EA%B3%BC-Diffusion-Probabilistic-Models%EA%B3%BC%EC%9D%98-%EA%B4%80%EA%B3%84
