@@ -8,6 +8,8 @@
 
 - Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch?tab=readme-ov-file
 
+- Diffusion Models: A Comprehensive Survey of Methods and Applications : https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy?tab=readme-ov-file#2.1.1
+
 ## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
 - https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Deep_Unsupervised_Learning_using_Nonequilibrium_Thermodynamics
