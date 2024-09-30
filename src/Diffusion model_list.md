@@ -23,7 +23,10 @@
 - https://huggingface.co/docs/diffusers/v0.30.3/en/api/pipelines/latent_diffusion#diffusers.LDMSuperResolutionPipeline
 - https://github.com/huggingface/notebooks/tree/main/diffusers
 - https://github.com/fastai/course22p2/blob/master/nbs/30_lsun_diffusion-latents.ipynb
+- https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler
 
+- Running IF with 🧨 diffusers on a Free Tier Google Colab : https://huggingface.co/blog/if
+- https://huggingface.co/docs/diffusers/using-diffusers/img2img#image-to-upscaler-to-super-resolution
 
 ## Latent Diffusion Models (LDM) for super-resolution : 
 - https://huggingface.co/CompVis/ldm-super-resolution-4x-openimages
@@ -35,6 +38,19 @@
 
 ## Latent Diffusion + FBCNN
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
+
+## SinSR: Diffusion-Based Image Super-Resolution in a Single Step
+- https://github.com/wyf0912/SinSR/tree/main
+
+## SeeSR: Towards Semantics-Aware Real-World Image Super-Resolution
+- https://github.com/cswry/SeeSR
+- https://rockyshikoku.medium.com/super-resolution-has-come-a-long-way-seesr-complements-the-details-to-make-the-image-clearer-8571b20facbc
+
+## ResShift: Efficient Diffusion Model for Image Super-resolution by Residual Shifting
+- https://github.com/zsyOAOA/ResShift
+
+## DDNM : Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model
+https://paperswithcode.com/paper/zero-shot-image-restoration-using-denoising
 
 ## Denoising Diffusion Probabilistic Models(DDPM)
 - Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch
