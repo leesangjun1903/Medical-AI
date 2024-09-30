@@ -28,6 +28,7 @@
 ## Latent Diffusion Models (LDM) for super-resolution : 
 - https://huggingface.co/CompVis/ldm-super-resolution-4x-openimages
 - https://github.com/huggingface/diffusers/tree/8e7d6c03a366fdb0f551ce7b92f0871c863d4e08/src/diffusers/pipelines/latent_diffusion
+- Cascaded Latent Diffusion for High-Resolution Chest X-ray Synthesis : https://github.com/saiboxx/chexray-diffusion/tree/main
 
 ## Stable Diffusion
 - pytorch-stable-diffusion : https://github.com/hkproj/pytorch-stable-diffusion/tree/main
