@@ -10,6 +10,8 @@
 
 - Diffusion Models: A Comprehensive Survey of Methods and Applications : https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy?tab=readme-ov-file#2.1.1
 
+- Awesome-diffusion-model-for-image-processing : https://github.com/lixinustc/Awesome-diffusion-model-for-image-processing?tab=readme-ov-file
+
 ## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
 - https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Deep_Unsupervised_Learning_using_Nonequilibrium_Thermodynamics
@@ -22,6 +24,14 @@
 - https://github.com/huggingface/notebooks/tree/main/diffusers
 - https://github.com/fastai/course22p2/blob/master/nbs/30_lsun_diffusion-latents.ipynb
 
+
+## Latent Diffusion Models (LDM) for super-resolution : 
+- https://huggingface.co/CompVis/ldm-super-resolution-4x-openimages
+- https://github.com/huggingface/diffusers/tree/8e7d6c03a366fdb0f551ce7b92f0871c863d4e08/src/diffusers/pipelines/latent_diffusion
+
+## Stable Diffusion
+- pytorch-stable-diffusion : https://github.com/hkproj/pytorch-stable-diffusion/tree/main
+
 ## Latent Diffusion + FBCNN
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
 
@@ -32,9 +42,6 @@
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
 - https://metamath1.github.io/blog/posts/diffusion/ddpm_part1.html
 - https://metamath1.github.io/blog/posts/diffusion/ddpm_part2-2.html
-
-## Stable Diffusion
-- pytorch-stable-diffusion : https://github.com/hkproj/pytorch-stable-diffusion/tree/main
 
 ## SRDiff: Single image super-resolution with diffusion probabilistic models
 https://github.com/LeiaLi/SRDiff/tree/main
