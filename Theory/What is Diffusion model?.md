@@ -34,9 +34,11 @@ https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
 
 # Latent Diffusion(Stable Diffusion)
 - https://www.goteodata.kr/104
+- https://ffighting.net/deep-learning-paper-review/diffusion-model/stable-diffusion/
+- https://jang-inspiration.com/latent-diffusion-model
+- https://dlaiml.tistory.com/entry/LDM-High-Resolution-Image-Synthesis-with-Latent-Diffusion-Models
 - https://velog.io/@yeonheedong/RUS-High-Resolution-Image-Synthesis-with-Latent-Diffusion-Models
 - https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/ldm/
-- https://jang-inspiration.com/latent-diffusion-model
 - https://medium.com/@preranabora12/understanding-the-loss-functions-of-latent-diffusion-model-fe53a551fa14
 - https://ostin.tistory.com/120
 - https://openaccess.thecvf.com/content/CVPR2021/papers/Esser_Taming_Transformers_for_High-Resolution_Image_Synthesis_CVPR_2021_paper.pdf
