@@ -1,10 +1,5 @@
 # Diffusion Model list
 
-- Awesome-Diffusion-Models : https://github.com/diff-usion/Awesome-Diffusion-Models
-- Awesome-diffusion-model-for-image-processing : https://github.com/lixinustc/Awesome-diffusion-model-for-image-processing?tab=readme-ov-file
-- Awesome Diffusion Models in High-Resolution Synthesis : https://github.com/GuoLanqing/Awesome-High-Resolution-Diffusion
-- Awesome Diffusion Models In Low-level Vision : https://github.com/ChunmingHe/awesome-diffusion-models-in-low-level-vision?tab=readme-ov-file
-
 ## DDPM
 - Diffusion Models from Scratch : https://colab.research.google.com/github/huggingface/diffusion-models-class/blob/main/unit1/02_diffusion_models_from_scratch.ipynb#scrollTo=6MW0xsLGNrXL
 
