@@ -14,15 +14,20 @@
 
 # Awesome Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
-- Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
-- Awesome Diffusion models for image processing https://github.com/lixinustc/awesome-diffusion-model-for-image-processing
 - Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
-- Awesome-Diffusion-Models : https://github.com/diff-usion/Awesome-Diffusion-Models
 - Awesome-Super-Resolution https://github.com/ChaofWang/Awesome-Super-Resolution?tab=readme-ov-file
 - Single-Image-Super-Resolution(7 years ago) : https://github.com/YapengTian/Single-Image-Super-Resolution?tab=readme-ov-file
 - Awesome GAN for Medical Imaging : https://github.com/xinario/awesome-gan-for-medical-imaging?tab=readme-ov-file#reconstruction
-- Awesome Diffusion Models : https://github.com/diff-usion/Awesome-Diffusion-Models?tab=readme-ov-file
+
+
+## Awesome Diffusion Models
+- Awesome-Diffusion-Models : https://github.com/diff-usion/Awesome-Diffusion-Models
+- Awesome-diffusion-model-for-image-processing : https://github.com/lixinustc/Awesome-diffusion-model-for-image-processing?tab=readme-ov-file
+- Awesome Diffusion Models in High-Resolution Synthesis : https://github.com/GuoLanqing/Awesome-High-Resolution-Diffusion
+- Awesome Diffusion Models In Low-level Vision : https://github.com/ChunmingHe/awesome-diffusion-models-in-low-level-vision?tab=readme-ov-file
+- Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
 - Awesome Diffusion Categorized models : https://github.com/wangkai930418/awesome-diffusion-categorized?tab=readme-ov-file#image-restoration
+
 
 ## Paper with name ( * ~ ***** : 성능)
 - Medical image denoising using convolutional denoising autoencoders(Autoencoder) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
