@@ -17,8 +17,9 @@
 - Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
 - Awesome-Super-Resolution https://github.com/ChaofWang/Awesome-Super-Resolution?tab=readme-ov-file
 - Single-Image-Super-Resolution(7 years ago) : https://github.com/YapengTian/Single-Image-Super-Resolution?tab=readme-ov-file
-- Awesome GAN for Medical Imaging : https://github.com/xinario/awesome-gan-for-medical-imaging?tab=readme-ov-file#reconstruction
 
+## Awesome GAN
+- Awesome GAN for Medical Imaging : https://github.com/xinario/awesome-gan-for-medical-imaging?tab=readme-ov-file#reconstruction
 
 ## Awesome Diffusion Models
 - Awesome-Diffusion-Models : https://github.com/diff-usion/Awesome-Diffusion-Models
