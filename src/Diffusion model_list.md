@@ -17,7 +17,6 @@
 - https://paperswithcode.com/paper/high-resolution-image-synthesis-with-latent
 - https://github.com/LukeDitria/pytorch_tutorials/blob/main/section09_generation/solutions/Pytorch3_Latent_Diffusion.ipynb
 - https://ostin.tistory.com/139
-- https://huggingface.co/docs/diffusers/v0.30.3/en/api/pipelines/latent_diffusion#diffusers.LDMSuperResolutionPipeline
 - https://github.com/huggingface/notebooks/tree/main/diffusers
 - https://github.com/fastai/course22p2/blob/master/nbs/30_lsun_diffusion-latents.ipynb
 - https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler
@@ -26,9 +25,14 @@
 - https://huggingface.co/docs/diffusers/using-diffusers/img2img#image-to-upscaler-to-super-resolution
 
 ## Latent Diffusion Models (LDM) for super-resolution : 
+### LDM with DDIM Schedulaer
 - https://huggingface.co/CompVis/ldm-super-resolution-4x-openimages
+- https://huggingface.co/docs/diffusers/v0.30.3/en/api/pipelines/latent_diffusion#diffusers.LDMSuperResolutionPipeline
 - https://github.com/huggingface/diffusers/tree/8e7d6c03a366fdb0f551ce7b92f0871c863d4e08/src/diffusers/pipelines/latent_diffusion
 - Cascaded Latent Diffusion for High-Resolution Chest X-ray Synthesis : https://github.com/saiboxx/chexray-diffusion/tree/main
+
+### LDM with DDPM, DDIM Scheduler
+- https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler
 
 ## Stable Diffusion
 - pytorch-stable-diffusion : https://github.com/hkproj/pytorch-stable-diffusion/tree/main
