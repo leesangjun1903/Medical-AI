@@ -78,3 +78,6 @@ https://github.com/yang-song/score_sde/tree/main?tab=readme-ov-file
 
 ## DDIM
 - https://keras.io/examples/generative/ddim/
+
+## DiffBir
+- https://github.com/camenduru/DiffBIR-colab?tab=readme-ov-file
