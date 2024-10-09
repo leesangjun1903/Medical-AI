@@ -19,6 +19,8 @@
 - https://aigong.tistory.com/569
 
 - https://zhuanlan.zhihu.com/p/689685189
+- https://zhuanlan.zhihu.com/p/641282126
+- ON THE THEORY OF STOCHASTIC PROCESSES, WITH PARTICULAR REFERENCE TO APPLICATIONS（1945）, feller : https://zhuanlan.zhihu.com/p/689696114
 
 # DDPM
 - A Gentle Introduction to Diffusion Model : https://metamath1.github.io/blog/posts/diffusion/ddpm_part1.html
