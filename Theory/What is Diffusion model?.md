@@ -17,6 +17,7 @@
 - https://dongwoo-im.github.io/papers/review/2023-10-02-DPM/
 - https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/dul-nt/
 - https://aigong.tistory.com/569
+- https://glanceyes.com/entry/Diffusion-Model%EC%9D%98-%EC%8B%9C%EC%B4%88%EC%9D%B8-Diffusion-Probabilistic-Models
 
 - https://zhuanlan.zhihu.com/p/689685189
 - https://zhuanlan.zhihu.com/p/641282126
@@ -29,6 +30,8 @@
 - https://jang-inspiration.com/ddpm-2
 - https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/ddpm/
 - https://kyujinpy.tistory.com/95
+- https://xoft.tistory.com/32
+- https://hyoseok-personality.tistory.com/entry/Concept-Diffusion-Models-with-DDPM-DDIM
 
 # DDIM
 - https://jang-inspiration.com/ddim
@@ -62,3 +65,6 @@ https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
 
 # Score based Diffusion
 - https://dlaiml.tistory.com/entry/Score-based-Generative-Models%EA%B3%BC-Diffusion-Probabilistic-Models%EA%B3%BC%EC%9D%98-%EA%B4%80%EA%B3%84
+
+# IR-SDE
+- https://github.com/Algolzw/image-restoration-sde/tree/main
