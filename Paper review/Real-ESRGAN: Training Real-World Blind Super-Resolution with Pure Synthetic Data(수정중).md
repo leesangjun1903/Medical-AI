@@ -198,3 +198,6 @@ U-Net은 각 픽셀에 대한 실제 값을 출력하며 픽셀당 자세한 피
 # Results
 ![](https://velog.velcdn.com/images%2Fheaseo%2Fpost%2F1808c539-6646-4ca5-aede-7a3c08affd12%2Fteaser.jpg)
 
+
+# Reference
+- https://velog.io/@heaseo/Real-ESRGAN-Training-Real-World-Blind-Super-Resolution-with-Pure-Synthetic-Data-%ED%95%B4%EC%84%9D
