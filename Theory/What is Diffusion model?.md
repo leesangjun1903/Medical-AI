@@ -60,6 +60,9 @@ https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
 - https://ostin.tistory.com/132
 - https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/ddnm/
 
+# StableSR
+- https://zhuanlan.zhihu.com/p/682487837
+
 # SRDiff
 - https://chaeso-coding.tistory.com/118
 
