@@ -18,6 +18,8 @@
 - https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/dul-nt/
 - https://aigong.tistory.com/569
 
+- https://zhuanlan.zhihu.com/p/689685189
+
 # DDPM
 - A Gentle Introduction to Diffusion Model : https://metamath1.github.io/blog/posts/diffusion/ddpm_part1.html
 - Diffusion model 설명 (Diffusion model이란? Diffusion model 증명) : https://process-mining.tistory.com/182  
