@@ -22,3 +22,4 @@ https://github.com/stroking-fishes-ml-corp/A-ESRGAN/tree/e1a71deb4a47e332cad6b3d
 - Dacon SR : https://github.com/Jinwoo1126/Dacon_SR/tree/main?tab=readme-ov-file
 - Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data : https://github.com/xinntao/Real-ESRGAN?tab=readme-ov-file#python-script  
 - Real-ESRGAN : https://github.com/ai-forever/Real-ESRGAN
+- https://www.kaggle.com/code/taha07/upscaling-images-using-esrgan-complete-procedure/notebook
