@@ -21,6 +21,8 @@
 - https://github.com/fastai/course22p2/blob/master/nbs/30_lsun_diffusion-latents.ipynb
 - https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler
 
+- https://github.com/digbangbang/Learning/blob/main/LDM_learning.md
+
 - Running IF with 🧨 diffusers on a Free Tier Google Colab : https://huggingface.co/blog/if
 - https://huggingface.co/docs/diffusers/using-diffusers/img2img#image-to-upscaler-to-super-resolution
 
