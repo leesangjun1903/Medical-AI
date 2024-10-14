@@ -172,7 +172,7 @@ $x_{t-1}$ 의 재구성된 프로세스에서 샘플링함으로써 $x_T$(또는
 \mathcal{L}_{\text {distill }}=L_{M S E}\left(f_{\hat{\theta}}\left(x_T, y, T\right), F_\theta\left(x_T, y\right)\right)
 ```
 
-여기서 $f_\theta\left(x_t, y, t\right)$ 는 단 한 단계만으로 HR 이미지를 직접 예측하는 학생 네트워크이며, $F_\theta$ 는 $\theta$ 로 매개변수화된 사전 훈련된 네트워크를 사용하여 반복적인 방식을 통해 4.1절의 ResShift[45]의 제안된 결정론적 추론 프로세스를 나타냅니다.  
+여기서 $f_{\hat{\theta}}\left(x_T, y, t\right)$ 는 단 한 단계만으로 HR 이미지를 직접 예측하는 학생 네트워크이며, $F_\theta$ 는 $\theta$ 로 매개변수화된 사전 훈련된 네트워크를 사용하여 반복적인 방식을 통해 4.1절의 ResShift[45]의 제안된 결정론적 추론 프로세스를 나타냅니다.  
 우리는 ${L}_{\text {distill }}$ 의 증류 손실로만 훈련된 학생 모델이 결과 표에서 "증류 전용"으로 표시된 것처럼 이미 단 한 번의 추론 단계에서 유망한 결과를 달성하는 것을 관찰합니다.
 
 ### Regularization by the ground-truth image.
@@ -184,7 +184,7 @@ vanilla distillation strategy 외에도 Student network는 훈련 중에 다음 
 \mathcal{L}_{\text {inverse }}=L_{M S E}\left(f_{\hat{\theta}}\left(F_\theta\left(x_T, y\right), y, 0\right), x_T\right)
 ```
 
-여기서 $f_\theta$의 마지막 매개 변수는 방정식 6의 T에서 0으로 설정되며, 이는 모델이 $\hat{x}_0$ 대신 역을 예측하고 있음을 나타냅니다.  
+여기서 $f_{\hat{\theta}}$의 마지막 매개 변수는 방정식 6의 T에서 0으로 설정되며, 이는 모델이 $\hat{x}_0$ 대신 역을 예측하고 있음을 나타냅니다.  
 그런 다음 실제 이미지 $x_0$ 을 사용하여 다음과 같이 예측된 역 $\hat{x}_T$ 가 주어지면 출력 SR 이미지를 정규화할 수 있습니다,
 
 ```math
