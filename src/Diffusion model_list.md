@@ -1,6 +1,19 @@
 # Diffusion Model list
 
-## DDPM
+- DDPM
+- DPM
+- SR3
+- DDIM
+- LDM
+- LDM + DDIM
+- SinSR
+- SeeSR
+- ResShift
+- DDNM
+- SRDiff
+- DiffBir
+
+## Denoising Diffusion Probabilistic Models(DDPM)
 - Diffusion Models from Scratch : https://colab.research.google.com/github/huggingface/diffusion-models-class/blob/main/unit1/02_diffusion_models_from_scratch.ipynb#scrollTo=6MW0xsLGNrXL
 
 - A Diffusion Model from Scratch in Pytorch : https://colab.research.google.com/drive/1sjy9odlSSy0RBVgMTgP7s99NXsqglsUL?usp=sharing#scrollTo=HhIgGq3za0yh
@@ -8,6 +21,13 @@
 - Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch?tab=readme-ov-file
 
 - Diffusion Models: A Comprehensive Survey of Methods and Applications : https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy?tab=readme-ov-file#2.1.1
+
+- Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch
+- https://github.com/acids-ircam/diffusion_models/tree/main
+- https://github.com/hojonathanho/diffusion
+- https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
+- https://metamath1.github.io/blog/posts/diffusion/ddpm_part1.html
+- https://metamath1.github.io/blog/posts/diffusion/ddpm_part2-2.html
 
 ## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
@@ -55,14 +75,6 @@
 ## DDNM : Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model
 https://paperswithcode.com/paper/zero-shot-image-restoration-using-denoising
 
-## Denoising Diffusion Probabilistic Models(DDPM)
-- Denoising Diffusion Probabilistic Model, in Pytorch : https://github.com/lucidrains/denoising-diffusion-pytorch
-- https://github.com/acids-ircam/diffusion_models/tree/main
-- https://github.com/hojonathanho/diffusion
-- https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
-- https://metamath1.github.io/blog/posts/diffusion/ddpm_part1.html
-- https://metamath1.github.io/blog/posts/diffusion/ddpm_part2-2.html
-
 ## SRDiff: Single image super-resolution with diffusion probabilistic models
 https://github.com/LeiaLi/SRDiff/tree/main
   
@@ -76,7 +88,6 @@ https://github.com/anthony-frion/SR3/tree/main
 
 ## Score Based Diffusion Model
 https://github.com/yang-song/score_sde/tree/main?tab=readme-ov-file
-
 
 ## DDIM
 - https://keras.io/examples/generative/ddim/
