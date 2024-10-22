@@ -16,7 +16,12 @@
 - ResShift(2023)
 - SinSR(2023)
 - DiffBir(2023)
+- HiDiffusion(2023)
+- StableSR(2023)
+- PASD(2023)
+- PromptSR(2023)
 - SeeSR(2024)
+- CoseR(2024)
 
 ## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
@@ -86,6 +91,7 @@ https://github.com/anthony-frion/SR3/tree/main
 ## SeeSR: Towards Semantics-Aware Real-World Image Super-Resolution
 - https://github.com/cswry/SeeSR
 - https://rockyshikoku.medium.com/super-resolution-has-come-a-long-way-seesr-complements-the-details-to-make-the-image-clearer-8571b20facbc
+- 
 
 ## ResShift: Efficient Diffusion Model for Image Super-resolution by Residual Shifting
 - https://github.com/zsyOAOA/ResShift
@@ -107,3 +113,15 @@ https://github.com/LeiaLi/SRDiff/tree/main
 
 ## HiDiffusion : image to image with prompt
 https://github.com/megvii-research/HiDiffusion
+
+## StableSR
+https://zhuanlan.zhihu.com/p/682487837
+
+## PASD
+https://github.com/yangxy/PASD
+
+## PromptSR
+https://github.com/zhengchen1999/PromptSR?tab=readme-ov-file
+
+## CoseR
+https://github.com/TianheWu/CoSeR
