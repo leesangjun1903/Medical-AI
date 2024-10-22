@@ -1,17 +1,26 @@
 # Diffusion Model list
+## Survey
+- Diffusion Models, Image Super-Resolution And Everything: A Survey : https://arxiv.org/html/2401.00736v2#bib.bib70
+- 
 
-- DDPM
-- DPM
-- SR3
-- DDIM
-- LDM
-- LDM + DDIM
-- SinSR
-- SeeSR
-- ResShift
-- DDNM
-- SRDiff
-- DiffBir
+- DPM(2015)
+- DDPM(2020)
+- DDIM(2020)
+- SR3(2021)
+- LDM(2021)
+- LDM + DDIM : Diffusers
+- LDM + FBCNN
+- SRDiff(2021)
+- Score based-SDE(2023)
+- DDNM(2022)
+- ResShift(2023)
+- SinSR(2023)
+- DiffBir(2023)
+- SeeSR(2024)
+
+## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
+- https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
+- https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Deep_Unsupervised_Learning_using_Nonequilibrium_Thermodynamics
 
 ## Denoising Diffusion Probabilistic Models(DDPM)
 - Diffusion Models from Scratch : https://colab.research.google.com/github/huggingface/diffusion-models-class/blob/main/unit1/02_diffusion_models_from_scratch.ipynb#scrollTo=6MW0xsLGNrXL
@@ -29,11 +38,18 @@
 - https://metamath1.github.io/blog/posts/diffusion/ddpm_part1.html
 - https://metamath1.github.io/blog/posts/diffusion/ddpm_part2-2.html
 
-## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
-- https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
-- https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Deep_Unsupervised_Learning_using_Nonequilibrium_Thermodynamics
+## DDIM
+- https://keras.io/examples/generative/ddim/
 
-## Latent Diffusion
+## SR3
+https://medium.com/@adityanutakki6250/sr3-explained-and-implemented-in-pytorch-from-scratch-b43b9742c232  
+https://github.com/aditya-nutakki/SR3/tree/main  
+https://github.com/novwaul/SR3/tree/main  
+https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement  
+https://github.com/anthony-frion/SR3  
+https://github.com/anthony-frion/SR3/tree/main  
+
+# Latent Diffusion Models : diffusers
 - https://paperswithcode.com/paper/high-resolution-image-synthesis-with-latent
 - https://github.com/LukeDitria/pytorch_tutorials/blob/main/section09_generation/solutions/Pytorch3_Latent_Diffusion.ipynb
 - https://ostin.tistory.com/139
@@ -77,20 +93,12 @@ https://paperswithcode.com/paper/zero-shot-image-restoration-using-denoising
 
 ## SRDiff: Single image super-resolution with diffusion probabilistic models
 https://github.com/LeiaLi/SRDiff/tree/main
-  
-## SR3
-https://medium.com/@adityanutakki6250/sr3-explained-and-implemented-in-pytorch-from-scratch-b43b9742c232  
-https://github.com/aditya-nutakki/SR3/tree/main  
-https://github.com/novwaul/SR3/tree/main  
-https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement  
-https://github.com/anthony-frion/SR3  
-https://github.com/anthony-frion/SR3/tree/main  
+
 
 ## Score Based Diffusion Model
-https://github.com/yang-song/score_sde/tree/main?tab=readme-ov-file
-
-## DDIM
-- https://keras.io/examples/generative/ddim/
+- https://github.com/yang-song/score_sde/tree/main?tab=readme-ov-file
+- https://github.com/Algolzw/image-restoration-sde?tab=readme-ov-file
+- https://github.com/marcelowds/sr-sde
 
 ## DiffBir
 - https://github.com/camenduru/DiffBIR-colab?tab=readme-ov-file
