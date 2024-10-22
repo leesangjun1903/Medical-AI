@@ -40,6 +40,8 @@
 
 ## DDIM
 - https://keras.io/examples/generative/ddim/
+- https://github.com/xiaohu2015/nngen/tree/main/models/diffusion_models
+
 
 ## SR3
 https://medium.com/@adityanutakki6250/sr3-explained-and-implemented-in-pytorch-from-scratch-b43b9742c232  
@@ -94,11 +96,14 @@ https://paperswithcode.com/paper/zero-shot-image-restoration-using-denoising
 ## SRDiff: Single image super-resolution with diffusion probabilistic models
 https://github.com/LeiaLi/SRDiff/tree/main
 
-
 ## Score Based Diffusion Model
 - https://github.com/yang-song/score_sde/tree/main?tab=readme-ov-file
 - https://github.com/Algolzw/image-restoration-sde?tab=readme-ov-file
 - https://github.com/marcelowds/sr-sde
 
 ## DiffBir
+- https://github.com/XPixelGroup/DiffBIR/tree/70c0944de037760bd159540469153735389f6c48
 - https://github.com/camenduru/DiffBIR-colab?tab=readme-ov-file
+
+## HiDiffusion : image to image with prompt
+https://github.com/megvii-research/HiDiffusion
