@@ -30,7 +30,7 @@
 - NCSR(2021) : https://github.com/younggeun-kim/NCSR/tree/main
 
 ## Other Models
-- NAFNet : https://github.com/megvii-research/NAFNet?tab=readme-ov-file
+- NAFNet(2022) : https://github.com/megvii-research/NAFNet?tab=readme-ov-file
 - Autoencoder
 - MPRNet(2021) : https://github.com/swz30/MPRNet
 
