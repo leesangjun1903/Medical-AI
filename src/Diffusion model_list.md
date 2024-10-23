@@ -1,7 +1,9 @@
 # Diffusion Model list
 ## Survey
 - Diffusion Models, Image Super-Resolution And Everything: A Survey : https://arxiv.org/html/2401.00736v2#bib.bib70
-- 
+- https://zhuanlan.zhihu.com/p/682487837
+- https://zhuanlan.zhihu.com/p/625425794
+- https://zhuanlan.zhihu.com/p/696161390, https://github.com/amusi/CVPR2024-Papers-with-Code?tab=readme-ov-file#SR
 
 - DPM(2015)
 - DDPM(2020)
@@ -22,6 +24,8 @@
 - PromptSR(2023)
 - SeeSR(2024)
 - CoseR(2024)
+- SAM-DiffSR(2024)
+- SUPIR(2024)
 
 ## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
@@ -87,6 +91,7 @@ https://github.com/anthony-frion/SR3/tree/main
 
 ## SinSR: Diffusion-Based Image Super-Resolution in a Single Step
 - https://github.com/wyf0912/SinSR/tree/main
+- https://zhuanlan.zhihu.com/p/684896250
 
 ## SeeSR: Towards Semantics-Aware Real-World Image Super-Resolution
 - https://github.com/cswry/SeeSR
@@ -95,6 +100,7 @@ https://github.com/anthony-frion/SR3/tree/main
 
 ## ResShift: Efficient Diffusion Model for Image Super-resolution by Residual Shifting
 - https://github.com/zsyOAOA/ResShift
+- https://zhuanlan.zhihu.com/p/624559796
 
 ## DDNM : Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model
 https://paperswithcode.com/paper/zero-shot-image-restoration-using-denoising
@@ -125,3 +131,6 @@ https://github.com/zhengchen1999/PromptSR?tab=readme-ov-file
 
 ## CoseR
 https://github.com/TianheWu/CoSeR
+
+## SUPIR
+https://github.com/Fanghua-Yu/SUPIR?tab=readme-ov-file
