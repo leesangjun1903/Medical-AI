@@ -1,3 +1,18 @@
+## GAN
+- Real-ESRGAN(2021) : https://github.com/xinntao/Real-ESRGAN
+- Super-resolution using Real-ESRGAN and ESRGAN in Medical Images(2022) : https://github.com/ShawkhIbneRashid/medical-images-sr
+- BSRGAN(2021) : https://github.com/cszn/BSRGAN
+- DPSRGAN(2021) : https://github.com/kushalchordiya216/DPSRGAN?tab=readme-ov-file
+- EdgeSRGAN(2022) : https://github.com/PIC4SeR/EdgeSRGAN?tab=readme-ov-file
+- StyleGANEX(2023) : https://github.com/williamyang1991/StyleGANEX?tab=readme-ov-file
+- Beby-GAN(2021) : https://github.com/dvlab-research/Simple-SR
+- I-WAGAN(WA-SRGAN)(2021) : https://github.com/Fuzzy-sh/WA-SRGAN/tree/main
+- SOUP-GAN(2022) : https://github.com/Mayo-Radiology-Informatics-Lab/SOUP-GAN
+- Lightweight GAN(2023) :  https://github.com/lucidrains/lightweight-gan/tree/main?tab=readme-ov-file
+- PSRGAN(2021) : https://github.com/yongsongH/Infrared_Image_SR_PSRGAN
+- Remote Sensing SRGAN(2022) : https://github.com/simon-donike/Remote-Sensing-SRGAN/tree/main
+
+## Modules
 - BasicSR : https://github.com/XPixelGroup/BasicSR/tree/master
 - Pytorch GAN : https://github.com/eriklindernoren/PyTorch-GAN/tree/master
 
