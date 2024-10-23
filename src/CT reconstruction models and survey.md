@@ -30,7 +30,6 @@
 
 ### I want to find Lightweight models
 Useful paper : Lightweight image super-resolution based on deep learning: State-of-the-art and future directions
-- DPSRGAN
 - EdgeSRGAN
 - FSRCNN
 - VDSR
