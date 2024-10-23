@@ -92,3 +92,56 @@ L_\gamma (\epsilon_\theta) := \sum_{t=1}^T \gamma_t \mathbb{E}_{x_0 \sim q(x_0),
 ```
 $\gamma := [\gamma_1, \cdots, \gamma_T]$ 는 $\alpha_{1:T}$ 에 의존하는 양의 계수이다.  
 DDPM은 생성 성능을 최대화하기 위해 $\gamma = \textbf{1}$ 로 두었다.
+
+# VARIATIONAL INFERENCE FOR NON-MARKOVIAN FORWARD PROCESSES
+
+![image](https://github.com/user-attachments/assets/bf3debf6-e21b-45d4-8588-f7ba4c687564)
+
+생성 모델이 inference process의 역과정으로 근사되므로 생성 모델에 필요한 iteration의 수를 줄이기 위해 inference process를 다시 생각해야 한다.  
+여기서 중요하는 것은 DDPM 목적 함수 $L_\gamma$가 
+주변 분포(Marginal Distribution) $q(x_t \vert x_0)$ 에만 의존하며 
+결합 분포 $q(x_{1:T}\vert x_0)$에는 직접적으로 의존하지 않는다는 것이다.  
+같은 주변 분포에 대해서 수 많은 결합 분포가 존재하기 때문에 non-Markovian인 새로운 inference process가 필요하며 이에 대응되는 새로운 generative process가 필요하다.  
+또한 이 non-Markovian inference process는 DDPM의 목적 함수와 같은 목적 함수를 가진다는 것을 보일 수 있다.
+
+## Non-Markovian forward processes
+실수 벡터 $\sigma \in \mathbb{R} _{\ge 0}^T$
+에 대한 
+
+inference distribution $q_\sigma (x_{1:T} \vert x_0)$ 은 다음과 같다.
+```math
+\begin{equation}
+q_\sigma (x_{1:T} | x_0) := q_\sigma (x_T | x_0) \prod_{t=2}^T q_\sigma (x_{t-1} | x_t, x_0) \\
+\textrm{where} \quad q_\sigma (x_T | x_0) = \mathcal{N} (\sqrt{\alpha_t} x_0, (1-\alpha_t)I)
+\end{equation}
+```
+
+모든 
+$t > 1$
+에 대하여
+```math
+\begin{equation}
+q_\sigma (x_{t-1} | x_t, x_0) = \mathcal{N} \bigg( \sqrt{\alpha_{t-1}} x_0  + \sqrt{1 - \alpha_{t-1} - \sigma_t^2} \cdot \frac{x_t - \sqrt{\alpha_t} x_0}{\sqrt{1-\alpha_t}}, \sigma_t^2 I \bigg) 
+\end{equation}
+```
+
+이다.  
+모든 $t$ 에 대하여 
+$q_\sigma (x_t \vert x_0) = \mathcal{N} (\sqrt{\alpha_t} x_0, (1-\alpha_t)I)$ 를 보장하기 위하여 평균 함수가 위와 같이 선택되었다.  
+따라서 평균 함수는 의도한대로 주변 분포와 일치하는 결합 분포를 정의한다.
+
+베이즈 정리에 의해 forward process는
+```math
+\begin{equation}
+q_\sigma (x_t | x_{t-1}, x_0) = \frac{q_\sigma (x_{t-1} | x_t, x_0) q_\sigma (x_t | x_0)}{q_\sigma (x_{t-1} | x_0)}
+\end{equation}
+```
+이며 이 또한 가우시안 분포이다.  
+각각의 $x_t$ 가 $x_{t−1}$ 과 $x_0$ 모두에 의존하므로 DDIM의 forward process는 더 이상 Markovian이 아니다.  
+$σ$ (분산) 의 크기로 얼마나 forward process가 확률적인지를 조절할 수 있으며 
+$σ → 0$ 일 때 어떤 $t$ 에 대해 
+$x_0$ 와 
+$x_t$ 를 알면 고정된 
+$x_{t−1}$ 를 알 수 있는 극단적인 경우에 도달한다.
+
+## Generative Process and Unified Variational Inference Objective
