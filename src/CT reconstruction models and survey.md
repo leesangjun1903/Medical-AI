@@ -22,6 +22,7 @@
 ## ETC
 - NAFNet(2022) : https://github.com/megvii-research/NAFNet?tab=readme-ov-file
 - MPRNet(2021) : https://github.com/swz30/MPRNet
+- Swin IR in PyTorch : https://colab.research.google.com/drive/17TzBSXFLu0jgItSxszNSmTDsxVXXXPfU?usp=sharing
 
 ### I want to find Lightweight models
 Useful paper : Lightweight image super-resolution based on deep learning: State-of-the-art and future directions
