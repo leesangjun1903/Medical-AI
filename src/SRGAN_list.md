@@ -5,6 +5,7 @@
 - BSRGAN(2021) : https://github.com/cszn/BSRGAN
 - DPSRGAN(2021) : https://github.com/kushalchordiya216/DPSRGAN?tab=readme-ov-file
 - PSRGAN(2021) : https://github.com/yongsongH/Infrared_Image_SR_PSRGAN
+- A-ESRGAN(2021) : https://github.com/stroking-fishes-ml-corp/A-ESRGAN/tree/e1a71deb4a47e332cad6b3d6bbbbb21a56bdd9c6
 - Super-resolution using Real-ESRGAN and ESRGAN in Medical Images(2022) : https://github.com/ShawkhIbneRashid/medical-images-sr
 - Remote Sensing SRGAN(2022) : https://github.com/simon-donike/Remote-Sensing-SRGAN/tree/main
 - EdgeSRGAN(2022) : https://github.com/PIC4SeR/EdgeSRGAN?tab=readme-ov-file
