@@ -5,6 +5,7 @@
 - https://zhuanlan.zhihu.com/p/625425794
 - https://zhuanlan.zhihu.com/p/696161390, https://github.com/amusi/CVPR2024-Papers-with-Code?tab=readme-ov-file#SR
 
+## Models
 - DPM(2015)
 - DDPM(2020)
 - DDIM(2020)
