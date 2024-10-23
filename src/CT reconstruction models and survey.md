@@ -30,17 +30,8 @@
 
 ### I want to find Lightweight models
 Useful paper : Lightweight image super-resolution based on deep learning: State-of-the-art and future directions
-- FSRCNN
-- VDSR
-- DRCN
 - GhostSR
-- CARN
-- CBPN
-- SRRFN
-- MFIN
-- WMRN
-- ELCRN
-
+- MFIN, MSFIN(2021) : https://github.com/wzx0826/MSFIN
 
 ### GAN models(~2020)
 - SRGAN : 초기 모델.
@@ -57,3 +48,9 @@ Useful paper : Lightweight image super-resolution based on deep learning: State-
 - FSRCNN(2016)
 - SRDenseNet(2017)
 - EDSR(2017) : https://keras.io/examples/vision/edsr/
+- ESPCN(2016)
+- VDSR(2016)
+- DRCN(2015)
+- CARN(2018)
+- CBPN(2019)
+- SRRFN(2019) : https://github.com/MIVRC/SRRFN-PyTorch?tab=readme-ov-file
