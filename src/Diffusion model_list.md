@@ -91,7 +91,7 @@ https://github.com/anthony-frion/SR3/tree/main
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
 
 ## SinSR: Diffusion-Based Image Super-Resolution in a Single Step
-- https://github.com/wyf0912/SinSR/tree/main
+- https://github.com/wyf0912/SinSR/tree/main  
 - https://zhuanlan.zhihu.com/p/684896250
 
 ## SeeSR: Towards Semantics-Aware Real-World Image Super-Resolution
@@ -104,10 +104,11 @@ https://github.com/anthony-frion/SR3/tree/main
 - https://zhuanlan.zhihu.com/p/624559796
 
 ## DDNM : Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model
-https://paperswithcode.com/paper/zero-shot-image-restoration-using-denoising
+- https://paperswithcode.com/paper/zero-shot-image-restoration-using-denoising
 
 ## SRDiff: Single image super-resolution with diffusion probabilistic models
-https://github.com/LeiaLi/SRDiff/tree/main
+- https://github.com/LeiaLi/SRDiff/tree/main
+- https://github.com/Descalabreitor/Satelite-Superresolution-diffusion/tree/main
 
 ## Score Based Diffusion Model
 - https://github.com/yang-song/score_sde/tree/main?tab=readme-ov-file
