@@ -14,11 +14,11 @@
 - LDM + DDIM : Diffusers
 - LDM + FBCNN
 - SRDiff(2021)
-- Score based-SDE(2023)
 - DDNM(2022)
 - ResShift(2023)
 - SinSR(2023)
 - DiffBir(2023)
+- Score based-SDE(2023)
 - HiDiffusion(2023)
 - StableSR(2023)
 - PASD(2023)
