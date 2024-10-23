@@ -25,6 +25,10 @@
 
 ## Wavelet transform
 
+## Transformer Models
+- MAGVIT2(2023) : https://github.com/bornfly-detachment/asymmetric_magvitv2?tab=readme-ov-file, https://huggingface.co/BornFly/AsymmetricMagVitV2_16z
+- HIT-SR(2024) : https://github.com/XiangZ-0/HiT-SR, https://huggingface.co/XiangZ/hit-sr
+
 ## ETC
 - MPRNet(2021) : https://github.com/swz30/MPRNet
 - Swin IR in PyTorch(2021) : https://colab.research.google.com/drive/17TzBSXFLu0jgItSxszNSmTDsxVXXXPfU?usp=sharing
