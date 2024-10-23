@@ -28,6 +28,7 @@
 - SAM-DiffSR(2024)
 - SUPIR(2024)
 - S3Diff(2024)
+- DiffTSR(2024)
 
 ## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
@@ -137,3 +138,9 @@ https://github.com/TianheWu/CoSeR
 
 ## SUPIR
 https://github.com/Fanghua-Yu/SUPIR?tab=readme-ov-file
+
+## SAM-DIffSR
+https://github.com/lose4578/SAM-DiffSR
+
+## DiffTSR
+https://github.com/YuzheZhang-1999/DiffTSR?tab=readme-ov-file
