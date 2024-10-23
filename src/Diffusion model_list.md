@@ -27,6 +27,7 @@
 - CoseR(2024)
 - SAM-DiffSR(2024)
 - SUPIR(2024)
+- S3Diff(2024)
 
 ## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
