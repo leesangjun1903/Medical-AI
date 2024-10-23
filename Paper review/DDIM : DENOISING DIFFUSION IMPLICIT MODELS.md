@@ -145,3 +145,12 @@ $x_t$ 를 알면 고정된
 $x_{t−1}$ 를 알 수 있는 극단적인 경우에 도달한다.
 
 ## Generative Process and Unified Variational Inference Objective
+다음으로 각 $p_\theta^{(t)} (x_{t-1} \vert x_t)$ 가 
+$q_\sigma (x_{t-1} \vert x_t, x_0)$ 에 대한 지식을 활용하는 
+학습 가능한 generative process $p_\theta (x_{0:T})$
+를 정의한다.  
+$x_t$ 가 주어지면 먼저 대응되는 
+$x_0$ 를 예측하고 이를 이용하여 
+$q_\sigma (x_{t-1} \vert x_t, x_0)$ 로 
+$x_{t-1}$ 을 샘플링한다.
+
