@@ -154,3 +154,94 @@ $x_0$ 를 예측하고 이를 이용하여
 $q_\sigma (x_{t-1} \vert x_t, x_0)$ 로 
 $x_{t-1}$ 을 샘플링한다.
 
+$x_0 \sim q(x_0)$ 와 $\epsilon_t \sim \mathcal{N} (\textbf{0},I)$ 에 대하여 $x_t$ 는 $x_t = \sqrt{\alpha_t} x_0 + \sqrt{1-\alpha_t} \epsilon_t$ 로 계산할 수 있다.  
+그 다음 모델 $\epsilon_\theta^{(t)} (x_t)$ 가
+$x_0$ 에 대한 정보 없이 
+$x_t$ 로부터 
+$\epsilon_t$ 를 예측한다.  
+식을 다음과 같이 다시 세우면 주어진 
+$x_t$ 에 대한 
+$x_0$ 의 예측인 denoised observation을 예측할 수 있다.  
+
+```math
+\begin{equation}
+f_\theta^{(t)} (x_t) := \frac{1}{\sqrt{\alpha_t}} (x_t - \sqrt{1-\alpha_t} \epsilon_\theta^{(t)})
+\end{equation}
+```
+
+그런 다음 고정된 prior(T단계에서의 노이즈 상태) $p_\theta (x_T) = \mathcal{N} (\textbf{0}, I)$ 에 대한 generative process를 다음과 같이 정의할 수 있다.  
+
+```math
+\begin{equation}
+p_\theta^{(t)} (x_{t-1} | x_t) = \cases{\mathcal{N}(f_\theta^{(t)} (x_1), \sigma_1^2 I) & t = 1 \\ q_\sigma (x_{t-1} | x_t, f_\theta^{(t)} (x_t)) & t > 1}
+\end{equation}
+```
+$q_\sigma (x_{t-1} \vert x_t, f_\theta^{(t)} (x_t))$ 는 위에서 정의한 $q_\sigma (x_{t-1} \vert x_t, x_0)$ 의 $x_0$ 대신 $f_\theta^{(t)} (x_t)$ 를 대입하여 사용할 수 있다.  
+Generative process가 
+모든 $t$ 에서 성립하도록
+$t = 1$ 인 경우에 약간의 Gaussian noise를 추가한다.  
+
+파라미터 
+$θ$
+는 다음 목적 함수로 최적화된다.
+
+```math
+\begin{aligned}
+J_\sigma (\epsilon_\theta) & := \mathbb{E}_{x_{0:T} \sim q_\sigma (x_{0:T})} [\log q_\sigma (x_{1:T} | x_0) - \log p_\theta (x_{0:T})] \\
+&= \mathbb{E}_{x_{0:T} \sim q_\sigma (x_{0:T})} \bigg[ \log \bigg( q_\sigma (x_T | x_0) \prod_{t=2}^T q_\sigma (x_{t-1} | x_t, x_0) \bigg)
+- \log \bigg( p_\theta (x_T) \prod_{t=1}^T p_\theta^{(t)} (x_{t-1} | x_t) \bigg) \bigg] \\
+&= \mathbb{E}_{x_{0:T} \sim q_\sigma (x_{0:T})} \bigg[ \log q_\sigma (x_T | x_0) + \sum_{t=2}^T \log q_\sigma (x_{t-1} | x_t, x_0)
+- \sum_{t=1}^T \log p_\theta^{(t)} (x_{t-1} | x_t) - \log p_\theta (x_T) \bigg]
+\end{aligned}
+```
+$J_σ$ 의 정의를 보면 
+$σ$ 에 따라 목적 함수가 다르기 때문에 다른 모델이 필요하다는 것을 알 수 있다.  
+
+이 목적 함수를 정리하면 아래와 같이 정리할 수 있다.  
+모든 $\sigma > 0$ 에 대하여 $J_\sigma = L_\gamma + C$ 인 $\gamma \in \mathbb{R}_{\ge 0}^T$ 와 $C \in \mathbb{R}$ 가 존재한다.  
+
+Variational objective $L_γ$ 의 특별한 점은 $\epsilon_\theta^{(t)}$ 가 
+다른 $t$ 에서 공유되지 않는 경우 
+$\epsilon_\theta^{(t)}$ 에 대한 최적해가 가중치 $γ$ 에 의존하지 않는다는 것이다.  
+
+이러한 성질은 두 가지 의미를 갖는다.
+- DDPM의 variational lower bound에 대한 목적 함수로 
+$L_1$ 을 사용하는 것이 가능하다.
+$J_σ$ 가 일부 
+$L_γ$ 와 같이 때문에 
+$J_σ$ 의 최적해는 
+$L_1$ 의 해와 동일하다.
+
+# Sampling from Generalized Generative Processes
+Markovian process를 위한 generative process뿐만 아니라 non-Markovian process를 위한 generative process도 
+$L_1$ 으로 학습할 수 있다.  
+따라서 pre-trained DDPM을 새로운 목적 함수에 대한 해로 사용할 수 있으며 
+$σ$ 를 변경하여 필요에 따라 샘플을 더 잘 생성하는 generative process를 찾는 데 집중할 수 있다.
+
+## Denoising Diffusion Implicit Models
+다음 식에서 $x_t$ 로부터 
+$x_{t−1}$를 생성할 수 있다.
+
+```math
+\begin{aligned}
+x_{t-1} = \sqrt{\alpha_{t-1}} \underbrace{\bigg( \frac{x_t - \sqrt{1-\alpha_t} \epsilon_\theta^{(t)} (x_t)}{\sqrt{\alpha_t}} \bigg)}_{\textrm{predicted } x_0}
++ \underbrace{\sqrt{1-\alpha_{t-1} - \sigma_t^2} \cdot \epsilon_\theta^{(t)} (x_t)}_{\textrm{direction pointing to } x_t}
++ \underbrace{\sigma_t \epsilon_t}_{\textrm{random noise}}
+\end{aligned}
+```
+$\epsilon_t \sim \mathcal{N} (0, I)$ 는 $x_t$ 에 독립적인 가우시안 노이즈이며 $\alpha_0 := 1$ 로 정한다.  
+$σ$ 를 변경하면 같은 모델 $ϵ_θ$ 를 사용하여도 generative process가 달라지기 때문에 모델을 다시 학습하지 않아도 된다.  
+
+모든 $t$ 에 대하여
+```math
+\begin{equation}
+\sigma_t = \sqrt{\frac{1-\alpha_{t-1}}{1-\alpha_t}} \sqrt{1 - \frac{\alpha_t}{\alpha_{t-1}}}
+\end{equation}
+```
+로 두면 forward process가 Markovian이 되며 generative process가 DDPM이 된다.
+
+모든 $t$ 에 대하여 $\sigma_t = 0$ 으로 두면, $x_{t-1}$ 와 $x_0$ 에 대하여 forward process가 deterministic해진다.  
+이 경우 $x_T$ 부터 $x_0$ 까지 모두 고정되어 샘플링되기 때문에 모델이 implicit probabilistic model이 된다.  
+이를 DDPM 목적 함수로 학습된 implicit probabilistic model이기 때문에 Denoising Diffusion Implicit Model (DDIM)이라 부른다.
+
+## Accelerated generation processes
