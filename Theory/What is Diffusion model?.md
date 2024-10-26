@@ -32,10 +32,21 @@
 - https://kyujinpy.tistory.com/95
 - https://xoft.tistory.com/32
 - https://hyoseok-personality.tistory.com/entry/Concept-Diffusion-Models-with-DDPM-DDIM
+- https://glanceyes.tistory.com/entry/Generative-Model%EA%B3%BC-Diffusion-Model-%EA%B7%B8%EB%A6%AC%EA%B3%A0-Denoising-Diffusion-Probabilistic-Model
 
 # DDIM
 - https://jang-inspiration.com/ddim
 - https://blog.mnc.ai/60
+- ELBO : https://yonghyuc.wordpress.com/2019/09/26/elbo-evidence-of-lower-bound/
+- https://www.jaewon.work/paper-review-denoising-diffusion-implicit-models-ddim/
+- Neural ODE : https://sunggoo.tistory.com/21
+- https://dml.korea.ac.kr/wp-content/uploads/2023/12/L06-1-cvpr2023-diffusion-tutorial-part-1-modified-post.pdf
+- https://glanceyes.com/entry/DDPMDenoising-Diffusion-Probabilistic-Models%EA%B3%BC-DDIMDenoising-Diffusion-Implicit-Modles-%EB%B6%84%EC%84%9D
+- https://velog.io/@sea_note/%EB%85%BC%EB%AC%B8%EB%B6%84%EC%84%9D-Denoising-Diffusion-Implicit-Models-DDIM#two
+- https://zhuanlan.zhihu.com/p/560603623
+- https://junia3.github.io/blog/ddim
+- https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/ddim/#2-generative-process-and-unified-variational-inference-objective
+- https://zhuanlan.zhihu.com/p/674142410
 
 # SR3
 https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
