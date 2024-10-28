@@ -30,4 +30,91 @@ CT 영상은 1970년대에 개발된 이래로 진단을 용이하게 하지만[
 딥 러닝 기반 CT 노이즈 제거 방법은 크게 지도 학습과 자기/비지도 학습으로 분류할 수 있습니다.  
 지도 학습 작업은 노이즈가 많은 이미지[즉, low-dose CT(LDCT)]와 깨끗한 이미지[즉, normal-dose CT(NDCT)] 간의 reconstruction loss을 최소화합니다[16].  
 
+그러나 지도 학습에는 대량의 쌍을 이루는 데이터[25], [26], [27], [28]가 필요하며, 예를 들어 LDCT-NDCT 이미지 쌍은 동일한 환자가 쌍을 이루는 CT 스캔을 생성하기 위해 두 번 CT 스캔을 받도록 하는 것은 윤리적이지 않기 때문에 어려운 일입니다.  
+이러한 한계를 피하기 위해 연구자들은 이상적이지 않은 수치 시뮬레이션을 활용하고 훈련 중에 깨끗한 이미지가 필요 없는 자기 지도 학습 또는 비지도 학습에 집중하기 시작합니다.  
+이러한 학습 패러다임은 자기 지도 학습 작업[29](Noise2Noise), [30](Noise2Void), [31](Noise2Self), [32](Self2Self with dropout), [33], [34](Noise2Inverse), [35], [36], [37], [38](Deformed2Self), [40], [41], [42](Noise2Contrast), [43](SACNN).  
+자기 지도 학습은 감독 대상에 비해 경쟁 성능을 유지하면서 쌍을 이루는 샘플의 필요성을 완화하는 데 효과적이지만 생성된 이미지의 이미지 품질은 여전히 추가 개선이 필요합니다.
 
+Deep deblurring은 해당 저해상도(LR) 대응물의 고해상도(HR) 이미지를 복구하는 것을 목표로 합니다.  
+이는 일반적인 역문제(inverse problem)입니다.  
+Degradation 작업은 blurring, noising, downsampling 등이 될 수 있습니다.  
+Image deblurring은 이미지 SR로 공식화하여 상세한 구조와 텍스처를 충실히 추정하면서 LR 또는 블러링된 이미지에서 HR 이미지를 복원할 수 있습니다[16], [44].  
+Deep denoising와 동일한 supervised learning 설정에서 deblurring은 대량의 LR 및 HR 이미지 쌍도 필요합니다.  
+Denoising와 달리 입력 이미지 크기가 SR 출력 이미지의 크기와 반드시 동일한 것은 아닙니다.  
+또한 일부 연구자들은 Meta-learning 을 사용하여 임의의 스케일 SR을 탐색했습니다[45](MetaSR), [46](MetaUSR).  
+Self-supervised deblurring은 인접한 CT 슬라이스 이미지 간의 보간과 같은 self-supervision 작업도 구성하는 데 중점을 둡니다[47].  
+이 글에서는 주로 CT 이미지에 대한 딥 러닝 기반 디블러링 및 SR 방법을 다룹니다.
+
+CT 이미지의 노이즈 제거 및 디블러링에 대한 최근의 고급 연구는 image inpainting 및 image editing과 같은 이미지 생성 작업에서 생성적 적대 신경망(GAN) 기반 방법[49]을 능가하는 생성 모델인 노이즈 제거 확산 확률 모델(DDPM)[48]을 기반으로 수행됩니다.  
+또한 점진적 노이즈 추가 및 제거 프로세스를 학습하여 CT 이미지 노이즈 제거에도 적용되었습니다[50], [51](CoCoDiff).  
+DDPM과 그 변형은 더 높은 fidelity로 CT 이미지 노이즈 제거에 힘을 실어주며, 새로 속도를 높인 대응 방식을 통해 확산 모델을 보다 실용적으로 만들 수 있습니다.  
+
+모델 아키텍처의 경우 CNN 관련 방법이 의료 이미지 복원(IR) 문제에서 우수한 성능을 발휘함에도 불구하고 self-attention(SA) 기반 transformer[52] 아키텍처는 노이즈 제거, 디블러링, 분류, 분할 등 다양한 작업에서 인기를 얻고 있습니다.  
+자연어 처리 분야에서 트랜스포머의 높은 성능에서 영감을 받은 vision transformer(ViT)[53]는 노이즈 제거 및 디블러링을 포함한 비전 작업의 성능을 더욱 질적으로 도약시킵니다.  
+따라서 트랜스포머 기반 CT 이미지 노이즈 제거 및 디블러링의 최근 발전을 검토하고 CNN 방법과 비교합니다.
+
+요약하자면, 먼저 섹션 II(INVERSE PROBLEM AND COMMON METRICS)에서 역 문제와 일반적으로 사용되는 메트릭을 소개하고 의료 이미지 노이즈 제거 및 디블러링에 대한 기존 검토[15], [44]와 달리, 이 글에서는 섹션 III(DEEP DENOISING METHODS) 및 IV(DEEP DEBLURRING METHODS) 의 Supervised Learning, Self-Supervised Learning, 메타 학습 및 고급 Diffusion 기반 방법과 같은 학습 패러다임에 따라 딥 러닝 기반 노이즈 제거 및 디블러링 방법에 대한 최근 연구를 분류하는 경향이 있습니다.  
+특히 인기 있는 네트워크 아키텍처, 학습 알고리즘, 기본 모듈 및 일부 plug-and-play 트릭을 소개합니다.  
+또한 이미지 재구성 과정에서 3D 시나리오에서 높은 효율성을 달성하면서 노이즈 제거와 디블러링을 함께 수행해야 하며, 이는 이 두 가지 작업만 연결할 수 있는 기존 방법으로는 어렵습니다.  
+이러한 유형의 시너지를 위해 섹션 V(SIMULTANEOUS DENOISING AND DEBLURRING) 에서는 CT 이미지 노이즈 제거와 디블러링에 대한 몇 가지 결과를 설명합니다.  
+그런 다음 대규모 비전 언어 모델과 visual prompt 학습에 비추어 섹션 VI(PROMISING DIRECTIONS) 에서는 이러한 임상 응용 기술을 개발하기 위한 인사이트와 방향을 추가로 제공합니다.  
+이 글에서 검토한 논문을 수집하기 위해 2000년부터 2023년까지 기간을 두고 "딥 러닝 CT 이미지 노이즈 제거", "CT 이미지 디블러링/SR", "자기 지도 CT 노이즈 제거/디블러링/SR", "메타 학습 CT 디블러링/SR"이라는 검색어를 과학 웹에 입력했습니다.  
+설문조사를 통해 우리의 동기는 가능한 한 많은 중요한 논문을 다루는 것입니다. 따라서 Google Scholar, PubMed, IEEE Xplore 등을 사용하여 관련 기사도 검색했습니다.
+
+# INVERSE PROBLEM AND COMMON METRICS
+## Inverse Problem
+역 문제(Inverse problem)는 손상된 관찰 이미지에서 목표 신호(예: 1-D 신호, 2-D 이미지 및 고차원 텐서)를 재구성하는 것을 목표로 합니다.  
+일반적으로 순방향 모델(forward model)은 다음과 같이 정의됩니다 :
+
+$y = A_(\hat x) + \epsilon $
+
+여기서 y는 손상된 측정값이고, $\hat x$ 는 알려지지 않은 손상된 신호이며, $A$ 는 손상된 프로세스이며 $\epsilon$ 은 가우시안 및 푸아송과 같은 추가 노이즈를 나타냅니다.  
+그런 다음 목표는 $y$의 $\hat x$를 복구하는 것입니다.  
+CT 이미지의 노이즈 제거와 디블러링은 역 문제의 두 가지 주요 사례입니다.  
+위 식의 역 문제를 해결하기 위한 기존 접근 방식은 이미지 노이즈 제거와 마찬가지로 Tikohonov, total variation [8], [9]와 같은 다양한 regularization term으로 least square 기반 fidelity 목표를 최소화하는 데 중점을 두어 더 나은 가장자리 및 텍스처 보존을 제공합니다.  
+이러한 방법은 Split Bregman 및 ADMM[55], [56], [57]과 같은 반복적인 최적화에 의존합니다.  
+또 다른 고전적인 방법인 nonlocal mean(NLM)은 참조한 픽셀과 유사한 픽셀을 비국소적 방식으로 집계하여 이미지 노이즈를 통계적으로 억제하는 것입니다[58], [59], [60], [61].  
+또한 dictionary learning-based, wavelet-based 및 BM3D 기반 방법도 이미지 노이즈 제거에 널리 적용되었습니다[62], [63], [64], [65], [66].  
+이러한 전통적인 방법은 실제로 유용하지만 계산 비용이 많이 들고 일반화하기 어려운 경우가 많습니다.  
+위에서 언급한 전통적인 방법은 수작업이 필요한 필터, 사양 정규화 및 민감한 임계값 선택을 적용하며, 이론적 해석 가능성이 높지만 많은 실제 임상 시나리오에서 결과 성능이 요구 사항을 충족하지 못할 수 있습니다.
+
+딥 러닝은 지난 10년 동안 의료 영상 영역을 지배해 왔으며, end-to-end 딥 러닝 아키텍처는 정량적 및 정성적 결과 모두에서 위에서 언급한 기존 방법을 능가했습니다.  
+기존 딥 러닝 방법의 대부분은 CNN과 트랜스포머를 기반으로 하며 supervised or self-/un-supervised loss function로 훈련됩니다.  
+즉, 관찰된 이미지에서 깨끗한 신호로의 직접 매핑을 학습했습니다.  
+일반적인 노이즈 제거 모델은 단축 연결의 이점을 누리는 U-Net 관련 [17], [19](V-Net) 아키텍처[25](RED-CNN), [26](CPCE-3D), [27], [28](WGAN_VGG)을 기반으로 구축됩니다.  
+최근 Diffusion Probabilistic 모델링[50], 예를 들어 DDPM[48]은 이미지 생성, 이미지 인페인팅 등을 포함한 생성 모델링에서 좋은 성과를 거두었습니다.  
+기존 딥 러닝 방법과는 다른 점진적인 degradation 절차를 시뮬레이션합니다.  
+Diffusion 프로세스는 입력에 반복적으로 노이즈를 추가하는 동시에 깨끗한 신호가 복구될 때까지 훈련 프로세스가 역방향으로 노이즈를 제거합니다.  
+Inverse problem의 경우 Diffusion 모델은 관측값을 입력으로 받아 VAE 및 GAN에 비해 더 높은 품질의 결과를 생성하는 노이즈 제거 프로세스를 시뮬레이션합니다.  
+Song 등은 DDPM 외에도 점수 기반 확산 모델[67](NCSN), [68](SBGM), [69](Score-based generative model) 및 확률적 미분 방정식 기반 방법[70](Score_SDE), [71](Score-Based Diffusion ODEs)에 대한 멋진 작업을 수행했습니다.
+
+이 글에서는 최신 접근 방식을 포함하여 섹션 III-V에서 이러한 딥 러닝 방법을 조사할 것입니다.
+
+## Evaluation Metrics
+먼저, CT 이미지 노이즈 제거 및 디블러링의 맥락에서 재구성된 이미지의 품질을 평가하기 위한 주요 지표를 소개합니다.  
+이러한 측정은 종종 주어진 참조 이미지와 처리된 이미지 사이에서 계산됩니다.  
+MSE와 Root MSE(RMSE)는 Euclidean distance를 기반으로 한 두 가지 픽셀 단위 차이 측정으로, 다음과 같이 정의됩니다:
+
+![image](https://github.com/user-attachments/assets/9f4994a7-4415-452a-8837-61f3ac7f044e)
+
+여기서 $I_{ND}$ 는 NDCT 이미지를 나타내며 $\hat I_{LD}$ 는 노이즈가 제거된 LDCT 이미지에 해당합니다.  
+MSE와 RMSE는 두 이미지 간의 픽셀 단위 차이를 평가하는 데 유용하지만 인간의 시각 시스템(HVS)과 일치하는 데는 열등합니다.  
+대표적인 예는 유사한 MSE 또는 RMSE 값을 가진 일부 재구성된 이미지가 있지만 시각적 품질이 심각하게 다르다는 것입니다.  
+생체 모방 관점에서 structural similarity(SSIM)은 구조 유사성 평가에 널리 사용되며[73] HVS와 상관관계가 있습니다.  
+$I_{ND}$ 및 $\hat I_{LD}$가 주어지면 SSIM은 다음과 같이 계산됩니다:
+
+![image](https://github.com/user-attachments/assets/c2f0c80e-7305-4f3a-b7fd-ebc5ced07879)
+
+여기서 $x = \hat I_{LD}$, $y = I_{ND}$, $μ$ 및 $σ$은 각각 평균과 분산을 나타내며 C1과 C2는 두 상수입니다.  
+SSIM은 밝기, 대비 및 구조를 체계적으로 비교합니다.  
+
+노이즈가 있는 이미지의 경우 노이즈 제거 프로세스 후 품질을 설명하는 메트릭이 필요합니다.  
+Peak signal-to-noise ratio(PSNR)는 일반적으로 사용되는 메트릭입니다[74]. PSNR은 다음과 같이 정의됩니다 :
+
+![image](https://github.com/user-attachments/assets/9382c3be-8c30-456d-8fcb-b5495c4c2c07)
+
+여기서 $MAX(I_{ND})$ 는 $I_{ND}$의 최대로 측정 가능한 픽셀 값을 나타냅니다.  
+분명히 PSNR은 MSE 값과 상관관계가 있으며, MSE가 0에 가까워지면 PSNR 값은 무한대, 즉 최상의 화질로 이동합니다.  
+즉, PSNR은 구조 보존을 고려하지 않고 재구성된 LDCT와 NDCT 간의 수치적 차이를 측정합니다.
+
+# DEEP DENOISING METHODS
