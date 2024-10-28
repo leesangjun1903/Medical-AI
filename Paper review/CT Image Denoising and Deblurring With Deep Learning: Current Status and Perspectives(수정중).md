@@ -261,7 +261,8 @@ DDPTransformer에서 사이노그램이 도메인인 subnet과 이미지 도메�
 관련 방법은 대략 self-supervised and unsupervised의 두 가지 클래스로 분류할 수 있습니다.  
 두 클래스는 개념적으로 다릅니다.  
 Self-supervised 방법은 LDCT 이미지로만 노이즈 제거 모델을 학습하는 데 초점을 맞추고, unsupervised 방법은 쌍을 이루지 않은 NDCT 이미지로 노이즈 제거 모델을 학습하는 것을 목표로 합니다.  
-1) Self-Supervised Denoising: Self-Supervised Denoising 설정에서 중요한 단계는 LDCT의 이미지 또는 feature에서 pseudo-supervision을 탐색하는 것이며, 노이즈 제거 문제는 다음과 같이 공식화됩니다[33]:
+### Self-Supervised Denoising: 
+Self-Supervised Denoising 설정에서 중요한 단계는 LDCT의 이미지 또는 feature에서 pseudo-supervision을 탐색하는 것이며, 노이즈 제거 문제는 다음과 같이 공식화됩니다[33]:
 
 ![image](https://github.com/user-attachments/assets/7915caa2-5305-42e2-b869-6f2081b400a4)
 
@@ -327,6 +328,9 @@ N2Void가 상대적으로 더 나쁜 결과를 얻었음이 분명하며, 이는
 즉, RMSE는 어느 정도 oversmoothing 효과와 상관관계가 있을 수 있습니다.  
 또한 MAP-NN과 N2Clean도 상대적으로 oversmoothing 효과를 나타내며, RMSE 값은 Noise2Sim보다 높습니다.  
 Liu 등[106]은 변형 가능한 컨볼루션을 사용하여 코로나19 노이즈 제거를 수행하도록 DCDNet을 제안했으며, 그림 7에서 NLM이 코로나19 병변의 중요한 특성인 텍스처를 oversmooth한 것을 확인할 수 있습니다.  
+
+![image](https://github.com/user-attachments/assets/2e6311ed-8249-4b56-b72f-93c564812f3e)
+
 Neighbor2neighbor(NB2NB)는 학습 이미지 쌍을 생성하기 위한 random neighbor subsampler를 개발했으며, 이는 노이즈가 있는 이미지만으로 학습하는 기존 노이즈 제거기와 앞서 self-supervised denoising method을 능가합니다[108].
 
 Corr2Self는 또한 self-supervised denoising method로, NDCT 이미지에 의존하지 않고 CNN을 훈련하기 위해 슬라이스 간 및 슬라이스 내 LDCT 데이터 간의 상관관계를 탐구했습니다.  
@@ -335,7 +339,68 @@ Corr2Self는 또한 self-supervised denoising method로, NDCT 이미지에 의�
 Meta-learning은 LDCT에 대한 의사 레이블을 생성하는 데 검증되었습니다.  
  
 Zhu 등[110]은 LDCT 노이즈 제거 작업에서 고품질 CT 이미지를 얻기 위한 Meta-learning 전략인 SMU-Net을 제안했습니다.  
-SMU-Net은 teacher network, 의사 레이블 생성 및 학생 네트워크를 포함한 세 가지 모듈로 구성됩니다.  
+SMU-Net은 Teacher Network, pseudo-labels generation 및 Student Network를 포함한 세 가지 모듈로 구성됩니다.  
 SMU-Net은 LDCT 이미지의 세부 구조를 보존하는 데 효과적입니다.  
 위에서 언급한 모든 방법은 stratified pixel selection strategy을 적용했으며, 이 전략은 receptive field의 노이즈 픽셀들이 center target(N2V 및 N2S)을 예측하는 데 정확한지 여부, 노이즈 픽셀의 보간으로 인해 예상치 못한 smoothness 및 discontinuity(SN2N)이 발생하는지 여부를 고려하지 않았습니다.  
 따라서 더 나은 마스킹 전략 또는 노이즈와 신호의 더 나은 분해는 이러한 방법을 더욱 향상시키는 데 도움이 될 것입니다.
+
+### Unsupervised Denoising:
+Wavelet transform은 LDCT 노이즈 제거를 지원하기 위해 적용되기도 합니다.  
+Gu et al. [77]은 wavelet-assisted preprocessing를 사용하여 LDCT 이미지의 노이즈 성분을 분해하는 WAND를 제안했습니다.  
+실험 결과는 기본 CycleGAN에 대해 제안된 방법의 성능을 크게 개선하는 데 WAND의 효과를 입증합니다.  
+노이즈 분리를 위해 wavelet transform은 가장 많은 노이즈 정보를 포함하는 고주파 신호를 캡처하는 데 사용됩니다.  
+심장병 환자 이미지의 일치된 LDCT와 NDCT는 실제로 얻을 수 없기 때문에 모델은 CycleGAN을 사용하여 unsupervised 방식으로 훈련되어 LDCT 및 NDCT 이미지에서 고주파 신호를 추출했습니다.  
+그림 8에 표시된 것과 같이 WAND는 Noise2Noise 및 CycleGAN과 비슷한 성능을 발휘합니다.  
+
+![image](https://github.com/user-attachments/assets/1a2e7241-425c-418c-8a7d-d9746c4fa895)
+
+실제로 X선 CT 이미지의 모션 Artifact는 blurring, streaking, ghosting, 내부 구조의 변형 또는 거친 이미지 왜곡과 같은 다양한 형태로 나타납니다.  
+Ko et al. [78]은 X선 CT 이미지의 고정되었거나 고정되지 않은 motion artifact를 줄이기 위해 attention module을 제안했습니다.  
+이 attention module은 해당 feature importance에 따라 residual feature를 증폭하고 약화시켜 모델 용량을 개선하는 데 도움이 됩니다.  
+모델은 1) rigid motion 또는 2) step-and-shoot fan-beam CT (FBCT) 하에서 고정되었거나 고정되지 않은 motion을 모두 사용하여 제안된 네 가지 벤치마크 데이터 세트에 대해 훈련 및 평가되었습니다.
+
+전 외[93]는 volumetric LDCT denoising task을 위한 MM-Net이라는 unsupervised learning-based framework를 설명했습니다.  
+MM-Net 훈련의 첫 번째 단계에서 초기 denoising network, 즉 multiscale attention U-Net(MSAU-Net)은 인접한 여러 개의 슬라이스 입력으로 노이즈가 억제된 중심 슬라이스를 예측하는 것을 목표로 self-supervised 방식으로 훈련됩니다.  
+둘째, U-Net 기반 노이즈 제거기는 사전 훈련된 MSAU-Net을 기반으로 훈련되어 novel multipatch 및 multimask matching loss을 도입하여 이미지 품질을 개선합니다.  
+MM-Net은 임상 및 동물 데이터의 다양한 영역에서 질적 및 정량적 측정 모두에서 기존의 unsupervised algorithm을 능가하는 성능을 보였습니다[93].  
+또한 unsupervised algorithm은 NDCT 이미지로 훈련된 지도학습된 모델과 유사한 노이즈 제거 성능을 달성했습니다.
+
+## Diffusion-Based Denoising
+Diffusion model은 노이즈를 추가하여 데이터를 점진적으로 손상시킨 다음 이 과정을 반전시켜 샘플을 생성하는 일종의 확률적 생성 모델입니다[50].  
+일반적인 DDPM [48], [112]은 1) 데이터를 무작위 노이즈로 추가하는 forward chain과 2) 무작위 노이즈를 다시 데이터로 변환하는 reverse chain의 두 가지 Markov chain을 사용합니다.  
+Forward chain은 모든 데이터 분포를 간단한 이전 가우시안 분포로 변환하도록 설계된 반면, reverse Markov chain은 transition kernel(그림 9), 즉 심층 신경망의 매개변수를 학습하여 전자를 반전시킵니다. 
+
+![image](https://github.com/user-attachments/assets/6f3658f9-d70c-48b2-897a-7067e9926eea)
+
+새로운 데이터를 생성하기 위해 먼저 이전 분포에서 무작위 노이즈를 샘플링한 다음 reverse Markov chain을 통해 노이즈 샘플링을 수행합니다.  
+구체적으로, 주어진 데이터 분포 $x_0 ~ q(x_0)$에 대해 $q(x_t|x_{t-1})$에 의해 구동되는 Markov chain의 forward process는 노이즈가 추가된 이미지 $x_1, x_2,...,x_T$를 생성하며, 그러면 분해된 joint probability distribution를 얻을 수 있습니다 :
+
+![image](https://github.com/user-attachments/assets/480137bd-c720-4744-a80e-4b4829762406)
+
+Transition kernel은 종종 Gaussian perturbation으로 선택됩니다 :
+
+![image](https://github.com/user-attachments/assets/b503d0d3-8c9b-44fc-a120-d08b93e7bb21)
+
+$β_t ∈ (0, 1)$ 는 확산 계수로, 하이퍼파라미터입니다.  
+
+![image](https://github.com/user-attachments/assets/7b013ca5-1694-4a55-af18-ce8e0241b1e2)
+
+![image](https://github.com/user-attachments/assets/6021f566-5ba9-41bb-ab56-e4c2176f41bb)
+
+따라서 $x_0$이 주어지면 가우시안 변수 $\epsilon \approx N (0, I)$ 을 따르는 노이즈를 추가하여 $x_t$를 얻을 수 있습니다 :
+
+![image](https://github.com/user-attachments/assets/72c463b8-3ed5-4113-ac94-4f5b118244b4)
+
+Diffusion model로 얻은 이미지 생성 성능은 이미지 편집과 같은 많은 응용 분야에서 GAN 기반 방법의 성능을 능가했습니다[50].  
+인기 있는 확산 모델에는 DDPM[48], score-based generative model(SGM)[67], [68](SBGM), 확률적 미분 방정식(ScoreSDE)[70], [71]이 포함됩니다.  
+Score function에서 영감을 받은 Xie et al. [113]은 Poisson noise, Gaussian noise, Gamma noise, and Rayleigh noise를 처리할 수 있도록 노이즈 모델에 구애받지 않는 unsupervised image denoising 방법을 개발했습니다.  
+또한 DDPM[114]을 기반으로 다양한 유형의 노이즈에 대한 생성 이미지 노이즈 제거 접근 방식을 제안했습니다.
+
+[111]에서는 의료 영상의 선형 역 문제를 해결하기 위해 일반적인 SGM을 제안했습니다.  
+이 방법은 순전히 생성적인 방법으로, 훈련 중에 물리적 측정 프로세스에 대한 사전 지식이 필요하지 않으며 모델 재교육 없이 추론 단계에서 다양한 영상 프로세스에 빠르게 적응할 수 있습니다.  
+저자들은 최근 도입된 score-based generative model을 활용하여 역 문제를 해결하기 위해 fully unsupervised method을 제안했습니다.  
+특히, 먼저 의료 이미지에 대해 SGM을 훈련하여 이전 분포를 캡처합니다.  
+그런 다음 훈련된 모델을 사용하여 관찰된 데이터의 likelihood을 최적화하여 역 문제를 해결합니다.  
+반면, Xie와 Lie[115]는 언더샘플링된 의료 이미지 재구성을 위한 새롭고 통합된 방법인 measurement-conditioned DDPM(MC-DDPM)을 제안했습니다.  
+이전 연구와 달리 MC-DDPM은 MRI 재구성에서 k-space간으로 정의되고 undersampling mask에 조건화됩니다.
+
