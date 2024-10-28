@@ -118,3 +118,148 @@ Peak signal-to-noise ratio(PSNR)는 일반적으로 사용되는 메트릭입니
 즉, PSNR은 구조 보존을 고려하지 않고 재구성된 LDCT와 NDCT 간의 수치적 차이를 측정합니다.
 
 # DEEP DENOISING METHODS
+이 섹션에서는 supervised learning, self/un-supervised learning 및 최근 Diffusion 기반 생성 모델과 같은 다양한 학습 패러다임에 따른 심층 노이즈 제거 방법을 종합적으로 검토합니다.  
+그림 1에는 최근 몇 년 동안 발표된 대표적인 방법이 요약되어 있습니다.  
+
+![image](https://github.com/user-attachments/assets/eda039d3-df57-4ecf-9391-ec1e99cc9e51)
+
+인기 있는 노이즈 제거 데이터 세트는 표 I에 요약되어 있으며 관련 논문은 표 II에 요약되어 있습니다.
+
+![image](https://github.com/user-attachments/assets/3ad735ef-91d9-4395-9475-c7d11fb67da1)
+
+![image](https://github.com/user-attachments/assets/a4dba159-14fa-4e0d-b4d3-3260f2c17634)
+
+## Supervised Denoising 
+### Problem Formulation: 
+지도 학습 설정에서 노이즈 제거의 학습 목표는 다음과 같이 공식화할 수 있는 페어링된 ground-truth 레이블로 신경망 기반 노이즈 제거 모델을 훈련하는 것입니다:
+
+![image](https://github.com/user-attachments/assets/cba52d0c-e07b-483a-b666-13fc9cfcd483)
+
+여기서 $f_θ$은 $θ$로 매개변수화된 심층 신경망이고, $L$ 은 MSE와 같은 image-to-image reconstruction loss을 나타냅니다.  
+$I_{LD}$와 $I_{ND}$는 각각 LDCT 입력과 NDCT ground-truth 이미지입니다.  
+의료 이미지 분할을 위해 제안된 U-Net 모델에서 영감을 받은 skip-connection이 있는 encoder–decoder 아키텍처는 의료 이미지 재구성 작업에서 잘 탐구되어 왔습니다[17].  
+지도 학습 설정에서 딥 러닝 모델은 훈련을 위해 많은 양의 페어링된 NDCT 샘플이 필요합니다.
+
+### CNN-Based Denoising: 
+CNN 기반 CT 이미지 재구성은 [82]에서 처음 논의된 후 Chen 등[83]은 CT 이미지 노이즈 제거에 CNN을 적용하는 것의 효과를 검증했습니다.  
+Wavelet transform은 딥 러닝 아키텍처에도 도입되었습니다[84].  
+CNN-based denoising autoencoder(CNN-DAE)는 LDCT 노이즈 제거를 위한 autoencoder에 컨볼루션 연산을 처음 적용했습니다[7].  
+U-Net의 다양한 스케일의 feature map 간에 자세한 정보를 학습하기 위해 Chen 등[25]은 LDCT 노이즈 제거를 위한 residual encoder–decoder CNN(RED-CNN)을 제안했습니다.  
+RED-CNN은 구조적 세부 사항을 유지하면서 통계적 특성을 모델링할 필요가 없습니다.  
+그림 2(a)는 RED-CNN의 아키텍처를 보여주며, U-Net과 유사한 개념의 encoder–decoder를 활용하지만 RED-CNN에 사용되는 skip-connection은 U-Net의 channel-wise concatenation과 element-wise addition로 구현됩니다.  
+
+![image](https://github.com/user-attachments/assets/4b9ce13b-98c7-4c3a-a681-c5470b0de918)
+
+
+이러한 encoder–decoder 아키텍처의 피할 수 없는 문제는 지속적인 downsampling을 위한 information loss(정보 손실)이 발생한다는 것입니다.
+이러한 장애물을 극복하기 위해 Huang 등[85]은 보다 상세한 구조를 보존하는 LDCT를 위한 deep cascaded residual network(DCRN)를 제안했습니다.  
+Detail 보존을 더욱 강화하기 위해 WGAN-VGG는 생성적 적대적 손실과 지각적 손실을 적용하여 MSE 기반 손실로 인한 중요한 구조적 세부 사항의 낮은 품질을 개선했습니다.  
+GAN[49]은 판별기와 생성기가 서로 경쟁한 다음 더 나은 판별기와 생성기를 얻을 수 있는 zero-sum game의 개념을 아이디어로 가져온 생성 모델입니다.  
+노이즈 제거 이미지 생성을 위한 CNN 생성기, perceptual loss을 평가하기 위한 VGG 네트워크, NDCT 이미지에서 생성된 이미지를 식별하기 위한 판별기 네트워크로 구성된 WGAN-VG의 프레임워크는 그림 2(b)에 나와 있습니다. 
+
+![image](https://github.com/user-attachments/assets/43bd7857-2448-4c30-af96-1334813a4757)
+
+생성된 이미지와 NDCT 이미지의 컨볼루션 특징 간의 유사성을 측정하기 위해 WGAN-VGG는 perceptual loss[86]을 활용했습니다.  
+또한 WGAN-VGG는 LDCT와 NDCT 이미지 간의 불일치를 측정하기 위해 Wasserstein distance를 사용했습니다.  
+이러한 손실은 노이즈와 아티팩트 문제를 완화하는 데 도움이 될 수 있습니다.  
+Skip-connection은 널리 사용되는 기술인 image-to-image 변환 작업의 성능을 크게 향상시킵니다.
+
+3D CT 스캔과 관련하여 Shan et al. [26]은 잘 훈련된 2D 네트워크를 활용하여 3D CT 노이즈를 개선할 것을 제안했습니다.  
+그들은 adversarial loss과 perceptual loss도 적용한 그림 2(c)에 표시된 conveying path-based convolutional encoder–decoder(CPCE)를 제안했습니다.  
+
+![image](https://github.com/user-attachments/assets/969a9f6a-4ca5-4236-ab89-b54e53d70117)
+
+RED-CNN 및 WGAN-VGG와 달리 CPCE는 사전 훈련된 2D 커널에서 3D 노이즈 제거 네트워크를 구축하는 데 더 중점을 두었습니다[26].  
+한 걸음 더 나아가, Shan et al. [27]은 modularized adaptive processing neural network(MAP-NN)이라고 불리는 end-to-process 학습 프레임워크에서 CPCE를 모듈로 공식화했습니다.  
+MAP-NN은 점진적 훈련 루프에 전문가의 지식을 통합하여 성능을 향상시킵니다. 특히, 이는 방사선 전문의의 판단을 테스트 단계에 통합했습니다.  
+이를 통해 결과의 신뢰성을 보장했습니다.  
+놀랍게도 MAP-NN은 노이즈 억제, structural fidelity 및 처리 속도 면에서 상용 반복 재구성(IR) 방법을 능가합니다.  
+MSE loss에도 불구하고 MAP-NN은 LDCT 및 NDCT 이미지에서 Sobel filtration에 대한 adversarial loss 및 MSE loss로 훈련되기도 했습니다.  
+요약하면, CNN 아키텍처를 기반으로 MSE는 이미지 콘텐츠의 대략적인 구조를 보장합니다.  
+Regularization를 사용하거나 adversarial, perceptual loss와 같은 신중하게 설계된 손실 함수를 사용하여 세부적인 구조를 보존하는 것이 더 중요합니다.
+
+모델 구조의 경우, 그림 2는 세부 정보 보존을 위해 element-wise addition를 도입하는 RED-CNN, CT 노이즈 제거에서 적대적 학습 개념을 활용하는 선행 작업인 WGAN-VGG, conveying-path 및 적대적 학습을 적용하여 3D CT 데이터 노이즈 제거를 위한 향상된 프레임워크를 개발하는 등 서로 다른 관점의 세 가지 일반적인 아키텍처를 보여줍니다.  
+
+![image](https://github.com/user-attachments/assets/3851ab11-0068-4dd1-a42c-41fdcc82d15c)
+
+Loss function의 경우 RED-CNN은 주로 MSE loss을 사용했으며, CPCE는 MSE와 adversarial loss의 조합을 추가로 사용했습니다.  
+WGAN-VGG는 단순한 MSE loss을 포기하고 CNN이 정확한 intermediate feature을 보존할 수 있는 perceptual loss을 사용했으며, 이는 output feature과 NDCT feature 간에 계산됩니다.  
+그림 3에서 RED-CNN은 일부 작은 세부 구조가 누락된 비교적 매끄러운(smoothed) 결과를 얻을 수 있음을 알 수 있습니다.  
+
+![image](https://github.com/user-attachments/assets/90053f34-46d6-4d82-943b-ee7f90a74bb2)
+
+적대적 학습을 활용하여 WGAN-VGG와 CPCE는 적절한 텍스처로 보다 사실적인 이미지를 달성했습니다.  
+또한 conveying-path를 통해 CPCE는 WGAN-VG보다 더 나은 성능을 발휘할 수 있습니다.
+
+기존의 컨볼루션 아키텍처와 달리 Fan et al. [88]은 LDCT 노이즈 제거를 위한 quadratic neuron과 해당 quadratic autoencoder (Q-AE)를 제안했습니다.  
+validation loss을 통해 Q-AE는 RED-CNN 및 CPCE-2D보다 더 나은 수렴 동작을 보여주었습니다.  
+정성적 평가를 위해 방사선 전문의는 Q-AE가 얻은 노이즈 제거 및 세부 정보 보존 측면에서 약간 우수한 성능을 확인했습니다.  
+강 외 [87]은 framelet-based 노이즈 제거 방법과 심층 신경망을 결합하여 제안된 convolutional framelet에 의한 성능을 보장하는 LDCT 노이즈 제거를 위한 wavelet residual network(WavResNet)를 제안했습니다.  
+Sparse-view CT에서의 노이즈 제거를 위해 Chen 외 [100]은 희소하게 수집된 데이터 또는 언더샘플링된 측정값으로부터 단층 촬영 재구성(CT)을 위한 compressive sensing method을 제안했습니다.  
+제안된 방법은 학습된 전문가의 평가 기반 재구성 네트워크를 기반으로 하며, 이는 Mayo 데이터 세트에서 우수한 성능을 생성합니다.  
+Zhang 외 [101]은 강력한 희소 시점 CT 재구성을 위한 REDAEP를 제안했으며, 이는 $l^2$ loss을 더 나은 텍스처 보존을 위한 더 강력한 $l^p$ 손실로 대체했습니다.
+
+CT 스캔의 여러 슬라이스들로 인해 multichannel 또는 multicolumn model과 트릭들은 더 많은 정보를 활용하는 데 집중되어 왔습니다.  
+슬라이스들 간의 관계를 고려하기 위해 Li 등[43]은 SA 기법을 활용하여 평면 주의력과 깊이 주의력을 동시에 융합하는 3D CNN 생성기인 SACNN을 구축했습니다.  
+그런 다음 CPCE[26] 및 WGAN-VGG[28]와 유사하게 SACNN도 adversarial loss, perceptual loss로 최적화되었습니다.  
+Artifact and detail attention GAN(ADAGAN)[76]은 서로 다른 스케일의 입력에 따라 점진적으로 cascaded(여러가지 모델을 추가하여 늘려나가는 과정) 되는 multiscale network로 구성됩니다.  
+또한 노이즈가 제거된 LDCT와 NDCT를 식별하기 위한 판별자로 multiscale Res2Net이 제안되었습니다.  
+Zhang 등[89]은 comprehensive learning-enabled adversarial reconstruction(CLEAR)이라는 이미지 domain과 projection domain 재구성을 모두 포함하는 3D ResUNet 기반 재구성 프레임워크를 제안했습니다.
+
+CLEAR에 사용된 판별기는 이미지와 projection domain 의 출력을 추가로 결합한 3D CNN이기도 합니다.  
+최근 Li 등[102]은 CycleGAN, IdentityGAN, GAN-CIRCLE을 사용하여 LDCT 노이즈 제거를 위한 페어링되지 않은 딥 러닝 기술을 조사했습니다.  
+추가 노이즈의 정의를 기반으로 Geng 등[90]은 노이즈가 많은 이미지를 해당 콘텐츠와 노이즈 부분으로 분해했습니다.  
+특히 고전적인 U-Net과 DnCNN[12]으로 구현된 콘텐츠 predictor와 노이즈 predictor를 설계했습니다.  
+그런 다음 PatchGAN을 적용하여 실제 이미지와 가짜 이미지에 대해 각각 예측된 콘텐츠와 노이즈를 구별했습니다[103].  
+임상 환경에는 충분한 NDCT 이미지가 없기 때문에 연구자들은 페어링되지 않은 이미지에서 학습 쌍을 생성하려고 노력합니다.  
+Physics-based noise model에서 영감을 받은 [80]에서 저자들은 페어링되지 않은 데이터에서 페어링된 원본 CT 이미지와 노이즈가 많은 CT 이미지를 생성하는 weakly supervised denoising framework를 설계했습니다.  
+이 프레임워크에는 작은 노이즈의 차이를 점진적으로 보정하여 LDCT에서 NDCT 이미지로 직접 매핑하는 문제를 우회하는 progressive denoising module이 포함되어 있습니다.  
+Noise power spectrum과 signal detection accuracy는 진단 이미지 품질을 정량적으로 평가하는 데 사용됩니다.  
+실험 결과는 제안된 방법이 감독된 노이즈 제거 방법보다 우수한 놀라운 노이즈 제거 성능을 달성한다는 것을 보여줍니다.  
+이 프레임워크는 데이터 수집에 유연하며 모든 선량 수준에서 페어링되지 않은 데이터를 활용할 수 있습니다.
+
+### Transformer-Based Denoising:
+Parvaiz et al. [104]는 이중 향상 기능을 갖춘 transformer를 사용하여 LDCT 노이즈를 제거하기 위한 DEformer를 제안했습니다.  
+제안된 방법은 이미지 노이즈 제거를 수행하기 위해 겹치지 않고 window-based SA transformer block을 사용하는 주요 부분과 double enhancement module을 통해 edge, texture, and context의 정보를 향상시키기 위해 맞춤화된 두 개의 작은 부분의 세 부분으로 구성됩니다[94].  
+Luthra et al. [24]는 의료 이미지 노이즈 제거를 위한 transformer-based encoder–decoder network이기도 한 Eformer를 제시했습니다.  
+Eformer는 학습 가능한 Sobel–Feldman operator를 edge information 향상을 위한 훈련에 통합합니다.  
+동시에 계산 효율성은 transformer block의 겹치지 않는 window-based SA에 의해 가져옵니다.  
+Wang et al. [95]은 masked autoencoder를 사용하여 LDCT 노이즈 제거를 위한 SwinIR+MAE를 제안했습니다.  
+제안된 방법은 1) 노이즈가 많은 이미지와 깨끗한 이미지 간의 매핑을 학습하는 denoising autoencoder와 2) 노이즈 제거 프로세스를 안내하는 마스크를 생성하는 mask generator의 두 부분으로 구성됩니다.  
+Zhang et al. [96]은 dual-path transformer를 사용하여 LDCT 노이즈 제거를 위한 TransCT를 제안했습니다.  
+제안된 방법은 1) SA transformer block을 사용하여 이미지 노이즈를 제거하는 주요 경로와 2) 입력 이미지의 표현을 향상시키는 multiscale feature fusion module을 사용하는 보조 경로의 두 가지 경로로 구성됩니다.
+Li et al. [97]은 컨볼루션 및 Swin-transformer 기반의 multidomain sparse-view CT reconstruction 네트워크를 사용하여 sparse-view CT reconstruction을 위한 MDST를 제안했습니다.  
+제안된 방법은 1) 컨볼루션 신경망과 Swin-transformer를 사용하여 sparse-view 프로젝션으로부터 CT 이미지를 재구성하는 multidomain sparse-view CT reconstruction network와 2) 재구성된 이미지와 실제 이미지 간의 일관성을 강화하는 multidomain consistency loss의 두 부분으로 구성됩니다.
+
+Kim et al. [98]은 task-agnostic ViT를 사용하여 이미지 처리의 distributed learning을 위한 TAViT를 제안했습니다.  
+이는 1) 입력 이미지의 표현을 학습하는 task-agnostic ViT와 2) 이미지 처리 작업을 수행하는 task-specific module의 두 부분으로 구성됩니다.  
+Li 등은 parallel transformer network가 있는 이중 도메인을 사용하여 희소 뷰 CT 이미지 재구성을 위해 맞춤화된 DDPTransformer를 제안했습니다.  
+DDPT 트랜스포머는 1) 이미지 도메인과 projection 도메인 모두에서 입력 이미지의 표현을 학습하는 dual-domain transformer와 2) 이미지 재구성 작업을 수행하는 parallel transformer network의 두 부분으로 구성됩니다.  
+DDPTransformer에서 사이노그램이 도메인인 subnet과 이미지 도메인 subnet은 모두 여러 개의 DDPTransformer Block[99]으로 구성됩니다.  
+
+위의 supervised denoising method 외에도 Noise2Noise[29]는 깨끗한 이미지를 지도학습할 필요 없이 이미지 노이즈 제거를 할 수 있는 선구적인 작업입니다.  
+이는 point-wise $L_2$ loss라는 trivial한 속성에서 영감을 받았고, 이는 target pixel들이 대상 픽셀의 Expectation와 일치하는 무작위 값으로 대체되면 $L_2$ loss에 대한 Expectation가 변경되지 않음을 의미합니다 : 
+
+![image](https://github.com/user-attachments/assets/e88337c6-9d10-4a8a-b379-e8bb53302d14)
+
+즉, $p(I_{ND}|I_{LD})$를 conditional expectation이 동일한 임의의 분포로 대체해도 최적의 모델 $f_θ$은 변경되지 않습니다.  
+그러면 다음과 같은 empirical risk를 최소화할 수 있습니다:
+
+![image](https://github.com/user-attachments/assets/fe99e638-aea3-41cb-850d-2d0220f3eff5)
+
+여기서 $\hat I_{LD}$ 와 $\hat I_{ND}$는 $E(\hat I_{LD}|\hat I_{ND}) = I_{ND}$가 되도록 $I_{ND}$를 조건으로 한 손상된 분포에서 추출됩니다.  
+실제 구현에서 Noise2Noise는 노이즈가 없는 두 손상된 이미지 간의 $L_2$ loss을 최소화합니다.  
+애플리케이션의 경우 Noise2Noise는 Gaussian additive noise, Poisson noise, and multiplicative Bernoulli noise을 더 잘 줄일 수 있습니다.  
+또한 텍스트 제거에서도 잘 작동합니다.  
+한 걸음 더 나아가 Hasan et al(105)는 세 개의 generator로 구성된 LDCT에 맞게 조정된 hybrid-collaborative Noise2Noise framework를 훈련했습니다.  
+이 새롭고 효과적인 학습 패러다임은 다음과 같이 논의될 많은 self-supervised denoising method을 가공하게 합니다.
+
+## Self/Un-Supervised Denoising
+지도 학습은 높은 fidelity와 인상적인 세부 정보 보존으로 CT 이미지 노이즈 제거에 힘을 실어주었지만, 많은 양의 쌍을 이루는 NDCT 이미지가 필요하기 때문에 임상 시나리오에서 사용하기는 여전히 어렵습니다.  
+최근 몇 년 동안 self-supervised learning은 특히 쌍을 이루는 NDCT 지도학습이 없는 LDCT의 경우 이미지 노이즈 제거에서 큰 관심을 받고 있습니다.  
+이 섹션에서는 서로 다른 모델 아키텍처보다는 NDCT 실제 이미지가 없는 학습 패러다임에 더 중점을 둡니다.  
+관련 방법은 대략 self-supervised and unsupervised의 두 가지 클래스로 분류할 수 있습니다.  
+두 클래스는 개념적으로 다릅니다.  
+Self-supervised 방법은 LDCT 이미지로만 노이즈 제거 모델을 학습하는 데 초점을 맞추고, unsupervised 방법은 쌍을 이루지 않은 NDCT 이미지로 노이즈 제거 모델을 학습하는 것을 목표로 합니다.  
+1) Self-Supervised Denoising: Self-Supervised Denoising 설정에서 중요한 단계는 LDCT의 이미지 또는 feature에서 pseudo-supervision을 탐색하는 것이며, 노이즈 제거 문제는 다음과 같이 공식화됩니다[33]:
+
