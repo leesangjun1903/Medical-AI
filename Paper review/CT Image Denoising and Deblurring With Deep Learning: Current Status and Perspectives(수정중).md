@@ -402,5 +402,6 @@ Score function에서 영감을 받은 Xie et al. [113]은 Poisson noise, Gaussia
 특히, 먼저 의료 이미지에 대해 SGM을 훈련하여 이전 분포를 캡처합니다.  
 그런 다음 훈련된 모델을 사용하여 관찰된 데이터의 likelihood을 최적화하여 역 문제를 해결합니다.  
 반면, Xie와 Lie[115]는 언더샘플링된 의료 이미지 재구성을 위한 새롭고 통합된 방법인 measurement-conditioned DDPM(MC-DDPM)을 제안했습니다.  
-이전 연구와 달리 MC-DDPM은 MRI 재구성에서 k-space간으로 정의되고 undersampling mask에 조건화됩니다.
+이전 연구와 달리 MC-DDPM은 MRI 재구성에서 k-space(공간좌표에 해당하는 3차원 좌표를 푸리에 변환환 주파수 공간)간으로 정의되고 undersampling mask에 조건화됩니다.
+
 
