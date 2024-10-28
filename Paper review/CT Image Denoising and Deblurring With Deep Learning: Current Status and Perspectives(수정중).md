@@ -263,3 +263,5 @@ DDPTransformer에서 사이노그램이 도메인인 subnet과 이미지 도메�
 Self-supervised 방법은 LDCT 이미지로만 노이즈 제거 모델을 학습하는 데 초점을 맞추고, unsupervised 방법은 쌍을 이루지 않은 NDCT 이미지로 노이즈 제거 모델을 학습하는 것을 목표로 합니다.  
 1) Self-Supervised Denoising: Self-Supervised Denoising 설정에서 중요한 단계는 LDCT의 이미지 또는 feature에서 pseudo-supervision을 탐색하는 것이며, 노이즈 제거 문제는 다음과 같이 공식화됩니다[33]:
 
+![image](https://github.com/user-attachments/assets/7915caa2-5305-42e2-b869-6f2081b400a4)
+
