@@ -404,4 +404,10 @@ Score function에서 영감을 받은 Xie et al. [113]은 Poisson noise, Gaussia
 반면, Xie와 Lie[115]는 언더샘플링된 의료 이미지 재구성을 위한 새롭고 통합된 방법인 measurement-conditioned DDPM(MC-DDPM)을 제안했습니다.  
 이전 연구와 달리 MC-DDPM은 MRI 재구성에서 k-space(공간좌표에 해당하는 3차원 좌표를 푸리에 변환환 주파수 공간)간으로 정의되고 undersampling mask에 조건화됩니다.
 
+Gao와 Shan[51]은 LDCT 이미지 노이즈 제거를 위해 CT 이미지의 복잡한 공간 상관관계를 효과적으로 캡처할 수 있는 contextual conditional diffusion model (CoCoCoDiff)을 제안했습니다.  
+그럼에도 불구하고 고전적 Diffusion 모델의 고유한 한계로 인해 추론 중에 1000단계의 샘플링을 수행해야 하기 때문에 실시간 이미징 시나리오에서 CoCodiff 모델의 실용성이 저해됩니다.  
+이 문제를 해결하기 위해 Gao 등[116]은 신속한 샘플링을 가능하게 하고 더 나은 일반화 성능을 나타내는 contextual error-modulated generalized diffusion model (CoreDiff)을 추가로 고안했습니다.  
+특히 저선량 이미지를 Diffusion endpoint로 사용하여 CT 이미지의 물리적 degradation를 모방하는 새로운 평균을 보존하는 Diffusion 프로세스를 개발합니다.  
+또한 one-shot learning framework를 맞춤화하여 CoreDiff 모델이 단일 LDCT 이미지로 보이지 않는 선량 수준의 CT 이미징 작업에 빠르게 적응할 수 있도록 지원합니다.
+
 
