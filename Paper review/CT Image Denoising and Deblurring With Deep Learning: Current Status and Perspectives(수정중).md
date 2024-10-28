@@ -265,3 +265,77 @@ Self-supervised 방법은 LDCT 이미지로만 노이즈 제거 모델을 학습
 
 ![image](https://github.com/user-attachments/assets/7915caa2-5305-42e2-b869-6f2081b400a4)
 
+여기서 σ(·)는 온라인 또는 오프라인 방식으로 설계할 수 있는 의사 감독 생성 프로세스를 나타냅니다.  
+널리 사용되는 자체 감독 노이즈 제거 방법은 blind-spot method입니다.  
+Noise2void(N2V)[30]는 그림 4에 나와 있는 첫 번째 blind-spot method입니다.  
+
+![image](https://github.com/user-attachments/assets/cb6ac050-002e-48f6-8d1d-67b52f6adb96)
+
+그림 4(d)의 기존 개별 픽셀 예측은 receptive field(원뿔 그림) 내의 모든 픽셀에 따라 달라집니다.  
+그러나 노이즈 입력을 학습 목표로 삼는 Noise2Noise의 아이디어를 채택하면 모델은 노이즈 제거 능력을 잃고 이미지 자체를 학습할 수 있습니다.  
+N2V의 핵심 아이디어는 픽셀의 receptive field를 학습하여 딥 네트워크가 이미지 자체를 학습하는 것을 방지한다는 것입니다.  
+그림 4(b)와 (c)에서 중앙 픽셀을 제외한 모든 픽셀이 receptive field로 간주된다는 것을 알 수 있습니다.  
+실제로 N2V는 먼저 계층화된 설정에서 무작위로 선택된 픽셀을 마스킹합니다.  
+그런 다음 원래 노이즈 입력의 해당 픽셀을 학습 대상으로 취급합니다.  
+Blind-spot 개념을 일반화하기 위해 noise2self(N2S)는 입력 자체에서 깨끗한 신호를 학습하기 위한 J-invariant theory을 제안했습니다[31].
+
+#### J-invariant theory : $J$를 차원 ${1,...,m}$과 $j ∈ J$의 분할이라고 가정합니다. 함수 $f : R^m → R^m$은 $f_j(x)$가 $x_j$의 값에 의존하지 않으면 J-invariant이며, 각 $j ∈ J$에 대해 j-invariant이면 J-invariant입니다[31].
+
+객관적인 self-supervised loss는 다음과 같이 정의됩니다:
+
+![image](https://github.com/user-attachments/assets/f92dc241-bc3b-4d1a-8725-6eb5ea494a80)
+
+$E[x|y] = y$ 일 때, $〈f (x) − y, x − y〉=0$ 라고 합니다. 
+
+#### Proposition 1 [31]: $x$를 $y$, 즉 $E[x|y] = y$의 unbiased estimator라고 하고, 각 부분 집합 $j ∈ J$의 노이즈는 $y$에 조건부로 하는 complement $J^c$와 독립적이라고 가정합니다.  
+그런 다음 f를 J-invariant이라고 가정하면 : 
+
+![image](https://github.com/user-attachments/assets/33941762-ac45-416d-a43e-484239444402)
+
+따라서 self-supervised loss은 다음과 같이 쓸 수 있습니다 : 
+
+![image](https://github.com/user-attachments/assets/fbc386fc-cf95-47ff-b17a-e7a85d40979c)
+
+입력 이미지 특정 픽셀과 마스킹을 통해 그 픽셀을 제외한 부분으로 예측한 그 부분의 픽셀값의 차이 : Loss
+
+J-invariant theory을 기반으로 Lei 등[33]은 self-supervised learning 목표를 구성하는 데 다른 관점을 취하는 strided noise2neighbors(SN2N)을 제안했습니다.  
+N2V와 N2S는 CNN의 입력 구조에 영향을 미치는 입력 이미지에서 대상 픽셀을 마스킹하는 데 중점을 둡니다.  
+반면, SN2N은 N2V와 N2S에 사용된 원래 입력이 아닌 학습 대상을 수정할 것을 제안했습니다.  
+SN2N의 학습 목표는 다음과 같습니다:
+
+![image](https://github.com/user-attachments/assets/c2206987-02fa-4b2e-92d0-5ef7f20cf03b)
+
+중심 부분을 제외한 원래 이미지 픽셀들로 예측한 중심 픽셀과 주변 픽셀들을 이용하여 Bilinear Intepolation 으로 변환한 중심 픽셀값의 차이
+
+여기서 $A(·)$는 중심 픽셀의 이웃한 픽셀들에 대한 변환을 나타내며, 예를 들어 SN2N에서 사용되는 bilinear interpolation은 근사시킬 대상을 구성하기 위해 맞춤화됩니다.  
+SN2N은 대상에 대한 계층화된 마스킹을 활성화하면서 입력 이미지를 변경하지 않습니다.  
+그림 5에서 K-SVD[107]와 N2N은 부드러운(smooth) 결과를 나타내는 반면, N2V와 N2S는 이 문제를 해결한다는 것을 알 수 있습니다.  
+
+![image](https://github.com/user-attachments/assets/8f070069-8540-4c2f-8e64-80c357a8bc49)
+
+그러나 N2V와 N2S는 손상된 입력으로 인한 명백한 artifact를 보존합니다.
+
+독립적인 노이즈에 대한 제한된 가정을 깨기 위해 Noise2Sim은 mild 조건에서 독립적인 노이즈와 상관관계에 있는 노이즈를 동시에 처리하도록 제안되었습니다[40].  
+그림 6에서 Noise2Sim은 정성적 및 정량적(PSNR 및 SSIM) 측정 측면에서 일부 지도 학습 방법을 능가하기도 하며, 이는 CT 재구성을 위한 self-supervised learning의 잠재력을 보여줍니다.  
+
+![image](https://github.com/user-attachments/assets/67fe6b85-cc81-4b3d-994e-0a74f933923e)
+
+또한 그림 6에서 Noise2Sim은 다른 것보다 작은 구조와 상세한 텍스처를 더 잘 보존할 수 있습니다.  
+N2Void가 상대적으로 더 나쁜 결과를 얻었음이 분명하며, 이는 blind spot의 무작위로 선정된 대상 때문이라고 추측합니다.  
+또한 RED-CNN은 더 높은 RMSE를 보존하면서 더 높은 PSNR 값을 달성했다는 점에 주목합니다.
+
+즉, RMSE는 어느 정도 oversmoothing 효과와 상관관계가 있을 수 있습니다.  
+또한 MAP-NN과 N2Clean도 상대적으로 oversmoothing 효과를 나타내며, RMSE 값은 Noise2Sim보다 높습니다.  
+Liu 등[106]은 변형 가능한 컨볼루션을 사용하여 코로나19 노이즈 제거를 수행하도록 DCDNet을 제안했으며, 그림 7에서 NLM이 코로나19 병변의 중요한 특성인 텍스처를 oversmooth한 것을 확인할 수 있습니다.  
+Neighbor2neighbor(NB2NB)는 학습 이미지 쌍을 생성하기 위한 random neighbor subsampler를 개발했으며, 이는 노이즈가 있는 이미지만으로 학습하는 기존 노이즈 제거기와 앞서 self-supervised denoising method을 능가합니다[108].
+
+Corr2Self는 또한 self-supervised denoising method로, NDCT 이미지에 의존하지 않고 CNN을 훈련하기 위해 슬라이스 간 및 슬라이스 내 LDCT 데이터 간의 상관관계를 탐구했습니다.  
+이 접근 방식은 참조한 데이터의 필요성을 제거하고 LDCT 이미지만으로 CNN 기반 노이즈 제거기를 훈련하려고 시도합니다.  
+이 방법을 사용하면 실시간 미세 조정을 통해 성능을 더욱 향상시킬 수 있습니다[109].  
+Meta-learning은 LDCT에 대한 의사 레이블을 생성하는 데 검증되었습니다.  
+ 
+Zhu 등[110]은 LDCT 노이즈 제거 작업에서 고품질 CT 이미지를 얻기 위한 Meta-learning 전략인 SMU-Net을 제안했습니다.  
+SMU-Net은 teacher network, 의사 레이블 생성 및 학생 네트워크를 포함한 세 가지 모듈로 구성됩니다.  
+SMU-Net은 LDCT 이미지의 세부 구조를 보존하는 데 효과적입니다.  
+위에서 언급한 모든 방법은 stratified pixel selection strategy을 적용했으며, 이 전략은 receptive field의 노이즈 픽셀들이 center target(N2V 및 N2S)을 예측하는 데 정확한지 여부, 노이즈 픽셀의 보간으로 인해 예상치 못한 smoothness 및 discontinuity(SN2N)이 발생하는지 여부를 고려하지 않았습니다.  
+따라서 더 나은 마스킹 전략 또는 노이즈와 신호의 더 나은 분해는 이러한 방법을 더욱 향상시키는 데 도움이 될 것입니다.
