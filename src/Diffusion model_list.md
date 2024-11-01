@@ -49,10 +49,12 @@
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models
 - https://metamath1.github.io/blog/posts/diffusion/ddpm_part1.html
 - https://metamath1.github.io/blog/posts/diffusion/ddpm_part2-2.html
+- https://github.com/w86763777/pytorch-ddpm
 
 ## DDIM
 - https://keras.io/examples/generative/ddim/
 - https://github.com/xiaohu2015/nngen/tree/main/models/diffusion_models
+- https://github.com/gxlover0625/pytorch-ddpm-ddpim/tree/master
 
 
 ## SR3
