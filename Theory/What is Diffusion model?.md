@@ -47,6 +47,10 @@
 - https://junia3.github.io/blog/ddim
 - https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/ddim/#2-generative-process-and-unified-variational-inference-objective
 - https://zhuanlan.zhihu.com/p/674142410
+- https://www.youtube.com/watch?v=0ClUCCYk-BI
+- https://zhuanlan.zhihu.com/p/565698027
+
+- ELBO : https://yonghyuc.wordpress.com/2019/09/26/elbo-evidence-of-lower-bound/
 
 # SR3
 https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
