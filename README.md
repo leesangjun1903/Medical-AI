@@ -1,6 +1,6 @@
 # Computer-Tomograpy reconstruction
-## CT reconstruction(Super-resolution, Image Denoising)
-### Useful paper(survey) :
+## CT reconstruction
+### Super-resolution, Image Denoising survey
 - Deep Learning for Single Image Super-Resolution: A Brief Review
 - A Deep Journey into Super-resolution: A survey
 - Deep learning for image super-resolution: A survey
@@ -10,6 +10,9 @@
 - Hitchhiker's Guide to Super-Resolution: Introduction and Recent Advances
 - Diffusion Models, Image Super-Resolution And Everything: A Survey
 - (Video Super Resolution Based on Deep Learning: A comprehensive survey)
+- 
+
+### Medical image segmentation survey
 - 
 
 # Awesome Papers
