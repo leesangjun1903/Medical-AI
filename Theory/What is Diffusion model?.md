@@ -33,6 +33,7 @@
 - https://xoft.tistory.com/32
 - https://hyoseok-personality.tistory.com/entry/Concept-Diffusion-Models-with-DDPM-DDIM
 - https://glanceyes.tistory.com/entry/Generative-Model%EA%B3%BC-Diffusion-Model-%EA%B7%B8%EB%A6%AC%EA%B3%A0-Denoising-Diffusion-Probabilistic-Model
+- https://zhuanlan.zhihu.com/p/530602852
 
 # DDIM
 - https://jang-inspiration.com/ddim
@@ -49,6 +50,8 @@
 - https://zhuanlan.zhihu.com/p/674142410
 - https://www.youtube.com/watch?v=0ClUCCYk-BI
 - https://zhuanlan.zhihu.com/p/565698027
+- https://zhuanlan.zhihu.com/p/666552214
+- 
 
 - ELBO : https://yonghyuc.wordpress.com/2019/09/26/elbo-evidence-of-lower-bound/
 
