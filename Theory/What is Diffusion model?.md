@@ -54,6 +54,7 @@
 - 
 
 - ELBO : https://yonghyuc.wordpress.com/2019/09/26/elbo-evidence-of-lower-bound/
+- MLE : https://angeloyeo.github.io/2020/07/17/MLE.html
 
 # SR3
 https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
