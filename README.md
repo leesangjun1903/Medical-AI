@@ -13,7 +13,7 @@
 - 
 
 ### Medical imaging survey
-
+- CT Image Denoising and Deblurring With Deep Learning: Current Status and Perspectives
 
 # Medical Imaging
 - Medical Image Classification : https://paperswithcode.com/task/medical-image-classification
