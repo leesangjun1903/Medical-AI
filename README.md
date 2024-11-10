@@ -12,8 +12,14 @@
 - (Video Super Resolution Based on Deep Learning: A comprehensive survey)
 - 
 
-### Medical image segmentation survey
-- 
+### Medical imaging survey
+
+
+# Medical Imaging
+- Medical Image Classification : https://paperswithcode.com/task/medical-image-classification
+- Medical Object Detection : https://paperswithcode.com/task/medical-object-detection
+- Low-Dose X-Ray Ct Reconstruction on X3D https://paperswithcode.com/sota/low-dose-x-ray-ct-reconstruction-on-x3d
+- 3D Medical Imaging Segmentation : https://paperswithcode.com/task/3d-medical-imaging-segmentation
 
 # Awesome Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
@@ -104,7 +110,6 @@
 - Scientific Computational Imaging Code (SCICO) https://github.com/lanl/scico
 - 2-Step Sparse-View CT Reconstruction with a Domain-Specific Perceptual Network https://github.com/anonyr7/Sinogram-Inpainting/tree/master?tab=readme-ov-file
 - Improving Hemorrhage Detection in Sparse-view CTs via Deep Learning https://github.com/J-3TO/Sparse-View-Cranial-CT-Reconstruction
-- Low-Dose X-Ray Ct Reconstruction on X3D https://paperswithcode.com/sota/low-dose-x-ray-ct-reconstruction-on-x3d
 - WalnutReconstructionCodes (FDK) : https://github.com/cicwi/WalnutReconstructionCodes?tab=readme-ov-file
 
 # Main Project(연구과제)
