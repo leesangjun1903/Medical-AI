@@ -131,6 +131,7 @@ https://zhuanlan.zhihu.com/p/682487837
 
 ## PASD
 https://github.com/yangxy/PASD
+https://linnk.ai/insight/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC-%EB%B0%8F-%EC%83%9D%EC%84%B1/%EC%82%AC%EC%8B%A4%EC%A0%81%EC%9D%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B4%88%ED%95%B4%EC%83%81%EB%8F%84%EC%99%80-%EA%B0%9C%EC%9D%B8%ED%99%94%EB%90%9C-%EC%8A%A4%ED%83%80%EC%9D%BC%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%94%BD%EC%85%80-%EC%9D%B8%EC%8B%9D-%EC%95%88%EC%A0%95-%ED%99%95%EC%82%B0-%EB%AA%A8%EB%8D%B8-iUEXkasb/
 
 ## PromptSR
 https://github.com/zhengchen1999/PromptSR?tab=readme-ov-file
