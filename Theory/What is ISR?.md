@@ -11,3 +11,6 @@ https://jaejunyoo.blogspot.com/2019/05/deep-learning-for-SISR-survey-1.html
 # Deep Learning for Image Super-resolution: A Survey
 - https://freeablelab.tistory.com/141
 - https://medium.com/beyondminds/an-introduction-to-super-resolution-using-deep-learning-f60aff9a499d
+
+# Single Image Super Resolution Overview
+https://www.slideshare.net/slideshow/single-image-super-resolution-overview/158016454
