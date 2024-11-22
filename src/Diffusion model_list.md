@@ -153,3 +153,7 @@ https://github.com/ArcticHare105/S3Diff?tab=readme-ov-file
 
 ## EMDiffuse
 https://github.com/Luchixiang/EMDiffuse/tree/master
+
+# Fine-tuning
+- Fine-Tuning Image-Conditional Diffusion Models : https://github.com/VisualComputingInstitute/diffusion-e2e-ft?tab=readme-ov-file
+- pytorch-stable-diffusion-fine-tuning : https://github.com/metamath1/pytorch-stable-diffusion-fine-tuning?utm_source=pytorchkr&ref=pytorchkr
