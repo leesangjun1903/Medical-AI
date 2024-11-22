@@ -15,11 +15,13 @@
 ### Medical imaging survey
 - CT Image Denoising and Deblurring With Deep Learning: Current Status and Perspectives
 
-# Medical Imaging
+# Medical Imaging(papers with code)
+- Medical Image Segmentation subtasks : https://paperswithcode.com/area/medical/medical-image-segmentation
 - Medical Image Classification : https://paperswithcode.com/task/medical-image-classification
 - Medical Object Detection : https://paperswithcode.com/task/medical-object-detection
 - Low-Dose X-Ray Ct Reconstruction on X3D https://paperswithcode.com/sota/low-dose-x-ray-ct-reconstruction-on-x3d
 - 3D Medical Imaging Segmentation : https://paperswithcode.com/task/3d-medical-imaging-segmentation
+- MONAI(medical imaging framework) : https://github.com/Project-MONAI/MONAI?tab=readme-ov-file , https://github.com/Project-MONAI/tutorials/tree/1ad4540755b7703302ea6210103f4d5d4c7e8ad0
 
 # Awesome Papers
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
@@ -43,7 +45,6 @@
 
 ## Awesome Transformer Models
 - Transformers in Medical Imaging: A Survey(Transformers) : https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction 
-
 
 ## Paper with name ( * ~ ***** : 읽은 정도)
 - Medical image denoising using convolutional denoising autoencoders(Autoencoder) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
