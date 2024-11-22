@@ -147,3 +147,6 @@ https://github.com/lose4578/SAM-DiffSR
 
 ## DiffTSR
 https://github.com/YuzheZhang-1999/DiffTSR?tab=readme-ov-file
+
+## S3Diff
+https://github.com/ArcticHare105/S3Diff?tab=readme-ov-file
