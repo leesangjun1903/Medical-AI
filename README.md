@@ -49,6 +49,7 @@
 - Annotated Research Paper Implementations: Transformers, StyleGAN, Stable Diffusion, DDPM/DDIM, LayerNorm, Nucleus Sampling and more https://nn.labml.ai/index.html
 - Pix2Pix: Denoising and Super Resolution (x4) : https://github.com/hieuGoku/Pix2Pix-Denoising-and-Super-Resolution/tree/main?tab=readme-ov-file
 - Super Resolution for Medical Images : https://github.com/architkaila/Super-Resolution-for-Medical-Images/tree/main
+- HMANet: Hybrid Multi-Axis Aggregation Network for Image Super-Resolution : https://paperswithcode.com/paper/hmanet-hybrid-multi-axis-aggregation-network#code
 
 ## Image Denoising
 - Awesome Image or Video Denoising Algorithms https://github.com/z-bingo/awesome-image-denoising-state-of-the-art
@@ -117,6 +118,9 @@
 - Awesome-Multimodal-Applications-In-Medical-Imaging : https://github.com/richard-peng-xia/awesome-multimodal-in-medical-imaging
 - Awesome-3D-Medical-Imaging-Segmentation : https://github.com/steve-zeyu-zhang/Awesome-3D-Medical-Imaging-Segmentation
 - Awesome Segment Anything : https://github.com/Hedlen/awesome-segment-anything , https://github.com/dk-liang/Awesome-Segment-Anything , https://github.com/baibizhe/Awesome-SAM
+- Super-Resolution : https://paperswithcode.com/task/super-resolution
+- MRI Reconstruction : https://paperswithcode.com/task/mri-reconstruction
+- Image Denoising : https://paperswithcode.com/task/image-denoising
 
 # Awesome Models
 ## Awesome GAN
@@ -166,28 +170,10 @@
 - DPSRGAN: Dilation Patch Super-Resolution Generative Adversarial Networks https://github.com/kushalchordiya216/DPSRGAN/tree/master?tab=readme-ov-file
 - Generative Adversarial Super-Resolution at the Edge with Knowledge Distillation(EdgeSRGAN) : https://github.com/PIC4SeR/EdgeSRGAN?tab=readme-ov-file
 
+  
 ### Challenges
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 - 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
-
-# Main Project(연구과제)
-  1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
-  2.  Metal artifact reduction techniques : CT 이미지의 결함 문제 : 배터리 노화, 인체 속 다른 물질 출력으로 인한 이미지 결함 해결
-  3.  motion-induced blur in cone-beam computed tomography(CB-CT) : CB-CT 를 사용했을 때 먼 거리에서 뿌연 현상(blur) 발생 문제
-  4.  segmentation task of oral CBCT image with Deep Learning : 딥러닝을 이용하여 이미지의 인체기관 위치 식별
-  5.  3D image stitching with CB-CT : CB-CT 를 이용하여 추출한 3D 이미지 연결(스티칭)
-
-1. Medical Image Super resolution : Medical image의 일정 영역을 확대(zoom in) 해도 초해상도 유지
-
-2. Medical image processing parameter regression : 전문가별 특정 파라미터 학습 후 예측
-   
-3. 파라미터 전문가의 파라미터 자동화 : Multimodal : raw 이미지, 변환 후 DICOM 이미지, 환자별 정보, (전문가의 의견 질문형식) 여러 input data 로 학습 후 특정 파라미터 출력
-
-4. Medical Image classification : Super resolution된 Medical Image(DCIM image) 질병 유무 판단 후 분류
-
-5. Medical Image Localization, Object Detection : Super resolution된 Medical Image 이상 부위 객체 탐지
-
-6. 3D Medical Image Segmentation
 
 # Lecture   
 - Computer Tomography, Matthias Beckmann  
