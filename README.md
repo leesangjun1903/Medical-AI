@@ -81,7 +81,7 @@
 - Low-Dose X-Ray Ct Reconstruction on X3D https://paperswithcode.com/sota/low-dose-x-ray-ct-reconstruction-on-x3d
 - 3D Medical Imaging Segmentation : https://paperswithcode.com/task/3d-medical-imaging-segmentation
 - 
-- MONAI(medical imaging framework) : https://github.com/Project-MONAI/MONAI?tab=readme-ov-file , https://github.com/Project-MONAI/tutorials/tree/1ad4540755b7703302ea6210103f4d5d4c7e8ad0
+- MONAI(medical imaging framework) : https://github.com/Project-MONAI/MONAI?tab=readme-ov-file , https://github.com/Project-MONAI/tutorials/tree/1ad4540755b7703302ea6210103f4d5d4c7e8ad0, https://zhuanlan.zhihu.com/p/166706664
 
 # 3D reconstruction
 
