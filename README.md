@@ -48,6 +48,7 @@
 - https://github.com/hellloxiaotian/Deep-Learning-on-Image-Denoising-An-overview
 - Annotated Research Paper Implementations: Transformers, StyleGAN, Stable Diffusion, DDPM/DDIM, LayerNorm, Nucleus Sampling and more https://nn.labml.ai/index.html
 - Pix2Pix: Denoising and Super Resolution (x4) : https://github.com/hieuGoku/Pix2Pix-Denoising-and-Super-Resolution/tree/main?tab=readme-ov-file
+- Super Resolution for Medical Images : https://github.com/architkaila/Super-Resolution-for-Medical-Images/tree/main
 
 ## Image Denoising
 - Awesome Image or Video Denoising Algorithms https://github.com/z-bingo/awesome-image-denoising-state-of-the-art
