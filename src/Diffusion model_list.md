@@ -66,6 +66,7 @@ https://github.com/anthony-frion/SR3
 https://github.com/anthony-frion/SR3/tree/main  
 
 # Latent Diffusion Models : diffusers
+- https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/upscale
 - https://paperswithcode.com/paper/high-resolution-image-synthesis-with-latent
 - https://github.com/LukeDitria/pytorch_tutorials/blob/main/section09_generation/solutions/Pytorch3_Latent_Diffusion.ipynb
 - https://ostin.tistory.com/139
