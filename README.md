@@ -121,6 +121,7 @@
 - Super-Resolution : https://paperswithcode.com/task/super-resolution
 - MRI Reconstruction : https://paperswithcode.com/task/mri-reconstruction
 - Image Denoising : https://paperswithcode.com/task/image-denoising
+- Awesome Active Learning for Medical Image Analysis : https://github.com/LightersWang/Awesome-Active-Learning-for-Medical-Image-Analysis
 
 # Awesome Models
 ## Awesome GAN
