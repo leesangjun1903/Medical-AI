@@ -159,3 +159,4 @@ https://github.com/Luchixiang/EMDiffuse/tree/master
 - Fine-Tuning Image-Conditional Diffusion Models : https://github.com/VisualComputingInstitute/diffusion-e2e-ft?tab=readme-ov-file
 - pytorch-stable-diffusion-fine-tuning : https://github.com/metamath1/pytorch-stable-diffusion-fine-tuning?utm_source=pytorchkr&ref=pytorchkr
 - Fine-tuning Diffusion-based Models : https://www.reddit.com/r/MachineLearning/comments/w5hl7a/d_finetuning_diffusionbased_models/
+- Fine-Tuning Stable Diffusion : https://velog.io/@nellcome/Riffusion4
