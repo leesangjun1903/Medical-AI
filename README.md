@@ -123,6 +123,7 @@
 - Image Denoising : https://paperswithcode.com/task/image-denoising
 - Awesome Active Learning for Medical Image Analysis : https://github.com/LightersWang/Awesome-Active-Learning-for-Medical-Image-Analysis
 
+
 # Awesome Models
 ## Awesome GAN
 - Awesome GAN for Medical Imaging : https://github.com/xinario/awesome-gan-for-medical-imaging?tab=readme-ov-file#reconstruction
@@ -134,6 +135,8 @@
 - Awesome Diffusion Models In Low-level Vision : https://github.com/ChunmingHe/awesome-diffusion-models-in-low-level-vision?tab=readme-ov-file
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
 - Awesome Diffusion Categorized models : https://github.com/wangkai930418/awesome-diffusion-categorized?tab=readme-ov-file#image-restoration
+- Awesome Diffusion Models in High-Resolution Synthesis : https://github.com/GuoLanqing/Awesome-High-Resolution-Diffusion?tab=readme-ov-file#-fine-tuning-algorithms
+
 
 ## Awesome Transformer Models
 - Transformers in Medical Imaging: A Survey(Transformers) : https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction 
