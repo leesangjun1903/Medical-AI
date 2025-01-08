@@ -60,6 +60,7 @@
 https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
 
 # Latent Diffusion(Stable Diffusion)
+- Align your Latents:High-Resolution Video Synthesis with Latent Diffusion Models : https://tkayyoo.tistory.com/167
 - https://www.goteodata.kr/104
 - https://ffighting.net/deep-learning-paper-review/diffusion-model/stable-diffusion/
 - https://jang-inspiration.com/latent-diffusion-model
