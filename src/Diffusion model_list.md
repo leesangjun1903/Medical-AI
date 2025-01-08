@@ -33,6 +33,8 @@
 # Diffusers
 - https://huggingface.co/docs/diffusers/main/en/index
 
+## Stable diffusion 3 
+
 ## Diffusion Models course : 
 - https://github.com/metamath1/diffusion-models-class?tab=readme-ov-file
 
