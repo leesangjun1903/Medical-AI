@@ -101,6 +101,10 @@ https://github.com/anthony-frion/SR3/tree/main
 ## stable-diffusion-fine-tuning
 - https://github.com/metamath1/pytorch-stable-diffusion-fine-tuning/tree/main
 
+## Stable Diffusion + DreamBooth
+- https://colab.research.google.com/github/TheLastBen/fast-stable-diffusion/blob/main/fast-DreamBooth.ipynb
+- https://github.com/TheLastBen/fast-stable-diffusion/tree/main
+
 ## SinSR: Diffusion-Based Image Super-Resolution in a Single Step
 - https://github.com/wyf0912/SinSR/tree/main  
 - https://zhuanlan.zhihu.com/p/684896250
