@@ -30,6 +30,9 @@
 - S3Diff(2024)
 - DiffTSR(2024)
 
+## Diffusion Models course : 
+- https://github.com/metamath1/diffusion-models-class?tab=readme-ov-file
+
 ## Deep Unsupervised Learning using Nonequilibrium Thermodynamics(초기 모델)
 - https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models/tree/master
 - https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Deep_Unsupervised_Learning_using_Nonequilibrium_Thermodynamics
@@ -94,6 +97,9 @@ https://github.com/anthony-frion/SR3/tree/main
 
 ## Latent Diffusion + FBCNN
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
+
+## stable-diffusion-fine-tuning
+- https://github.com/metamath1/pytorch-stable-diffusion-fine-tuning/tree/main
 
 ## SinSR: Diffusion-Based Image Super-Resolution in a Single Step
 - https://github.com/wyf0912/SinSR/tree/main  
