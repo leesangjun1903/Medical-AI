@@ -30,6 +30,9 @@
 - S3Diff(2024)
 - DiffTSR(2024)
 
+# Diffusers
+- https://huggingface.co/docs/diffusers/main/en/index
+
 ## Diffusion Models course : 
 - https://github.com/metamath1/diffusion-models-class?tab=readme-ov-file
 
