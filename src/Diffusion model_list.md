@@ -87,6 +87,8 @@ https://github.com/anthony-frion/SR3/tree/main
 - Running IF with 🧨 diffusers on a Free Tier Google Colab : https://huggingface.co/blog/if
 - https://huggingface.co/docs/diffusers/using-diffusers/img2img#image-to-upscaler-to-super-resolution
 
+- https://huggingface.co/docs/diffusers/v0.14.0/api/pipelines/stable_diffusion/latent_upscale
+
 ## Latent Diffusion Models (LDM) for super-resolution : 
 ### LDM with DDIM Schedulaer
 - https://huggingface.co/CompVis/ldm-super-resolution-4x-openimages
