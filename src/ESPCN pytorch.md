@@ -3,5 +3,6 @@
 "Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network"
 
 # Reference
-https://blog.naver.com/go21/221147971473
+- https://blog.naver.com/go21/221147971473
+- https://github.com/Nhat-Thanh/ESPCN-Pytorch/tree/main
 
