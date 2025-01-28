@@ -89,6 +89,9 @@ https://github.com/anthony-frion/SR3/tree/main
 
 - https://huggingface.co/docs/diffusers/v0.14.0/api/pipelines/stable_diffusion/latent_upscale
 
+### Pipeline 목록, How to make realistic image
+- https://github.com/huggingface/diffusers/tree/main/src/diffusers/pipelines/stable_diffusion
+
 ## Latent Diffusion Models (LDM) for super-resolution : 
 ### LDM with DDIM Schedulaer
 - https://huggingface.co/CompVis/ldm-super-resolution-4x-openimages
