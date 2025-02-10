@@ -89,6 +89,8 @@ https://github.com/anthony-frion/SR3/tree/main
 
 - https://huggingface.co/docs/diffusers/v0.14.0/api/pipelines/stable_diffusion/latent_upscale
 
+- How Stable Diffusion make realistic image : https://github.com/estelleafl/diffusers/tree/ldm3d_upscaler_community/examples/community#stablediffusionupscaleldm3d-pipeline
+
 ### Pipeline 목록, How to make realistic image
 - https://github.com/huggingface/diffusers/tree/main/src/diffusers/pipelines/stable_diffusion
 
