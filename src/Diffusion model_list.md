@@ -106,6 +106,7 @@ https://github.com/anthony-frion/SR3/tree/main
 
 ## Stable Diffusion
 - pytorch-stable-diffusion : https://github.com/hkproj/pytorch-stable-diffusion/tree/main
+- Stable Diffusion web UI : https://github.com/AUTOMATIC1111/stable-diffusion-webui?tab=readme-ov-file
 
 ## Latent Diffusion + FBCNN
 - Latent Diffusion + FBCNN : https://github.com/olaviinha/NeuralImageSuperResolution?tab=readme-ov-file
