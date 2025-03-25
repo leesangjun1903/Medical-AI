@@ -74,15 +74,23 @@ https://github.com/anthony-frion/SR3
 https://github.com/anthony-frion/SR3/tree/main  
 
 # Latent Diffusion Models : diffusers
+- diffusers github : https://github.com/huggingface/diffusers/tree/ec953047bc0f4a3542e673f3d463543c02505ca5
 - https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/upscale
 - https://paperswithcode.com/paper/high-resolution-image-synthesis-with-latent
 - https://github.com/LukeDitria/pytorch_tutorials/blob/main/section09_generation/solutions/Pytorch3_Latent_Diffusion.ipynb
 - https://ostin.tistory.com/139
 - https://github.com/huggingface/notebooks/tree/main/diffusers
 - https://github.com/fastai/course22p2/blob/master/nbs/30_lsun_diffusion-latents.ipynb
-- https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler
 
 - https://github.com/digbangbang/Learning/blob/main/LDM_learning.md
+
+## StableDiffusionUpscalePipeline
+- Main : https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler 
+- StableDiffusionUpscalePipeline : https://github.com/huggingface/diffusers/blob/v0.23.1/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_upscale.py#L70
+- CLIP guided Img2Img stable diffusion can help to generate more realistic images with an initial image by guiding stable diffusion at every denoising step with an additional CLIP model. : https://github.com/estelleafl/diffusers/tree/ldm3d_upscaler_community/examples/community#stablediffusionupscaleldm3d-pipeline
+
+## Tiled upscaling
+- https://github.com/huggingface/diffusers/blob/41ba8c0bf6b3dc3ebd0fa6b96ecf671fa4171566/examples/community/tiled_upscaling.py#L184
 
 - Running IF with 🧨 diffusers on a Free Tier Google Colab : https://huggingface.co/blog/if
 - https://huggingface.co/docs/diffusers/using-diffusers/img2img#image-to-upscaler-to-super-resolution
