@@ -103,6 +103,7 @@ https://github.com/anthony-frion/SR3/tree/main
 - https://github.com/huggingface/diffusers/tree/main/src/diffusers/pipelines/stable_diffusion
 
 ## Latent Diffusion Models (LDM) for super-resolution : 
+- https://github.com/CompVis/latent-diffusion/tree/a506df5756472e2ebaf9078affdde2c4f1502cd4
 ### LDM with DDIM Schedulaer
 - https://huggingface.co/CompVis/ldm-super-resolution-4x-openimages
 - https://huggingface.co/docs/diffusers/v0.30.3/en/api/pipelines/latent_diffusion#diffusers.LDMSuperResolutionPipeline
