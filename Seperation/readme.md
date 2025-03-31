@@ -12,3 +12,6 @@ https://github.com/diaoquesang/A-detailed-summarization-about-bone-suppression-i
 
 ## xU-NetFullSharp: ANN for Chest X-Ray Bone Shadow Suppression
 https://github.com/xKev1n/xU-NetFullSharp/tree/main
+
+## Deep Learning Models for bone suppression in chest radiographs
+https://github.com/danielnflam/Deep-Learning-Models-for-bone-suppression-in-chest-radiographs?tab=readme-ov-file
