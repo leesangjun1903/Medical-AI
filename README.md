@@ -151,3 +151,4 @@
 - Computer Tomography, Matthias Beckmann  
 - Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition
 - 의학영상기기 https://www.youtube.com/playlist?list=PLSN_PltQeOyj-XhgiWmtqjGo08isXUlSy
+- 의료영상 인공지능의 모든 것 PART I: 개발환경 설치부터 머신러닝 모델 개발까지 : https://wikidocs.net/book/10449
