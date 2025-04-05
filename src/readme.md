@@ -10,3 +10,6 @@ VQ-VAE 처럼 Encoder에서 나온 vector 값과 codebook 간의 유클리디안
 
 https://bigdata-analyst.tistory.com/m/349  
 https://github.com/CompVis/latent-diffusion/issues/218
+https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf  
+https://github.com/CompVis/taming-transformers/blob/3ba01b241669f5ade541ce990f7650a3b8f65318/taming/modules/vqvae/quantize.py  
+https://github.com/CompVis/latent-diffusion/blob/a506df5756472e2ebaf9078affdde2c4f1502cd4/ldm/models/autoencoder.py#L8
