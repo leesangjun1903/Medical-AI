@@ -11,6 +11,9 @@ https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/code?datase
 ## Chest X‐Ray Bone Suppression for Improving Classification of Tuberculosis‐Consistent Findings, Sivaramakrishnan Rajaraman
 ## Development and Validation of a Deep Learning–Based Synthetic Bone-Suppressed Model for Pulmonary Nodule Detection in Chest Radiographs, Hwiyoung Kim
 
+# Reference
+https://suzukilab.first.iir.titech.ac.jp/publications/journal-papers/
+
 # Survey
 https://github.com/diaoquesang/A-detailed-summarization-about-bone-suppression-in-Chest-X-rays?tab=readme-ov-file
 
