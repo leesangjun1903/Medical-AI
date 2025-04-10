@@ -67,7 +67,9 @@ This transformation achieves good frequency resolution for low-frequency compone
 비정상 신호에서 가장 적합한 용도를 찾습니다. 이 변환은 저주파 성분에 대한 좋은 주파수 분해능과 고주파 성분에 대한 높은 시간 분해능을 달성합니다.
 Dimensionality reduction: The Haar wavelet transform can reduce the dimensionality of a dataset while preserving important features. This can lead to faster computation and improved performance.
 차원 감소 : Haar 웨이블릿 변환은 중요한 특징을 보존하면서 데이터 세트의 차원을 줄일 수 있습니다. 이를 통해 더 빠른 계산과 향상된 성능을 얻을 수 있습니다.
+https://en.wikipedia.org/wiki/Haar_wavelet
 https://rla020.tistory.com/16
+https://blog.naver.com/PostView.nhn?blogId=skkong89&logNo=222093854309
 ```
 
 두 명의 보드 인증 방사선 전문의(각각 5년 및 7년 경력)는 2주 간격으로 세 번의 판독 세션에서 폐 결절을 감지하기 위해 333개의 이미지 세트를 독립적으로 평가
