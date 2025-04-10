@@ -101,7 +101,8 @@ The model selectively projected the bone- and soft tissue–only chest radiograp
 ![image](https://github.com/user-attachments/assets/7070eb43-ea21-41ce-ae52-70a0c9d73b4e)
 
 ```
-Development of a deep neural network for generating synthetic dual-energy chest x-ray images with single x-ray exposure, 인용수 : 19 논문에서는 고주파수로 분리한 feature map 을 디코더 부분으로 연결시키기 위해 frequency feature map concat시킨 알고리즘 적용.
+Development of a deep neural network for generating synthetic dual-energy chest x-ray images with single x-ray exposure, 인용수 : 19 논문에서는 고주파수로 분리한 feature map 을 디코더 부분으로 연결시키기 위해 Skip Architecture 대신 frequency feature map 을 다른 해상도로 변환한 feature map에 concat시킨 알고리즘 적용.
+다른 해상도는 average pooling과 upsampling method 사용.
 
 ```
 
