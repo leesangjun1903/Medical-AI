@@ -67,6 +67,13 @@ This transformation achieves good frequency resolution for low-frequency compone
 비정상 신호에서 가장 적합한 용도를 찾습니다. 이 변환은 저주파 성분에 대한 좋은 주파수 분해능과 고주파 성분에 대한 높은 시간 분해능을 달성합니다.
 Dimensionality reduction: The Haar wavelet transform can reduce the dimensionality of a dataset while preserving important features. This can lead to faster computation and improved performance.
 차원 감소 : Haar 웨이블릿 변환은 중요한 특징을 보존하면서 데이터 세트의 차원을 줄일 수 있습니다. 이를 통해 더 빠른 계산과 향상된 성능을 얻을 수 있습니다.
+
+웨이블릿 분석은 이미지에 존재하는 정보(신호)를 근사치와 세부 정보(하위 신호)라는 두 가지 개별 구성 요소로 나누는 데 사용됩니다.
+신호는 고역 통과 필터와 저역 통과 필터, 두 개의 필터를 통과합니다.
+그런 다음 이미지는 고주파(디테일)와 저주파(근사) 성분으로 분해됩니다. 각 레벨에서 4개의 하위 신호를 얻습니다.
+근사값은 픽셀 값의 전반적인 추세와 수평, 수직, 대각선 성분으로 표현된 디테일을 보여줍니다.
+
+https://medium.com/@koushikc2000/2d-discrete-wavelet-transformation-and-its-applications-in-digital-image-processing-using-matlab-1f5c68672de3
 https://en.wikipedia.org/wiki/Haar_wavelet
 https://rla020.tistory.com/16
 https://blog.naver.com/PostView.nhn?blogId=skkong89&logNo=222093854309
