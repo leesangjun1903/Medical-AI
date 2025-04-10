@@ -10,6 +10,7 @@ https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/code?datase
 ## Bone Suppression on Chest Radiographs for Pulmonary Nodule Detection: Comparison between a Generative Adversarial Network and Dual-Energy Subtraction, Kyungsoo Bae
 ## Chest X‐Ray Bone Suppression for Improving Classification of Tuberculosis‐Consistent Findings, Sivaramakrishnan Rajaraman
 ## Development and Validation of a Deep Learning–Based Synthetic Bone-Suppressed Model for Pulmonary Nodule Detection in Chest Radiographs, Hwiyoung Kim
+## 
 
 # Reference
 https://suzukilab.first.iir.titech.ac.jp/publications/journal-papers/
