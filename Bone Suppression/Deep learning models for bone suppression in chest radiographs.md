@@ -35,6 +35,8 @@ Moreover, we propose a loss function that teaches the network (in an end-to-end 
 우리 프레임워크의 목표는 네트워크에 CXR 이미지를 공급하고 뼈가 억제된 이미지를 생성하는 것입니다.  
 또한, 입력된 이미지에 대해 사용자 지정 노이즈 제거를 수행하도록 네트워크에 end-to-end 방식으로 가르치는 손실 함수를 제안합니다.  
 
+![image](https://github.com/user-attachments/assets/9e2d59a4-868d-44fe-9c7d-14aa2fb2a5c3)
+
 A. Autoencoder-like Convolutional Model 
 
 Our first model is a stacked denoising autoencoder (AE).  
