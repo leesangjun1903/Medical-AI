@@ -43,6 +43,8 @@ The model trains on the original CXRs and their bone‐suppressed coun
 기존의 노이즈 제거 AE와 달리, 제안된 AE-BS 모델의 노이즈는 뼈 구조를 나타냅니다.  
 이 모델은 원래의 CXR과 그 뼈 ,억제된 연질 조직 이미지를 예측하기 위해 훈련됩니다. 
 
+![image](https://github.com/user-attachments/assets/68915f13-4386-4513-89bb-63d9967c95a9)
+
 (ii) ConvNet–BS model: The ConvNet–BS model is a sequential model consisting of  seven convolutional layers having 16, 32, 64, 128, 256, 512, and 1 filter, respectively.  
 Zero  paddings are used to preserve the dimensions of the input image at all convolutional layers.  
 Lasso regularization (L1) penalties are used at each convolutional layer to induce penalty  on  weights  that  seldom  contribute  to  learning  meaningful  feature  representations.   
@@ -54,6 +56,8 @@ The deepest convolutional layer with the sigmoidal activation produces 
 각 컨볼루션 레이어에서 의미 있는 특징 표현을 학습하는 데 거의 기여하지 않는 가중치에 대한 페널티를 유도하기 위해 Lasso 정규화(L1) 페널티가 사용됩니다. 이는 모델 희소성을 개선하고 보이지 않는 데이터로 일반화하는 데 도움이 됩니다.  
 시그모이드 활성화가 있는 가장 깊은 컨볼루션 레이어는 뼈 ‐ 억제 연조직 이미지를 생성합니다. 그림 2는 제안된 ConvNet–BS 모델의 아키텍처를 보여줍니다.
 
+![image](https://github.com/user-attachments/assets/a7ab6101-cd84-4cb1-9567-c44c82c736ed)
+
 (iii)  RL–BS  model:  The architecture  of  the  RL–BS  model  consists  of  eight  convolutional layers having 8, 16, 32, 64, 128, 256, 512, and 1 filter, respectively.  
 Zero paddings are  used at all convolutional layers to preserve the dimensions of the input image.  
 The RLBS model learns the residual error between the predicted bone‐suppressed image and its  corresponding ground truth.  
@@ -64,6 +68,9 @@ The deepest convolutional slayer produces bone‐suppressed  images. 
 RLBS 모델은 예측된 뼈 ‐ 억제 이미지와 해당하는 실측값 사이의 잔여 오차를 학습합니다.  
 가장 깊은 컨볼루션 슬레이어는 뼈 ‐ 억제 이미지를 생성합니다.
 
+![image](https://github.com/user-attachments/assets/ea9ba5a3-a368-4d13-904b-9b1c6f674395)
+
+
 (iv)  ResNet–BS  model:  The residual design utilizes shortcuts to skip over layers thereby eliminating  learning  convergence  issues  due  to  vanishing  gradients.   
 This  facilitates  reusing  previous  layer  activations  until  the  weights  are  updated  in  the  adjacent  layer.   
 These shortcuts  lead  to  improved  convergence  and  optimization  and  help  to  construct  deeper  models.
@@ -71,6 +78,8 @@ These shortcuts  lead  to  improved  convergence  and  optimization  and�
 (iv) ResNet–BS 모델: 잔차 설계는 레이어를 건너뛸 수 있는 단축키를 활용하여 그래디언트가 사라짐에 따른 학습 수렴 문제를 제거합니다.  
 이를 통해 인접 레이어에서 가중치가 업데이트될 때까지 이전 레이어 활성화를 재사용할 수 있습니다.  
 이러한 단축키는 수렴 및 최적화를 개선하고 더 깊은 모델을 구성하는 데 도움이 됩니다.
+
+![image](https://github.com/user-attachments/assets/7b5163c3-094c-48c7-9c40-4490223547a9)
 
 EDSR 에서 영감을 받아 ReLU 활성화 레이어는 잔여 블록 외부에서 사용되지 않습니다.  
 이 문헌은 배치 정규화가 정보 손실을 초래하고 활성화의 범위 처리 가능성을 감소시킨다는 것을 보여줍니다.  
