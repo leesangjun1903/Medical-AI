@@ -37,7 +37,7 @@ The size of the input is decreased twice at the encoder  layers  and
 As  opposed  to  the  conventional denoising AEs, the noise in the proposed AE–BS model represents the bony structures.  
 The model trains on the original CXRs and their bone‐suppressed counterparts to  predict  a  bone‐suppressed  soft‐tissue  image.  
 
-(i) AE-BS 모델: AE-BS 모델은 대칭 인코더와 디코더 레이어가 있는 합성곱 노이즈 제거 AE입니다.  
+(i) AE-BS 모델: AE-BS 모델은 대칭 인코더와 디코더 레이어가 있는 denoising AE입니다.  
 인코더는 각각 16개, 32개, 64개의 필터가 있는 세 개의 합성곱 레이어로 구성됩니다.  
 입력 크기는 인코더 레이어에서 두 번 감소하고 디코더 레이어에서 그에 따라 증가합니다.  
 기존의 노이즈 제거 AE와 달리, 제안된 AE-BS 모델의 노이즈는 뼈 구조를 나타냅니다.  
