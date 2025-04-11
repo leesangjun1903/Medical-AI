@@ -42,7 +42,7 @@ Technical details of the model, including network architecture, quantitative per
 No additional training was imparted for this study. A total of 111 CXRs obtained using the dual energy technique were postprocessed.  
 The generated bone-suppressed images (BSpDL) were anonymized and stored for evaluation.
 
-우리의 골 억제 모델은 입력 이미지에 따른 출력 이미지의 조건부 확률 분포를 학습하기 위해 GAN 프레임워크에서 적대적 훈련을 사용했습니다. Haar 웨이블릿 분해는 입력 시스템으로 채택되었습니다. 이는 네트워크가 이미지를 네 방향 특징 이미지로 웨이블릿 변환하여 학습해야 할 특징을 미리 정의한 것입니다(그림 2).  
+우리의 뼈 억제 모델은 입력 이미지에 따른 출력 이미지의 조건부 확률 분포를 학습하기 위해 GAN 프레임워크에서 적대적 훈련을 사용했습니다. Haar 웨이블릿 분해는 입력 시스템으로 채택되었습니다. 이는 네트워크가 이미지를 네 방향 특징 이미지로 웨이블릿 변환하여 학습해야 할 특징을 미리 정의한 것입니다(그림 2).  
 이를 통해 모델은 CXR의 고주파 세부 사항을 활용하고 더 빠르고 효율적으로 수렴할 수 있었습니다 [21].  
 GAN 프레임워크에서 생성기는 훈련 세트와 유사한 이미지를 생성하여 판별기를 속이려고 시도했습니다.  
 이 뼈 억제 모델은 공개 도메인에서 사용할 수 있는 이중 에너지 방사선 촬영을 통해 얻은 총 348쌍의 복합 및 연조직 선택 이미지를 사용하여 훈련 및 검증되었습니다[20].  
