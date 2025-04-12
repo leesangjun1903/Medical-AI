@@ -12,6 +12,14 @@ https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/code?datase
 ## Development and Validation of a Deep Learning–Based Synthetic Bone-Suppressed Model for Pulmonary Nodule Detection in Chest Radiographs, Hwiyoung Kim
 ## 
 
+# Object Removal
+https://github.com/treeebooor/object-remove (Mask-R CNN : https://herbwood.tistory.com/20)  
+https://medium.com/analytics-vidhya/removing-objects-from-pictures-with-deep-learning-5e7c35f3f0dd  
+https://github.com/sujaykhandekar/Automated-objects-removal-inpainter?tab=readme-ov-file  
+https://github.com/KnowledgePending/Object-Removal-using-Image-Processing/tree/master  
+
+
+
 # Reference
 https://suzukilab.first.iir.titech.ac.jp/publications/journal-papers/
 
@@ -24,3 +32,6 @@ https://github.com/xKev1n/xU-NetFullSharp/tree/main
 
 ## Deep Learning Models for bone suppression in chest radiographs
 https://github.com/danielnflam/Deep-Learning-Models-for-bone-suppression-in-chest-radiographs?tab=readme-ov-file
+
+## High-Resolution-Chest-X-ray-Bone-Suppression
+https://github.com/MIRACLE-Center/High-Resolution-Chest-X-ray-Bone-Suppression?tab=readme-ov-file
