@@ -3,5 +3,11 @@
 - XAI 이용
 - Segmentation Model 이용
 
+
+## Grad-CAM
+
+## Relevance-CAM
+https://kyujinpy.tistory.com/63
+
 ## Medical Image Segmentation
 Papers with code : https://paperswithcode.com/task/medical-image-segmentation
