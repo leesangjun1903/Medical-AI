@@ -18,6 +18,7 @@ https://medium.com/analytics-vidhya/removing-objects-from-pictures-with-deep-lea
 https://github.com/sujaykhandekar/Automated-objects-removal-inpainter?tab=readme-ov-file  
 https://github.com/KnowledgePending/Object-Removal-using-Image-Processing/tree/master  
 
+# Bone fracture detection
 
 
 # Reference
