@@ -50,6 +50,7 @@
 - Pix2Pix: Denoising and Super Resolution (x4) : https://github.com/hieuGoku/Pix2Pix-Denoising-and-Super-Resolution/tree/main?tab=readme-ov-file
 - Super Resolution for Medical Images : https://github.com/architkaila/Super-Resolution-for-Medical-Images/tree/main
 - HMANet: Hybrid Multi-Axis Aggregation Network for Image Super-Resolution : https://paperswithcode.com/paper/hmanet-hybrid-multi-axis-aggregation-network#code
+- VDSR(Very-Deep Super-Resolution) 신경망을 사용하여 하나의 저해상도 영상에서 고해상도 영상을 만드는 방법(MatLab) : https://kr.mathworks.com/help/deeplearning/ug/single-image-super-resolution-using-deep-learning.html
 
 ## Image Denoising
 - Awesome Image or Video Denoising Algorithms https://github.com/z-bingo/awesome-image-denoising-state-of-the-art
