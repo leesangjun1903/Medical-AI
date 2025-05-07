@@ -1,23 +1,6 @@
 # Computer-Tomograpy reconstruction
 
 # Main Project(연구과제)
-  1.  Lower-Dose reduction Pediatric CT reconstruction : 적은 방사선량으로 데이터 추출하여 최적화된 CT 이미지 재건축
-  2.  Metal artifact reduction techniques : CT 이미지의 결함 문제 : 배터리 노화, 인체 속 다른 물질 출력으로 인한 이미지 결함 해결
-  3.  motion-induced blur in cone-beam computed tomography(CB-CT) : CB-CT 를 사용했을 때 먼 거리에서 뿌연 현상(blur) 발생 문제
-  4.  segmentation task of oral CBCT image with Deep Learning : 딥러닝을 이용하여 이미지의 인체기관 위치 식별
-  5.  3D image stitching with CB-CT : CB-CT 를 이용하여 추출한 3D 이미지 연결(스티칭)
-
-1. Medical Image Super resolution : Medical image의 일정 영역을 확대(zoom in) 해도 초해상도 유지
-
-2. Medical image processing parameter regression : 전문가별 특정 파라미터 학습 후 예측
-   
-3. 파라미터 전문가의 파라미터 자동화 : Multimodal : raw 이미지, 변환 후 DICOM 이미지, 환자별 정보, (전문가의 의견 질문형식) 여러 input data 로 학습 후 특정 파라미터 출력
-
-4. Medical Image classification : Super resolution된 Medical Image(DCIM image) 질병 유무 판단 후 분류
-
-5. Medical Image Localization, Object Detection : Super resolution된 Medical Image 이상 부위 객체 탐지
-
-6. 3D Medical Image Segmentation
 
 ## CT reconstruction
 ### Super-resolution, Image Denoising survey
