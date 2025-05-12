@@ -12,6 +12,8 @@ https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/code?datase
 ## Development and Validation of a Deep Learning–Based Synthetic Bone-Suppressed Model for Pulmonary Nodule Detection in Chest Radiographs, Hwiyoung Kim
 ## An Efficient and Robust Method for Chest X-ray Rib Suppression That Improves Pulmonary Abnormality Diagnosis
 https://github.com/FluteXu/CXR-Rib-Suppression/tree/master
+## BS-LDM: Effective Bone Suppression in High-Resolution Chest X-Ray Images with Conditional Latent Diffusion Models
+https://github.com/diaoquesang/BS-LDM
 
 # Object Removal
 https://github.com/treeebooor/object-remove (Mask-R CNN : https://herbwood.tistory.com/20)  
