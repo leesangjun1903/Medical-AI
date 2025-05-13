@@ -3,7 +3,8 @@
 # X-ray Bone Shadow Supression
 ## Useful kaggle challenge
 https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/data
-https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/code?datasetId=68239&sortBy=voteCount
+https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/code?datasetId=68239&sortBy=voteCount  
+https://stanfordaimi.azurewebsites.net/datasets?domain=CHEST&page=2
 
 # Papers
 ## Deep learning models for bone suppression in chest radiographs, Maxim Gusarev
