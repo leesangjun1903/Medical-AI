@@ -15,6 +15,8 @@ https://stanfordaimi.azurewebsites.net/datasets?domain=CHEST&page=2
 https://github.com/FluteXu/CXR-Rib-Suppression/tree/master
 ## BS-LDM: Effective Bone Suppression in High-Resolution Chest X-Ray Images with Conditional Latent Diffusion Models
 https://github.com/diaoquesang/BS-LDM
+## Remove Bones from X-Ray images with fastai
+https://github.com/mmiv-center/deboning/tree/master
 
 # Object Removal
 https://github.com/treeebooor/object-remove (Mask-R CNN : https://herbwood.tistory.com/20)  
