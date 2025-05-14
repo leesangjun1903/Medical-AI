@@ -1,6 +1,6 @@
 # Computer-Tomograpy reconstruction
-
-# Main Project(연구과제)
+## Deep Learning in Medical Imaging and Medical Image Analysis
+https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis?tab=readme-ov-file
 
 ## CT reconstruction
 ### Super-resolution, Image Denoising survey
