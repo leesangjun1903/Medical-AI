@@ -1,44 +1,55 @@
 # Main Project : Bone suppression, X-ray 이미지에서 갈비뼈 제거
+# Bone suppression in Chest X-rays: A deep survey (Keep on updating)
+https://github.com/diaoquesang/A-detailed-summarization-about-bone-suppression-in-Chest-X-rays?tab=readme-ov-file
 
 # X-ray Bone Shadow Supression
 ## Useful kaggle challenge
+### X-ray Bone Shadow Supression
 https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/data
-https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/code?datasetId=68239&sortBy=voteCount  
+
+# DATASETS
+### Stanford AIMI Shared Datasets
 https://stanfordaimi.azurewebsites.net/datasets?domain=CHEST&page=2
 
 # Papers
 ## Deep learning models for bone suppression in chest radiographs, Maxim Gusarev
 ## Bone Suppression on Chest Radiographs for Pulmonary Nodule Detection: Comparison between a Generative Adversarial Network and Dual-Energy Subtraction, Kyungsoo Bae
 ## Chest X‐Ray Bone Suppression for Improving Classification of Tuberculosis‐Consistent Findings, Sivaramakrishnan Rajaraman
+
 ## Development and Validation of a Deep Learning–Based Synthetic Bone-Suppressed Model for Pulmonary Nodule Detection in Chest Radiographs, Hwiyoung Kim
+
 ## An Efficient and Robust Method for Chest X-ray Rib Suppression That Improves Pulmonary Abnormality Diagnosis
 https://github.com/FluteXu/CXR-Rib-Suppression/tree/master
-## BS-LDM: Effective Bone Suppression in High-Resolution Chest X-Ray Images with Conditional Latent Diffusion Models
+
+## Diffusion 기반 모델 : BS-LDM: Effective Bone Suppression in High-Resolution Chest X-Ray Images with Conditional Latent Diffusion Models
 https://github.com/diaoquesang/BS-LDM
+
 ## Remove Bones from X-Ray images with fastai
 https://github.com/mmiv-center/deboning/tree/master
 
-# Object Removal
+# Object Removal : 특정 물체 제거 작업 -> Suppression 작업에 영향을 줄 수 있을 것.
 https://github.com/treeebooor/object-remove (Mask-R CNN : https://herbwood.tistory.com/20)  
 https://medium.com/analytics-vidhya/removing-objects-from-pictures-with-deep-learning-5e7c35f3f0dd  
 https://github.com/sujaykhandekar/Automated-objects-removal-inpainter?tab=readme-ov-file  
 https://github.com/KnowledgePending/Object-Removal-using-Image-Processing/tree/master  
 
-# Bone fracture detection
+# Bone fracture detection : 뼈 탐지 알고리즘
 
 
-# Reference
+# Suzuki 저자의 논문 : 읽어볼 여지가 있으나 2020년대 이후 BS 작업은 확인되지 않음.
 https://suzukilab.first.iir.titech.ac.jp/publications/journal-papers/
+- Enhancement of chest radiographs obtained in the intensive care unit through bone suppression and consistent processing(2016)
 
-# Survey
-https://github.com/diaoquesang/A-detailed-summarization-about-bone-suppression-in-Chest-X-rays?tab=readme-ov-file
-
-# Application
-## xU-NetFullSharp: ANN for Chest X-Ray Bone Shadow Suppression
+## U-Net 기반 모델 : xU-NetFullSharp: ANN for Chest X-Ray Bone Shadow Suppression
 https://github.com/xKev1n/xU-NetFullSharp/tree/main
 
+### xU-NetFullSharp (Paper Implementation) 
+https://www.kaggle.com/code/arjunbasandrai/xu-netfullsharp-paper-implementation
+
 ## Deep Learning Models for bone suppression in chest radiographs
+- Gusarev's bone suppression method 사용.
+- ConV , AE 기반 모델.
 https://github.com/danielnflam/Deep-Learning-Models-for-bone-suppression-in-chest-radiographs?tab=readme-ov-file
 
-## High-Resolution-Chest-X-ray-Bone-Suppression
+## 좀 더 읽어봐야 함 : High-Resolution-Chest-X-ray-Bone-Suppression
 https://github.com/MIRACLE-Center/High-Resolution-Chest-X-ray-Bone-Suppression?tab=readme-ov-file
