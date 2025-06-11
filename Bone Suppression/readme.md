@@ -14,8 +14,11 @@ https://stanfordaimi.azurewebsites.net/datasets?domain=CHEST&page=2
 # Papers
 ## Deep learning models for bone suppression in chest radiographs, Maxim Gusarev
 ## Bone Suppression on Chest Radiographs for Pulmonary Nodule Detection: Comparison between a Generative Adversarial Network and Dual-Energy Subtraction, Kyungsoo Bae
-## Chest X‐Ray Bone Suppression for Improving Classification of Tuberculosis‐Consistent Findings, Sivaramakrishnan Rajaraman
+## Chest X‐Ray Bone Suppression for Improving Classification of Tuberculosis‐Consistent Findings, Sivaramakrishnan Rajaraman(2021)
+https://github.com/sivaramakrishnan-rajaraman/CXR-bone-suppression
 
+## Bone-Suppresion-Ensemble, Rajaraman 논문(2022)
+https://github.com/sivaramakrishnan-rajaraman/Bone-Suppresion-Ensemble
 ## Development and Validation of a Deep Learning–Based Synthetic Bone-Suppressed Model for Pulmonary Nodule Detection in Chest Radiographs, Hwiyoung Kim
 
 ## An Efficient and Robust Method for Chest X-ray Rib Suppression That Improves Pulmonary Abnormality Diagnosis
