@@ -59,23 +59,37 @@
 # SR3
 https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/sr3/
 
-# Latent Diffusion(Stable Diffusion)
+# Latent Diffusion
 - Align your Latents:High-Resolution Video Synthesis with Latent Diffusion Models : https://tkayyoo.tistory.com/167
 - LDM: High-Resolution Image Synthesis with Latent Diffusion Models 분석 : https://dlaiml.tistory.com/entry/LDM-High-Resolution-Image-Synthesis-with-Latent-Diffusion-Models
 - https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/ldm/
 - https://www.goteodata.kr/104
-- https://ffighting.net/deep-learning-paper-review/diffusion-model/stable-diffusion/
-- https://jang-inspiration.com/latent-diffusion-model
-- https://velog.io/@yeonheedong/RUS-High-Resolution-Image-Synthesis-with-Latent-Diffusion-Models
+- **https://ffighting.net/deep-learning-paper-review/diffusion-model/stable-diffusion/**
+- **https://jang-inspiration.com/latent-diffusion-model**
+- **https://velog.io/@yeonheedong/RUS-High-Resolution-Image-Synthesis-with-Latent-Diffusion-Models**
 - https://medium.com/@preranabora12/understanding-the-loss-functions-of-latent-diffusion-model-fe53a551fa14
 - https://ostin.tistory.com/120
 - https://openaccess.thecvf.com/content/CVPR2021/papers/Esser_Taming_Transformers_for_High-Resolution_Image_Synthesis_CVPR_2021_paper.pdf
-- https://blog.outta.ai/5
+- **https://blog.outta.ai/5**
 - https://towardsdatascience.com/controllable-medical-image-generation-with-controlnets-48ef33dde652
 - https://lilianweng.github.io/posts/2021-07-11-diffusion-models/#ldm
 - https://velog.io/@rcchun/%EB%94%A5%EB%9F%AC%EB%8B%9DStable-Diffusion
 - Stable Diffusion 원리 : https://ai-designer-allan.tistory.com/entry/%EB%88%84%EA%B5%AC%EB%82%98-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-%EC%8A%A4%ED%85%8C%EC%9D%B4%EB%B8%94-%EB%94%94%ED%93%A8%EC%A0%84-%EC%9B%90%EB%A6%AC1-Diffusion-%EB%AA%A8%EB%8D%B8
 - An Introduction to Diffusion Models and Stable Diffusion : https://blog.marvik.ai/2023/11/28/an-introduction-to-diffusion-models-and-stable-diffusion/
+
+## (Fine-Tuned Latent Diffusion : Stable Diffusion)
+- The Illustrated Stable Diffusion : https://jalammar.github.io/illustrated-stable-diffusion/
+- ADM, LDM, Stable Diffusion : https://tkayyoo.tistory.com/167#tktag4
+- Stable Diffusion 에 대한 기초 이론 : https://www.internetmap.kr/m/entry/Basic-Theory-of-Stable-Diffusion#vae
+- Loss Function : https://medium.com/@preranabora12/understanding-the-loss-functions-of-latent-diffusion-model-fe53a551fa14
+- VQ , KL regularlization code : https://ostin.tistory.com/139
+- Perceptual Loss : https://deepdata.tistory.com/920
+- VQ-VAE : https://blog.naver.com/gypsi12/222977571589
+- VAE ( 사전학습된 VAE 라 관련은 없지만 ) : https://blog.naver.com/gypsi12/222972181857
+- 실제 코드 : https://github.com/CompVis/latent-diffusion/tree/main
+- LDM : https://en.wikipedia.org/wiki/Latent_diffusion_model#cite_note-stable-diffusion-github-3
+- How to Modified LDM? : Progressive Distillation for Fast Sampling of Diffusion Models https://kimjy99.github.io/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/progressive-distillation/
+- Stable Diffusion 그 이후 : https://tkayyoo.tistory.com/183
 
 # Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model (DDNM)
 - https://ostin.tistory.com/132
