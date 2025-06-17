@@ -1,5 +1,4 @@
 # OpenMIBOOD: Open Medical Imaging Benchmarks for Out-Of-Distribution Detection 
-# OpenMIBOOD 논문 쉽게 요약
 
 ## 개요
 **OpenMIBOOD: Open Medical Imaging Benchmarks for Out-Of-Distribution Detection** 논문은 의료 영상 분야에서 인공지능(AI) 모델이 훈련 데이터와 다른(분포 밖, OOD) 데이터를 얼마나 잘 탐지하는지 평가할 수 있는 벤치마크를 제시합니다[1][2][3]. 의료 AI의 신뢰성과 안전성을 높이기 위해 OOD 탐지는 매우 중요한 과제입니다.
