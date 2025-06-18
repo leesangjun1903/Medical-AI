@@ -1,5 +1,4 @@
 # Chest X-ray bone suppression toward improving classification and detection of Tuberculosis-consistent findings
-# 논문 요약: Chest X-ray Bone Suppression for Improving Classification of Tuberculosis-Consistent Findings
 
 ## 연구 배경 및 목적
 
