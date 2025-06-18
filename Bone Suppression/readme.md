@@ -24,7 +24,7 @@ https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/data
 - Deep Learning Models for bone suppression in chest radiographs (Gusarev's bone suppression method 사용. ConV , AE 기반 모델.) : https://github.com/danielnflam/Deep-Learning-Models-for-bone-suppression-in-chest-radiographs?tab=readme-ov-file
 - High-Resolution Chest X-ray Bone Suppression Using Unpaired CT Structural Priors : https://github.com/MIRACLE-Center/High-Resolution-Chest-X-ray-Bone-Suppression?tab=readme-ov-file
 
-## Object Removal : 특정 물체 제거 작업 -> Suppression 작업에 영향을 줄 수 있을 것.
+## Object Removal or Image Inpainting : 특정 물체 제거 작업 -> Suppression 작업에 영향을 줄 수 있을 것.
 - An object removal from image system using deep learning image segmentation and inpainting techniques(Free-Form Image Inpainting with Gated Convolution) : https://github.com/treeebooor/object-remove
 - Sementic segmentation : (Mask-R CNN : https://herbwood.tistory.com/20)  
 - Semantic segmenator model of deeplabv3/fcn resnet 101 has been combined with EdgeConnect(EdgeConnect: Generative Image Inpainting with Adversarial Edge Learning) : https://medium.com/analytics-vidhya/removing-objects-from-pictures-with-deep-learning-5e7c35f3f0dd , https://github.com/sujaykhandekar/Automated-objects-removal-inpainter/tree/master
