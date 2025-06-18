@@ -18,8 +18,7 @@ https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/data
 - An Efficient and Robust Method for Chest X-ray Rib Suppression That Improves Pulmonary Abnormality Diagnosis : https://github.com/FluteXu/CXR-Rib-Suppression/tree/master
 - Diffusion 기반 모델 : BS-LDM: Effective Bone Suppression in High-Resolution Chest X-Ray Images with Conditional Latent Diffusion Models : https://github.com/diaoquesang/BS-LDM
 - Remove Bones from X-Ray images with fastai : https://github.com/mmiv-center/deboning/tree/master
-- Suzuki 저자의 논문 : 읽어볼 여지가 있으나 2020년대 이후 BS 작업은 확인되지 않음. : https://suzukilab.first.iir.titech.ac.jp/publications/journal-papers/
-- Enhancement of chest radiographs obtained in the intensive care unit through bone suppression and consistent processing(2016)
+- Suzuki 저자의 논문 : 읽어볼 여지가 있으나 2020년대 이후 BS 작업은 확인되지 않음. : https://suzukilab.first.iir.titech.ac.jp/publications/journal-papers/ : Enhancement of chest radiographs obtained in the intensive care unit through bone suppression and consistent processing(2016)
 - U-Net 기반 모델 : xU-NetFullSharp: ANN for Chest X-Ray Bone Shadow Suppression : https://github.com/xKev1n/xU-NetFullSharp/tree/main
 - xU-NetFullSharp (Paper Implementation) : https://www.kaggle.com/code/arjunbasandrai/xu-netfullsharp-paper-implementation
 - Deep Learning Models for bone suppression in chest radiographs (Gusarev's bone suppression method 사용. ConV , AE 기반 모델.) : https://github.com/danielnflam/Deep-Learning-Models-for-bone-suppression-in-chest-radiographs?tab=readme-ov-file
