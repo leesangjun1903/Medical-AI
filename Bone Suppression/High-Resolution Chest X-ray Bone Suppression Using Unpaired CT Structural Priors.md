@@ -74,3 +74,83 @@
 [13] https://mednexus.org/doi/10.1016/j.radmp.2024.12.003
 [14] https://pubmed.ncbi.nlm.nih.gov/34888191/
 [15] https://scholar.kyobobook.co.kr/article/detail/4010025912536
+
+# 논문 방법(Method) 쉽게 설명
+
+## 전체 흐름 요약
+
+이 논문은 **짝지어진 데이터 없이(CT, X-ray 각각 따로 있음)** CT에서 얻은 구조 정보를 활용해, 고해상도 흉부 X-ray에서 뼈 구조(늑골, 쇄골 등)만 효과적으로 억제하는 방법을 제안합니다.  
+핵심은 **CT에서 DRR(디지털 재구성 방사선 영상)을 만들고, 이를 X-ray와 연결해 뼈 구조만 분리**하는 것입니다[1][2].
+
+---
+
+## 단계별 상세 설명
+
+### 1. CT로부터 DRR(Digitally Reconstructed Radiograph) 생성
+
+- **CT 데이터**는 3차원(3D) 구조 정보를 갖고 있습니다.
+- 이 CT를 바탕으로, 실제 X-ray처럼 보이는 **2차원(2D) DRR 이미지를 생성**합니다.
+- DRR은 CT의 뼈 구조를 X-ray 관점에서 투영한 이미지로, 뼈 구조 정보가 명확하게 나타납니다[1].
+
+### 2. DRR과 X-ray의 도메인 차이 줄이기 (LoG 도메인)
+
+- CT에서 만든 DRR과 실제 X-ray는 촬영 방식, 화질, 노이즈 등 여러 차이가 있습니다.
+- 이 차이를 줄이기 위해 **Laplacian of Gaussian(LoG) 도메인**에서 두 이미지를 변환·비교합니다.
+  - LoG는 이미지의 윤곽, 경계, 뼈 구조를 더 잘 드러내는 변환 방식입니다.
+- 이렇게 하면 DRR과 X-ray의 구조적 차이를 효과적으로 줄일 수 있습니다[1].
+
+### 3. Coarse-to-Fine(저해상도→고해상도) 전략
+
+- **1단계:** 저해상도에서 DRR과 X-ray를 비교·학습해 뼈 구조만 분리하는 모델을 만듭니다.
+- **2단계:** 저해상도에서 얻은 뼈 구조 분리 결과를 **고해상도**로 업샘플링합니다.
+- **3단계:** 고해상도 X-ray의 뼈 영역만 정밀하게 보정·분리합니다.
+- 이렇게 하면 **고해상도에서도 뼈 구조만 정확히 분리**할 수 있습니다[1].
+
+### 4. 최종 Bone Suppression(뼈 억제) 이미지 생성
+
+- 위 과정에서 얻은 **뼈 이미지(분리된 뼈 구조)**를 원본 X-ray에서 **빼줍니다(뺄셈 연산)**.
+- 그 결과, **뼈가 억제된(거의 없는) X-ray 이미지**가 만들어집니다.
+- 이 이미지는 폐 조직, 미세 병변 등을 더 명확히 볼 수 있게 해줍니다[1][2].
+
+---
+
+## 실제 구현 예시 (코드 흐름)
+
+1. **CycleGAN 등 도메인 변환 네트워크**로 DRR과 X-ray의 구조적 차이 극복
+2. **UNet 기반 분리 네트워크**로 뼈 구조만 추출
+3. **히스토그램 매칭** 등 후처리로 X-ray와 뼈 억제 이미지의 밝기/톤 맞춤
+4. **최종적으로 원본 X-ray에서 뼈 이미지를 빼서** 뼈 억제 영상 생성[2]
+
+---
+
+## 표로 정리
+
+| 단계                | 설명                                                                 |
+|-------------------|--------------------------------------------------------------------|
+| DRR 생성           | CT 데이터로 X-ray와 유사한 2D DRR 이미지 생성                         |
+| 도메인 차이 완화    | LoG 변환으로 DRR과 X-ray의 구조적 차이 줄임                            |
+| Coarse-to-Fine     | 저해상도에서 뼈 분리 → 고해상도 업샘플링 → 정밀 뼈 분리                 |
+| 뼈 억제 영상 생성   | 분리된 뼈 이미지를 원본 X-ray에서 빼서 뼈 억제 영상 완성                  |
+
+---
+
+## 한 줄 요약
+
+**CT에서 얻은 DRR(뼈 구조)과 X-ray를 LoG 도메인에서 비교·학습하여, 저해상도→고해상도 순으로 뼈만 분리하고, 이를 원본 X-ray에서 빼주는 방식**입니다[1][2].
+
+---
+
+- 이 방법은 **짝지어진 데이터가 필요 없고, 추가 장비 없이 기존 CT/X-ray 데이터로 적용**할 수 있어 현실적으로 매우 유용합니다[1].
+
+[1][2]
+
+[1] https://pubmed.ncbi.nlm.nih.gov/32275586/
+[2] https://github.com/MIRACLE-Center/High-Resolution-Chest-X-ray-Bone-Suppression
+[3] https://www.sciencedirect.com/science/article/abs/pii/S0895611123000046
+[4] https://rctd.uic.cu/rctd/user/setLocale/en_US
+[5] https://cdn.amegroups.cn/journals/amepc/files/journals/4/articles/67433/public/67433-PB2-9455-R2.pdf
+[6] https://pubmed.ncbi.nlm.nih.gov/34888191/
+[7] https://pmc.ncbi.nlm.nih.gov/articles/PMC9540269/
+[8] https://arxiv.org/html/2412.15670v2
+[9] https://www.mdpi.com/resolver?pii=diagnostics11050840
+[10] https://pubmed.ncbi.nlm.nih.gov/40293914/
