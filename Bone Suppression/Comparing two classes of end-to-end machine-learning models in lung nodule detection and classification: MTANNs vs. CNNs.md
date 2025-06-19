@@ -1,6 +1,4 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
-## 논문 요약: MTANNs vs. CNNs의 폐결절 검출 및 분류 비교
+## Comparing two classes of end-to-end machine-learning models in lung nodule detection and classification: MTANNs vs. CNNs
 
 ### 핵심 실험 결과
 
