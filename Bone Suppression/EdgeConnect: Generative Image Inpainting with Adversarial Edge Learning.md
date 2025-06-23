@@ -1,85 +1,107 @@
 # EdgeConnect: Generative Image Inpainting with Adversarial Edge Learning
 
-## 1. 개요
-
-EdgeConnect는 딥러닝을 활용한 이미지 인페인팅(Image Inpainting) 분야의 대표적인 논문으로, 기존 방식들이 복원 영역의 디테일이 부족하거나 흐릿하게 복원되는 문제를 개선하기 위해 제안된 모델입니다[1][2][3]. 이 논문은 이미지의 **에지(Edge)** 정보를 먼저 복원한 후, 이를 바탕으로 실제 이미지를 복원하는 **2단계(two-stage) 구조**를 채택합니다[1][2].
-
----
-
-## 2. 기존 인페인팅 방식과 한계
-
-- **Diffusion-based**: 주변 픽셀 값을 점진적으로 채워가는 방식. 큰 영역 복원에는 한계가 있음.
-- **Patch-based**: 이미지 내 유사 영역을 찾아 복사하는 방식. 계산량이 많고, 복잡한 구조 복원에 한계.
-- **Learning-based**: 딥러닝 기반 생성 모델(GAN 등)로 복원. 하지만 종종 부드럽고 비현실적인 결과를 냄[2].
+## 개요  
+EdgeConnect는 손상된 이미지 영역을 자연스럽게 채우는 **2단계 적대적 학습(Generative Adversarial Network, GAN)** 기반 모델입니다. 먼저 누락된 부분의 **Edge(윤곽선)** 를 생성하고, 이를 바탕으로 실제 픽셀을 복원하여 세밀한 디테일을 보존합니다[1].
 
 ---
 
-## 3. EdgeConnect의 핵심 아이디어
+## 1. 동기와 기여  
+기존 딥러닝 기반 이미지 복원 기법들은 종종 결과물이 과하게 매끄럽거나 흐려지는 문제가 있었습니다.  
+EdgeConnect는 **“Line First, Color Next”** 라는 화가의 스케치-채색 과정을 모방하여 불완전한 영역의 구조적 윤곽을 먼저 예측한 뒤 실제 색상을 채우도록 설계했습니다[1].
 
-- **Line First, Color Next**: 실제 그림을 그릴 때처럼, 먼저 선(Edge)을 그리고 그 위에 색과 질감을 입히는 방식에서 착안[2].
-- **2단계 구조**:
-  1. **Edge Generator**: 결손 영역의 에지(선)를 생성.
-  2. **Image Completion Network**: 생성된 에지를 바탕으로 실제 이미지를 복원[1][2].
-
----
-
-## 4. 모델 구조 및 학습 방식
-
-### 4.1. Edge Generator
-
-- 입력: 마스킹된 그레이스케일 이미지, 해당 영역의 에지 맵, 마스크.
-- 출력: 결손 영역의 새로운 에지 맵.
-- 학습: **Adversarial Loss**(GAN 손실)와 **Feature-Matching Loss**를 조합하여 학습. Feature-Matching Loss는 생성된 에지와 실제 에지의 중간 레이어 특성 차이를 최소화함[2].
-
-### 4.2. Image Completion Network
-
-- 입력: 마스킹된 컬러 이미지와, 결손 영역을 채운 에지 맵.
-- 출력: 최종 복원 이미지.
-- 학습: 네 가지 손실 함수(L1 Loss, Adversarial Loss, Perceptual Loss, Style Loss)를 조합한 **Joint Loss** 사용[2].
-  - **Perceptual Loss**: VGG-19 등 사전학습된 네트워크의 중간 레이어를 활용해, 생성 이미지와 실제 이미지의 특징 차이를 최소화.
-  - **Style Loss**: 이미지의 질감(스타일) 유사성을 측정하여, 블러 현상이나 체커보드 아티팩트를 줄임.
-
-### 4.3. 기타 특징
-
-- 에지 맵 생성에는 **Canny Edge Detector** 사용, Gaussian Smoothing의 표준편차는 실험적으로 최적값(2) 사용[2].
-- 마스크는 사각형(정형)과 불규칙(비정형) 두 가지 모두 실험[2].
-- 학습 데이터: CelebA, Places2, Paris StreetView 등 공개 데이터셋 활용[1][2].
+주요 기여  
+- **2단계 구조**: Edge 생성기(Generator)와 이미지 완성 네트워크로 분리  
+- **경계 정보 활용**: 손실된 영역 윤곽선을 hallucination 기법으로 생성  
+- **End-to-End 학습**: 두 네트워크를 통합하여 최적화  
 
 ---
 
-## 5. 성능 및 실험 결과
+## 2. 모델 구조  
 
-- **정성적 평가**: 기존 방법보다 결손 영역의 디테일이 뛰어나고, 블러/체커보드 아티팩트가 적은 결과를 보임[2].
-- **정량적 평가**: L1, SSIM, PSNR, FID 등 다양한 지표에서 기존 SOTA(State-of-the-art) 모델 대비 우수한 성능 확인[2].
-- **Ablation Study**: Edge Generator의 존재가 복원 품질에 미치는 영향 실험. 에지 생성 단계가 있을 때 성능이 확실히 향상됨을 확인[2].
+### 2.1. Edge Generator (G₁, D₁)  
+- **입력**: 그레이스케일로 변환된 마스크 이미지, 원본 윤곽선 맵, 마스크 정보  
+- **아키텍처**:  
+  - Down-sampling → 8개의 Residual Block(2-Dilated Convolution) → Up-sampling  
+  - Discriminator(D₁): 70×70 PatchGAN[2]  
+- **손실 함수**:  
+  - Adversarial Loss ($$L_{adv,₁}$$)  
+  - Feature Matching Loss ($$L_{FM}$$)  
+  - 가중치: $$λ_{adv₁} = 1, λ_{FM} = 10$$
+
+### 2.2. Image Completion Network (G₂, D₂)  
+- **입력**: 손상된 컬러 이미지, 결합된 윤곽선 맵  
+- **아키텍처**:  
+  - 구조는 Edge Generator와 유사하나 색상 및 텍스처 학습에 집중  
+  - Discriminator(D₂): 70×70 PatchGAN  
+- **손실 함수**(Joint Loss):  
+  - L1 Loss (픽셀 차이)  
+  - Adversarial Loss ($$L_{adv,₂}$$)  
+  - Perceptual Loss (VGG-19의 relu1_1 ~ relu5_1 레이어 이용)  
+  - Style Loss (Gram matrix 기반)  
+  - 가중치: $$λ_{L1}=1, λ_{adv}=0.1, λ_{perc}=0.1, λ_{style}=250$$[3]
 
 ---
 
-## 6. 결론 및 의의
+## 3. 학습 전략  
 
-- EdgeConnect는 **에지 정보를 활용한 2단계 복원** 전략을 통해, 기존 인페인팅 기법의 한계를 극복하고 세밀한 디테일까지 복원할 수 있음을 실험적으로 증명했습니다[1][2].
-- Restoration(복원), Removal(제거), Synthesis(합성) 등 다양한 이미지 편집 분야에 응용 가능성이 높습니다[2].
+- **데이터셋**: CelebA, Places2, Paris StreetView  
+- **마스크 종류**:  
+  - (1) 정사각형 랜덤 마스크(전체 이미지의 25% 크기)  
+  - (2) 불규칙 마스크(Partial Convolutions 논문의 공개 데이터)  
+- **Edge 추출**: Canny Detector (Gaussian σ=2)  
+- **최적화**: Adam (β₁=0, β₂=0.9)  
+- **학습률**:  
+  - G₁, G₂ 초기 LR=1e-4 → 수렴 후 1e-5  
+  - D₁, D₂: G의 LR × 0.1  
+- **End-to-End Fine-tuning**: G₁, G₂, D₂ 통합 후 LR=1e-6 로 미세 조정[3]
 
 ---
 
-## 7. 요약 표
+## 4. 평가 및 결과  
 
-| 단계               | 입력                                         | 출력                | 주요 손실 함수                             |
-|--------------------|----------------------------------------------|---------------------|--------------------------------------------|
-| Edge Generator     | 마스킹된 흑백 이미지, 에지 맵, 마스크         | 복원된 에지 맵      | Adversarial, Feature-Matching              |
-| Image Completion   | 마스킹된 컬러 이미지, 복원된 에지 맵         | 최종 복원 이미지    | L1, Adversarial, Perceptual, Style         |
+### 4.1. 정성적 결과  
+EdgeConnect는 기존 기법 대비 **흐림(Blurriness)** 과 **Checkerboard artifact**가 현저히 줄어든 고품질 복원 결과를 보였습니다[1].
+
+### 4.2. 정량적 지표  
+|지표|설명|연산 방식|유리한 방향|
+|---|---|---|---|
+|L1|픽셀 단위 절대차이|정규화된 L1|낮을수록 좋음|
+|SSIM|구조적 유사도|계산식 기반|높을수록 좋음|
+|PSNR|신호 대 잡음비|20 log10(MAX/√MSE)|높을수록 좋음|
+|FID|Inception-Feature 차이|Wasserstein-2 Distance|낮을수록 좋음|
+
+EdgeConnect는 대부분 지표에서 기존 방법을 앞섰습니다. 특히 FID 개선이 두드러져 전체적 인식률 상승을 확인했습니다[1].
+
+### 4.3. Visual Turing Test  
+- 2-Alternative Forced Choice(2AFC), Just Noticeable Differences(JND) 적용  
+- 실제 이미지 판별 정확도 약 94.6% (오차 ±0.5%)  
+- 사람 지각 기반 평가에서도 우수한 결과를 보였습니다[1].
+
+### 4.4. Ablation Study  
+- **Edge Generator 유무**: Edge 모듈 포함 시 모든 지표에서 성능 향상  
+- **Canny σ 값 변화**: σ=2일 때 PSNR·FID 최적값 달성  
+이로써 경계 정보가 이미지 복원에 핵심적임을 확인했습니다[3].  
 
 ---
 
-EdgeConnect 논문은 인페인팅 분야에서 **에지 기반의 2단계 접근법**이 실제 복원 품질을 크게 높일 수 있음을 보여준 대표적인 연구입니다[1][2][3].
+## 5. 결론  
+EdgeConnect는 **“Line First, Color Next”**를 모티브로 윤곽선 예측 후 색상 복원을 수행하여, 세밀한 디테일을 효과적으로 재현합니다. 2단계 GAN 구조와 다양한 손실 함수를 결합하여 기존 딥러닝 기반 인페인팅 기법의 한계를 극복했으며, Restoration, Removal, Synthesis 등 다양한 어플리케이션에 적용 가능합니다[1].
 
-[1] https://subinium.github.io/LR007/
-[2] https://big-dream-world.tistory.com/80
-[3] https://arxiv.org/abs/1901.00212
-[4] https://dsba.snu.ac.kr/seminar/?mod=document
-[5] https://ettrends.etri.re.kr/ettrends/194/0905194005/
-[6] https://blog.everdu.com/397
-[7] https://ettrends.etri.re.kr/ettrends/184/0905184009/0905184009.html
-[8] https://ostin.tistory.com/240
-[9] https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=NPAP13263461
-[10] https://www.fsp-group.com/kr/knowledge-app-42.html
+---
+
+References  
+[1] Generative Image Inpainting with Adversarial Edge Learning, Kamyar Nazeri et al., arXiv:1901.00212 (2019)  
+[2] Image-to-Image Translation with Conditional Adversarial Networks, Phillips et al., arXiv:1611.07004 (2016)  
+[3] Big Dream World 블로그, “EdgeConnect: Generative Image Inpainting with Adversarial Edge Learning,” 2021.
+
+[1] https://arxiv.org/abs/1901.00212
+[2] https://subinium.github.io/LR007/
+[3] https://big-dream-world.tistory.com/80
+[4] https://github.com/knazeri/edge-connect
+[5] https://github.com/YeshengSu/EdgeConnect
+[6] https://huggingface.co/papers/1901.00212
+[7] https://github.com/jshi31/edge-connect
+[8] https://arxiv.org/pdf/2102.08078.pdf
+[9] https://arxiv.org/pdf/1901.00212.pdf
+[10] https://github.com/Ma-Dan/edge-connect
+[11] https://openaccess.thecvf.com/content_ICCVW_2019/papers/AIM/Nazeri_EdgeConnect_Structure_Guided_Image_Inpainting_using_Edge_Prediction_ICCVW_2019_paper.pdf
