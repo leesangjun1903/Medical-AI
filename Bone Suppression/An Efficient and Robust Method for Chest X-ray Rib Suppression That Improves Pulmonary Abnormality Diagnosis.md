@@ -66,7 +66,7 @@
 
 ---
 
-**참고:** 데이터 및 코드 공개: [https://github.com/FluteXu/CXR-Rib-Suppression][1][2]
+**참고:** 데이터 및 코드 공개: https://github.com/FluteXu/CXR-Rib-Suppression
 
 [1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC10177861/
 [2]: https://arxiv.org/abs/2302.09696
