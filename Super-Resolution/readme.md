@@ -26,7 +26,6 @@ https://github.com/asalmada/x-ray-images-enhancement
 - Image Denoising Using a Generative Adversarial Network(SRGAN) : https://github.com/manumathewthomas/ImageDenoisingGAN/tree/master?tab=readme-ov-file
 - Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data(Real-ESRGAN) : https://github.com/xinntao/Real-ESRGAN
 - Learning Enriched Features for Fast Image Restoration and Enhancement(MIRnet) : https://github.com/swz30/MIRNetv2/tree/main
-- Efficient Face Super-Resolution via Wavelet-based Feature Enhancement Network : https://github.com/PRIS-CV/WFEN/tree/main?tab=readme-ov-file
 - FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction(FreeSeed) : https://github.com/masaaki-75/freeseed
 - Image Denoising Using a Generative Adversarial Network(ImageDenoisingGAN) : https://github.com/manumathewthomas/ImageDenoisingGAN/tree/master?tab=readme-ov-file
 - SwinIR: Image Restoration Using Swin Transformer(SwinIR) : https://github.com/JingyunLiang/SwinIR/tree/main
