@@ -1,3 +1,22 @@
+# Awesome Papers
+## Awesome GAN
+- Awesome GAN for Medical Imaging : https://github.com/xinario/awesome-gan-for-medical-imaging?tab=readme-ov-file#reconstruction
+
+## Awesome Diffusion Models
+- Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
+
+## Awesome Transformer Models
+- Transformers in Medical Imaging: A Survey(Transformers) : https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction 
+
+## Awesome Medical imaging
+- Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
+- Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
+- Awesome-Multimodal-Applications-In-Medical-Imaging : https://github.com/richard-peng-xia/awesome-multimodal-in-medical-imaging
+- Awesome-3D-Medical-Imaging-Segmentation : https://github.com/steve-zeyu-zhang/Awesome-3D-Medical-Imaging-Segmentation
+- MRI Reconstruction : https://paperswithcode.com/task/mri-reconstruction
+- Awesome Active Learning for Medical Image Analysis : https://github.com/LightersWang/Awesome-Active-Learning-for-Medical-Image-Analysis
+- Awesome Foundational Models in Medical Imaging : https://github.com/xmindflow/Awesome-Foundation-Models-in-Medical-Imaging
+
 # Computer-Tomograpy reconstruction
 ## Deep Learning in Medical Imaging and Medical Image Analysis
 https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis?tab=readme-ov-file
@@ -7,8 +26,6 @@ https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis
 ## Image reconstruction with Super-resolution
 - X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file
 - Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
-- 'Lightweight' GAN : https://github.com/lucidrains/lightweight-gan
-- Deep Learning Image Generation with GANs and Diffusion Model : https://github.com/kanru-wang/Udemy_GAN_and_Diffusion_models/tree/main
 - Super Resolution for Medical Images : https://github.com/architkaila/Super-Resolution-for-Medical-Images/tree/main
 
 ## Image Denoising
@@ -32,7 +49,6 @@ https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis
 - Medical Object Detection : https://paperswithcode.com/task/medical-object-detection
 - Low-Dose X-Ray Ct Reconstruction on X3D https://paperswithcode.com/sota/low-dose-x-ray-ct-reconstruction-on-x3d
 - 3D Medical Imaging Segmentation : https://paperswithcode.com/task/3d-medical-imaging-segmentation
-- 
 - MONAI(medical imaging framework) : https://github.com/Project-MONAI/MONAI?tab=readme-ov-file , https://github.com/Project-MONAI/tutorials/tree/1ad4540755b7703302ea6210103f4d5d4c7e8ad0, https://zhuanlan.zhihu.com/p/166706664
 
 ## 3D Reconstruction
@@ -44,39 +60,6 @@ https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis
 
 ## Physically Based Rendering method
 - Deep Learning with Cinematic Rendering: Fine-Tuning Deep Neural Networks Using Photorealistic Medical Images https://durr.jhu.edu/pubs/dl-cin-ren/
-
-
-# Awesome Papers
-- Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
-- Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
-- Awesome-Super-Resolution https://github.com/ChaofWang/Awesome-Super-Resolution?tab=readme-ov-file
-- Single-Image-Super-Resolution(7 years ago) : https://github.com/YapengTian/Single-Image-Super-Resolution?tab=readme-ov-file
-- Awesome-Multimodal-Applications-In-Medical-Imaging : https://github.com/richard-peng-xia/awesome-multimodal-in-medical-imaging
-- Awesome-3D-Medical-Imaging-Segmentation : https://github.com/steve-zeyu-zhang/Awesome-3D-Medical-Imaging-Segmentation
-- Awesome Segment Anything : https://github.com/Hedlen/awesome-segment-anything , https://github.com/dk-liang/Awesome-Segment-Anything , https://github.com/baibizhe/Awesome-SAM
-- Super-Resolution : https://paperswithcode.com/task/super-resolution
-- MRI Reconstruction : https://paperswithcode.com/task/mri-reconstruction
-- Image Denoising : https://paperswithcode.com/task/image-denoising
-- Awesome Active Learning for Medical Image Analysis : https://github.com/LightersWang/Awesome-Active-Learning-for-Medical-Image-Analysis
-- Awesome Foundational Models in Medical Imaging : https://github.com/xmindflow/Awesome-Foundation-Models-in-Medical-Imaging
-
-
-# Awesome Models
-## Awesome GAN
-- Awesome GAN for Medical Imaging : https://github.com/xinario/awesome-gan-for-medical-imaging?tab=readme-ov-file#reconstruction
-
-## Awesome Diffusion Models
-- Awesome-Diffusion-Models : https://github.com/diff-usion/Awesome-Diffusion-Models
-- Awesome-diffusion-model-for-image-processing : https://github.com/lixinustc/Awesome-diffusion-model-for-image-processing?tab=readme-ov-file
-- Awesome Diffusion Models in High-Resolution Synthesis : https://github.com/GuoLanqing/Awesome-High-Resolution-Diffusion
-- Awesome Diffusion Models In Low-level Vision : https://github.com/ChunmingHe/awesome-diffusion-models-in-low-level-vision?tab=readme-ov-file
-- Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
-- Awesome Diffusion Categorized models : https://github.com/wangkai930418/awesome-diffusion-categorized?tab=readme-ov-file#image-restoration
-- Awesome Diffusion Models in High-Resolution Synthesis : https://github.com/GuoLanqing/Awesome-High-Resolution-Diffusion?tab=readme-ov-file#-fine-tuning-algorithms
-
-
-## Awesome Transformer Models
-- Transformers in Medical Imaging: A Survey(Transformers) : https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction 
 
 # Lecture   
 - Computer Tomography, Matthias Beckmann  
