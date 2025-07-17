@@ -1,4 +1,4 @@
-# 디지털 방사선 촬영에서 Nonsubsampled Contourlet Transform 기반 격자선 억제 기법 연구 분석
+# A grid-line suppression technique based on the nonsubsampled contourlet transform in digital radiography
 
 ## 1. 논문 한 문장 요약
 
