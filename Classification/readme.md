@@ -1,6 +1,7 @@
 # Pneumonia Classification
 
 ## Papers
+- Comparing two classes of end-to-end machine-learning models in lung nodule detection and classification: MTANNs vs. CNNs
 - Performance Evaluation of the NASNet Convolutional Network in the Automatic Identification of COVID-19
 - 
 
