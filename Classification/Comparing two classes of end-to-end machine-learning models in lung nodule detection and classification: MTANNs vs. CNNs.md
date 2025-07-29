@@ -1,4 +1,4 @@
-## Comparing two classes of end-to-end machine-learning models in lung nodule detection and classification: MTANNs vs. CNNs
+# Comparing two classes of end-to-end machine-learning models in lung nodule detection and classification: MTANNs vs. CNNs
 
 ### 핵심 실험 결과
 
