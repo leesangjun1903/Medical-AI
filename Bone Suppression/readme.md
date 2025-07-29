@@ -24,6 +24,7 @@ https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/data
 - Deep Learning Models for bone suppression in chest radiographs (Gusarev's bone suppression method 사용. ConV , AE 기반 모델.) : https://github.com/danielnflam/Deep-Learning-Models-for-bone-suppression-in-chest-radiographs?tab=readme-ov-file
 - High-Resolution Chest X-ray Bone Suppression Using Unpaired CT Structural Priors : https://github.com/MIRACLE-Center/High-Resolution-Chest-X-ray-Bone-Suppression?tab=readme-ov-file
 - Bone Suppression on Chest Radiographs With Adversarial Learning | Pix2Pix, CycleGAN
+- Generation of Virtual Dual Energy Images from Standard Single-Shot Radiographs using Multi-scale and Conditional Adversarial Network
 
 ## Object Removal or Image Inpainting : 특정 물체 제거 작업 -> Suppression 작업에 영향을 줄 수 있을 것.
 - An object removal from image system using deep learning image segmentation and inpainting techniques(Free-Form Image Inpainting with Gated Convolution) : https://github.com/treeebooor/object-remove
