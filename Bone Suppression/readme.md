@@ -10,6 +10,7 @@ https://stanfordaimi.azurewebsites.net/datasets?domain=CHEST&page=2
 https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/data
 
 # Papers and Models
+- Dual energy subtraction: Principles and clinical applications
 - Deep learning models for bone suppression in chest radiographs, Maxim Gusarev
 - Bone Suppression on Chest Radiographs for Pulmonary Nodule Detection: Comparison between a Generative Adversarial Network and Dual-Energy Subtraction, Kyungsoo Bae
 - Chest X‐Ray Bone Suppression for Improving Classification of Tuberculosis‐Consistent Findings, Sivaramakrishnan Rajaraman(2021) : https://github.com/sivaramakrishnan-rajaraman/CXR-bone-suppression
