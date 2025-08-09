@@ -1,4 +1,4 @@
-# Pneumonia Classification
+# Pneumonia Classification, Medical Image classification
 
 ## Papers
 - Comparing two classes of end-to-end machine-learning models in lung nodule detection and classification: MTANNs vs. CNNs
