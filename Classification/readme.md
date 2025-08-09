@@ -5,7 +5,7 @@
 - Massive training artificial neural network MTANN for reduction of false positives in computerized detection of lung nodules in low-dose computed tomography
 - Performance of Deep-Learning Solutions on Lung Nodule Malignancy Classification: A Systematic Review
 - Performance Evaluation of the NASNet Convolutional Network in the Automatic Identification of COVID-19
-- 
+- PHG-Net: Persistent Homology Guided Medical Image Classification
 
 ## COVID-19-Detection-Deep_Learning-Pytorch_Model
 ### DenseNet. 
