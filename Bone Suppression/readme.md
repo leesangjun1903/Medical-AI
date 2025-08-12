@@ -26,6 +26,7 @@ https://www.kaggle.com/datasets/hmchuong/xray-bone-shadow-supression/data
 - High-Resolution Chest X-ray Bone Suppression Using Unpaired CT Structural Priors : https://github.com/MIRACLE-Center/High-Resolution-Chest-X-ray-Bone-Suppression?tab=readme-ov-file
 - Bone Suppression on Chest Radiographs With Adversarial Learning | Pix2Pix, CycleGAN
 - Generation of Virtual Dual Energy Images from Standard Single-Shot Radiographs using Multi-scale and Conditional Adversarial Network
+- Feasibility Study of Deep-Learning-Based Bone Suppression with Single-Energy Material Decomposition in Chest X-Rays
 
 ## Object Removal or Image Inpainting : 특정 물체 제거 작업 -> Suppression 작업에 영향을 줄 수 있을 것.
 - An object removal from image system using deep learning image segmentation and inpainting techniques(Free-Form Image Inpainting with Gated Convolution) : https://github.com/treeebooor/object-remove
