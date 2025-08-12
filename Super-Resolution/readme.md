@@ -37,4 +37,5 @@ https://github.com/asalmada/x-ray-images-enhancement
 - DPSRGAN: Dilation Patch Super-Resolution Generative Adversarial Networks https://github.com/kushalchordiya216/DPSRGAN/tree/master?tab=readme-ov-file
 - Generative Adversarial Super-Resolution at the Edge with Knowledge Distillation(EdgeSRGAN) : https://github.com/PIC4SeR/EdgeSRGAN?tab=readme-ov-file
 - Unconditional Latent Diffusion Models Memorize Patient Imaging Data: Implications for Openly Sharing Synthetic Data : https://arxiv.org/html/2402.01054v3
+- CT Super-resolution GAN Constrained by the Identical, Residual, and Cycle Learning Ensemble (GAN-CIRCLE)
 
