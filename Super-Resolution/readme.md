@@ -6,6 +6,7 @@
 https://github.com/asalmada/x-ray-images-enhancement
 
 ## Papers
+- (Survey) CT Image Denoising and Deblurring With Deep Learning: Current Status and Perspectives
 - Medical image denoising using convolutional denoising autoencoders(Autoencoder) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
 - Content-Noise Complementary Learning for Medical Image Denoising(CNCL) https://github.com/gengmufeng/CNCL-denoising/tree/main, https://github.com/kiananvari/Content-Noise-Complementary-Learning-for-Medical-Image-Denoising?tab=readme-ov-file
 - Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior(DIP) https://github.com/mlaves/uncertainty-deep-image-prior?tab=readme-ov-file
