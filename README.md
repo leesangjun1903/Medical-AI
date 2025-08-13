@@ -2,16 +2,9 @@
 Awesome-Medical-Dataset : https://github.com/openmedlab/Awesome-Medical-Dataset?tab=readme-ov-file
 
 # Awesome Papers
-## Awesome GAN
 - Awesome GAN for Medical Imaging : https://github.com/xinario/awesome-gan-for-medical-imaging?tab=readme-ov-file#reconstruction
-
-## Awesome Diffusion Models
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
-
-## Awesome Transformer Models
 - Transformers in Medical Imaging: A Survey(Transformers) : https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction 
-
-## Awesome Medical imaging
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
 - Awesome articles about Implicit Neural Representation networks in medical imaging https://github.com/xmindflow/Awesome-Implicit-Neural-Representations-in-Medical-imaging?tab=readme-ov-file#tomography-and-ct
 - Awesome-Multimodal-Applications-In-Medical-Imaging : https://github.com/richard-peng-xia/awesome-multimodal-in-medical-imaging
