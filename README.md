@@ -36,9 +36,6 @@ https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis
 
 # Medical Imaging
 
-## Medical imaging survey
-- CT Image Denoising and Deblurring With Deep Learning: Current Status and Perspectives
-
 ## Medical imaging papers
 - Medical Image Segmentation subtasks : https://paperswithcode.com/area/medical/medical-image-segmentation
 - Medical Image Classification : https://paperswithcode.com/task/medical-image-classification
