@@ -1,4 +1,4 @@
-> # Image Denoising for Gaussian noise, Grid line suppression, Artifact(Moire, etc)
+> # Image Denoising for Gaussian noise, Grid line suppression, Artifact(Moire, etc) using sinogram, CT, MRI
 
 ## Papers
 - (Survey) A review on CT image noise and its denoising
