@@ -2,8 +2,14 @@
 # Image Denoising and Super-Resolution
 
 ## Traditional methods
-### X-Ray Images Enhancement
-https://github.com/asalmada/x-ray-images-enhancement
+- X-Ray Images Enhancement : https://github.com/asalmada/x-ray-images-enhancement
+- X-ray and CT image processing using machine learning and deep learning https://github.com/YIZHE12/ML_DeepCT?tab=readme-ov-file
+- Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
+- 
+
+## SR methods with CT, MRI
+- Super Resolution for Medical Images : https://github.com/architkaila/Super-Resolution-for-Medical-Images/tree/main
+
 
 ## Papers
 - (Survey) CT Image Denoising and Deblurring With Deep Learning: Current Status and Perspectives
