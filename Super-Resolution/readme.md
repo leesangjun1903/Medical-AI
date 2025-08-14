@@ -1,5 +1,5 @@
 
-# Image Denoising and Super-Resolution
+> # Learning Image reconstruction and Super-Resolution methods using CT, MRI 
 
 ## Projects
 ### Traditional methods
