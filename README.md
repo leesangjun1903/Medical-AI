@@ -17,7 +17,6 @@
 - Awesome Foundational Models in Medical Imaging : https://github.com/xmindflow/Awesome-Foundation-Models-in-Medical-Imaging
 - Deep Learning in Medical Imaging and Medical Image Analysis : https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis?tab=readme-ov-file
 
-## CT reconstruction
 
 ## Image Denoising
 - MR-self Noise2Noise: self-supervised deep learning–based image quality improvement of submillimeter resolution 3D MR images : https://link.springer.com/article/10.1007/s00330-022-09243-y
