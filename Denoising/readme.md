@@ -6,6 +6,7 @@
 - (Survey) Diffusion Models in Medical Imaging: A Comprehensive Survey
 - A grid-line suppression technique based on the nonsubsampled contourlet transform in digital radiography
 - DRAN : Learning Medical Image Denoising with Deep Dynamic Residual Attention Network : https://github.com/sharif-apu/MID-DRAN
+- An Effective COVID-19 CT Image Denoising Method Based on a Deep Convolutional Neural Network
 
 - 수정필 :
 - MR-self Noise2Noise: self-supervised deep learning–based image quality improvement of submillimeter resolution 3D MR images : https://link.springer.com/article/10.1007/s00330-022-09243-y
