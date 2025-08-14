@@ -2,7 +2,7 @@
 
 ## Papers
 - MR-self Noise2Noise: self-supervised deep learning–based image quality improvement of submillimeter resolution 3D MR images : https://link.springer.com/article/10.1007/s00330-022-09243-y
-- Learning Medical Image Denoising with Deep Dynamic Residual Attention Network https://github.com/sharif-apu/MID-DRAN
+- DRAN : Learning Medical Image Denoising with Deep Dynamic Residual Attention Network : https://github.com/sharif-apu/MID-DRAN
 - MR Image Denoising and Super-Resolution Using Regularized Reverse Diffusion https://arxiv.org/abs/2203.12621
 
 - 2-Step Sparse-View CT Reconstruction with a Domain-Specific Perceptual Network https://github.com/anonyr7/Sinogram-Inpainting/tree/master?tab=readme-ov-file
