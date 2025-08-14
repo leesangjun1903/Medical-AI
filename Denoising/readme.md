@@ -10,6 +10,7 @@
 - Medical image denoising using convolutional denoising autoencoders
 - Deep Filtered Back Projection for CT Reconstruction
 - Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images
+- DuDoNet: Dual Domain Network for CT Metal Artifact Reduction
 
 - 수정필 :
 - MR-self Noise2Noise: self-supervised deep learning–based image quality improvement of submillimeter resolution 3D MR images : https://link.springer.com/article/10.1007/s00330-022-09243-y
