@@ -4,7 +4,7 @@
 - My Main Project Data : Chest X-Ray Images (Pneumonia) : https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data
 - COVID-19 Radiography Database : https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
 
-# Awesome Papers
+# Awesome Series
 - Awesome GAN for Medical Imaging : https://github.com/xinario/awesome-gan-for-medical-imaging?tab=readme-ov-file#reconstruction
 - Awesome Diffusion Models in Medical Imaging https://github.com/amirhossein-kz/Awesome-Diffusion-Models-in-Medical-Imaging?tab=readme-ov-file#reconstruction
 - Transformers in Medical Imaging: A Survey(Transformers) : https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging?tab=readme-ov-file#reconstruction 
@@ -15,10 +15,7 @@
 - MRI Reconstruction : https://paperswithcode.com/task/mri-reconstruction
 - Awesome Active Learning for Medical Image Analysis : https://github.com/LightersWang/Awesome-Active-Learning-for-Medical-Image-Analysis
 - Awesome Foundational Models in Medical Imaging : https://github.com/xmindflow/Awesome-Foundation-Models-in-Medical-Imaging
-
-# Computer-Tomograpy reconstruction
-## Deep Learning in Medical Imaging and Medical Image Analysis
-https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis?tab=readme-ov-file
+- Deep Learning in Medical Imaging and Medical Image Analysis : https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis?tab=readme-ov-file
 
 ## CT reconstruction
 
