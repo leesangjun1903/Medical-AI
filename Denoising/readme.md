@@ -16,9 +16,8 @@
 - FreeSeed: Frequency-band-aware and Self-guided Network for Sparse-view CT Reconstruction
 - Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior
 - Adversarial Distortion Learning for Medical Image Denoising
-
-- 수정필 :
-
 - 2-Step Sparse-View CT Reconstruction with a Domain-Specific Perceptual Network https://github.com/anonyr7/Sinogram-Inpainting/tree/master?tab=readme-ov-file
 - Improving Hemorrhage Detection in Sparse-view CTs via Deep Learning https://github.com/J-3TO/Sparse-View-Cranial-CT-Reconstruction
 - WalnutReconstructionCodes (FDK) : https://github.com/cicwi/WalnutReconstructionCodes?tab=readme-ov-file
+
+- 수정필 :
