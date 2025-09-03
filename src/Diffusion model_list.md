@@ -85,6 +85,7 @@ https://github.com/anthony-frion/SR3/tree/main
 - https://github.com/digbangbang/Learning/blob/main/LDM_learning.md
 
 - Community Pipeline Examples : https://github.com/huggingface/diffusers/blob/main/examples/community/README.md
+- [코드리뷰] Diffusers 라이브러리 리뷰 - (2) Stable Diffusion with Diffusers : https://velog.io/@choidaedae/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0-Diffusers-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A6%AC%EB%B7%B0-2-Stable-Diffusion-with-Diffusers
 
 ## StableDiffusionUpscalePipeline
 - Main : https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler 
