@@ -16,6 +16,7 @@
 - Awesome Active Learning for Medical Image Analysis : https://github.com/LightersWang/Awesome-Active-Learning-for-Medical-Image-Analysis
 - Awesome Foundational Models in Medical Imaging : https://github.com/xmindflow/Awesome-Foundation-Models-in-Medical-Imaging
 - Deep Learning in Medical Imaging and Medical Image Analysis : https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis?tab=readme-ov-file
+- Awesome Self-Supervised Learning in Medical Imaging : https://github.com/SaeedShurrab/awesome-self-supervised-learning-in-medical-imaging
 
 # Medical Imaging
 
