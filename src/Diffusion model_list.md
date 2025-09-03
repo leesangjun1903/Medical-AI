@@ -84,6 +84,8 @@ https://github.com/anthony-frion/SR3/tree/main
 
 - https://github.com/digbangbang/Learning/blob/main/LDM_learning.md
 
+- Community Pipeline Examples : https://github.com/huggingface/diffusers/blob/main/examples/community/README.md
+
 ## StableDiffusionUpscalePipeline
 - Main : https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler 
 - StableDiffusionUpscalePipeline : https://github.com/huggingface/diffusers/blob/v0.23.1/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_upscale.py#L70
