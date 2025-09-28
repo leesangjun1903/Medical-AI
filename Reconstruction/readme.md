@@ -1,5 +1,7 @@
 
-> # Learning Image reconstruction and Super-Resolution methods using CT, MRI 
+> # Learning Image reconstruction and Super-Resolution methods using CT, MRI
+> Medical Image Super-Resolution Methods
+> Virtual Grid for Medical Image Enhancement
 
 ## Projects
 ### Traditional methods
@@ -8,7 +10,7 @@
 - Computed-tomography Fan-beam FBP reconstruction https://github.com/kk17m/CT-Fan-beam-FBP-reconstruction/tree/master
 - 
 
-### SR methods with CT, MRI
+### DL methods with CT, MRI
 - Super Resolution for Medical Images : https://github.com/architkaila/Super-Resolution-for-Medical-Images/tree/main
 
 
