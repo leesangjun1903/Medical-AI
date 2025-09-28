@@ -1,7 +1,8 @@
 
 > # Learning Image reconstruction and Super-Resolution methods using CT, MRI
-> Medical Image Super-Resolution Methods
-> Virtual Grid for Medical Image Enhancement
+
+> ## Medical Image Super-Resolution Methods
+> ## Virtual Grid for Medical Image Enhancement
 
 ## Projects
 ### Traditional methods
