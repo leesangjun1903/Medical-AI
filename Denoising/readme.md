@@ -4,6 +4,8 @@
 > ## Grid line suppression(Moire,...)
 
 ## Papers
+- Medical image denoising using convolutional denoising autoencoders(Autoencoder) https://paperswithcode.com/paper/medical-image-denoising-using-convolutional
+- Content-Noise Complementary Learning for Medical Image Denoising(CNCL) https://github.com/gengmufeng/CNCL-denoising/tree/main, https://github.com/kiananvari/Content-Noise-Complementary-Learning-for-Medical-Image-Denoising?tab=readme-ov-file
 - (Survey) A review on CT image noise and its denoising
 - (Survey) CT Image Denoising and Deblurring With Deep Learning: Current Status and Perspectives
 - (Survey) Diffusion Models in Medical Imaging: A Comprehensive Survey
