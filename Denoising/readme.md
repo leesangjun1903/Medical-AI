@@ -1,5 +1,8 @@
 > # Image Denoising for Gaussian noise, Grid line suppression, Artifact(Moire, etc) using sinogram, CT, MRI
 
+> ## Artifact(Gaussian noise, etc) Denoising
+> ## Grid line suppression(Moire,...)
+
 ## Papers
 - (Survey) A review on CT image noise and its denoising
 - (Survey) CT Image Denoising and Deblurring With Deep Learning: Current Status and Perspectives
