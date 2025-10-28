@@ -14,8 +14,6 @@
 - Awesome Foundational Models in Medical Imaging : https://github.com/xmindflow/Awesome-Foundation-Models-in-Medical-Imaging
 - Awesome Self-Supervised Learning in Medical Imaging : https://github.com/SaeedShurrab/awesome-self-supervised-learning-in-medical-imaging
 - Awesome-Healthcare-Foundation-Models : https://github.com/Jianing-Qiu/Awesome-Healthcare-Foundation-Models?tab=readme-ov-file
-- awesome-mmps(multimodal machine learning with physiological signals) : https://github.com/willxxy/awesome-mmps
-
 
 ## Reconstruction
 - Awesome-CT-Reconstruction https://github.com/LoraLinH/Awesome-CT-Reconstruction?tab=readme-ov-file
@@ -32,6 +30,8 @@
 
 ## Multi-Modal
 - Awesome-Multimodal-Applications-In-Medical-Imaging : https://github.com/richard-peng-xia/awesome-multimodal-in-medical-imaging
+- awesome-mmps(multimodal machine learning with physiological signals) : https://github.com/willxxy/awesome-mmps
+
 
 ## Segmentation
 - Medical Image Segmentation subtasks : https://paperswithcode.com/area/medical/medical-image-segmentation
