@@ -14,6 +14,7 @@
 - Awesome Foundational Models in Medical Imaging : https://github.com/xmindflow/Awesome-Foundation-Models-in-Medical-Imaging
 - Awesome Self-Supervised Learning in Medical Imaging : https://github.com/SaeedShurrab/awesome-self-supervised-learning-in-medical-imaging
 - Awesome-Healthcare-Foundation-Models : https://github.com/Jianing-Qiu/Awesome-Healthcare-Foundation-Models?tab=readme-ov-file
+- awesome-mmps(multimodal machine learning with physiological signals) : https://github.com/willxxy/awesome-mmps
 
 
 ## Reconstruction
