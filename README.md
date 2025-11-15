@@ -52,6 +52,7 @@
 ## Application
 - MONAI(medical imaging framework) : https://github.com/Project-MONAI/MONAI?tab=readme-ov-file , https://github.com/Project-MONAI/tutorials/tree/1ad4540755b7703302ea6210103f4d5d4c7e8ad0, https://zhuanlan.zhihu.com/p/166706664
 - Deep Learning with Cinematic Rendering: Fine-Tuning Deep Neural Networks Using Photorealistic Medical Images https://durr.jhu.edu/pubs/dl-cin-ren/
+- Awesome Drug Pair Scoring : https://github.com/AstraZeneca/awesome-drug-pair-scoring
 
 # Lecture   
 - Computer Tomography, Matthias Beckmann  
