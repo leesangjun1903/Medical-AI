@@ -51,8 +51,11 @@
 
 
 ## Analysis
+- Deep Learning in Medical Imaging and Medical Image Analysis : https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis
+
+- Awesome medical imaging : https://github.com/fepegar/awesome-medical-imaging
+
 - Awesome Active Learning for Medical Image Analysis : https://github.com/LightersWang/Awesome-Active-Learning-for-Medical-Image-Analysis
-- Deep Learning in Medical Imaging and Medical Image Analysis : https://github.com/shawnyuen/DeepLearningInMedicalImagingAndMedicalImageAnalysis?tab=readme-ov-file
 
 ## Classification
 - Medical Image Classification : https://paperswithcode.com/task/medical-image-classification
@@ -65,8 +68,7 @@
 - Deep Learning with Cinematic Rendering: Fine-Tuning Deep Neural Networks Using Photorealistic Medical Images https://durr.jhu.edu/pubs/dl-cin-ren/
 - Awesome Drug Pair Scoring : https://github.com/AstraZeneca/awesome-drug-pair-scoring
 
-## Medical Imaging
-- Awesome medical imaging : https://github.com/fepegar/awesome-medical-imaging
+
 # Lecture   
 - Computer Tomography, Matthias Beckmann  
 - Timothy G. Feeman, The Mathematics of Medical Imaging, Second Edition
