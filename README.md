@@ -68,6 +68,7 @@
 - Deep Learning with Cinematic Rendering: Fine-Tuning Deep Neural Networks Using Photorealistic Medical Images https://durr.jhu.edu/pubs/dl-cin-ren/
 - Awesome Drug Pair Scoring : https://github.com/AstraZeneca/awesome-drug-pair-scoring
 - Awesome Machine Learning in Biomedical(Healthcare) Imaging : https://github.com/XindiWu/Awesome-Machine-Learning-in-Biomedical-Healthcare-Imaging
+- A curated list of resources for 3D segmentation of neurites (connectomics) in EM images : https://github.com/subeeshvasu/Awesome-Neuron-Segmentation-in-EM-Images
 
 # Lecture   
 - Computer Tomography, Matthias Beckmann  
