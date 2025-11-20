@@ -5,7 +5,6 @@
 ## Grad-CAM
 
 ## Relevance-CAM
-https://kyujinpy.tistory.com/63
 
 - Segmentation Model 이용
 
