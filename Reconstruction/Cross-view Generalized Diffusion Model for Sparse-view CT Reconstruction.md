@@ -1,4 +1,4 @@
-# Cross-view Generalized Diffusion Model (CvG-Diff) 종합 분석
+# Cross-view Generalized Diffusion Model for Sparse-view CT Reconstruction
 
 ---
 
