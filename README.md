@@ -29,6 +29,7 @@
 ## Reconstruction
 - Awesome-CT-Reconstruction : https://github.com/LoraLinH/Awesome-CT-Reconstruction
 - MRI Reconstruction : https://paperswithcode.com/task/mri-reconstruction
+- AAPM CT Metal Artifact Reduction Grand Challenge : https://github.com/xcist/example/tree/main/AAPM_datachallenge
 
 ### 3D Reconstruction
 - Low-Dose X-Ray Ct Reconstruction on X3D https://paperswithcode.com/sota/low-dose-x-ray-ct-reconstruction-on-x3d
